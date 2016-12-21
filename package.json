@@ -1,0 +1,53 @@
+{
+  "name": "liip-styleguide",
+  "version": "0.0.1",
+  "description": "Liip UI Toolkit",
+  "license": "private",
+  "private": true,
+  "homepage": "http://styleguide.liip.ch",
+  "scripts": {
+    "build": "gulp",
+    "start": "gulp --dev",
+    "test": "npm run build"
+  },
+  "author": "Liip AG",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:liip/styleguide.git"
+  },
+  "engines": {
+    "node": ">=4.0",
+    "npm": ">=2.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-2": "^6.5.0",
+    "browser-sync": "^2.13.0",
+    "del": "^2.2.1",
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-plugin-import": "^1.9.2",
+    "fabricator-assemble": "^1.1.11",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-csso": "^2.0.0",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "imports-loader": "^0.6.5",
+    "prismjs": "^1.6.0",
+    "run-sequence": "^1.2.1",
+    "script-loader": "^0.7.0",
+    "webpack": "^1.13.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}
