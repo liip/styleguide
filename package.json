@@ -8,7 +8,7 @@
   "scripts": {
     "build": "gulp",
     "start": "gulp --dev",
-    "test": "npm run build"
+    "deploy": "rsync -avzP --exclude='.*' dist/ demo:/var/www/styleguide.liip.ch/web/"
   },
   "author": "Liip AG",
   "repository": {
