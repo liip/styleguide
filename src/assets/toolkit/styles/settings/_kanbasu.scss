@@ -44,7 +44,7 @@ $brand-color:                       $green-700;
 
 // $ratio:                             1.61803398875;
 
-// $spacing-unit-default:              24px;
+$spacing-unit-default:              20px;
 // $spacing-unit-tiny:                 floor($spacing-unit-default / ($ratio * 2));
 // $spacing-unit-small:                floor($spacing-unit-default / $ratio);
 // $spacing-unit-large:                floor($spacing-unit-default * $ratio);
@@ -95,29 +95,29 @@ $brand-color:                       $green-700;
 
 // $btn-use-padding-ratio:             true;
 
-// $btn-padding:                       $spacing-unit-small;
+$btn-padding:                       $spacing-unit-default;
 // $btn-color:                         inherit;
 // $btn-border:                        1px solid transparent;
 // $btn-bkg:                           transparent;
-// $btn-border-radius:                 $border-radius-default;
+$btn-border-radius:                 0;
 
-// $btn-small-padding:                 $spacing-unit-tiny;
+$btn-small-padding:                 $spacing-unit-small;
 // $btn-small-font-size:               $font-size-small;
-// $btn-small-border-radius:           $border-radius-small;
+$btn-small-border-radius:           0;
 
 // $btn-large-padding:                 $spacing-unit-default;
 // $btn-large-font-size:               $font-size-large;
-// $btn-large-border-radius:           $border-radius-large;
+$btn-large-border-radius:           0;
 
-// $btn-default-color:                 $text-color;
-// $btn-default-bkg-color:             $alt-color-lighter;
-// $btn-default-hover-bkg-color:       lighten($btn-default-bkg-color, 3%);
-// $btn-default-active-bkg-color:      darken($btn-default-bkg-color, 5%);
+$btn-default-color:                 $warm-grey-600;
+$btn-default-bkg-color:             transparent;
+$btn-default-hover-bkg-color:       $warm-grey-100;
+$btn-default-active-bkg-color:      $warm-grey-100;
 
-// $btn-primary-color:                 white;
-// $btn-primary-bkg-color:             $brand-color;
-// $btn-primary-hover-bkg-color:       lighten($btn-primary-bkg-color, 8%);
-// $btn-primary-active-bkg-color:      darken($btn-primary-bkg-color, 5%);
+$btn-primary-color:                 $brand-color;
+$btn-primary-bkg-color:             transparent;
+$btn-primary-hover-bkg-color:       $brand-color;
+$btn-primary-active-bkg-color:      $brand-color;
 
 
 /**

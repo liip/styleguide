@@ -1,0 +1,30 @@
+/*----------------------------------------*\
+  BUTTON
+  @extend Kanbasu
+\*----------------------------------------*/
+
+.btn {
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+.btn--default {
+  border-color: currentcolor;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $warm-grey-700;
+  }
+}
+
+.btn--primary {
+  border-color: $brand-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+  }
+}
