@@ -1,89 +1,113 @@
 .f-item-group {
-	@include clearfix;
-	margin-top: 3rem;
-	margin-bottom: 3rem;
-	padding-bottom: 3rem;
-	border-bottom: 1px solid color(light);
+  @include clearfix;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid map-get($colors, light);
 
-	&:last-child {
-		border-bottom: 0;
-		margin-bottom: 0;
-	}
+  &:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
 
-	& ~ & {
-		margin-top: 0;
-	}
+  & ~ & {
+    margin-top: 0;
+  }
 
-	& > & {
-		padding-bottom: 1.5rem;
-		margin-bottom: 1.5rem;
-		border-bottom: 0;
+  & > & {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 0;
 
-		&:first-of-type {
-			margin-top: 0;
-		}
+    &:first-of-type {
+      margin-top: 0;
+    }
 
-		&:last-child {
-			margin-bottom: 0;
-			padding-bottom: 0;
-		}
-	}
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
 }
 
 .f-item-code {
-	margin-top: 2rem;
+  margin: -8px 5px 0;
+
+  position: relative;
+  z-index: 1;
+
+  border-radius: 2px;
+  background-color: $web-black;
+
+  pre,
+  code {
+    margin-bottom: 0;
+  }
 }
 
 .f-item-preview {
-	@include clearfix;
+  @include clearfix;
+
+  padding: 1rem;
+
+  position: relative;
+  z-index: 2;
+
+  background-color: white;
+  border: 1px solid #eaeaea;
+  border-bottom-color: darken(#eaeaea, 5%);
+  border-radius: 2px;
 }
 
 .f-item-border-bottom {
-	border-bottom: 1px solid color(light);
+  border-bottom: 1px solid map-get($colors, light);
 }
 
 .f-item-heading-group {
-	@include clearfix;
-	margin-bottom: 2rem;
-	vertical-align: middle;
+  @include clearfix;
+  margin-bottom: 1rem;
+  vertical-align: middle;
 }
 
 .f-item-heading {
-	margin-top: 0;
-	margin-bottom: 0;
-	display: inline-block;
-	vertical-align: middle;
-	line-height: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
 }
 
-
 .f-item-controls {
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: 0.5rem;
+  margin-top: 0.5rem;
 
-	.f-control {
-		width: 0.875rem;
-		height: 0.875rem;
-		display: block;
-		float: left;
+  .f-control {
+    vertical-align: baseline;
 
-		&:hover {
-			use {
-				fill: color(normal);
-			}
-		}
+    font-size: 0.75rem;
+    color: map-get($colors, medium);
 
-		use {
-			fill: color(light);
-		}
-	}
+    svg {
+      width: 16px;
+      height: 16px;
+      margin-right: 0.25rem;
+
+      vertical-align: text-bottom;
+    }
+
+    use {
+      fill: map-get($colors, medium);
+    }
+
+    &:hover {
+      color: map-get($colors, dark);
+
+      use {
+        fill: map-get($colors, dark);
+      }
+    }
+  }
 }
 
 .f-item-hidden {
-	display: none;
-}
-
-.f-item-notes {
-	font-size: 0.875rem;
+  display: none;
 }

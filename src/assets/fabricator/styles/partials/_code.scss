@@ -1,125 +1,122 @@
 /**
- * Github-like theme for Prism.js
- * @author Luke Askew http://github.com/lukeaskew
+ * Material prism theme by Mitch Jackson (http://mitchelljackson.co.uk)
+ * Inspired by Material Theme for Sublime Text
  */
 
-// color vars
-$code-colors: (
-	blue: #183691,
-	teal: #0086b3,
-	black: #333,
-	purple: #a71d5d,
-	maroon: #a71d5d,
-	green: #63a35c,
-	light-gray: #f7f7f7,
-	dark-gray: #969896
-);
+$color-code:               #CED3DF;
+$color-code-punctuation:   #89DDFF;
+$color-code-tag:           #F07178;
+$color-code-selector:      #FFCB6B;
+$color-code-keyword:       #C2E78C;
 
+$base-code-tab-size:       2;
 
-// base
-code,
-code[class*='language-'],
-pre[class*='language-'] {
-	color: map-get($code-colors, black);
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	tab-size: 4;
-	hyphens: none;
-	font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-	line-height: 1.4;
-	direction: ltr;
-	cursor: text;
-	letter-spacing: normal;
+code[class*="language-"],
+pre[class*="language-"] {
+    color: $color-code;
+    text-shadow: none;
+    font-size: 15px;
+    font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.6em;
+
+    -moz-tab-size: $base-code-tab-size;
+    -o-tab-size: $base-code-tab-size;
+    tab-size: $base-code-tab-size;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+
+    background: $web-black;
 }
 
-// code blocks
-pre[class*='language-'] {
-	overflow: auto;
-	margin: 1em 0;
-	padding: 1.2em;
-	border-radius: 3px;
-	font-size: 85%;
+/* Code blocks */
+pre[class*="language-"] {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
 }
 
-p code,
-li code,
-table code {
-	margin: 0;
-	border-radius: 3px;
-	padding: 0.2em 0;
-	font-size: 85%;
-
-	&:before,
-	&:after {
-		letter-spacing: -0.2em;
-		content: '\00a0';
-	}
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+    white-space: normal;
 }
 
-code,
-:not(pre) > code[class*='language-'],
-pre[class*='language-'] {
-	background: map-get($code-colors, light-gray);
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: slategray;
 }
 
-// inline code
-:not(pre) > code[class*='language-'] {
-	padding: 0.1em;
-	border-radius: 0.3em;
-}
-
-
-// token colors
-.token {
-
-	&.comment,
-	&.prolog,
-	&.doctype,
-	&.cdata {
-		color: map-get($code-colors, dark-gray);
-	}
-
-	&.punctuation,
-	&.string,
-	&.atrule,
-	&.attr-value {
-		color: map-get($code-colors, blue);
-	}
-
-	&.property,
-	&.tag {
-		color: map-get($code-colors, green);
-	}
-
-	&.boolean,
-	&.number {
-		color: map-get($code-colors, teal);
-	}
-
-	&.selector,
-	&.attr-name,
-	&.attr-value .punctuation:first-child,
-	&.keyword,
-	&.regex,
-	&.important {
-		color: map-get($code-colors, maroon);
-	}
-
-
-	&.operator,
-	&.entity,
-	&.url,
-	.language-css &.string {
-		color: map-get($code-colors, purple);
-	}
-
-	&.entity {
-		cursor: help;
-	}
-
+.token.punctuation {
+    color: $color-code-punctuation;
 }
 
 .namespace {
-	opacity: 0.7;
+    opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: $color-code-tag;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: $color-code-selector;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    color: $color-code-selector;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    color: #C3E984;
+}
+
+.token.function {
+    color: $color-code-tag;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+    color: $color-code-selector;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
 }

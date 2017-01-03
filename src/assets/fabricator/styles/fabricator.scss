@@ -4,9 +4,11 @@
  * Class selectors are namespaced with "f-"
  */
 
+@import '../../toolkit/styles/settings/settings';
+
 $settings: (
-	theme: light,
-	accent: hsl(0, 0%, 46%),
+	theme: dark,
+	accent: $green-700,
 	menu-width: 14rem
 );
 
