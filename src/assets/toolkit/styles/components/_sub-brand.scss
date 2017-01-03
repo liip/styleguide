@@ -4,10 +4,11 @@
 
 .sub-brand {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 6px 12px;
 
   color: $white;
   font-size: rem(14px);
+  font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
 
@@ -17,10 +18,9 @@
   &::after {
     content: '';
     display: inline-block;
-    margin-left: 0.5em;
-
     width: 14px;
     height: 12px;
+    margin-left: 0.5em;
 
     background: url('../images/slashes.svg') no-repeat center center;
     background-size: 100% auto;
