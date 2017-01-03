@@ -1,0 +1,37 @@
+/*----------------------------------------*\
+  SUB-BRAND
+\*----------------------------------------*/
+
+.sub-brand {
+  display: inline-block;
+  padding: 5px 10px;
+
+  color: $white;
+  font-size: rem(14px);
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $green-700;
+  background-image: linear-gradient(to right, $green-700 50%, $green-400);
+
+  &::after {
+    content: '';
+    display: inline-block;
+    margin-left: 0.5em;
+
+    width: 14px;
+    height: 12px;
+
+    background: url('../images/slashes.svg') no-repeat center center;
+    background-size: 100% auto;
+  }
+
+  &:hover,
+  &:focus {
+    background-image: none;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
