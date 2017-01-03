@@ -258,7 +258,7 @@ fabricator.singleItemToggle = () => {
 
   // toggle single
   const toggleSingleItemCode = (e) => {
-    const group = e.currentTarget.parentNode.parentNode.parentNode;
+    const group = e.currentTarget.parentNode.parentNode;
     const type = e.currentTarget.getAttribute('data-f-toggle-control');
     group.querySelector(`[data-f-toggle=${type}]`).classList.toggle('f-item-hidden');
   };
@@ -268,28 +268,6 @@ fabricator.singleItemToggle = () => {
   }
 
   return fabricator;
-
-};
-
-
-/**
- * Automatically select code when code block is clicked
- */
-fabricator.bindCodeAutoSelect = () => {
-
-  const codeBlocks = document.querySelectorAll('.f-item-code');
-
-  const select = (block) => {
-    const selection = window.getSelection();
-    const range = document.createRange();
-    range.selectNodeContents(block.querySelector('code'));
-    selection.removeAllRanges();
-    selection.addRange(range);
-  };
-
-  for (let i = codeBlocks.length - 1; i >= 0; i--) {
-    codeBlocks[i].addEventListener('click', select.bind(this, codeBlocks[i]));
-  }
 
 };
 
@@ -335,5 +313,4 @@ fabricator
  .allItemsToggles()
  .singleItemToggle()
  .buildColorChips()
- .setActiveItem()
- .bindCodeAutoSelect();
+ .setActiveItem();
