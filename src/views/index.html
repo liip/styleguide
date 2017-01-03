@@ -20,12 +20,17 @@ fabricator: true
 
 <h2>Colors</h2>
 
+<p>Please use the Sass variables rather than hardcoded values.</p>
+
 {{#each toolkit.colors}}
-	<div class="f-color-chips">
+  <h3>{{@key}}</h3>
+  <div class="f-color-chips">
 	{{#each this}}
 		<div class="f-color-chip">
 			<div class="f-color-chip__name">{{@key}}</div>
-			<div class="f-color-chip__color">{{this}}</div>
+      <div class="f-color-chip__variable">{{this.variable}}</div>
+      <div class="f-color-chip__color">{{this.HEX}}</div>
+			<div class="f-color-chip__color">{{this.RGB}}</div>
 		</div>
 	{{/each}}
 	</div>

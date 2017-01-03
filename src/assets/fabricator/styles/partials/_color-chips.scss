@@ -22,9 +22,15 @@
 		flex-basis: 13em;
 	}
 
-	.f-color-chip__color {
-		background-color: #fff;
-		content: attr(data-color);
-		font-weight: 400;
-	}
+  .f-color-chip__variable {
+    font-weight: 400;
+    margin: 8px 0;
+  }
+
+  .f-color-chip__color {
+    background-color: #fff;
+    content: attr(data-color);
+    font-weight: 400;
+    color: #999;
+  }
 }

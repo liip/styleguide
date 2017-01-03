@@ -1,8 +1,191 @@
 colors:
-  primary:
-    Dark: "rgb(30, 30, 30)"
-    Light: "rgb(242, 242, 242)"
-  secondary:
-    Red: "rgb(201, 55, 6)"
-    Yellow: "rgb(252, 207, 80)"
-    Blue: "rgb(39, 102, 143)"
+  Main Colors:
+    "Liip Green 700":
+      variable: $green-700
+      HEX: "#6EA644"
+      RGB: "rgb(110, 166, 68)"
+    "Liip Green 400":
+      variable: $green-400
+      HEX: "#A4C339"
+      RGB: "rgb(164, 195, 57)"
+    "Liip Green 100":
+      variable: $green-100
+      HEX: "#D0DD2C"
+      RGB: "rgb(208, 221, 44)"
+    "Web Black":
+      variable: $web-black
+      HEX: "#414141"
+      RGB: "rgb(65, 65, 65)"
+    "Black":
+      variable: $black
+      HEX: "#000000"
+      RGB: "rgb(0, 0, 0)"
+    "Web White":
+      variable: $web-white
+      HEX: "#F7F7F5"
+      RGB: "rgb(247, 247, 245)"
+    "White":
+      variable: $white
+      HEX: "#FFFFFF"
+      RGB: "rgb(255, 255, 255)"
+  Green:
+    100:
+      variable: $green-100
+      HEX: "#D0DD2C"
+      RGB: "rgb(208, 221, 44)"
+    200:
+      variable: $green-200
+      HEX: "#C1D430"
+      RGB: "rgb(193, 212, 48)"
+    300:
+      variable: $green-300
+      HEX: "#B3CC35"
+      RGB: "rgb(179, 204, 53)"
+    400:
+      variable: $green-400
+      HEX: "#A4C339"
+      RGB: "rgb(164, 195, 57)"
+    500:
+      variable: $green-500
+      HEX: "#92B93D"
+      RGB: "rgb(146, 185, 61)"
+    600:
+      variable: $green-600
+      HEX: "#80B040"
+      RGB: "rgb(128, 176, 64)"
+    700:
+      variable: $green-700
+      HEX: "#6EA644"
+      RGB: "rgb(110, 166, 68)"
+  Warm Grey:
+    50:
+      variable: $warm-grey-50
+      HEX: "#F7F7F5"
+      RGB: "rgb(247, 247, 245)"
+    100:
+      variable: $warm-grey-100
+      HEX: "#EBEBE6"
+      RGB: "rgb(235, 235, 230)"
+    200:
+      variable: $warm-grey-200
+      HEX: "#DDDDD8"
+      RGB: "rgb(221, 221, 216)"
+    300:
+      variable: $warm-grey-300
+      HEX: "#CECFCA"
+      RGB: "rgb(206, 207, 202)"
+    400:
+      variable: $warm-grey-400
+      HEX: "#C0C1BC"
+      RGB: "rgb(192, 193, 188)"
+    500:
+      variable: $warm-grey-500
+      HEX: "#A5A59F"
+      RGB: "rgb(165, 165, 159)"
+    600:
+      variable: $warm-grey-600
+      HEX: "#898A81"
+      RGB: "rgb(137, 138, 129)"
+    700:
+      variable: $warm-grey-700
+      HEX: "#6E6E64"
+      RGB: "rgb(110, 110, 100)"
+    800:
+      variable: $warm-grey-800
+      HEX: "#5F5F58"
+      RGB: "rgb(95, 95, 88)"
+    900:
+      variable: $warm-grey-900
+      HEX: "#50504D"
+      RGB: "rgb(80, 80, 77)"
+    1000:
+      variable: $warm-grey-1000
+      HEX: "#414141"
+      RGB: "rgb(65, 65, 65)"
+  Orange:
+    100:
+      variable: $orange-100
+      HEX: "#F8C026"
+      RGB: "rgb(248, 192, 38)"
+    200:
+      variable: $orange-200
+      HEX: "#F5B61F"
+      RGB: "rgb(245, 182, 31)"
+    300:
+      variable: $orange-300
+      HEX: "#F2AB17"
+      RGB: "rgb(242, 171, 23)"
+    400:
+      variable: $orange-400
+      HEX: "#EFA00F"
+      RGB: "rgb(239, 160, 15)"
+    500:
+      variable: $orange-500
+      HEX: "#EC9506"
+      RGB: "rgb(236, 149, 6)"
+    600:
+      variable: $orange-600
+      HEX: "#E98A00"
+      RGB: "rgb(233, 138, 0)"
+    700:
+      variable: $orange-700
+      HEX: "#E58000"
+      RGB: "rgb(229, 128, 0)"
+  Teal:
+    100:
+      variable: $teal-100
+      HEX: "#19B3A6"
+      RGB: "rgb(25, 179, 166)"
+    200:
+      variable: $teal-200
+      HEX: "#13A99C"
+      RGB: "rgb(19, 169, 156)"
+    300:
+      variable: $teal-300
+      HEX: "#0E9F93"
+      RGB: "rgb(14, 159, 147)"
+    400:
+      variable: $teal-400
+      HEX: "#089589"
+      RGB: "rgb(8, 149, 137)"
+    500:
+      variable: $teal-500
+      HEX: "#05837C"
+      RGB: "rgb(5, 131, 124)"
+    600:
+      variable: $teal-600
+      HEX: "#03736C"
+      RGB: "rgb(3, 115, 108)"
+    700:
+      variable: $teal-700
+      HEX: "#00615D"
+      RGB: "rgb(0, 97, 93)"
+  Cranberry:
+    100:
+      variable: $cranberry-100
+      HEX: "#F26380"
+      RGB: "rgb(242, 99, 128)"
+    200:
+      variable: $cranberry-200
+      HEX: "#E85876"
+      RGB: "rgb(232, 88, 118)"
+    300:
+      variable: $cranberry-300
+      HEX: "#DD4E6B"
+      RGB: "rgb(221, 78, 107)"
+    400:
+      variable: $cranberry-400
+      HEX: "#D34361"
+      RGB: "rgb(211, 67, 97)"
+    500:
+      variable: $cranberry-500
+      HEX: "#C23E59"
+      RGB: "rgb(194, 62, 89)"
+    600:
+      variable: $cranberry-600
+      HEX: "#B23852"
+      RGB: "rgb(178, 56, 82)"
+    700:
+      variable: $cranberry-700
+      HEX: "#A1334A"
+      RGB: "rgb(161, 51, 74)"
