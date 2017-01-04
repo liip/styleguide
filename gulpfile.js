@@ -12,6 +12,8 @@ const reload = browserSync.reload;
 const runSequence = require('run-sequence');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
+const watch = require('gulp-watch');
+const batch = require('gulp-batch');
 const webpack = require('webpack');
 
 // configuration
@@ -157,19 +159,29 @@ gulp.task('serve', () => {
   });
 
   gulp.task('assembler:watch', ['assembler'], browserSync.reload);
-  gulp.watch(config.templates.watch, ['assembler:watch']);
+  watch(config.templates.watch, batch((events, done) => {
+    gulp.start('assembler:watch', done);
+  }));
 
   gulp.task('styles:watch', ['styles']);
-  gulp.watch([config.styles.fabricator.watch, config.styles.toolkit.watch], ['styles:watch']);
+  watch([config.styles.fabricator.watch, config.styles.toolkit.watch], batch((events, done) => {
+    gulp.start('styles:watch', done);
+  }));
 
   gulp.task('scripts:watch', ['scripts'], browserSync.reload);
-  gulp.watch([config.scripts.fabricator.watch, config.scripts.toolkit.watch], ['scripts:watch']);
+  watch([config.scripts.fabricator.watch, config.scripts.toolkit.watch], batch((events, done) => {
+    gulp.start('scripts:watch', done);
+  }));
 
   gulp.task('images:watch', ['images'], browserSync.reload);
-  gulp.watch(config.images.toolkit.watch, ['images:watch']);
+  watch(config.images.toolkit.watch, batch((events, done) => {
+    gulp.start('images:watch', done);
+  }));
 
   gulp.task('fonts:watch', ['fonts'], browserSync.reload);
-  gulp.watch(config.fonts.toolkit.watch, ['fonts:watch']);
+  watch(config.fonts.toolkit.watch, batch((events, done) => {
+    gulp.start('fonts:watch', done);
+  }));
 });
 
 
