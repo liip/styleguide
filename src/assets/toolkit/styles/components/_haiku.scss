@@ -1,0 +1,35 @@
+/*----------------------------------------*\
+  HAIKU
+\*----------------------------------------*/
+
+.haiku {
+  line-height: 1;
+}
+
+  .haiku__date {
+    margin-bottom: $spacing-unit-small;
+
+    color: $brand-color;
+    font-weight: 500;
+    font-size: rem(22px);
+  }
+
+  .haiku__list {
+    font-weight: 700;
+    font-size: rem(36px);
+  }
+
+  .haiku__number {
+    color: $brand-color;
+  }
+
+
+@include media('md') {
+  .haiku__date {
+    font-size: rem(32px);
+  }
+
+  .haiku__list {
+    font-size: rem(60px);
+  }
+}
