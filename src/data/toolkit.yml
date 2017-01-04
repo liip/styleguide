@@ -189,3 +189,14 @@ colors:
       variable: $cranberry-700
       HEX: "#A1334A"
       RGB: "rgb(161, 51, 74)"
+icons:
+  - api
+  - audit
+  - content-management
+  - ecommerce
+  - elearning
+  - fintech
+  - mobile
+  - open-source
+  - performance
+  - user-experience

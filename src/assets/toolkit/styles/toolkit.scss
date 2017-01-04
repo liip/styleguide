@@ -57,11 +57,11 @@
  * Helpers
  */
 
-// @import '../../../../node_modules/kanbasu/src/assets/scss/helpers/text';
+@import '../../../../node_modules/kanbasu/src/assets/scss/helpers/text';
 @import '../../../../node_modules/kanbasu/src/assets/scss/helpers/float';
-// @import '../../../../node_modules/kanbasu/src/assets/scss/helpers/spacings';
+@import '../../../../node_modules/kanbasu/src/assets/scss/helpers/spacings';
 // @import '../../../../node_modules/kanbasu/src/assets/scss/helpers/spacings-responsive';
-// @import '../../../../node_modules/kanbasu/src/assets/scss/helpers/images';
+@import '../../../../node_modules/kanbasu/src/assets/scss/helpers/images';
 // @import '../../../../node_modules/kanbasu/src/assets/scss/helpers/positionning';
 // @import '../../../../node_modules/kanbasu/src/assets/scss/helpers/display';
 
@@ -78,19 +78,21 @@
  * Components
  */
 
-// @import '../../../../node_modules/kanbasu/src/assets/scss/components/grid';
-// @import '../../../../node_modules/kanbasu/src/assets/scss/components/widths';
-// @import '../../../../node_modules/kanbasu/src/assets/scss/components/widths-responsive';
+@import '../../../../node_modules/kanbasu/src/assets/scss/components/grid';
+@import '../../../../node_modules/kanbasu/src/assets/scss/components/widths';
+@import '../../../../node_modules/kanbasu/src/assets/scss/components/widths-responsive';
 @import '../../../../node_modules/kanbasu/src/assets/scss/components/btn';
 // @import '../../../../node_modules/kanbasu/src/assets/scss/components/box';
 // @import '../../../../node_modules/kanbasu/src/assets/scss/components/media';
 // @import '../../../../node_modules/kanbasu/src/assets/scss/components/media-responsive';
 // @import '../../../../node_modules/kanbasu/src/assets/scss/components/mosaic';
 // @import '../../../../node_modules/kanbasu/src/assets/scss/components/mosaic-responsive';
-// @import '../../../../node_modules/kanbasu/src/assets/scss/components/list';
+@import '../../../../node_modules/kanbasu/src/assets/scss/components/list';
 // @import '../../../../node_modules/kanbasu/src/assets/scss/components/list-inline';
 // @import '../../../../node_modules/kanbasu/src/assets/scss/components/list-stacked';
 // @import '../../../../node_modules/kanbasu/src/assets/scss/components/embed-responsive';
 
+@import 'components/icon';
 @import 'components/btn';
-@import 'components/sub-brand';
+@import 'components/service-tag';
+@import 'components/services-tiles';

@@ -303,6 +303,23 @@ fabricator.setInitialMenuState = () => {
 
 };
 
+/**
+ * Prevent links to "#" to fires
+ */
+fabricator.preventFakeLinks = () => {
+
+  const links = document.querySelectorAll('a[href="#"]');
+
+  links.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+    });
+  });
+
+  return fabricator;
+
+};
+
 
 /**
  * Initialization
@@ -313,4 +330,5 @@ fabricator
  .allItemsToggles()
  .singleItemToggle()
  .buildColorChips()
- .setActiveItem();
+ .setActiveItem()
+ .preventFakeLinks();

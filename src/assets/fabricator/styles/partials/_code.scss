@@ -13,57 +13,67 @@ $base-code-tab-size:       2;
 
 code[class*="language-"],
 pre[class*="language-"] {
-    color: $color-code;
-    text-shadow: none;
-    font-size: 15px;
-    font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
-    direction: ltr;
-    text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
-    word-wrap: normal;
-    line-height: 1.6em;
+  color: $color-code;
+  text-shadow: none;
+  font-size: 15px;
+  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.6em;
 
-    -moz-tab-size: $base-code-tab-size;
-    -o-tab-size: $base-code-tab-size;
-    tab-size: $base-code-tab-size;
+  -moz-tab-size: $base-code-tab-size;
+  -o-tab-size: $base-code-tab-size;
+  tab-size: $base-code-tab-size;
 
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
 
-    background: $web-black;
+  background: $web-black;
+
+  ::selection {
+    background-color: rgba(255,255,255,.18);
+    color: inherit;
+  }
+
+  ::-moz-selection {
+    background-color: rgba(255,255,255,.18);
+    color: inherit;
+  }
 }
 
 /* Code blocks */
 pre[class*="language-"] {
-    padding: 1em;
-    margin: .5em 0;
-    overflow: auto;
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-    padding: .1em;
-    border-radius: .3em;
-    white-space: normal;
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-    color: slategray;
+  color: slategray;
 }
 
 .token.punctuation {
-    color: $color-code-punctuation;
+  color: $color-code-punctuation;
 }
 
 .namespace {
-    opacity: .7;
+  color: transparentize($color-code-selector, .3);
 }
 
 .token.property,
@@ -73,7 +83,7 @@ pre[class*="language-"] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-    color: $color-code-tag;
+  color: $color-code-tag;
 }
 
 .token.selector,
@@ -82,7 +92,7 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-    color: $color-code-selector;
+  color: $color-code-selector;
 }
 
 .token.operator,
@@ -90,33 +100,33 @@ pre[class*="language-"] {
 .token.url,
 .language-css .token.string,
 .style .token.string {
-    color: $color-code-selector;
+  color: $color-code-selector;
 }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-    color: #C3E984;
+  color: #C3E984;
 }
 
 .token.function {
-    color: $color-code-tag;
+  color: $color-code-tag;
 }
 
 .token.regex,
 .token.important,
 .token.variable {
-    color: $color-code-selector;
+  color: $color-code-selector;
 }
 
 .token.important,
 .token.bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 .token.italic {
-    font-style: italic;
+  font-style: italic;
 }
 
 .token.entity {
-    cursor: help;
+  cursor: help;
 }

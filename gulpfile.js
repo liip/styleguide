@@ -1,24 +1,18 @@
+const path = require('path');
+const fs = require('fs');
 const assembler = require('fabricator-assemble');
 const browserSync = require('browser-sync');
+const reload = browserSync.reload;
 const csso = require('gulp-csso');
 const del = require('del');
 const gulp = require('gulp');
-const gutil = require('gulp-util');
-const gulpif = require('gulp-if');
-const imagemin = require('gulp-imagemin');
-const prefix = require('gulp-autoprefixer');
-const rename = require('gulp-rename');
-const reload = browserSync.reload;
+const $ = require('gulp-load-plugins')();
 const runSequence = require('run-sequence');
-const sass = require('gulp-sass');
-const sourcemaps = require('gulp-sourcemaps');
-const watch = require('gulp-watch');
-const batch = require('gulp-batch');
 const webpack = require('webpack');
 
 // configuration
 const config = {
-  dev: gutil.env.dev,
+  dev: $.util.env.dev,
   styles: {
     browsers: 'last 1 version',
     fabricator: {
@@ -58,6 +52,13 @@ const config = {
       watch: 'src/assets/toolkit/images/**/*',
     },
   },
+  icons: {
+    toolkit: {
+      src: 'src/assets/toolkit/icons/**/*.svg',
+      dest: 'dist/assets/toolkit/icons',
+      watch: 'src/assets/toolkit/icons/**/*.svg',
+    },
+  },
   templates: {
     watch: 'src/**/*.{html,md,json,yml}',
   },
@@ -72,27 +73,27 @@ gulp.task('clean', del.bind(null, [config.dest]));
 // styles
 gulp.task('styles:fabricator', () => {
   gulp.src(config.styles.fabricator.src)
-  .pipe(sourcemaps.init())
-  .pipe(sass().on('error', sass.logError))
-  .pipe(prefix('last 1 version'))
-  .pipe(gulpif(!config.dev, csso()))
-  .pipe(rename('f.css'))
-  .pipe(sourcemaps.write())
+  .pipe($.sourcemaps.init())
+  .pipe($.sass().on('error', $.sass.logError))
+  .pipe($.autoprefixer('last 1 version'))
+  .pipe($.if(!config.dev, csso()))
+  .pipe($.rename('f.css'))
+  .pipe($.sourcemaps.write())
   .pipe(gulp.dest(config.styles.fabricator.dest))
-  .pipe(gulpif(config.dev, reload({ stream: true })));
+  .pipe($.if(config.dev, reload({ stream: true })));
 });
 
 gulp.task('styles:toolkit', () => {
   gulp.src(config.styles.toolkit.src)
-  .pipe(gulpif(config.dev, sourcemaps.init()))
-  .pipe(sass({
+  .pipe($.if(config.dev, $.sourcemaps.init()))
+  .pipe($.sass({
     includePaths: './node_modules',
-  }).on('error', sass.logError))
-  .pipe(prefix('last 1 version'))
-  .pipe(gulpif(!config.dev, csso()))
-  .pipe(gulpif(config.dev, sourcemaps.write()))
+  }).on('error', $.sass.logError))
+  .pipe($.autoprefixer('last 1 version'))
+  .pipe($.if(!config.dev, csso()))
+  .pipe($.if(config.dev, $.sourcemaps.write()))
   .pipe(gulp.dest(config.styles.toolkit.dest))
-  .pipe(gulpif(config.dev, reload({ stream: true })));
+  .pipe($.if(config.dev, reload({ stream: true })));
 });
 
 gulp.task('styles', ['styles:fabricator', 'styles:toolkit']);
@@ -104,12 +105,12 @@ const webpackConfig = require('./webpack.config')(config);
 gulp.task('scripts', (done) => {
   webpack(webpackConfig, (err, stats) => {
     if (err) {
-      gutil.log(gutil.colors.red(err()));
+      $.util.log($.util.colors.red(err()));
     }
     const result = stats.toJson();
     if (result.errors.length) {
       result.errors.forEach((error) => {
-        gutil.log(gutil.colors.red(error));
+        $.util.log($.util.colors.red(error));
       });
     }
     done();
@@ -120,13 +121,26 @@ gulp.task('scripts', (done) => {
 // images
 gulp.task('images', ['favicon'], () => {
   return gulp.src(config.images.toolkit.src)
-    .pipe(imagemin())
+    .pipe($.imagemin())
     .pipe(gulp.dest(config.images.toolkit.dest));
 });
 
 gulp.task('favicon', () => {
   return gulp.src('src/favicon.ico')
     .pipe(gulp.dest(config.dest));
+});
+
+
+// icons
+gulp.task('icons', () => {
+  return gulp.src(config.icons.toolkit.src)
+    .pipe($.svgSymbols({
+      templates: [
+        path.join(__dirname, 'src/templates/icons.svg'),
+      ],
+    }))
+    .pipe($.rename('icons.svg'))
+    .pipe(gulp.dest(config.icons.toolkit.dest));
 });
 
 
@@ -142,6 +156,18 @@ gulp.task('assembler', (done) => {
   assembler({
     logErrors: config.dev,
     dest: config.dest,
+    helpers: {
+      icons: () => {
+        const fileName = path.join(__dirname, config.icons.toolkit.dest, 'icons.svg');
+        const exists = fs.existsSync(fileName);
+
+        if (!exists) {
+          return `[File "${fileName}" doesn’t exist.]`;
+        }
+
+        return fs.readFileSync(fileName, 'utf-8');
+      },
+    },
   });
   done();
 });
@@ -159,27 +185,34 @@ gulp.task('serve', () => {
   });
 
   gulp.task('assembler:watch', ['assembler'], browserSync.reload);
-  watch(config.templates.watch, batch((events, done) => {
+  $.watch(config.templates.watch, $.batch((events, done) => {
     gulp.start('assembler:watch', done);
   }));
 
   gulp.task('styles:watch', ['styles']);
-  watch([config.styles.fabricator.watch, config.styles.toolkit.watch], batch((events, done) => {
+  $.watch([config.styles.fabricator.watch, config.styles.toolkit.watch], $.batch((events, done) => {
     gulp.start('styles:watch', done);
   }));
 
   gulp.task('scripts:watch', ['scripts'], browserSync.reload);
-  watch([config.scripts.fabricator.watch, config.scripts.toolkit.watch], batch((events, done) => {
+  $.watch([config.scripts.fabricator.watch, config.scripts.toolkit.watch], $.batch((events, done) => {
     gulp.start('scripts:watch', done);
   }));
 
   gulp.task('images:watch', ['images'], browserSync.reload);
-  watch(config.images.toolkit.watch, batch((events, done) => {
+  $.watch(config.images.toolkit.watch, $.batch((events, done) => {
     gulp.start('images:watch', done);
   }));
 
+  gulp.task('icons:watch', () => {
+    runSequence('icons', 'assembler', browserSync.reload);
+  });
+  $.watch(config.icons.toolkit.watch, $.batch((events, done) => {
+    gulp.start('icons:watch', done);
+  }));
+
   gulp.task('fonts:watch', ['fonts'], browserSync.reload);
-  watch(config.fonts.toolkit.watch, batch((events, done) => {
+  $.watch(config.fonts.toolkit.watch, $.batch((events, done) => {
     gulp.start('fonts:watch', done);
   }));
 });
@@ -187,17 +220,7 @@ gulp.task('serve', () => {
 
 // default build task
 gulp.task('default', ['clean'], () => {
-  // define build tasks
-  const tasks = [
-    'styles',
-    'scripts',
-    'images',
-    'fonts',
-    'assembler',
-  ];
-
-  // run build
-  runSequence(tasks, () => {
+  runSequence(['styles', 'scripts', 'images', 'icons', 'fonts'], 'assembler', () => {
     if (config.dev) {
       gulp.start('serve');
     }

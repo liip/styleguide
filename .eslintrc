@@ -1,6 +1,7 @@
 {
   "extends": "airbnb-base",
   "rules": {
-    "arrow-body-style": ["off"]
+    "arrow-body-style": ["off"],
+    "max-len": ["error", 120]
   }
 }
