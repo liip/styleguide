@@ -49,7 +49,7 @@
 @import '../../../../node_modules/kanbasu/src/assets/scss/defaults/box-model';
 @import '../../../../node_modules/kanbasu/src/assets/scss/defaults/elements';
 @import '../../../../node_modules/kanbasu/src/assets/scss/defaults/typography';
-// @import '../../../../node_modules/kanbasu/src/assets/scss/defaults/table';
+@import '../../../../node_modules/kanbasu/src/assets/scss/defaults/table';
 // @import '../../../../node_modules/kanbasu/src/assets/scss/defaults/forms';
 
 
@@ -60,7 +60,7 @@
 @import '../../../../node_modules/kanbasu/src/assets/scss/helpers/text';
 @import '../../../../node_modules/kanbasu/src/assets/scss/helpers/float';
 @import '../../../../node_modules/kanbasu/src/assets/scss/helpers/spacings';
-// @import '../../../../node_modules/kanbasu/src/assets/scss/helpers/spacings-responsive';
+@import '../../../../node_modules/kanbasu/src/assets/scss/helpers/spacings-responsive';
 @import '../../../../node_modules/kanbasu/src/assets/scss/helpers/images';
 // @import '../../../../node_modules/kanbasu/src/assets/scss/helpers/positionning';
 // @import '../../../../node_modules/kanbasu/src/assets/scss/helpers/display';
@@ -97,3 +97,4 @@
 @import 'components/service-tag';
 @import 'components/services-tiles';
 @import 'components/haiku';
+@import 'components/section';

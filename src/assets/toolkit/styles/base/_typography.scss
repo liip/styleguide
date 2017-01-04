@@ -13,6 +13,17 @@ h1, h2, h3, h4, h5, h6,
 
 
 /**
+ * Code and preformatted text
+ */
+
+code {
+  color: white;
+  background-color: $warm-grey-600;
+  border-radius: 2px;
+}
+
+
+/**
  * Selection
  */
 

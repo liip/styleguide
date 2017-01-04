@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Example page &middot; Liip Styleguide</title>
+
+  <link rel="stylesheet" href="{{baseurl}}/assets/toolkit/styles/toolkit.css">
+</head>
+<body>
+  {{#icons}}{{/icons}}
+
+  <section class="section section--reversed section--fit">
+    <canvas id="section-multiplier" class="section__bg"></canvas>
+    <div class="section__body">
+      <h1>Shinylicious</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section__body">
+      <h1>Digital product expertise</h1>
+      {{>services-tiles}}
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="section__body">
+      <h1>We could put a contact form here</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section__body">
+      <h1>And there would go the footer</h1>
+    </div>
+  </section>
+
+  <script src="{{baseurl}}/assets/toolkit/scripts/toolkit.js"></script>
+  <script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', function() {
+      var el = document.querySelector('#section-multiplier');
+      new Toolkit.Multiplier(el, '/assets/toolkit/images/multiplier.png');
+    });
+  </script>
+</body>
+</html>

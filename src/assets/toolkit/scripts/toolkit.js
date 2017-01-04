@@ -1,3 +1,5 @@
-/**
- * Toolkit JavaScript
- */
+import Multiplier from './multiplier';
+
+window.Toolkit = {
+  Multiplier,
+};

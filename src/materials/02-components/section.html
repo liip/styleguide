@@ -1,0 +1,91 @@
+---
+notes: |
+  Useful to structure a page. The content is automatically spaced from the sides. By default it has no background but you are free to add a `.section__bg` child which will cover the whole space. Ensure the contast with the text is good enough according to the image chosen.
+
+  ##### Modifiers
+
+  <table class="table">
+    <tbody>
+      <tr>
+        <td width="20%"><code>.section--fit</code></td>
+        <td>Take at least the viewport height</td>
+      </tr>
+      <tr>
+        <td><code>.section--reversed</code></td>
+        <td>Use light text color</td>
+      </tr>
+      <tr>
+        <td><code>.section--primary</code></td>
+        <td>Green gradient background and light text color</td>
+      </tr>
+      <tr>
+        <td><code>.section--dark</code></td>
+        <td>Dark solid background and light text color</td>
+      </tr>
+    </tbody>
+  </table>
+---
+
+<section class="section">
+  <div class="section__body">
+    <h1>Default section</h1>
+    <ol>
+      <li>Height depending on content</li>
+      <li>No background</li>
+      <li>Normal text color</li>
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <img src="/assets/toolkit/images/multiplier.png" class="section__bg"></canvas>
+  <div class="section__body">
+    <h1>Light background section</h1>
+    <ol>
+      <li>Height depending on content</li>
+      <li>Light background image</li>
+      <li>Normal text color</li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section--reversed section--fit">
+  <canvas id="section-multiplier" class="section__bg"></canvas>
+  <div class="section__body">
+    <h1>Dark background fitted section</h1>
+    <ol>
+      <li>Full viewport height</li>
+      <li>Dark background image</li>
+      <li>Light text color</li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section--primary">
+  <div class="section__body">
+    <h1>Primary section</h1>
+    <ol>
+      <li>Height depending on content</li>
+      <li>Green gradient background</li>
+      <li>Light text color</li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section--dark">
+  <div class="section__body">
+    <h1>Dark section</h1>
+    <ol>
+      <li>Height depending on content</li>
+      <li>Dark warm grey background</li>
+      <li>Light text color</li>
+    </ol>
+  </div>
+</section>
+
+<script type="text/javascript">
+  window.addEventListener('DOMContentLoaded', function() {
+    var el = document.querySelector('#section-multiplier');
+    new Toolkit.Multiplier(el, '/assets/toolkit/images/multiplier.png');
+  });
+</script>

@@ -1,42 +1,33 @@
 <!doctype html>
 <html lang="en" class="f-menu-active">
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}{{#if title}} &middot; {{/if}}Liip Styleguide</title>
 
-	<title>{{title}}{{#if title}} &middot; {{/if}}Liip Styleguide</title>
+  {{#if fabricator}}<link rel="stylesheet" href="{{baseurl}}/assets/fabricator/styles/f.css">{{/if}}
 
-	{{#if fabricator}}<link rel="stylesheet" href="{{baseurl}}/assets/fabricator/styles/f.css">{{/if}}
-
-	<!-- toolkit styles -->
-	<link rel="stylesheet" href="{{baseurl}}/assets/toolkit/styles/toolkit.css">
-	<!-- /toolkit styles -->
-
+  <link rel="stylesheet" href="{{baseurl}}/assets/toolkit/styles/toolkit.css">
 </head>
 <body>
   {{#icons}}{{/icons}}
 
-	{{#if fabricator}}
-		{{> f-icons}}
-		{{> f-menu}}
-		<div class="f-container">
-			{{> f-control-bar}}
-	{{/if}}
+  {{#if fabricator}}
+    {{> f-icons}}
+    {{> f-menu}}
+    <div class="f-container">
+      {{> f-control-bar}}
+  {{/if}}
 
+  {% body %}
 
-	{% body %}
+  {{#if fabricator}}
+    </div>
+  <script src="{{baseurl}}/assets/fabricator/scripts/f.js"></script>
+  {{/if}}
 
-
-	{{#if fabricator}}
-		</div>
-	<script src="{{baseurl}}/assets/fabricator/scripts/f.js"></script>
-	{{/if}}
-
-	<!-- toolkit scripts -->
-	<script src="{{baseurl}}/assets/toolkit/scripts/toolkit.js"></script>
-	<!-- /toolkit scripts -->
-
+  <script src="{{baseurl}}/assets/toolkit/scripts/toolkit.js"></script>
 </body>
 </html>
