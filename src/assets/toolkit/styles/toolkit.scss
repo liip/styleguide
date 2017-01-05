@@ -62,7 +62,7 @@
 @import '../../../../node_modules/kanbasu/src/assets/scss/helpers/spacings';
 @import '../../../../node_modules/kanbasu/src/assets/scss/helpers/spacings-responsive';
 @import '../../../../node_modules/kanbasu/src/assets/scss/helpers/images';
-// @import '../../../../node_modules/kanbasu/src/assets/scss/helpers/positionning';
+@import '../../../../node_modules/kanbasu/src/assets/scss/helpers/positionning';
 // @import '../../../../node_modules/kanbasu/src/assets/scss/helpers/display';
 
 
@@ -88,7 +88,7 @@
 // @import '../../../../node_modules/kanbasu/src/assets/scss/components/mosaic';
 // @import '../../../../node_modules/kanbasu/src/assets/scss/components/mosaic-responsive';
 @import '../../../../node_modules/kanbasu/src/assets/scss/components/list';
-// @import '../../../../node_modules/kanbasu/src/assets/scss/components/list-inline';
+@import '../../../../node_modules/kanbasu/src/assets/scss/components/list-inline';
 @import '../../../../node_modules/kanbasu/src/assets/scss/components/list-stacked';
 // @import '../../../../node_modules/kanbasu/src/assets/scss/components/embed-responsive';
 
@@ -98,3 +98,5 @@
 @import 'components/services-tiles';
 @import 'components/haiku';
 @import 'components/section';
+@import 'components/navbar';
+@import 'components/logo';

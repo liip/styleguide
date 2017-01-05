@@ -190,6 +190,8 @@ colors:
       HEX: "#A1334A"
       RGB: "rgb(161, 51, 74)"
 icons:
+  - logo
+  - slashes
   - api
   - audit
   - content-management

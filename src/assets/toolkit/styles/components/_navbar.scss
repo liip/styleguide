@@ -1,0 +1,80 @@
+/*----------------------------------------*\
+  NAVBAR
+\*----------------------------------------*/
+
+.navbar {
+  height: $navbar-height;
+  color: $text-color;
+
+  transition-property: color, background;
+  transition-duration: .5s;
+
+  a {
+    color: inherit;
+    transition: opacity .3s;
+
+    &:hover,
+    &:focus {
+      opacity: .7;
+    }
+  }
+}
+
+  .navbar__body {
+    height: 100%;
+    padding-left: $spacing-unit-small;
+    padding-right: $spacing-unit-small;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media('sm') {
+      padding-left: $spacing-unit-default;
+      padding-right: $spacing-unit-default;
+    }
+
+    @include media('md') {
+      padding-left: $spacing-unit-large;
+      padding-right: $spacing-unit-large;
+    }
+
+    @include media('lg') {
+      padding-left: $spacing-unit-huge;
+      padding-right: $spacing-unit-huge;
+    }
+  }
+
+.navbar--floating,
+.navbar--sticky {
+  width: 100%;
+
+  position: absolute;
+  z-index: 100;
+}
+
+.navbar--sticky {
+  position: fixed;
+}
+
+.navbar--negative {
+  color: $white;
+}
+
+.navbar--overlay {
+  background-color: rgba(255, 255, 255, .9);
+  backdrop-filter: blur(10px);
+}
+
+
+/**
+ * Menu
+ */
+
+.navbar-menu {}
+
+  .navbar-menu__link {
+    font-size: rem(24px);
+    font-weight: 700;
+    text-decoration: none;
+  }

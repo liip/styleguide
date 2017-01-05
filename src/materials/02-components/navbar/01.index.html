@@ -1,0 +1,39 @@
+---
+index: true
+notes: |
+  ##### Modifiers
+
+  <table class="table">
+    <tbody>
+      <tr>
+        <td width="20%"><code>.navbar--negative</code></td>
+        <td>Use light text color</td>
+      </tr>
+      <tr>
+        <td><code>.navbar--floating</code></td>
+        <td>Absolutely position it above the rest</td>
+      </tr>
+      <tr>
+        <td><code>.navbar--sticky</code></td>
+        <td>Keep it always visible at the top of the screen</td>
+      </tr>
+      <tr>
+        <td><code>.navbar--overlay</code></td>
+        <td>Adds a slightly transparent light background</td>
+      </tr>
+    </tbody>
+  </table>
+
+  ##### Make it shrink !
+
+  In case you use the sticky navbar, you should make it shrink while the user scroll to free-up some space. To do so, use the following code:
+
+  ```javascript
+  window.addEventListener('DOMContentLoaded', function() {
+    var navbar = document.querySelector('#my-sticky-navbar');
+    new Toolkit.Navbar(navbar, { mode: 'window' });
+  });
+  ```
+
+  There is two modes available: `window` and `instant`, the latter being by default. `instant` make it shrink as soon as the user scroll. `window` start the transition when the end of the first screen approach the top, corresponding to the beginning of the second fitted section. You can see example of implementation in the <a href="/example-pages.html">example pages</a>.
+---

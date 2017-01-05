@@ -1,0 +1,40 @@
+/*----------------------------------------*\
+  LOGO
+\*----------------------------------------*/
+
+.logo {
+  display: inline-block;
+  font-size: rem(24px);
+  vertical-align: middle;
+
+  svg {
+    float: left;
+    fill: currentColor;
+
+    transition-property: opacity, transform;
+    transition-duration: .5s;
+  }
+}
+
+  .logo__L {
+    width: 1.335em;
+  }
+
+  .logo__II {
+    width: 2.6044em;
+  }
+
+  .logo__P {
+    width: 1.465em;
+  }
+
+.logo--shrinked {
+  svg {
+    transform: translateX(-1.335em);
+  }
+
+  .logo__L,
+  .logo__P {
+    opacity: 0;
+  }
+}
