@@ -8,6 +8,8 @@
 
   position: relative;
 
+  background-color: $web-white;
+
   @include media('sm') {
     padding: $spacing-unit-default;
   }
@@ -24,8 +26,8 @@
   .section__bg {
     width: auto;
     height: auto;
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 100.1%;
+    min-height: 100.1%;
 
     position: absolute;
     top: 50%;
@@ -36,7 +38,8 @@
   }
 
   .section__body {
-    max-width: 1142px;
+    width: $container-width;
+    max-width: 100%;
     margin: 0 auto;
 
     position: relative;
@@ -51,8 +54,27 @@
     }
   }
 
-.section--fit {
-  min-height: 100vh;
+.section--behind-navbar {
+  padding-top: $navbar-height + $spacing-unit-small;
+
+  @include media('sm') {
+    padding-top: $navbar-height + $spacing-unit-default;
+  }
+  @include media('md') {
+    padding-top: $navbar-height + $spacing-unit-large;
+  }
+  @include media('lg') {
+    padding-top: $navbar-height + $spacing-unit-huge;
+  }
+}
+
+
+/**
+ * Alternative colors
+ */
+
+.section--alt {
+  background-color: $warm-grey-100;
 }
 
 .section--negative,
@@ -68,3 +90,32 @@
 .section--dark {
   background-color: $warm-grey-900;
 }
+
+
+/**
+ * Fixed sections
+ */
+
+.section--fixed {
+  width: 100%;
+  position: fixed;
+}
+
+  .section-spacer {
+    height: 100vh;
+  }
+
+
+/**
+ * Alternate layout
+ */
+
+.section--middle {
+  display: flex;
+  align-items: center;
+}
+
+.section--fit {
+  min-height: 100vh;
+}
+
