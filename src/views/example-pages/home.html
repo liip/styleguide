@@ -5,21 +5,25 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Example page &middot; Liip Styleguide</title>
+  <title>Home &middot; Liip Styleguide</title>
 
   <link rel="stylesheet" href="{{baseurl}}/assets/toolkit/styles/toolkit.css">
 </head>
 <body>
   {{#icons}}{{/icons}}
 
-  <section class="section section--negative section--fit">
-    <canvas id="section-multiplier" class="section__bg"></canvas>
-    <div class="section__body">
-      {{>haiku.negative}}
-    </div>
-  </section>
+  {{>navbar.negative class="navbar--sticky"}}
 
-  <section class="section">
+  <div class="section-spacer">
+    <section class="section section--negative section--fit section--fixed section--behind-navbar">
+      <canvas id="section-multiplier" class="section__bg"></canvas>
+      <div class="section__body">
+        {{>haiku.negative}}
+      </div>
+    </section>
+  </div>
+
+  <section class="section section--alt">
     <div class="section__body">
       <h1>Digital product expertise</h1>
       {{>services-tiles}}
@@ -41,8 +45,11 @@
   <script src="{{baseurl}}/assets/toolkit/scripts/toolkit.js"></script>
   <script type="text/javascript">
     window.addEventListener('DOMContentLoaded', function() {
-      var el = document.querySelector('#section-multiplier');
-      new Toolkit.Multiplier(el, '/assets/toolkit/images/multiplier.png');
+      var multiplier = document.querySelector('#section-multiplier');
+      new Toolkit.Multiplier(multiplier, '/assets/toolkit/images/multiplier.png');
+
+      var navbar = document.querySelector('.navbar');
+      new Toolkit.Navbar(navbar, { mode: 'window' });
     });
   </script>
 </body>

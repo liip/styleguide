@@ -1,0 +1,16 @@
+---
+fabricator: true
+title: Example Pages
+---
+
+<h1 data-f-toggle="labels">Example Pages</h1>
+
+<ul>
+{{#each views.example-pages.items}}
+
+	<li>
+		<a href="example-pages/{{@key}}.html" class="f-item-heading" target="_blank">{{name}}</a>
+	</li>
+
+{{/each}}
+</ul>
