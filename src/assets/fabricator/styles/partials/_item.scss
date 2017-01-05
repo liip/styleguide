@@ -31,7 +31,7 @@
 }
 
 .f-item-code {
-  margin: -8px 5px 0;
+  margin: -10px 5px 0;
 
   position: relative;
   z-index: 1;
@@ -59,6 +59,11 @@
   border-bottom-color: darken(#eaeaea, 5%);
   border-radius: 2px;
 }
+  .f-item-preview-dark {
+    background-color: $warm-grey-800;
+    border-color: $web-black;
+    border-bottom-color: darken($web-black, 5%);
+  }
 
 .f-item-border-bottom {
   border-bottom: 1px solid map-get($colors, light);

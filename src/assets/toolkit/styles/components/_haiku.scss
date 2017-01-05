@@ -23,6 +23,18 @@
     color: $brand-color;
   }
 
+.haiku--negative {
+  color: $web-white;
+
+  .haiku__date {
+    color: transparentize($web-white, .44);
+  }
+
+  .haiku__number {
+    color: inherit;
+  }
+}
+
 
 @include media('md') {
   .haiku__date {
