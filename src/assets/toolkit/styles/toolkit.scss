@@ -43,6 +43,13 @@
 
 
 /**
+ * Animations
+ */
+
+@import 'animations/rotate';
+
+
+/**
  * Defaults
  */
 
@@ -100,3 +107,4 @@
 @import 'components/section';
 @import 'components/navbar';
 @import 'components/logo';
+@import 'components/weather';
