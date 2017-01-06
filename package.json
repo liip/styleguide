@@ -28,6 +28,7 @@
     "del": "^2.2.1",
     "eslint": "^2.9.0",
     "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-import-resolver-webpack": "^0.8.0",
     "eslint-plugin-import": "^1.9.2",
     "fabricator-assemble": "^1.1.11",
     "gulp": "^3.9.1",

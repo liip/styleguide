@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 
+const config = require('./config.js');
 
 /**
  * Define plugins based on environment
@@ -8,7 +9,6 @@ const webpack = require('webpack');
  * @return {Array}
  */
 function getPlugins(isDev) {
-
   const plugins = [
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin({}),
@@ -28,7 +28,6 @@ function getPlugins(isDev) {
   }
 
   return plugins;
-
 }
 
 
@@ -37,7 +36,6 @@ function getPlugins(isDev) {
  * @return {Array}
  */
 function getLoaders() {
-
   const loaders = [{
     test: /(\.js)/,
     exclude: /(node_modules)/,
@@ -51,27 +49,27 @@ function getLoaders() {
   }];
 
   return loaders;
-
 }
 
 
-module.exports = (config) => {
-  return {
-    entry: {
-      'fabricator/scripts/f': config.scripts.fabricator.src,
-      'toolkit/scripts/toolkit': config.scripts.toolkit.src,
-    },
-    output: {
-      path: path.resolve(__dirname, config.dest, 'assets'),
-      filename: '[name].js',
-    },
-    devtool: 'source-map',
-    resolve: {
-      extensions: ['', '.js'],
-    },
-    plugins: getPlugins(config.dev),
-    module: {
-      loaders: getLoaders(),
-    },
-  };
+module.exports = {
+  entry: {
+    'fabricator/scripts/f': config.scripts.fabricator.src,
+    'toolkit/scripts/toolkit': config.scripts.toolkit.src,
+  },
+  output: {
+    path: path.resolve(__dirname, config.dest, 'assets'),
+    filename: '[name].js',
+  },
+  devtool: 'source-map',
+  resolve: {
+    extensions: ['', '.js'],
+    root: [
+      path.resolve(__dirname, 'src/assets/toolkit/scripts'),
+    ],
+  },
+  plugins: getPlugins(config.dev),
+  module: {
+    loaders: getLoaders(),
+  },
 };

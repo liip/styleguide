@@ -3,5 +3,8 @@
   "rules": {
     "arrow-body-style": ["off"],
     "max-len": ["error", 120]
+  },
+  "settings": {
+    "import/resolver": "webpack"
   }
 }
