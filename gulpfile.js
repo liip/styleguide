@@ -2,15 +2,16 @@ const path = require('path');
 const fs = require('fs');
 const assembler = require('fabricator-assemble');
 const browserSync = require('browser-sync');
-const reload = browserSync.reload;
 const csso = require('gulp-csso');
 const del = require('del');
 const gulp = require('gulp');
 const $ = require('gulp-load-plugins')();
 const runSequence = require('run-sequence');
 const webpack = require('webpack');
-
+const autoprefixer = require('autoprefixer');
 const config = require('./config.js');
+
+const reload = browserSync.reload;
 
 
 // clean
@@ -22,7 +23,7 @@ gulp.task('styles:fabricator', () => {
   gulp.src(config.styles.fabricator.src)
   .pipe($.sourcemaps.init())
   .pipe($.sass().on('error', $.sass.logError))
-  .pipe($.autoprefixer('last 1 version'))
+  .pipe($.postcss([autoprefixer()]))
   .pipe($.if(!config.dev, csso()))
   .pipe($.rename('f.css'))
   .pipe($.sourcemaps.write())
@@ -36,7 +37,7 @@ gulp.task('styles:toolkit', () => {
   .pipe($.sass({
     includePaths: './node_modules',
   }).on('error', $.sass.logError))
-  .pipe($.autoprefixer('last 1 version'))
+  .pipe($.postcss([autoprefixer()]))
   .pipe($.if(!config.dev, csso()))
   .pipe($.if(config.dev, $.sourcemaps.write()))
   .pipe(gulp.dest(config.styles.toolkit.dest))

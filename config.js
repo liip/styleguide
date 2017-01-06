@@ -3,7 +3,6 @@ const $ = require('gulp-load-plugins')();
 module.exports = {
   dev: $.util.env.dev,
   styles: {
-    browsers: 'last 1 version',
     fabricator: {
       src: 'src/assets/fabricator/styles/fabricator.scss',
       dest: 'dist/assets/fabricator/styles',
