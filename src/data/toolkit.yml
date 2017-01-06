@@ -190,15 +190,34 @@ colors:
       HEX: "#A1334A"
       RGB: "rgb(161, 51, 74)"
 icons:
-  - logo
-  - slashes
-  - api
-  - audit
-  - content-management
-  - ecommerce
-  - elearning
-  - fintech
-  - mobile
-  - open-source
-  - performance
-  - user-experience
+  Brand:
+    - logo
+    - slashes
+  Services:
+    - api
+    - audit
+    - content-management
+    - ecommerce
+    - elearning
+    - fintech
+    - mobile
+    - open-source
+    - performance
+    - user-experience
+  Weather:
+    - sunny
+    - cloud
+    - cloud-double
+    - rain
+    - snow
+    - day-cloud
+    - day-rain
+    - day-thunder-storm
+    - night
+    - night-cloud
+    - night-rain
+    - night-thunder-storm
+    - mist
+    - weather-unknown
+  Miscellaneous:
+    - loading

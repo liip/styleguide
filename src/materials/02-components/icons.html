@@ -25,15 +25,19 @@ notes: |
   </ul>
 ---
 
-<div class="grid">
-  {{#each toolkit.icons}}
-    <div class="grid__item w-1/2 sm-w-1/3 md-w-1/4 lg-w-1/6 text-center">
-      <div class="pdgh+">
-        <svg class="icon icon--{{this}} img-responsive">
-          <use xlink:href="#{{this}}" />
-        </svg>
-        <p class="mrgt0">{{this}}</p>
+
+{{#each toolkit.icons}}
+  <h3 class="mrgt0">{{@key}}</h3>
+  <div class="grid mrgb">
+    {{#each this}}
+      <div class="grid__item w-1/2 sm-w-1/3 md-w-1/4 lg-w-1/6 text-center">
+        <div class="pdgh+">
+          <svg class="icon icon--{{this}} img-responsive">
+            <use xlink:href="#{{this}}" />
+          </svg>
+          <p class="mrgt0">{{this}}</p>
+        </div>
       </div>
-    </div>
-  {{/each}}
-</div>
+    {{/each}}
+  </div>
+{{/each}}
