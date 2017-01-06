@@ -38,7 +38,23 @@
 
   <section class="section">
     <div class="section__body">
-      <h1>And there would go the footer</h1>
+      <div class="grid grid--large">
+        <div class="grid__item w-1/5">
+          {{>address city="Lausanne" id="2659994" level="300" skipinit=true}}
+        </div>
+        <div class="grid__item w-1/5">
+          {{>address city="Fribourg" id="2660718" level="400" skipinit=true}}
+        </div>
+        <div class="grid__item w-1/5">
+          {{>address city="Bern" id="2661552" level="500" skipinit=true}}
+        </div>
+        <div class="grid__item w-1/5">
+          {{>address city="Zürich" id="6295494" level="600" skipinit=true}}
+        </div>
+        <div class="grid__item w-1/5">
+          {{>address city="St Gallen" id="2658822" level="700" skipinit=true}}
+        </div>
+      </div>
     </div>
   </section>
 
@@ -50,6 +66,9 @@
 
       var navbar = document.querySelector('.navbar');
       new Toolkit.Navbar(navbar, { mode: 'window' });
+
+      var weather = new Toolkit.Weather('169cbfccef2ed05a196994895bcd9465');
+      weather.initAll();
     });
   </script>
 </body>

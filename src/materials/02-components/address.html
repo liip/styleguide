@@ -1,0 +1,44 @@
+---
+notes: |
+  Display contact informations with the current weather for the given location.
+
+  ##### Modifiers
+
+  <table class="table">
+    <tbody>
+      <tr>
+        <td width="20%"><code>.address--300</code></td>
+        <td>Use green 300 as main color.</td>
+      </tr>
+      <tr>
+        <td><code>.address--400</code></td>
+        <td>Use green 400 as main color.</td>
+      </tr>
+      <tr>
+        <td><code>.address--500</code></td>
+        <td>Use green 500 as main color.</td>
+      </tr>
+      <tr>
+        <td><code>.address--600</code></td>
+        <td>Use green 600 as main color.</td>
+      </tr>
+      <tr>
+        <td><code>.address--700</code></td>
+        <td>Use green 700 as main color.</td>
+      </tr>
+    </tbody>
+  </table>
+---
+
+<article class="address{{#if level}} address--{{level}}{{/if}}">
+  {{>weather class="address__weather" id=id skipinit=skipinit }}
+  <h4 class="address__title">{{#if city}}{{city}}{{else}}Fribourg{{/if}}</h4>
+  <address class="address__body">
+    Rue de la Banque 1<br>
+    PO box 917<br>
+    CH-1701 Fribourg<br>
+    Phone: +41 26 422 25 11<br>
+    Fax: +41 26 422 25 13
+  </address>
+  <a href="#" class="address__map-link">Open Map</a>
+</article>
