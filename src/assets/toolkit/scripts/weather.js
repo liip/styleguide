@@ -45,13 +45,9 @@ export default class Weather {
   init(el, fetch = true) {
     const city = el.dataset.city;
 
-    console.log('init', el);
-
     if (city) {
       this.elements.push(el);
       this.cities.push(city);
-
-      console.log('init', fetch);
 
       if (fetch) {
         this.fetch()
@@ -89,19 +85,12 @@ export default class Weather {
 
   getWeather(id) {
     const city = this.data[id];
-    const weather = city && city.weather && city.weather[0];
-
-    return weather;
+    return city && city.weather && city.weather[0];
   }
 
   getIcon(id) {
     const weather = this.getWeather(id);
-
-    if (weather) {
-      return ICONS[weather.icon];
-    }
-
-    return 'weather-unknown';
+    return weather ? ICONS[weather.icon] : 'weather-unknown';
   }
 
 }
