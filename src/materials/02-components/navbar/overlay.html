@@ -6,12 +6,21 @@ notes: |
 
 <nav class="navbar navbar--overlay{{#if class}} {{class}}{{/if}}">
   <div class="navbar__body">
-    <a href="/example-pages/home.html">{{>logo}}</a>
+    <a href="/example-pages/home.html" class="navbar__brand" title="Liip">{{>logo}}</a>
 
-    <ul class="navbar-menu list-inline">
-      <li><a href="/example-pages/work.html" class="navbar-menu__link">Work</a></li>
-      <li><a href="#" class="navbar-menu__link">Team</a></li>
-      <li><a href="#" class="navbar-menu__link">Blog</a></li>
-    </ul>
+    <a href="#toggle-navbar" class="navbar__toggle btn btn--bare">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="navbar-hamburger icon">
+        <rect x="4" y="5" width="16" height="2" class="navbar-hamburger__first"/>
+        <rect x="4" y="11" width="16" height="2" class="navbar-hamburger__second"/>
+        <rect x="4" y="17" width="16" height="2" class="navbar-hamburger__third"/>
+      </svg>
+    </a>
+    <div class="navbar__collapse">
+      <ul class="navbar-menu list">
+        <li><a href="/example-pages/work.html" class="navbar-menu__link">Work</a></li>
+        <li><a href="#" class="navbar-menu__link">Team</a></li>
+        <li><a href="#" class="navbar-menu__link">Blog</a></li>
+      </ul>
+    </div>
   </div>
 </nav>

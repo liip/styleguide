@@ -55,10 +55,10 @@
   }
 
 .section--behind-navbar {
-  padding-top: $navbar-height + $spacing-unit-small;
+  padding-top: $navbar-height-small + $spacing-unit-small;
 
   @include media('sm') {
-    padding-top: $navbar-height + $spacing-unit-default;
+    padding-top: $navbar-height-small + $spacing-unit-default;
   }
   @include media('md') {
     padding-top: $navbar-height + $spacing-unit-large;

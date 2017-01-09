@@ -3,8 +3,10 @@
 \*----------------------------------------*/
 
 .navbar {
-  height: $navbar-height;
+  height: $navbar-height-small;
   color: $text-color;
+
+  position: relative;
 
   transition-property: color, background;
   transition-duration: .5s;
@@ -16,6 +18,22 @@
     &:hover,
     &:focus {
       opacity: .7;
+    }
+  }
+
+  .navbar__brand {
+    flex-shrink: 0;
+  }
+
+    .logo {
+      font-size: rem(10px);
+    }
+
+  @include media('md') {
+    height: $navbar-height;
+
+    .logo {
+      font-size: rem(24px);
     }
   }
 }
@@ -45,6 +63,43 @@
     }
   }
 
+  .navbar__collapse {
+    @include media('sm', $breakpoints-desc) {
+      padding-top: $spacing-unit-tiny;
+      padding-bottom: $spacing-unit-tiny;
+
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      z-index: 101;
+
+      color: $text-color;
+
+      background-color: rgba(255,255,255,.9);
+      border-top: 1px solid $warm-grey-200;
+
+      transform: scaleY(0);
+      transform-origin: top right;
+      opacity: 0;
+      transition-property: transform opacity;
+      transition-duration: .3s;
+
+      .navbar--expanded & {
+        opacity: 1;
+        transform: scaleY(1);
+      }
+    }
+  }
+
+  .navbar__toggle {
+    display: inline-block;
+
+    @include media('md') {
+      display: none;
+    }
+  }
+
 .navbar--floating,
 .navbar--sticky {
   width: 100%;
@@ -61,20 +116,73 @@
   color: $white;
 }
 
-.navbar--overlay {
+.navbar--overlay,
+.navbar--expanded {
+  color: $web-black;
+
   background-color: rgba(255, 255, 255, .9);
-  backdrop-filter: blur(10px);
 }
+
+
+/**
+ * Hamburger
+ */
+
+.navbar-hamburger {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+  .navbar-hamburger__first,
+  .navbar-hamburger__third {
+    transform-origin: 50% 50%;
+    transition: transform .3s ease;
+  }
+  .navbar-hamburger__second {
+    transition: opacity .3s ease;
+  }
+
+  .navbar--expanded {
+    .navbar-hamburger__first {
+      transform: translateY(6px) rotate(-45deg);
+    }
+    .navbar-hamburger__second {
+      opacity: 0;
+    }
+    .navbar-hamburger__third {
+      transform: translateY(-6px) rotate(45deg);
+    }
+  }
 
 
 /**
  * Menu
  */
 
-.navbar-menu {}
+.navbar-menu {
+  > li {
+    @include media('md') {
+      display: inline-block;
+
+      + li {
+        margin-left: $spacing-unit-large;
+      }
+    }
+  }
+}
 
   .navbar-menu__link {
-    font-size: rem(24px);
+    display: block;
+    padding: $spacing-unit-tiny $spacing-unit-small;
+
+    font-size: rem(20px);
     font-weight: 700;
     text-decoration: none;
+    text-align: center;
+
+    @include media('md') {
+      display: inline-block;
+      padding: 0;
+      font-size: rem(24px);
+    }
   }

@@ -1,3 +1,5 @@
+import Delegate from 'dom-delegate';
+
 const MIN_HEIGHT = 80;
 const MAX_HEIGHT = 160;
 
@@ -25,13 +27,16 @@ export default class Navbar {
   }
 
   addEventListeners() {
-    window.addEventListener('scroll', () => {
-      if (window.requestAnimationFrame) {
-        window.requestAnimationFrame(this.handleScroll.bind(this));
-      } else {
-        this.handleScroll();
-      }
-    });
+    window.addEventListener('scroll', this.handleChange.bind(this));
+    window.addEventListener('resize', this.handleChange.bind(this));
+  }
+
+  handleChange() {
+    if (window.requestAnimationFrame) {
+      window.requestAnimationFrame(this.handleScroll.bind(this));
+    } else {
+      this.handleScroll();
+    }
   }
 
   handleScroll() {
@@ -40,8 +45,13 @@ export default class Navbar {
     const logoScale = 1 - (animationBase / 2);
     const navbarHeight = Math.max(Math.min(MAX_HEIGHT, this.threshold - scrollY), 60);
 
-    this.logoEl.style.transform = `scale(${logoScale})`;
-    this.el.style.height = `${navbarHeight}px`;
+    if (matchMedia('(min-width: 769px)').matches) {
+      this.logoEl.style.transform = `scale(${logoScale})`;
+      this.el.style.height = `${navbarHeight}px`;
+    } else {
+      this.logoEl.removeAttribute('style');
+      this.el.removeAttribute('style');
+    }
 
     if (this.threshold - scrollY <= MIN_HEIGHT) {
       this.logoEl.classList.add('logo--shrinked');
@@ -63,3 +73,13 @@ export default class Navbar {
   }
 
 }
+
+/**
+ * Automatically handle toggle for all navbars
+ */
+document.addEventListener('DOMContentLoaded', () => {
+  new Delegate(document).on('click', 'a[href="#toggle-navbar"]', (e, el) => {
+    const navbar = el.closest('.navbar');
+    navbar.classList.toggle('navbar--expanded');
+  });
+});
