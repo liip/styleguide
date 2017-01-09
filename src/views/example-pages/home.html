@@ -22,75 +22,7 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="section__body">
-    <div class="grid grid--large">
-      <div class="grid__item md-w-1/5 mrgt md-mrgt0">
-        {{>address city="Lausanne" id="2659994" level="300" skipinit=true}}
-      </div>
-      <div class="grid__item md-w-1/5 mrgt md-mrgt0">
-        {{>address city="Fribourg" id="2660718" level="400" skipinit=true}}
-      </div>
-      <div class="grid__item md-w-1/5 mrgt md-mrgt0">
-        {{>address city="Bern" id="2661552" level="500" skipinit=true}}
-      </div>
-      <div class="grid__item md-w-1/5 mrgt md-mrgt0">
-        {{>address city="Zürich" id="6295494" level="600" skipinit=true}}
-      </div>
-      <div class="grid__item md-w-1/5 mrgt md-mrgt0">
-        {{>address city="St Gallen" id="2658822" level="700" skipinit=true}}
-      </div>
-    </div>
-
-    <div class="grid grid--middle">
-      <div class="grid__item md-w-1/2 mrgt md-mrgt++">
-        <ul class="list-inline">
-          <li><a href="#" class="btn btn--default">Français</a></li>
-          <li><a href="#" class="btn btn--default">Deutsch</a></li>
-        </ul>
-      </div>
-      <div class="grid__item md-w-1/2 mrgt md-mrgt++ md-text-right">
-        <ul class="list-inline list-inline--large">
-          <li>
-            <a href="#" class="link-text">
-              <svg class="icon icon--large icon--facebook">
-                <use xlink:href="#facebook" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="link-text">
-              <svg class="icon icon--large icon--twitter">
-                <use xlink:href="#twitter" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="link-text">
-              <svg class="icon icon--large icon--instagram">
-                <use xlink:href="#instagram" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="link-text">
-              <svg class="icon icon--large icon--github">
-                <use xlink:href="#github" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="link-text">
-              <svg class="icon icon--large icon--rss">
-                <use xlink:href="#rss" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+{{>footer}}
 
 <script type="text/javascript">
   window.addEventListener('DOMContentLoaded', function() {
@@ -99,8 +31,5 @@
 
     var navbar = document.querySelector('.navbar');
     new Toolkit.Navbar(navbar, { mode: 'window' });
-
-    var weather = new Toolkit.Weather('169cbfccef2ed05a196994895bcd9465');
-    weather.initAll();
   });
 </script>
