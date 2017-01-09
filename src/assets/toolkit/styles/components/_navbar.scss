@@ -11,7 +11,9 @@
   transition-property: color, background;
   transition-duration: .5s;
 
-  a {
+  .navbar__brand {
+    flex-shrink: 0;
+
     color: inherit;
     transition: opacity .3s;
 
@@ -19,10 +21,6 @@
     &:focus {
       opacity: .7;
     }
-  }
-
-  .navbar__brand {
-    flex-shrink: 0;
   }
 
     .logo {
@@ -113,14 +111,21 @@
 }
 
 .navbar--negative {
-  color: $white;
+  color: $web-white;
 }
 
-.navbar--overlay,
-.navbar--expanded {
+.navbar--overlay {
   color: $web-black;
 
   background-color: rgba(255, 255, 255, .9);
+}
+
+@include media('sm', $breakpoints-desc) {
+  .navbar--expanded {
+    color: $web-black;
+
+    background-color: rgba(255, 255, 255, .9);
+  }
 }
 
 
@@ -175,14 +180,35 @@
     display: block;
     padding: $spacing-unit-tiny $spacing-unit-small;
 
+    color: inherit;
     font-size: rem(20px);
     font-weight: 700;
     text-decoration: none;
     text-align: center;
 
+    border-bottom: 4px solid rgba(255,255,255,0);
+    transition: border .3s;
+
     @include media('md') {
       display: inline-block;
       padding: 0;
       font-size: rem(24px);
+
+      &:focus,
+      &:hover {
+        border-bottom: 4px solid;
+      }
+    }
+
+    &.is-active {
+      color: $brand-color;
+
+      @include media('md') {
+        border-bottom-color: currentcolor;
+
+        .navbar--negative & {
+          color: white;
+        }
+      }
     }
   }
