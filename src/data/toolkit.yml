@@ -204,6 +204,12 @@ icons:
     - open-source
     - performance
     - user-experience
+  Social:
+    - facebook
+    - twitter
+    - instagram
+    - github
+    - rss
   Weather:
     - sunny
     - cloud

@@ -1,70 +1,53 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+{{>navbar.default class="navbar--sticky"}}
 
-  <title>Home &middot; Liip Styleguide</title>
-
-  <link rel="stylesheet" href="{{baseurl}}/assets/toolkit/styles/toolkit.css">
-</head>
-<body>
-  {{#icons}}{{/icons}}
-
-  {{>navbar.default class="navbar--sticky"}}
-
-  <section class="section section--fit section--middle">
-    <div class="section__body">
-      <div class="grid grid--huge grid--middle">
-        <div class="grid__item w-1/2">
-          <img src="/assets/toolkit/images/showcase.png" class="img-responsive">
-        </div>
-        <div class="grid__item w-1/2">
-          {{>service-tag}}
-          <h1 class="mrgv">Agile development for Freitag</h1>
-          <a href="#" class="btn btn--primary">Read our case study</a>
-        </div>
+<section class="section section--fit section--middle">
+  <div class="section__body">
+    <div class="grid grid--huge grid--middle">
+      <div class="grid__item md-w-1/2">
+        <img src="/assets/toolkit/images/showcase.png" class="img-responsive">
+      </div>
+      <div class="grid__item md-w-1/2 mrgt md-mrgt0">
+        {{>service-tag}}
+        <h1 class="mrgv">Agile development for Freitag</h1>
+        <a href="#" class="btn btn--primary">Read our case study</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section section--fit section--middle section--alt">
-    <div class="section__body">
-      <div class="grid grid--huge grid--middle">
-        <div class="grid__item w-1/2">
-          <img src="/assets/toolkit/images/showcase.png" class="img-responsive">
-        </div>
-        <div class="grid__item w-1/2">
-          {{>service-tag}}
-          <h1 class="mrgv">Agile development for Freitag</h1>
-          <a href="#" class="btn btn--primary">Read our case study</a>
-        </div>
+<section class="section section--fit section--middle section--alt">
+  <div class="section__body">
+    <div class="grid grid--huge grid--middle">
+      <div class="grid__item md-w-1/2">
+        <img src="/assets/toolkit/images/showcase.png" class="img-responsive">
+      </div>
+      <div class="grid__item md-w-1/2 mrgt md-mrgt0">
+        {{>service-tag}}
+        <h1 class="mrgv">Agile development for Freitag</h1>
+        <a href="#" class="btn btn--primary">Read our case study</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section section--fit section--middle">
-    <div class="section__body">
-      <div class="grid grid--huge grid--middle">
-        <div class="grid__item w-1/2">
-          <img src="/assets/toolkit/images/showcase.png" class="img-responsive">
-        </div>
-        <div class="grid__item w-1/2">
-          {{>service-tag}}
-          <h1 class="mrgv">Agile development for Freitag</h1>
-          <a href="#" class="btn btn--primary">Read our case study</a>
-        </div>
+<section class="section section--fit section--middle">
+  <div class="section__body">
+    <div class="grid grid--huge grid--middle">
+      <div class="grid__item md-w-1/2">
+        <img src="/assets/toolkit/images/showcase.png" class="img-responsive">
+      </div>
+      <div class="grid__item md-w-1/2 mrgt md-mrgt0">
+        {{>service-tag}}
+        <h1 class="mrgv">Agile development for Freitag</h1>
+        <a href="#" class="btn btn--primary">Read our case study</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <script src="{{baseurl}}/assets/toolkit/scripts/toolkit.js"></script>
-  <script type="text/javascript">
-    window.addEventListener('DOMContentLoaded', function() {
-      var navbar = document.querySelector('.navbar');
-      new Toolkit.Navbar(navbar);
-    });
-  </script>
-</body>
-</html>
+<script type="text/javascript">
+  window.addEventListener('DOMContentLoaded', function() {
+    var navbar = document.querySelector('.navbar');
+    new Toolkit.Navbar(navbar);
+  });
+</script>

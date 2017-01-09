@@ -44,6 +44,21 @@ h6,
 
 
 /**
+ * Links
+ */
+
+.link-text {
+  color: $web-black;
+
+  &:hover,
+  &:focus {
+    color: $warm-grey-700;
+  }
+}
+
+
+
+/**
  * Code and preformatted text
  */
 
