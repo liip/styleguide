@@ -13,12 +13,6 @@
 
 .btn--default {
   border-color: currentcolor;
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: $warm-grey-700;
-  }
 }
 
 .btn--primary {

@@ -97,7 +97,7 @@ $spacing-unit-default:              20px;
 
 $btn-padding:                       $spacing-unit-default;
 // $btn-color:                         inherit;
-// $btn-border:                        1px solid transparent;
+$btn-border:                        2px solid transparent;
 // $btn-bkg:                           transparent;
 $btn-border-radius:                 0;
 
@@ -109,7 +109,7 @@ $btn-small-border-radius:           0;
 // $btn-large-font-size:               $font-size-large;
 $btn-large-border-radius:           0;
 
-$btn-default-color:                 $warm-grey-600;
+$btn-default-color:                 $text-color;
 $btn-default-bkg-color:             transparent;
 $btn-default-hover-bkg-color:       $warm-grey-100;
 $btn-default-active-bkg-color:      $warm-grey-100;
@@ -124,6 +124,8 @@ $btn-primary-active-bkg-color:      $brand-color;
  * Forms
  */
 
+ $field-use-padding-ratio:          false;
+
 // $field-padding:                     $spacing-unit-small;
 
 // $field-color:                       inherit;
@@ -132,20 +134,20 @@ $btn-primary-active-bkg-color:      $brand-color;
 // $field-line-height:                 $line-height-default;
 
 // $field-bkg-color:                   white;
-// $field-border:                      1px solid $alt-color-light;
-// $field-focus-border-color:          $alt-color-darker;
-// $field-border-radius:               $border-radius-default;
+$field-border:                      1px solid $warm-grey-100;
+$field-focus-border-color:          $warm-grey-500;
+$field-border-radius:               0;
 
-// $field-disabled-bkg-color:          $alt-color-lighter;
+$field-disabled-bkg-color:          $warm-grey-100;
 // $field-disabled-color:              $alt-color;
 
 // $field-small-padding:               $spacing-unit-tiny;
 // $field-small-font-size:             $font-size-small;
-// $field-small-border-radius:         $border-radius-small;
+$field-small-border-radius:         0;
 
 // $field-large-padding:               $spacing-unit-default;
 // $field-large-font-size:             $font-size-large;
-// $field-large-border-radius:         $border-radius-large;
+$field-large-border-radius:         0;
 
 // $field-help-color:                  $alt-color-light;
 

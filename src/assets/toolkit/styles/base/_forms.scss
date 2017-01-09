@@ -1,0 +1,63 @@
+/*----------------------------------------*\
+  FORMS
+\*----------------------------------------*/
+
+input[type='text'],
+input[type='search'],
+input[type='email'],
+input[type='tel'],
+input[type='url'],
+input[type='password'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='number'],
+input[type='file'],
+select,
+textarea {
+  &[disabled] {
+    border-color: $warm-grey-200;
+  }
+}
+
+select {
+  appearance: none;
+
+  padding-left: 0;
+
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+
+  background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4%207h16l-8%2010z%22%20fill%3D%22%23414141%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 1.5em auto;
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+
+  // Hide select arrow on IE/Edge
+  &::-ms-expand {
+    display: none;
+  }
+
+  // Remove dotted outline on Firefox
+  &:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
+}
+
+  .select--small,
+  .select--large {
+    padding-left: 0 !important;
+  }

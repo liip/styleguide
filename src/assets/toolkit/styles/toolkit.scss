@@ -57,7 +57,7 @@
 @import '../../../../node_modules/kanbasu/src/assets/scss/defaults/elements';
 @import '../../../../node_modules/kanbasu/src/assets/scss/defaults/typography';
 @import '../../../../node_modules/kanbasu/src/assets/scss/defaults/table';
-// @import '../../../../node_modules/kanbasu/src/assets/scss/defaults/forms';
+@import '../../../../node_modules/kanbasu/src/assets/scss/defaults/forms';
 
 
 /**
@@ -79,6 +79,7 @@
 
 @import 'base/fonts';
 @import 'base/typography';
+@import 'base/forms';
 
 
 /**
