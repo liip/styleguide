@@ -32,9 +32,9 @@ export default class Weather {
   }
 
   initAll() {
-    const elements = document.querySelectorAll('.weather');
+    this.elements = [...document.querySelectorAll('.weather')];
 
-    elements.forEach((el) => {
+    this.elements.forEach((el) => {
       this.init(el, false);
     });
 

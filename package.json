@@ -11,10 +11,7 @@
     "deploy": "rsync -avzP --exclude='.*' dist/ demo:/var/www/styleguide.liip.ch/web/"
   },
   "author": "Liip AG",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:liip/styleguide.git"
-  },
+  "repository": "liip/styleguide",
   "engines": {
     "node": ">=4.0",
     "npm": ">=2.0.0"

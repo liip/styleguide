@@ -36,7 +36,7 @@ export default class Multiplier {
         0.7 * this.width,
         0.125 * this.height,
         0.924 * this.width,
-        0.813 * this.height
+        0.813 * this.height,
       );
       gradient.addColorStop(0, '#6EA644');
       gradient.addColorStop(1, '#A4C339');

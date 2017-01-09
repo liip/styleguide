@@ -11,7 +11,7 @@ export function updateIcon(el, icon) {
   });
 
   // Clean-up all `icon--` classes
-  el.classList.remove.apply(el.classList, modifiers);
+  el.classList.remove(...modifiers);
   el.classList.add(`icon--${icon}`);
 
   use.setAttribute('xlink:href', `#${icon}`);
