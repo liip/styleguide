@@ -78,7 +78,7 @@ export default class Navbar {
  * Automatically handle toggle for all navbars
  */
 document.addEventListener('DOMContentLoaded', () => {
-  new Delegate(document).on('click', 'a[href="#toggle-navbar"]', (e, el) => {
+  new Delegate(document).on('click', '.navbar__toggle', (e, el) => {
     const navbar = el.closest('.navbar');
     navbar.classList.toggle('navbar--expanded');
   });
