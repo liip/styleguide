@@ -1,9 +1,9 @@
 /*----------------------------------------*\
-  SERVICE-TAG
+  SERVICE-LABEL
 \*----------------------------------------*/
 
-.service-tag {
-  @extend %tag;
+.service-label {
+  @extend %label;
 
   padding: 6px 12px;
 
