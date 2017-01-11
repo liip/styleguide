@@ -1,0 +1,51 @@
+/*----------------------------------------*\
+  TAG
+\*----------------------------------------*/
+
+.tag,
+%tag {
+  display: inline-block;
+  padding: 2px 8px;
+
+  position: relative;
+
+  color: $white;
+  font-size: rem(14px);
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $warm-grey-700;
+  transition: transform .25s;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: linear-gradient(to right, $warm-grey-700 50%, $warm-grey-400);
+    transition: opacity .3s;
+    opacity: 0;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    transform: scale(1.25);
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+}
