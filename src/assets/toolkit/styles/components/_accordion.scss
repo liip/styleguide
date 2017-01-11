@@ -1,0 +1,172 @@
+/*----------------------------------------*\
+  ACCORDION
+\*----------------------------------------*/
+
+.accordion {
+  display: flex;
+  align-items: center;
+
+  @include media('md', $breakpoints-desc) {
+    flex-direction: column;
+    min-height: auto !important;
+  }
+}
+
+  .accordion__body {
+    display: flex;
+    align-items: center;
+
+    @include media('md', $breakpoints-desc) {
+      flex-direction: column;
+    }
+  }
+
+  .accordion__toggle {
+    color: $warm-grey-500;
+    text-decoration: none;
+
+    transition: all .3s;
+
+    &:hover,
+    &:focus {
+      color: $web-black;
+
+      .accordion--negative & {
+        color: $web-white;
+      }
+    }
+  }
+
+  .accordion__collapse {
+    transition: height .5s;
+    overflow: hidden;
+  }
+
+.accordion--negative {
+  color: $web-white;
+}
+
+
+/**
+ * List
+ */
+
+.accordion-list {
+  @extend %list;
+}
+
+  .accordion-list__title {
+    margin-bottom: 0;
+    word-break: break-word;
+  }
+
+  .accordion-list__item  {
+    padding-top: $spacing-unit-tiny;
+    padding-bottom: $spacing-unit-tiny;
+
+    &.is-active {
+      .accordion__toggle {
+        font-size: 150%;
+        font-weight: 700px;
+        color: $brand-color;
+
+        .accordion--negative & {
+          color: inherit;
+        }
+      }
+    }
+
+    &:not(.is-active) .accordion__collapse.is-ready {
+      height: 0 !important;
+    }
+
+    > :first-child {
+      margin-top: 0;
+    }
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+
+/**
+ * Playground
+ */
+
+.accordion-playground {
+  width: 100%;
+  margin-bottom: $spacing-unit-default;
+  order: -1;
+
+  @include media('lg') {
+    order: 0;
+    min-width: 40%;
+    margin-left: $spacing-unit-default;
+    margin-bottom: 0;
+  }
+}
+
+
+/**
+ * Navigation
+ */
+
+.accordion-nav {
+  @extend %list;
+
+  padding: 6px;
+  margin-left: $spacing-unit-default;
+
+  border-radius: 15px;
+  background-color: rgba(0,0,0,0.1);
+
+  > li + li {
+    margin-top: 5px;
+  }
+
+  @include media('md', $breakpoints-desc) {
+    display: none;
+  }
+}
+
+  .accordion-nav__link {
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      border-radius: 50%;
+
+      border: 2px solid transparent;
+      background-color: rgba(0,0,0,0.33);
+      transform: translate(-50%, -50%);
+      transition: all 0.3s cubic-bezier(.32,.63,.43,1.34);
+    }
+
+    &:hover,
+    &:focus,
+    &.is-active {
+      &::after {
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border: 2px solid rgba(0,0,0,0.33);
+      }
+    }
+
+    &.is-active::after {
+      border-color: $white;
+    }
+  }

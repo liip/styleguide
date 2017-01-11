@@ -1,0 +1,313 @@
+/*----------------------------------------*\
+  RECTANGLES
+  Animation to be used inside an accordion
+\*----------------------------------------*/
+
+.rectangles {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+}
+
+.rectangle {
+  width: 4.6%;
+  height: 19.8%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  background-color: $green-700;
+  transition: all 1s cubic-bezier(.41,1.68,.55,.89);
+  opacity: 0;
+}
+
+.rectangle--alt {
+  background-color: $green-100;
+}
+
+
+/* STATE 1 */
+
+.accordion[data-current="1"] {
+  .rectangle-1 {
+    left: 38.327%;
+    top: 29.239%;
+    transform: translate(-50%, -50%) rotate(-24deg);
+    opacity: 1;
+  }
+  .rectangle-2 {
+    left: 62.575%;
+    top: 30.343%;
+    transform: translate(-50%, -50%) rotate(88deg);
+    opacity: 1;
+  }
+  .rectangle-3 {
+    left: 50.543%;
+    top: 49.013%;
+    transform: translate(-50%, -50%) rotate(32deg);
+    opacity: 1;
+  }
+  .rectangle-4 {
+    left: 44.362%;
+    top: 70.482%;
+    transform: translate(-50%, -50%) rotate(75deg);
+    opacity: 1;
+  }
+  .rectangle-5 {
+    left: 38.327%;
+    top: 29.239%;
+    transform: translate(-50%, -50%) rotate(-24deg);
+    opacity: 0;
+  }
+  .rectangle-6 {
+    left: 62.575%;
+    top: 30.343%;
+    transform: translate(-50%, -50%) rotate(88deg);
+    opacity: 0;
+  }
+  .rectangle-7 {
+    left: 50.543%;
+    top: 49.013%;
+    transform: translate(-50%, -50%) rotate(32deg);
+    opacity: 0;
+  }
+  .rectangle-8 {
+    left: 28.038%;
+    top: 44.5%;
+    transform: translate(-50%, -50%) rotate(-73deg);
+    opacity: 1;
+  }
+  .rectangle-9 {
+    left: 70.912%;
+    top: 59.376%;
+    transform: translate(-50%, -50%) rotate(-207deg);
+    opacity: 1;
+  }
+  .rectangle-10 {
+    left: 28.038%;
+    top: 44.5%;
+    transform: translate(-50%, -50%) rotate(-73deg);
+    opacity: 0;
+  }
+  .rectangle-11 {
+    left: 70.912%;
+    top: 59.376%;
+    transform: translate(-50%, -50%) rotate(-207deg);
+    opacity: 0;
+  }
+}
+
+/* STATE 2 */
+
+.accordion[data-current="2"] {
+  .rectangle-1 {
+    left: 34.398%;
+    top: 60.665%;
+    transform: translate(-50%, -50%) rotate(27deg);
+    opacity: 1;
+  }
+  .rectangle-2 {
+    left: 44.698%;
+    top: 60.665%;
+    transform: translate(-50%, -50%) rotate(27deg);
+    opacity: 1;
+  }
+  .rectangle-3 {
+    left: 54.898%;
+    top: 60.665%;
+    transform: translate(-50%, -50%) rotate(27deg);
+    opacity: 1;
+  }
+  .rectangle-4 {
+    left: 65.298%;
+    top: 60.665%;
+    transform: translate(-50%, -50%) rotate(27deg);
+    opacity: 1;
+  }
+  .rectangle-5 {
+    left: 34.398%;
+    top: 60.665%;
+    transform: translate(-50%, -50%) rotate(27deg);
+    opacity: 0;
+  }
+  .rectangle-6 {
+    left: 44.698%;
+    top: 60.665%;
+    transform: translate(-50%, -50%) rotate(27deg);
+    opacity: 0;
+  }
+  .rectangle-7 {
+    left: 54.898%;
+    top: 60.665%;
+    transform: translate(-50%, -50%) rotate(27deg);
+    opacity: 0;
+  }
+  .rectangle-8 {
+    left: 44.898%;
+    top: 39.265%;
+    transform: translate(-50%, -50%) rotate(27deg);
+    opacity: 1;
+  }
+  .rectangle-9 {
+    left: 54.998%;
+    top: 39.265%;
+    transform: translate(-50%, -50%) rotate(27deg);
+    opacity: 1;
+  }
+  .rectangle-10 {
+    left: 44.898%;
+    top: 39.265%;
+    transform: translate(-50%, -50%) rotate(27deg);
+    opacity: 0;
+  }
+  .rectangle-11 {
+    left: 54.998%;
+    top: 39.265%;
+    transform: translate(-50%, -50%) otate(27deg);
+    opacity: 0;
+  }
+}
+
+/* STATE 3 */
+
+.accordion[data-current="3"] {
+  .rectangle-1 {
+    left: 42.4%;
+    top: 56.9%;
+    transform: translate(-50%, -50%) rotate(0);
+    opacity: 1;
+  }
+  .rectangle-2 {
+    left: 49.9%;
+    top: 49.3%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    opacity: 1;
+  }
+  .rectangle-3 {
+    left: 57.6%;
+    top: 56.9%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    opacity: 1;
+  }
+  .rectangle-4 {
+    left: 50%;
+    top: 64.4%;
+    transform: translate(-50%, -50%) rotate(270deg);
+    opacity: 1;
+  }
+  .rectangle-5 {
+    left: 49.9%;
+    top: 49.3%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    opacity: 0;
+  }
+  .rectangle-6 {
+    left: 49.9%;
+    top: 49.3%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    opacity: 0;
+  }
+  .rectangle-7 {
+    left: 50%;
+    top: 64.4%;
+    transform: translate(-50%, -50%) rotate(270deg);
+    opacity: 0;
+  }
+  .rectangle-8 {
+    left: 44.456%;
+    top: 41.827%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    opacity: 1;
+  }
+  .rectangle-9 {
+    left: 55.327%;
+    top: 41.756%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    opacity: 1;
+  }
+  .rectangle-10 {
+    left: 55.327%;
+    top: 41.756%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    opacity: 0;
+  }
+  .rectangle-11 {
+    left: 55.327%;
+    top: 41.756%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    opacity: 0;
+  }
+}
+
+/* STATE 4 */
+
+.accordion[data-current="4"] {
+  .rectangle-1 {
+    left: 36.5%;
+    top: 56.8%;
+    transform: translate(-50%, -50%) rotate(0);
+    opacity: 1;
+  }
+  .rectangle-2 {
+    left: 44.0%;
+    top: 49.2%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    opacity: 1;
+  }
+  .rectangle-3 {
+    left: 55.8%;
+    top: 56.9%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    opacity: 1;
+  }
+  .rectangle-4 {
+    left: 44.0%;
+    top: 64.5%;
+    transform: translate(-50%, -50%) rotate(270deg);
+    opacity: 1;
+  }
+  .rectangle-5 {
+    left: 58.4%;
+    top: 49.2%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    opacity: 1;
+  }
+  .rectangle-6 {
+    left: 66.1%;
+    top: 56.9%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    opacity: 1;
+  }
+  .rectangle-7 {
+    left: 58.4%;
+    top: 64.5%;
+    transform: translate(-50%, -50%) rotate(270deg);
+    opacity: 1;
+  }
+  .rectangle-8 {
+    left: 38.529%;
+    top: 41.8%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    opacity: 1;
+  }
+  .rectangle-9 {
+    left: 49.327%;
+    top: 41.656%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    opacity: 1;
+  }
+  .rectangle-10 {
+    left: 51.698%;
+    top: 38.149%;
+    transform: translate(-50%, -50%) rotate(0) scaleY(0.5);
+    opacity: 1;
+  }
+  .rectangle-11 {
+    left: 62%;
+    top: 48.098%;
+    transform: translate(-50%, -50%) rotate(90deg) scaleY(0.75);
+    opacity: 1;
+  }
+}

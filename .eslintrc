@@ -7,6 +7,8 @@
     "arrow-body-style": "off",
     "max-len": ["error", 120],
     "no-mixed-operators": "off",
+    "no-param-reassign": "off",
+    "no-underscore-dangle": "off",
     "import/prefer-default-export": "off"
   },
   "settings": {
