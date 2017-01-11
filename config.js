@@ -34,8 +34,13 @@ module.exports = {
     },
   },
   images: {
+    fabricator: {
+      src: 'src/assets/fabricator/images/**/*',
+      dest: 'dist/assets/fabricator/images',
+      watch: ['src/assets/fabricator/images/**/*', 'src/favicon.ico'],
+    },
     toolkit: {
-      src: ['src/assets/toolkit/images/**/*', 'src/favicon.ico'],
+      src: ['src/assets/toolkit/images/**/*'],
       dest: 'dist/assets/toolkit/images',
       watch: 'src/assets/toolkit/images/**/*',
     },

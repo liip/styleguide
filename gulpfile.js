@@ -67,7 +67,13 @@ gulp.task('scripts', (done) => {
 
 
 // images
-gulp.task('images', ['favicon'], () => {
+gulp.task('images:fabricator', () => {
+  return gulp.src(config.images.fabricator.src)
+    .pipe($.imagemin())
+    .pipe(gulp.dest(config.images.fabricator.dest));
+});
+
+gulp.task('images:toolkit', () => {
   return gulp.src(config.images.toolkit.src)
     .pipe($.imagemin())
     .pipe(gulp.dest(config.images.toolkit.dest));
@@ -77,6 +83,8 @@ gulp.task('favicon', () => {
   return gulp.src('src/favicon.ico')
     .pipe(gulp.dest(config.dest));
 });
+
+gulp.task('images', ['images:fabricator', 'images:toolkit', 'favicon']);
 
 
 // icons
@@ -148,7 +156,7 @@ gulp.task('serve', () => {
   }));
 
   gulp.task('images:watch', ['images'], browserSync.reload);
-  $.watch(config.images.toolkit.watch, $.batch((events, done) => {
+  $.watch([config.images.fabricator.watch, config.images.toolkit.watch], $.batch((events, done) => {
     gulp.start('images:watch', done);
   }));
 
