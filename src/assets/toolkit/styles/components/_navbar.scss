@@ -92,6 +92,7 @@
 
   .navbar__toggle {
     display: inline-block;
+    transition: background .3s;
 
     @include media('md') {
       display: none;
@@ -165,6 +166,8 @@
  */
 
 .navbar-menu {
+  @extend %list;
+
   > li {
     @include media('md') {
       display: inline-block;

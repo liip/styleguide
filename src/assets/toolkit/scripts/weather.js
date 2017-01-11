@@ -25,71 +25,77 @@ const ICONS = {
 export default class Weather {
 
   constructor(appId) {
-    this.appId = appId;
-    this.cities = [];
-    this.elements = [];
-    this.data = {};
+    this._appId = appId;
+    this._cities = [];
+    this._elements = [];
+    this._data = {};
   }
 
+  /**
+   * Init all .weather elements in the page
+   */
   initAll() {
-    this.elements = [...document.querySelectorAll('.weather')];
+    this._elements = [...document.querySelectorAll('.weather')];
 
-    this.elements.forEach((el) => {
+    this._elements.forEach((el) => {
       this.init(el, false);
     });
 
-    this.fetch()
-      .then(this.updateIcons.bind(this));
+    this._fetch()
+      .then(this._updateIcons.bind(this));
   }
 
+  /**
+   * Init the given element and then possibly fetch the weather
+   */
   init(el, fetch = true) {
     const city = el.dataset.city;
 
     if (city) {
-      this.elements.push(el);
-      this.cities.push(city);
+      this._elements.push(el);
+      this._cities.push(city);
 
       if (fetch) {
-        this.fetch()
-          .then(this.updateIcons.bind(this));
+        this._fetch()
+          .then(this._updateIcons.bind(this));
       }
     }
   }
 
-  fetch() {
-    return fetch(`${ENDPOINT}?id=${this.cities.join(',')}&units=metric&appid=${this.appId}`)
+  _fetch() {
+    return fetch(`${ENDPOINT}?id=${this._cities.join(',')}&units=metric&appid=${this._appId}`)
       .then(response => response.json())
       .then((json) => {
         const list = json.list;
 
         if (list) {
           list.forEach((item) => {
-            this.data[item.id] = item;
+            this._data[item.id] = item;
           });
         }
       });
   }
 
-  updateIcons() {
-    this.elements.forEach((el) => {
+  _updateIcons() {
+    this._elements.forEach((el) => {
       const iconEl = el.querySelector('.weather__icon');
       const id = el.dataset.city;
-      const weather = this.getWeather(id);
+      const weather = this._getWeather(id);
 
       if (weather) {
         el.setAttribute('title', weather.main);
       }
-      updateIcon(iconEl, this.getIcon(id));
+      updateIcon(iconEl, this._getIcon(id));
     });
   }
 
-  getWeather(id) {
-    const city = this.data[id];
+  _getWeather(id) {
+    const city = this._data[id];
     return city && city.weather && city.weather[0];
   }
 
-  getIcon(id) {
-    const weather = this.getWeather(id);
+  _getIcon(id) {
+    const weather = this._getWeather(id);
     return weather ? ICONS[weather.icon] : 'weather-unknown';
   }
 

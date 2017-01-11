@@ -8,67 +8,67 @@ export default class Navbar {
   constructor(el, options = {
     mode: 'instant',
   }) {
-    this.el = el;
-    this.options = options;
+    this._el = el;
+    this._options = options;
 
-    this.logoEl = this.el.querySelector('.logo');
-    this.isNegative = this.el.classList.contains('navbar--negative');
+    this._logoEl = this._el.querySelector('.logo');
+    this._isNegative = this._el.classList.contains('navbar--negative');
 
-    switch (options.mode) {
+    switch (this._options.mode) {
       case 'window':
-        this.threshold = window.innerHeight;
+        this._threshold = window.innerHeight;
         break;
       default:
-        this.threshold = MAX_HEIGHT;
+        this._threshold = MAX_HEIGHT;
         break;
     }
 
-    this.addEventListeners();
+    this._addEventListeners();
   }
 
-  addEventListeners() {
-    window.addEventListener('scroll', this.handleChange.bind(this));
-    window.addEventListener('resize', this.handleChange.bind(this));
+  _addEventListeners() {
+    window.addEventListener('scroll', this._handleChange.bind(this));
+    window.addEventListener('resize', this._handleChange.bind(this));
   }
 
-  handleChange() {
+  _handleChange() {
     if (window.requestAnimationFrame) {
-      window.requestAnimationFrame(this.handleScroll.bind(this));
+      window.requestAnimationFrame(this._handleScroll.bind(this));
     } else {
-      this.handleScroll();
+      this._handleScroll();
     }
   }
 
-  handleScroll() {
+  _handleScroll() {
     const scrollY = window.scrollY;
-    const animationBase = Math.max(Math.min(1, (scrollY - this.threshold + MAX_HEIGHT) / MIN_HEIGHT), 0);
+    const animationBase = Math.max(Math.min(1, (scrollY - this._threshold + MAX_HEIGHT) / MIN_HEIGHT), 0);
     const logoScale = 1 - (animationBase / 2);
-    const navbarHeight = Math.max(Math.min(MAX_HEIGHT, this.threshold - scrollY), 60);
+    const navbarHeight = Math.max(Math.min(MAX_HEIGHT, this._threshold - scrollY), 60);
 
     if (matchMedia('(min-width: 769px)').matches) {
-      this.logoEl.style.transform = `scale(${logoScale})`;
-      this.el.style.height = `${navbarHeight}px`;
+      this._logoEl.style.transform = `scale(${logoScale})`;
+      this._el.style.height = `${navbarHeight}px`;
     } else {
-      this.logoEl.removeAttribute('style');
-      this.el.removeAttribute('style');
+      this._logoEl.removeAttribute('style');
+      this._el.removeAttribute('style');
     }
 
-    if (this.threshold - scrollY <= MIN_HEIGHT) {
-      this.logoEl.classList.add('logo--shrinked');
+    if (this._threshold - scrollY <= MIN_HEIGHT) {
+      this._logoEl.classList.add('logo--shrinked');
     } else {
-      this.logoEl.classList.remove('logo--shrinked');
+      this._logoEl.classList.remove('logo--shrinked');
     }
 
-    if (this.threshold - scrollY <= MIN_HEIGHT / 2) {
-      if (this.isNegative) {
-        this.el.classList.remove('navbar--negative');
+    if (this._threshold - scrollY <= MIN_HEIGHT / 2) {
+      if (this._isNegative) {
+        this._el.classList.remove('navbar--negative');
       }
-      this.el.classList.add('navbar--overlay');
+      this._el.classList.add('navbar--overlay');
     } else {
-      if (this.isNegative) {
-        this.el.classList.add('navbar--negative');
+      if (this._isNegative) {
+        this._el.classList.add('navbar--negative');
       }
-      this.el.classList.remove('navbar--overlay');
+      this._el.classList.remove('navbar--overlay');
     }
   }
 
