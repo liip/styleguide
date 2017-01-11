@@ -100,10 +100,39 @@ h6,
  * Code and preformatted text
  */
 
+pre,
 code {
-  color: white;
-  background-color: $warm-grey-600;
-  border-radius: 2px;
+  color: $web-white;
+  font-size: rem(14px);
+
+  border-radius: 0;
+  background-color: $web-black;
+
+  tab-size: 2;
+
+  &::selection,
+  ::selection {
+    background-color: rgba(255,255,255,.18);
+    color: inherit;
+  }
+
+  &::-moz-selection,
+  ::-moz-selection {
+    background-color: rgba(255,255,255,.18);
+    color: inherit;
+  }
+}
+
+pre {
+  padding: $spacing-unit-small;
+  margin-top: $spacing-unit-default;
+  margin-bottom: $spacing-unit-default;
+}
+
+code {
+  display: inline;
+
+  box-shadow: 0 -1px 0 0 $web-black, 0 2px 0 0 $web-black;
 }
 
 

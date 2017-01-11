@@ -1,5 +1,3 @@
-import 'prismjs';
-
 /**
  * Global `fabricator` object
  * @namespace

@@ -1,0 +1,68 @@
+/**
+ * Material prism theme by Mitch Jackson (http://mitchelljackson.co.uk)
+ * Inspired by Material Theme for Sublime Text
+ */
+
+$color-code-selector: #FFCB6B;
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray;
+}
+
+.token.punctuation {
+  color: #89DDFF;
+}
+
+.namespace {
+  color: transparentize($color-code-selector, .3);
+}
+
+.token.function,
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #F07178;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted,
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.token.regex,
+.token.important,
+.token.variable,
+.style .token.string {
+  color: $color-code-selector;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #C3E984;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
