@@ -80,6 +80,11 @@
   }
 }
 
+.service-tile--ghost {
+  pointer-events: none;
+  opacity: .5;
+}
+
   .service-tile__body {
     width: 100%;
     padding: $spacing-unit-default;
