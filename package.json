@@ -1,6 +1,6 @@
 {
   "name": "liip-styleguide",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Liip UI Toolkit",
   "license": "private",
   "private": true,
@@ -16,7 +16,7 @@
     "node": ">=4.0",
     "npm": ">=2.0.0"
   },
-  "main": "src/assets/toolkit/scripts/toolkit.js",
+  "main": "dist/assets/toolkit/scripts/toolkit.js",
   "devDependencies": {
     "autoprefixer": "^6.6.1",
     "babel-core": "^6.10.4",
