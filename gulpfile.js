@@ -156,7 +156,7 @@ gulp.task('serve', () => {
   }));
 
   gulp.task('images:watch', ['images'], browserSync.reload);
-  $.watch([config.images.fabricator.watch, config.images.toolkit.watch], $.batch((events, done) => {
+  $.watch([config.images.fabricator.watch, config.images.toolkit.watch, 'src/favicon.ico'], $.batch((events, done) => {
     gulp.start('images:watch', done);
   }));
 

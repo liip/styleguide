@@ -37,7 +37,7 @@ module.exports = {
     fabricator: {
       src: 'src/assets/fabricator/images/**/*',
       dest: 'dist/assets/fabricator/images',
-      watch: ['src/assets/fabricator/images/**/*', 'src/favicon.ico'],
+      watch: 'src/assets/fabricator/images/**/*',
     },
     toolkit: {
       src: ['src/assets/toolkit/images/**/*'],
