@@ -22,10 +22,12 @@ import Multiplier from './multiplier';
 import Navbar from './navbar';
 import Weather from './weather';
 import Accordion from './accordion';
+import Reel from './reel';
 
 window.Toolkit = {
   Multiplier,
   Navbar,
   Weather,
   Accordion,
+  Reel,
 };

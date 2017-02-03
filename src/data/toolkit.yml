@@ -228,3 +228,5 @@ icons:
     - weather-unknown
   Miscellaneous:
     - loading
+    - chevron-left
+    - chevron-right

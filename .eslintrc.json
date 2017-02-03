@@ -9,7 +9,8 @@
     "no-mixed-operators": "off",
     "no-param-reassign": "off",
     "no-underscore-dangle": "off",
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "no-plusplus": "off"
   },
   "settings": {
     "import/resolver": "webpack"
