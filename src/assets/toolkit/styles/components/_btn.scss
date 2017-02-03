@@ -7,16 +7,36 @@
   font-weight: 500;
 }
 
+.btn--default,
+.btn--primary {
+  background-size: 100% 0;
+  background-color: transparent;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  transition-property: background-size, color;
+  transition-duration: .3s;
+
+  &:not([disabled]):hover,
+  &:not([disabled]):focus,
+  &:not([disabled]):active {
+    color: $white;
+
+    background-size: 100% 100%;
+  }
+
+  &:not([disabled]):active {
+    background-image: none;
+  }
+}
+
 .btn--default {
-  border-color: currentcolor;
+  border-color: $text-color;
+
+  background-image: linear-gradient(to top, $text-color, $text-color);
 }
 
 .btn--primary {
   border-color: $brand-color;
 
-  &:hover,
-  &:focus,
-  &:active {
-    color: $white;
-  }
+  background-image: linear-gradient(to top, $brand-color, $brand-color);
 }
