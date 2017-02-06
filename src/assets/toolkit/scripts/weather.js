@@ -41,8 +41,7 @@ export default class Weather {
       this.init(el, false);
     });
 
-    this._fetch()
-      .then(this._updateIcons.bind(this));
+    this._fetch();
   }
 
   /**
@@ -56,8 +55,7 @@ export default class Weather {
       this._cities.push(city);
 
       if (fetch) {
-        this._fetch()
-          .then(this._updateIcons.bind(this));
+        this._fetch();
       }
     }
   }
@@ -73,7 +71,8 @@ export default class Weather {
             this._data[item.id] = item;
           });
         }
-      });
+      })
+      .then(this._updateIcons.bind(this));
   }
 
   _updateIcons() {
