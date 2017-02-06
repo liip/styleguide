@@ -38,7 +38,7 @@
 }
 
 .f-item-code {
-  margin: -10px 5px 0;
+  margin: 0 5px;
 
   position: relative;
   z-index: 1;
@@ -48,6 +48,7 @@
 
   pre,
   code {
+    margin-top: 0;
     margin-bottom: 0;
   }
 }
