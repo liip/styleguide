@@ -1,0 +1,34 @@
+<form class="contact-form{{#if negative}} contact-form--negative{{/if}}">
+  <h1 class="contact-form__header pusher">
+    <div class="pusher__body">Get in touch</div>
+    <select name="reason" class="select--primary">
+      <option>for a project</option>
+      <option>for a job</option>
+      <option>for sponsoring</option>
+      <option>for anything else</option>
+    </select>
+  </h1>
+  <div class="grid">
+    <div class="grid__item md-w-1/2 lg-w-2/3">
+      <textarea
+        name="message"
+        placeholder="Tell us about your idea, your questions, anything…"
+        class="contact-form__message input--large{{#if negative}} input--negative{{/if}}"
+        rows="8"></textarea>
+    </div>
+    <div class="contact-form__aside grid__item md-w-1/2 lg-w-1/3">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your name" class="input--large{{#if negative}} input--negative{{/if}}">
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your e-mail address" class="input--large{{#if negative}} input--negative{{/if}}">
+      </div>
+      <div class="form-group">
+        <input type="tel" name="Your phone number" placeholder="Your phone number" class="input--large{{#if negative}} input--negative{{/if}}">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn--block {{#if negative}}btn--negative{{else}}btn--default{{/if}} btn--large">Send your message</button>
+      </div>
+    </div>
+  </div>
+</form>

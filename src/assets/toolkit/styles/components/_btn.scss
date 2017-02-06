@@ -8,7 +8,8 @@
 }
 
 .btn--default,
-.btn--primary {
+.btn--primary,
+.btn--negative {
   background-size: 100% 0;
   background-color: transparent;
   background-position: bottom center;
@@ -26,6 +27,19 @@
 
   &:not([disabled]):active {
     background-image: none;
+  }
+}
+
+.btn--negative {
+  color: $web-white;
+  border-color: $web-white;
+
+  background-image: linear-gradient(to top, $web-white, $web-white);
+
+  &:not([disabled]):hover,
+  &:not([disabled]):focus,
+  &:not([disabled]):active {
+    color: $web-black;
   }
 }
 
