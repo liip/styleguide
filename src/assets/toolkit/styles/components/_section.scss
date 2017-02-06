@@ -23,17 +23,27 @@
 }
 
   .section__bg {
-    width: auto;
-    height: auto;
-    min-width: 100.1%;
-    min-height: 100.1%;
-
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: 1;
 
-    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    > * {
+      width: auto;
+      height: auto;
+      min-width: 100.1%;
+      min-height: 100.1%;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+    }
   }
 
   .section__body {
