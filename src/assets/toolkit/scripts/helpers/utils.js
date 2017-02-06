@@ -12,3 +12,20 @@ export function debounce(callback, delay = 250) {
 
   timeout = setTimeout(callback, delay);
 }
+
+/**
+ * Return the scroll top of the window/document
+ * @return {Integer}
+ */
+export function getDocumentScrollTop() {
+  return Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop, 0);
+}
+
+/**
+ * Return the given element offsetTop value
+ * @return {Integer}
+ */
+export function offsetTop(element) {
+  return element.getBoundingClientRect().top + getDocumentScrollTop()
+    - (document.documentElement.clientTop || document.body.clientTop);
+}

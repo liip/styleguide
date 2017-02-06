@@ -4,7 +4,6 @@
 
 .section {
   padding: $spacing-unit-small;
-  overflow: hidden;
 
   position: relative;
 
@@ -45,13 +44,7 @@
     position: relative;
     z-index: 2;
 
-    > :first-child {
-      margin-top: 0;
-    }
-
-    > :last-child {
-      margin-bottom: 0;
-    }
+    @include spaceless-children();
   }
 
 .section--behind-navbar {

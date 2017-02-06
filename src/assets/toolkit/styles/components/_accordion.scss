@@ -5,9 +5,9 @@
 .accordion {
   display: flex;
   align-items: center;
+  position: relative;
 
   @include media('md', $breakpoints-desc) {
-    flex-direction: column;
     min-height: auto !important;
   }
 }
@@ -40,6 +40,8 @@
   .accordion__collapse {
     transition: height .5s;
     overflow: hidden;
+
+    @include spaceless-children();
   }
 
 .accordion--negative {
@@ -57,12 +59,12 @@
 
   .accordion-list__title {
     margin-bottom: 0;
-    word-break: break-word;
+    @include wrap-words();
   }
 
   .accordion-list__item  {
-    padding-top: $spacing-unit-tiny;
-    padding-bottom: $spacing-unit-tiny;
+    padding-top: 11px;
+    padding-bottom: 11px;
 
     &.is-active {
       .accordion__toggle {
@@ -80,12 +82,7 @@
       height: 0 !important;
     }
 
-    > :first-child {
-      margin-top: 0;
-    }
-    > :last-child {
-      margin-bottom: 0;
-    }
+    @include spaceless-children();
   }
 
 
@@ -94,15 +91,12 @@
  */
 
 .accordion-playground {
-  width: 100%;
-  margin-bottom: $spacing-unit-default;
-  order: -1;
+  min-width: 45%;
+  margin-left: $spacing-unit-default;
+  margin-bottom: 0;
 
-  @include media('lg') {
-    order: 0;
-    min-width: 40%;
-    margin-left: $spacing-unit-default;
-    margin-bottom: 0;
+  @include media('md', $breakpoints-desc) {
+    display: none;
   }
 }
 
@@ -125,7 +119,9 @@
   }
 
   @include media('md', $breakpoints-desc) {
-    display: none;
+    position: sticky;
+    top: $spacing-unit-huge;
+    bottom: $spacing-unit-default;
   }
 }
 

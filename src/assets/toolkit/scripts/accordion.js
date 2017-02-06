@@ -1,5 +1,8 @@
 import Delegate from 'dom-delegate';
-import { debounce } from 'helpers/utils';
+import { debounce, offsetTop } from 'helpers/utils';
+import scrollTo from 'scroll';
+import doc from 'scroll-doc';
+import { inOutSine } from 'ease-component';
 
 export default class Accordion {
 
@@ -75,6 +78,7 @@ export default class Accordion {
 
     this._updateList(target);
     this._updateNav(target);
+    this._scrollToActive();
   }
 
   _updateList(target) {
@@ -107,6 +111,20 @@ export default class Accordion {
     if (targetEl) {
       targetEl.classList.toggle('is-active');
     }
+  }
+
+  /**
+   * If the top of the panel we just opened is outside the viewport, we scroll the window to show it
+   */
+  _scrollToActive() {
+    // Wait for the animation to complete
+    setTimeout(() => {
+      const top = this._current.getBoundingClientRect().top;
+
+      if (top <= 60) {
+        scrollTo.top(doc(), offsetTop(this._current) - 74, { ease: inOutSine });
+      }
+    }, 500);
   }
 
 }
