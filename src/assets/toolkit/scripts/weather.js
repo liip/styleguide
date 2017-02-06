@@ -72,7 +72,8 @@ export default class Weather {
           });
         }
       })
-      .then(this._updateIcons.bind(this));
+      .then(this._updateIcons.bind(this))
+      .catch(this._updateIcons.bind(this));
   }
 
   _updateIcons() {
