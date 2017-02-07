@@ -103,19 +103,25 @@
 @import '../../../../node_modules/kanbasu/src/assets/scss/components/list-stacked';
 // @import '../../../../node_modules/kanbasu/src/assets/scss/components/embed-responsive';
 
+// Simple components
 @import 'components/icon';
 @import 'components/btn';
 @import 'components/label';
 @import 'components/pusher';
+@import 'components/avatar';
 @import 'components/service-label';
-@import 'components/services-tiles';
 @import 'components/service-tile';
 @import 'components/haiku';
 @import 'components/section';
-@import 'components/navbar';
 @import 'components/logo';
-@import 'components/address';
 @import 'components/weather';
+@import 'components/address';
 @import 'components/accordion';
+@import 'components/quote';
+@import 'components/article';
+
+// Composed components
+@import 'components/navbar';
 @import 'components/reel';
+@import 'components/services-tiles';
 @import 'components/contact-form';

@@ -1,0 +1,69 @@
+/*----------------------------------------*\
+  QUOTE
+\*----------------------------------------*/
+
+.quote {
+  display: flex;
+  align-items: center;
+
+  @include media('sm', $breakpoints-desc) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+  .quote__avatar  {
+    width: 180px;
+    max-width: 30%;
+    margin-bottom: $spacing-unit-default;
+    margin-left: $spacing-unit-default;
+
+    @include media('md') {
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: $spacing-unit-default;
+    }
+    @include media('lg') {
+      margin-right: $spacing-unit-large;
+    }
+  }
+
+  .quote__text {
+    flex: 1;
+    padding-left: $spacing-unit-default;
+    padding-right: $spacing-unit-default;
+
+    font-size: rem(32px);
+    line-height: 1.2;
+
+    position: relative;
+
+    p:first-of-type::before,
+    p:last-of-type::after {
+      font-size: 1.5em;
+      color: $warm-grey-500;
+    }
+
+    p:first-of-type::before {
+      content: '“';
+      position: absolute;
+      left: 0;
+    }
+    p:last-of-type {
+      margin-bottom: $spacing-unit-tiny;
+
+      &::after {
+        content: '”';
+        position: absolute;
+      }
+    }
+  }
+
+  .quote__cite {
+    display: inline-block;
+    font-size: $font-size-default;
+  }
+
+  .quote__author {
+    font-weight: 500;
+  }

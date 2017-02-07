@@ -70,13 +70,17 @@ h6,
  * Paragraphs
  */
 
+p {
+  margin-top: $spacing-unit-small;
+  margin-bottom: $spacing-unit-small;
+}
+
 .text-lead {
   font-size: rem(18px);
-  line-height: 1.6;
+  line-height: 1.5;
 
   @include media('md') {
     font-size: rem(20px);
-    line-height: 1.7;
   }
 }
 
@@ -84,6 +88,15 @@ h6,
 /**
  * Links
  */
+
+a {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
 
 .link-text {
   color: $web-black;
@@ -141,6 +154,21 @@ code {
  */
 
 address {
+  font-style: normal;
+}
+
+
+/**
+ * Quotes
+ */
+
+blockquote {
+  margin: 0;
+
+  @include spaceless-children();
+}
+
+cite {
   font-style: normal;
 }
 
