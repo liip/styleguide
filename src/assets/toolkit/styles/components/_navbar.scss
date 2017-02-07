@@ -186,7 +186,6 @@
     color: inherit;
     font-size: rem(20px);
     font-weight: 700;
-    text-decoration: none;
     text-align: center;
 
     border-bottom: 4px solid rgba(255,255,255,0);
@@ -200,6 +199,7 @@
       &:focus,
       &:hover {
         border-bottom: 4px solid;
+        text-decoration: none;
       }
     }
 

@@ -10,7 +10,6 @@
   position: relative;
 
   color: $brand-color;
-  text-decoration: none;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 1.2;
@@ -42,6 +41,7 @@
   &:hover,
   &:focus {
     color: white;
+    text-decoration: none;
 
     &::after {
       opacity: 1;
@@ -68,9 +68,6 @@
 
   @include media('sm') {
     font-size: rem(12px);
-  }
-  @include media('md') {
-    font-size: rem(14px);
   }
 }
 

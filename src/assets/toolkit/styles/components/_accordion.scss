@@ -23,13 +23,13 @@
 
   .accordion__toggle {
     color: $warm-grey-500;
-    text-decoration: none;
 
     transition: all .3s;
 
     &:hover,
     &:focus {
       color: $web-black;
+      text-decoration: none;
 
       .accordion--negative & {
         color: $web-white;
