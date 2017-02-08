@@ -31,106 +31,11 @@ notes: |
   </button>
   <div class="reel__body">
     <div class="reel__roll">
-      <div class="reel__item">
-        <a href="#" class="service-tile service-tile--small">
-          <div class="service-tile__body">
-            <svg class="service-tile__icon icon icon--ecommerce">
-              <use xlink:href="#ecommerce" />
-            </svg>
-            Ecommerce
-          </div>
-        </a>
-      </div>
-      <div class="reel__item">
-        <a href="#" class="service-tile service-tile--small">
-          <div class="service-tile__body">
-            <svg class="service-tile__icon icon icon--content-management">
-              <use xlink:href="#content-management" />
-            </svg>
-            Content Management
-          </div>
-        </a>
-      </div>
-      <div class="reel__item">
-        <a href="#" class="service-tile service-tile--small">
-          <div class="service-tile__body">
-            <svg class="service-tile__icon icon icon--user-experience">
-              <use xlink:href="#user-experience" />
-            </svg>
-            User Experience
-          </div>
-        </a>
-      </div>
-      <div class="reel__item">
-        <a href="#" class="service-tile service-tile--small">
-          <div class="service-tile__body">
-            <svg class="service-tile__icon icon icon--mobile">
-              <use xlink:href="#mobile" />
-            </svg>
-            Mobile
-          </div>
-        </a>
-      </div>
-      <div class="reel__item">
-        <a href="#" class="service-tile service-tile--small">
-          <div class="service-tile__body">
-            <svg class="service-tile__icon icon icon--elearning">
-              <use xlink:href="#elearning" />
-            </svg>
-            Elearning
-          </div>
-        </a>
-      </div>
-      <div class="reel__item">
-        <a href="#" class="service-tile service-tile--small">
-          <div class="service-tile__body">
-            <svg class="service-tile__icon icon icon--api">
-              <use xlink:href="#api" />
-            </svg>
-            API
-          </div>
-        </a>
-      </div>
-      <div class="reel__item">
-        <a href="#" class="service-tile service-tile--small">
-          <div class="service-tile__body">
-            <svg class="service-tile__icon icon icon--open-source">
-              <use xlink:href="#open-source" />
-            </svg>
-            Open Data
-          </div>
-        </a>
-      </div>
-      <div class="reel__item">
-        <a href="#" class="service-tile service-tile--small">
-          <div class="service-tile__body">
-            <svg class="service-tile__icon icon icon--performance">
-              <use xlink:href="#performance" />
-            </svg>
-            Performance
-          </div>
-        </a>
-      </div>
-      <div class="reel__item">
-        <a href="#" class="service-tile service-tile--small">
-          <div class="service-tile__body">
-            <svg class="service-tile__icon icon icon--fintech">
-              <use xlink:href="#fintech" />
-            </svg>
-            Finance
-          </div>
-        </a>
-      </div>
-      <div class="reel__item">
-        <a href="#" class="service-tile service-tile--small">
-          <div class="service-tile__body">
-            <svg class="service-tile__icon icon icon--service-design">
-              <use xlink:href="#service-design" />
-            </svg>
-            Service Design
-          </div>
-        </a>
-      </div>
+      {{#each toolkit.services}}
+        <div class="reel__item">
+          {{>service-tile icon=this.icon name=this.name small="true" }}
+        </div>
+      {{/each}}
     </div>
   </div>
   <button class="reel__next btn btn--bare btn--disabled" data-navigate="next">

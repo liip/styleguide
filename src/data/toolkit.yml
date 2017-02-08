@@ -230,3 +230,24 @@ icons:
     - loading
     - chevron-left
     - chevron-right
+services:
+  - name: Ecommerce
+    icon: ecommerce
+  - name: Content Management
+    icon: content-management
+  - name: User Experience
+    icon: user-experience
+  - name: Mobile
+    icon: mobile
+  - name: Elearning
+    icon: elearning
+  - name: API
+    icon: api
+  - name: Open Data
+    icon: open-source
+  - name: Performance
+    icon: performance
+  - name: Finance
+    icon: fintech
+  - name: Service Design
+    icon: service-design
