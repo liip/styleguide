@@ -111,12 +111,12 @@ $btn-large-border-radius:           0;
 
 $btn-default-color:                 $text-color;
 $btn-default-bkg-color:             transparent;
-$btn-default-hover-bkg-color:       transparent;
+$btn-default-hover-bkg-color:       $text-color;
 $btn-default-active-bkg-color:      $warm-grey-700;
 
 $btn-primary-color:                 $brand-color;
 $btn-primary-bkg-color:             transparent;
-$btn-primary-hover-bkg-color:       transparent;
+$btn-primary-hover-bkg-color:       $brand-color;
 $btn-primary-active-bkg-color:      $green-500;
 
 

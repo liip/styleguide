@@ -10,23 +10,13 @@
 .btn--default,
 .btn--primary,
 .btn--negative {
-  background-size: 100% 0;
-  background-color: transparent;
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  transition-property: background-size, color;
-  transition-duration: .3s;
+  transition-property: background-color, color;
+  transition-duration: .25s;
 
-  &:not([disabled]):hover,
-  &:not([disabled]):focus,
-  &:not([disabled]):active {
+  &:hover,
+  &:focus,
+  &:active {
     color: $white;
-
-    background-size: 100% 100%;
-  }
-
-  &:not([disabled]):active {
-    background-image: none;
   }
 }
 
@@ -34,23 +24,18 @@
   color: $web-white;
   border-color: $web-white;
 
-  background-image: linear-gradient(to top, $web-white, $web-white);
-
-  &:not([disabled]):hover,
-  &:not([disabled]):focus,
-  &:not([disabled]):active {
+  &:hover,
+  &:focus,
+  &:active {
     color: $web-black;
+    background-color: $web-white;
   }
 }
 
 .btn--default {
   border-color: $text-color;
-
-  background-image: linear-gradient(to top, $text-color, $text-color);
 }
 
 .btn--primary {
   border-color: $brand-color;
-
-  background-image: linear-gradient(to top, $brand-color, $brand-color);
 }
