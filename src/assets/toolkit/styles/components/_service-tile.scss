@@ -17,6 +17,14 @@
   transition-property: background, color, transform;
   transition-duration: .3s;
 
+  @include media('md', $breakpoints-desc) {
+    font-size: rem(14px);
+  }
+
+  @include media('sm', $breakpoints-desc) {
+    font-size: rem(12px);
+  }
+
   &::before {
     content: '';
     display: block;
@@ -40,24 +48,30 @@
 
   &:hover,
   &:focus {
-    color: white;
     text-decoration: none;
-
-    &::after {
-      opacity: 1;
-    }
-
-    .service-tile__body {
-      transform: scale(1.15);
-    }
   }
 
-  &:active {
-    .service-tile__body {
-      transform: scale(1.2);
+  @include media('md') {
+    &:hover,
+    &:focus {
+      color: white;
 
-      @include media('lg') {
-        transform: scale(1.4);
+      &::after {
+        opacity: 1;
+      }
+
+      .service-tile__body {
+        transform: scale(1.1);
+      }
+    }
+
+    &:active {
+      .service-tile__body {
+        transform: scale(1.2);
+
+        @include media('lg') {
+          transform: scale(1.4);
+        }
       }
     }
   }
@@ -68,6 +82,10 @@
 
   @include media('sm') {
     font-size: rem(12px);
+  }
+
+  .service-tile__body {
+    padding: $spacing-unit-small;
   }
 }
 
@@ -93,8 +111,8 @@
     }
 
     .service-icon {
-      width: 14px;
-      height: 12px;
+      width: 0.875em;
+      height: 0.75em;
     }
   }
 
@@ -105,37 +123,22 @@
     margin-bottom: 15%;
 
     .service-tile--small & {
-      width: 30px;
-      height: 30px;
+      width: 36px;
+      height: 36px;
     }
 
     @include media('sm') {
       width: 56px;
       height: 56px;
-
-      .service-tile--small & {
-        width: 42px;
-        height: 42px;
-      }
     }
 
     @include media('md') {
       width: 66px;
       height: 66px;
-
-      .service-tile--small & {
-        width: 52px;
-        height: 52px;
-      }
     }
 
     @include media('lg') {
       width: 76px;
       height: 76px;
-
-      .service-tile--small & {
-        width: 62px;
-        height: 62px;
-      }
     }
   }

@@ -29,3 +29,11 @@ export function offsetTop(element) {
   return element.getBoundingClientRect().top + getDocumentScrollTop()
     - (document.documentElement.clientTop || document.body.clientTop);
 }
+
+/**
+ * Variable operators
+ */
+export const operators = {
+  '+': (a, b) => { return a + b; },
+  '-': (a, b) => { return a - b; },
+}

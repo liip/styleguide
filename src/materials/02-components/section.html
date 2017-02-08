@@ -11,20 +11,28 @@ notes: |
         <td>Slightly darker background for odd/even lists of sections</td>
       </tr>
       <tr>
-        <td><code>.section--negative</code></td>
-        <td>Light text color</td>
-      </tr>
-      <tr>
-        <td width="20%"><code>.section--fit</code></td>
-        <td>Take at least the viewport height</td>
-      </tr>
-      <tr>
         <td><code>.section--primary</code></td>
         <td>Green gradient background and light text color</td>
       </tr>
       <tr>
+        <td><code>.section--negative</code></td>
+        <td>Light text color</td>
+      </tr>
+      <tr>
         <td><code>.section--dark</code></td>
         <td>Dark solid background and light text color</td>
+      </tr>
+      <tr>
+        <td><code>.section--light</code></td>
+        <td>White background</td>
+      </tr>
+      <tr>
+        <td><code>.section--fit</code></td>
+        <td>Take at least the viewport height</td>
+      </tr>
+      <tr>
+        <td><code>.section--tight</code></td>
+        <td>No padding (can be combined with <code>.section--behind-navbar</code>.)</td>
       </tr>
       <tr>
         <td><code>.section--fixed</code></td>
@@ -100,12 +108,19 @@ notes: |
     <canvas id="section-multiplier"></canvas>
   </div>
   <div class="section__body">
-    <h1>Dark background fitted</h1>
+    <h1>Dark background image fitted</h1>
     <ol>
       <li>Fitted to the viewport height</li>
       <li>Dark background image</li>
       <li>Light text color</li>
     </ol>
+  </div>
+</section>
+
+<section class="section section--tight section--light">
+  <div class="section__body">
+    <h1>Light section without padding</h1>
+    {{>reel}}
   </div>
 </section>
 

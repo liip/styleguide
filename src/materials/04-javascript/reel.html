@@ -1,3 +1,28 @@
+---
+notes: |
+  Create a reel of aligned items where their size is more or less distributed fairly. When there’s more items than the available space, the user is able to swipe horizontaly or use the buttons to navigate.
+
+  ##### Initialization
+
+  ```javascript
+  window.addEventListener('DOMContentLoaded', function() {
+    var reel = document.querySelector('#reel');
+    new Toolkit.Reel(reel);
+  });
+  ```
+
+  ##### Methods
+
+  <table class="table">
+    <tbody>
+      <tr>
+        <td width="20%"><code>reel.destroy()</code></td>
+        <td>Destroy the component, stop listening for events.</td>
+      </tr>
+    </tbody>
+  </table>
+---
+
 <div id="reel" class="reel">
   <button class="reel__previous btn btn--bare btn--disabled" data-navigate="previous">
     <svg class="icon icon--chevron-left">
@@ -5,8 +30,8 @@
     </svg>
   </button>
   <div class="reel__body">
-    <div class="reel__roll grid grid--tight">
-      <div class="reel__item grid__item w-1/4 sm-w-1/5 md-w-1/6 lg-w-1/7">
+    <div class="reel__roll">
+      <div class="reel__item">
         <a href="#" class="service-tile service-tile--small">
           <div class="service-tile__body">
             <svg class="service-tile__icon icon icon--ecommerce">
@@ -16,7 +41,7 @@
           </div>
         </a>
       </div>
-      <div class="reel__item grid__item w-1/4 sm-w-1/5 md-w-1/6 lg-w-1/7">
+      <div class="reel__item">
         <a href="#" class="service-tile service-tile--small">
           <div class="service-tile__body">
             <svg class="service-tile__icon icon icon--content-management">
@@ -26,7 +51,7 @@
           </div>
         </a>
       </div>
-      <div class="reel__item grid__item w-1/4 sm-w-1/5 md-w-1/6 lg-w-1/7">
+      <div class="reel__item">
         <a href="#" class="service-tile service-tile--small">
           <div class="service-tile__body">
             <svg class="service-tile__icon icon icon--user-experience">
@@ -36,7 +61,7 @@
           </div>
         </a>
       </div>
-      <div class="reel__item grid__item w-1/4 sm-w-1/5 md-w-1/6 lg-w-1/7">
+      <div class="reel__item">
         <a href="#" class="service-tile service-tile--small">
           <div class="service-tile__body">
             <svg class="service-tile__icon icon icon--mobile">
@@ -46,7 +71,7 @@
           </div>
         </a>
       </div>
-      <div class="reel__item grid__item w-1/4 sm-w-1/5 md-w-1/6 lg-w-1/7">
+      <div class="reel__item">
         <a href="#" class="service-tile service-tile--small">
           <div class="service-tile__body">
             <svg class="service-tile__icon icon icon--elearning">
@@ -56,7 +81,7 @@
           </div>
         </a>
       </div>
-      <div class="reel__item grid__item w-1/4 sm-w-1/5 md-w-1/6 lg-w-1/7">
+      <div class="reel__item">
         <a href="#" class="service-tile service-tile--small">
           <div class="service-tile__body">
             <svg class="service-tile__icon icon icon--api">
@@ -66,7 +91,7 @@
           </div>
         </a>
       </div>
-      <div class="reel__item grid__item w-1/4 sm-w-1/5 md-w-1/6 lg-w-1/7">
+      <div class="reel__item">
         <a href="#" class="service-tile service-tile--small">
           <div class="service-tile__body">
             <svg class="service-tile__icon icon icon--open-source">
@@ -76,7 +101,7 @@
           </div>
         </a>
       </div>
-      <div class="reel__item grid__item w-1/4 sm-w-1/5 md-w-1/6 lg-w-1/7">
+      <div class="reel__item">
         <a href="#" class="service-tile service-tile--small">
           <div class="service-tile__body">
             <svg class="service-tile__icon icon icon--performance">
@@ -86,7 +111,7 @@
           </div>
         </a>
       </div>
-      <div class="reel__item grid__item w-1/4 sm-w-1/5 md-w-1/6 lg-w-1/7">
+      <div class="reel__item">
         <a href="#" class="service-tile service-tile--small">
           <div class="service-tile__body">
             <svg class="service-tile__icon icon icon--fintech">
@@ -96,7 +121,7 @@
           </div>
         </a>
       </div>
-      <div class="reel__item grid__item w-1/4 sm-w-1/5 md-w-1/6 lg-w-1/7">
+      <div class="reel__item">
         <a href="#" class="service-tile service-tile--small">
           <div class="service-tile__body">
             <svg class="service-tile__icon icon icon--service-design">

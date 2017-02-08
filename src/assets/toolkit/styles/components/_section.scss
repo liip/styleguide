@@ -71,6 +71,17 @@
   }
 }
 
+.section--tight {
+  padding: 0;
+
+  &.section--behind-navbar {
+    padding-top: $navbar-height-small;
+
+    @include media('md') {
+      padding-top: $navbar-height;
+    }
+  }
+}
 
 /**
  * Alternative colors
@@ -78,6 +89,10 @@
 
 .section--alt {
   background-color: $warm-grey-100;
+}
+
+.section--light {
+  background-color: $white;
 }
 
 .section--negative,

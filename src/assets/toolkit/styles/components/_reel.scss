@@ -3,67 +3,47 @@
 \*----------------------------------------*/
 
 .reel {
-  display: flex;
-
   position: relative;
-
-  background-color: $white;
 }
 
   .reel__body {
-    flex: 1;
     overflow: hidden;
   }
 
     .reel__roll {
+      display: flex;
       flex-wrap: nowrap;
-
-      white-space: nowrap;
-      text-align: center;
-
-      transition: transform .5s ease-in-out;
       will-change: transform;
     }
 
     .reel__item {
+      flex: 1 0 0;
+      min-width: 105px;
       white-space: normal;
     }
 
   .reel__previous,
   .reel__next {
-    padding: $spacing-unit-tiny;
+    padding: 5px;
 
-    @include media('sm', $breakpoints-desc) {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      z-index: 2;
-    }
-
-    color: $warm-grey-800;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
 
     border: none;
     transition: opacity .3s ease-out;
-
-    @include media('md') {
-      padding: $spacing-unit-small;
-    }
+    background-color: rgba(255,255,255,.85);
 
     &:hover,
     &:focus,
     &:active {
       color: $black;
-      background-color: $warm-grey-100;
     }
 
     .icon {
-      width: 20px;
-      height: 20px;
-
-      @include media('md') {
-        width: 32px;
-        height: 32px;
-      }
+      width: 18px;
+      height: 18px;
     }
 
     &.btn--disabled {
@@ -74,9 +54,7 @@
 
   .reel__next {
     right: 0;
-    background-image: linear-gradient(to right, transparentize($web-white, 1), $web-white);
   }
   .reel__previous {
     left: 0;
-    background-image: linear-gradient(to left, transparentize($web-white, 1), $web-white);
   }
