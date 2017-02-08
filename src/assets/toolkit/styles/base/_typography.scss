@@ -20,11 +20,13 @@ h1,
 h2,
 .h2 {
   font-size: rem(26px);
+  font-weight: 700;
 }
 
 h3,
 .h3 {
   font-size: rem(22px);
+  font-weight: 700;
 }
 
 h4,
@@ -46,12 +48,11 @@ h6,
   h1,
   .h1 {
     font-size: rem(52px);
-    font-weight: 700;
   }
 
   h2,
   .h2 {
-    font-size: rem(30px);
+    font-size: rem(40px);
   }
 
   h3,
@@ -71,12 +72,12 @@ h6,
  */
 
 .text-lead {
-  font-size: rem(18px);
+  font-size: rem(20px);
   line-height: 1.6;
 
   @include media('md') {
-    font-size: rem(20px);
-    line-height: 1.7;
+    font-size: rem(26px);
+    // line-height: 1.7;
   }
 }
 
