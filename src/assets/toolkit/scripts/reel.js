@@ -21,7 +21,7 @@ export default class Reel {
     this._lastPosition = 0;
     this._minPosition = 0;
 
-    this._hadleWindowResize = this._hadleWindowResize.bind(this);
+    this._handleWindowResize = this._handleWindowResize.bind(this);
     this._handlePan = this._handlePan.bind(this);
     this._handlePan = this._handlePan.bind(this);
     this._handlePanEnd = this._handlePanEnd.bind(this);
@@ -36,7 +36,7 @@ export default class Reel {
   }
 
   _addEventListeners() {
-    window.addEventListener('resize', this._hadleWindowResize);
+    window.addEventListener('resize', this._handleWindowResize);
 
     this._touchManager = new Hammer.Manager(this._rollNode, {
       recognizers: [
@@ -56,14 +56,14 @@ export default class Reel {
   }
 
   _removeEventsListeners() {
-    window.removeEventListener('resize', this._hadleWindowResize);
+    window.removeEventListener('resize', this._handleWindowResize);
     this._touchManager.destroy();
   }
 
   /**
    * On window resize recalculate reel sizes and update navigation accordingly
    */
-  _hadleWindowResize() {
+  _handleWindowResize() {
     debounce(() => {
       this._setSizes();
       this._updateNavigation();
@@ -184,7 +184,11 @@ export default class Reel {
    */
   _requestAnimation() {
     if (this._animation) {
-      requestAnimationFrame(this._draw);
+      if (window.requestAnimationFrame) {
+        requestAnimationFrame(this._draw);
+      } else {
+        this._draw();
+      }
     }
   }
 

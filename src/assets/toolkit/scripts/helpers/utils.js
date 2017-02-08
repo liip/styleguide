@@ -18,7 +18,10 @@ export function debounce(callback, delay = 250) {
  * @return {Integer}
  */
 export function getDocumentScrollTop() {
-  return Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop, 0);
+  return window.scrollY
+    || Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+    || window.pageYOffset
+    || 0;
 }
 
 /**
@@ -36,4 +39,4 @@ export function offsetTop(element) {
 export const operators = {
   '+': (a, b) => { return a + b; },
   '-': (a, b) => { return a - b; },
-}
+};
