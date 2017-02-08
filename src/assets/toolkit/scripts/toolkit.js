@@ -1,4 +1,11 @@
-// Vendors
+/*----------------------------------------*\
+  LIIP STYLEGUIDE JS COMPONENTS
+\*----------------------------------------*/
+
+/**
+ * Vendors
+ */
+
 import 'prismjs';
 import 'prismjs/components/prism-scss';
 import 'prismjs/components/prism-bash';
@@ -14,16 +21,25 @@ import 'prismjs/components/prism-twig';
 import 'prismjs/components/prism-typescript';
 import 'prismjs/components/prism-yaml';
 
-// Globals
+/**
+ * Globals
+ */
+
 import 'polyfills';
 
-// Components
+/**
+ * Components
+ */
+
 import Multiplier from './multiplier';
 import Navbar from './navbar';
 import Weather from './weather';
 import Accordion from './accordion';
 import Reel from './reel';
 
+/**
+ * Expose modules to the Toolkit namespace
+ */
 window.Toolkit = {
   Multiplier,
   Navbar,

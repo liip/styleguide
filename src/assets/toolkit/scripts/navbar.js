@@ -23,17 +23,25 @@ export default class Navbar {
         break;
     }
 
+    this._handleChange = this._handleChange.bind(this);
+    this._handleScroll = this._handleScroll.bind(this);
+
     this._addEventListeners();
   }
 
   _addEventListeners() {
-    window.addEventListener('scroll', this._handleChange.bind(this));
-    window.addEventListener('resize', this._handleChange.bind(this));
+    window.addEventListener('scroll', this._handleChange);
+    window.addEventListener('resize', this._handleChange);
+  }
+
+  _removeEventListeners() {
+    window.removeEventListener('scroll', this._handleChange);
+    window.removeEventListener('resize', this._handleChange);
   }
 
   _handleChange() {
     if (window.requestAnimationFrame) {
-      window.requestAnimationFrame(this._handleScroll.bind(this));
+      window.requestAnimationFrame(this._handleScroll);
     } else {
       this._handleScroll();
     }
@@ -70,6 +78,14 @@ export default class Navbar {
       }
       this._el.classList.remove('navbar--overlay');
     }
+  }
+
+  /*----------------------------------------*\
+    PUBLIC
+  \*----------------------------------------*/
+
+  destroy() {
+    this._removeEventListeners();
   }
 
 }

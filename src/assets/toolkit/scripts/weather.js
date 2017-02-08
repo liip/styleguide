@@ -31,35 +31,6 @@ export default class Weather {
     this._data = {};
   }
 
-  /**
-   * Init all .weather elements in the page
-   */
-  initAll() {
-    this._elements = [...document.querySelectorAll('.weather')];
-
-    this._elements.forEach((el) => {
-      this.init(el, false);
-    });
-
-    this._fetch();
-  }
-
-  /**
-   * Init the given element and then possibly fetch the weather
-   */
-  init(el, fetch = true) {
-    const city = el.dataset.city;
-
-    if (city) {
-      this._elements.push(el);
-      this._cities.push(city);
-
-      if (fetch) {
-        this._fetch();
-      }
-    }
-  }
-
   _fetch() {
     return fetch(`${ENDPOINT}?id=${this._cities.join(',')}&units=metric&appid=${this._appId}`)
       .then(response => response.json())
@@ -97,6 +68,39 @@ export default class Weather {
   _getIcon(id) {
     const weather = this._getWeather(id);
     return weather ? ICONS[weather.icon] : 'weather-unknown';
+  }
+
+  /*----------------------------------------*\
+    PUBLIC
+  \*----------------------------------------*/
+
+  /**
+   * Init all .weather elements in the page
+   */
+  initAll() {
+    this._elements = [...document.querySelectorAll('.weather')];
+
+    this._elements.forEach((el) => {
+      this.init(el, false);
+    });
+
+    this._fetch();
+  }
+
+  /**
+   * Init the given element and then possibly fetch the weather
+   */
+  init(el, fetch = true) {
+    const city = el.dataset.city;
+
+    if (city) {
+      this._elements.push(el);
+      this._cities.push(city);
+
+      if (fetch) {
+        this._fetch();
+      }
+    }
   }
 
 }

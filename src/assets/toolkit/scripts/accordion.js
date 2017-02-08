@@ -20,17 +20,6 @@ export default class Accordion {
     this._addEventListeners();
   }
 
-  destroy() {
-    this._removeEventListeners();
-    delete this._accordion;
-    delete this._list;
-    delete this._elements;
-    delete this._nav;
-    delete this._current;
-    delete this._delegate;
-    delete this._debounceResize;
-  }
-
   _addEventListeners() {
     this._delegate.on('click', '[data-toggle="accordion"]', this._handleShow.bind(this));
     window.addEventListener('resize', this._debounceResize);
@@ -125,6 +114,21 @@ export default class Accordion {
         scrollTo.top(doc(), offsetTop(this._current) - 74, { ease: inOutSine });
       }
     }, 500);
+  }
+
+  /*----------------------------------------*\
+    PUBLIC
+  \*----------------------------------------*/
+
+  destroy() {
+    this._removeEventListeners();
+    delete this._accordion;
+    delete this._list;
+    delete this._elements;
+    delete this._nav;
+    delete this._current;
+    delete this._delegate;
+    delete this._debounceResize;
   }
 
 }
