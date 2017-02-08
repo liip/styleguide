@@ -46,8 +46,8 @@
     justify-content: space-between;
 
     @include media('sm') {
-      padding-left: $spacing-unit-default;
-      padding-right: $spacing-unit-default;
+      padding-left: $spacing-unit-small;
+      padding-right: $spacing-unit-small;
     }
 
     @include media('md') {
@@ -56,8 +56,8 @@
     }
 
     @include media('lg') {
-      padding-left: $spacing-unit-huge;
-      padding-right: $spacing-unit-huge;
+      padding-left: $spacing-unit-large;
+      padding-right: $spacing-unit-large;
     }
   }
 
@@ -184,22 +184,21 @@
     padding: $spacing-unit-tiny $spacing-unit-small;
 
     color: inherit;
-    font-size: rem(20px);
+    font-size: rem(18px);
     font-weight: 700;
     text-decoration: none;
     text-align: center;
 
-    border-bottom: 4px solid rgba(255,255,255,0);
     transition: border .3s;
 
     @include media('md') {
       display: inline-block;
       padding: 0;
-      font-size: rem(24px);
+      font-size: rem(20px);
 
       &:focus,
       &:hover {
-        border-bottom: 4px solid;
+        opacity: 0.8;
       }
     }
 
@@ -207,7 +206,6 @@
       color: $brand-color;
 
       @include media('md') {
-        border-bottom-color: currentcolor;
 
         .navbar--negative & {
           color: white;

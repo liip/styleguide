@@ -1,7 +1,7 @@
 import Delegate from 'dom-delegate';
 
-const MIN_HEIGHT = 80;
-const MAX_HEIGHT = 160;
+const MIN_HEIGHT = 70;
+const MAX_HEIGHT = 130;
 
 export default class Navbar {
 
@@ -16,7 +16,7 @@ export default class Navbar {
 
     switch (this._options.mode) {
       case 'window':
-        this._threshold = window.innerHeight;
+        this._threshold = document.querySelector('.section-spacer').clientHeight || window.innerHeight;
         break;
       default:
         this._threshold = MAX_HEIGHT;
@@ -43,7 +43,7 @@ export default class Navbar {
     const scrollY = window.scrollY;
     const animationBase = Math.max(Math.min(1, (scrollY - this._threshold + MAX_HEIGHT) / MIN_HEIGHT), 0);
     const logoScale = 1 - (animationBase / 2);
-    const navbarHeight = Math.max(Math.min(MAX_HEIGHT, this._threshold - scrollY), 60);
+    const navbarHeight = Math.max(Math.min(MAX_HEIGHT, this._threshold - scrollY), MIN_HEIGHT);
 
     if (matchMedia('(min-width: 769px)').matches) {
       this._logoEl.style.transform = `scale(${logoScale})`;
