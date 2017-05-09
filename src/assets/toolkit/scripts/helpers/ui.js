@@ -6,7 +6,7 @@
 export function updateIcon(el, icon) {
   const use = el.querySelector('use');
   const classes = el.getAttribute('class').split(' ');
-  const modifiers = classes.filter((className) => {
+  const modifiers = classes.filter(className => {
     return className.match(/icon--/);
   });
 

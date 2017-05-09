@@ -84,7 +84,9 @@ export default class Reel {
    */
   _handlePan(e) {
     // Do no pan if the whole roll is visible
-    if (this._reelWidth === this._rollWidth) return;
+    if (this._reelWidth === this._rollWidth) {
+      return;
+    }
 
     const position = this._position + e.deltaX;
     this._setPosition(position);
@@ -196,7 +198,9 @@ export default class Reel {
    * Calculate and set reel position during animation with easing
    */
   _draw() {
-    if (!this._animation) return;
+    if (!this._animation) {
+      return;
+    }
 
     const { duration, start, startX, destination, easeFn } = this._animation;
     const now = Date.now();

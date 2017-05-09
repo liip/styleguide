@@ -42,7 +42,7 @@ export default class Accordion {
     let tallestHeight = 0;
 
     // Hardcode the height of each collapse to allow CSS transition
-    this._elements.forEach((el) => {
+    this._elements.forEach(el => {
       el.classList.remove('is-ready');
       el.style.height = 'auto';
 

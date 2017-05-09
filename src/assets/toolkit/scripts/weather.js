@@ -33,12 +33,14 @@ export default class Weather {
 
   _fetch() {
     return fetch(`${ENDPOINT}?id=${this._cities.join(',')}&units=metric&appid=${this._appId}`)
-      .then(response => response.json())
-      .then((json) => {
+      .then(response => {
+        return response.json();
+      })
+      .then(json => {
         const list = json.list;
 
         if (list) {
-          list.forEach((item) => {
+          list.forEach(item => {
             this._data[item.id] = item;
           });
         }
@@ -48,7 +50,7 @@ export default class Weather {
   }
 
   _updateIcons() {
-    this._elements.forEach((el) => {
+    this._elements.forEach(el => {
       const iconEl = el.querySelector('.weather__icon');
       const id = el.dataset.city;
       const weather = this._getWeather(id);
@@ -80,7 +82,7 @@ export default class Weather {
   initAll() {
     this._elements = [...document.querySelectorAll('.weather')];
 
-    this._elements.forEach((el) => {
+    this._elements.forEach(el => {
       this.init(el, false);
     });
 
