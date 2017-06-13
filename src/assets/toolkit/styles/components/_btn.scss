@@ -8,27 +8,11 @@
 }
 
 .btn--default,
-.btn--primary,
-.btn--negative {
-  transition-property: background-color, color;
-  transition-duration: .25s;
-
+.btn--primary {
   &:hover,
   &:focus,
   &:active {
     color: $white;
-  }
-}
-
-.btn--negative {
-  color: $web-white;
-  border-color: $web-white;
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: $web-black;
-    background-color: $web-white;
   }
 }
 
@@ -38,4 +22,14 @@
 
 .btn--primary {
   border-color: $brand-color;
+
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(to right, $green-700 50%, $green-400);
+  }
+
+  &:active {
+    background-image: none;
+    background-color: $green-400;
+  }
 }
