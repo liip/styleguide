@@ -33,7 +33,9 @@
     padding-left: $spacing-unit-default;
     padding-right: $spacing-unit-default;
 
+    color: $brand-color;
     font-size: rem(32px);
+    font-weight: 500;
     line-height: 1.2;
 
     position: relative;
@@ -41,11 +43,10 @@
     p:first-of-type::before,
     p:last-of-type::after {
       font-size: 1.5em;
-      color: $warm-grey-500;
     }
 
     p:first-of-type::before {
-      content: '“';
+      content: open-quote;
       position: absolute;
       left: 0;
     }
@@ -53,7 +54,7 @@
       margin-bottom: $spacing-unit-tiny;
 
       &::after {
-        content: '”';
+        content: close-quote;
         position: absolute;
       }
     }
@@ -61,6 +62,9 @@
 
   .quote__cite {
     display: inline-block;
+
+    color: $text-color;
+    font-weight: normal;
     font-size: $font-size-default;
   }
 
