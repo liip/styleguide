@@ -112,18 +112,6 @@ gulp.task('assembler', (done) => {
   assembler({
     logErrors: config.dev,
     dest: config.dest,
-    helpers: {
-      icons: () => {
-        const fileName = path.join(__dirname, config.icons.toolkit.dest, 'icons.svg');
-        const exists = fs.existsSync(fileName);
-
-        if (!exists) {
-          return `[File "${fileName}" doesn’t exist.]`;
-        }
-
-        return fs.readFileSync(fileName, 'utf-8');
-      },
-    },
   });
   done();
 });

@@ -31,9 +31,7 @@ notes: |
 ---
 
 <div{{#unless skipinit}} id="my-weather"{{/unless}} class="weather{{#if class}} {{class}}{{/if}}" data-city="{{#if id}}{{id}}{{else}}2661552{{/if}}">
-  <svg class="weather__icon icon icon--loading">
-    <use xlink:href="#loading" />
-  </svg>
+  {{> icon id="loading" class="weather__icon"}}
 </div>
 
 {{#unless skipinit}}

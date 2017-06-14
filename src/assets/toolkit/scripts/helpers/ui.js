@@ -5,6 +5,7 @@
  */
 export function updateIcon(el, icon) {
   const use = el.querySelector('use');
+  const href = use.getAttribute('xlink:href').split('#')[0];
   const classes = el.getAttribute('class').split(' ');
   const modifiers = classes.filter(className => {
     return className.match(/icon--/);
@@ -14,5 +15,5 @@ export function updateIcon(el, icon) {
   el.classList.remove(...modifiers);
   el.classList.add(`icon--${icon}`);
 
-  use.setAttribute('xlink:href', `#${icon}`);
+  use.setAttribute('xlink:href', `${href}#${icon}`);
 }

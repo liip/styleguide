@@ -230,6 +230,8 @@ icons:
     - loading
     - chevron-left
     - chevron-right
+    - chevron-up
+    - chevron-down
 services:
   - name: Ecommerce
     icon: ecommerce

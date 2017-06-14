@@ -6,15 +6,15 @@ notes: |
 
 <a href="#" class="service-tile{{#if small}} service-tile--small{{/if}}">
   <div class="service-tile__body">
-    <svg class="service-tile__icon icon icon--{{#if icon}}{{icon}}{{else}}ecommerce{{/if}}">
-      <use xlink:href="#{{#if icon}}{{icon}}{{else}}ecommerce{{/if}}" />
-    </svg>
+    {{#if icon}}
+      {{> icon id=icon class="service-tile__icon"}}
+    {{else}}
+      {{> icon id="ecommerce" class="service-tile__icon"}}
+    {{/if}}
     <span>
     {{#if name}}{{name}}{{else}}Ecommerce{{/if}}
     {{#unless small}}
-      <svg class="service-icon icon icon--slashes">
-        <use xlink:href="#slashes" />
-      </svg>
+      {{> icon id="slashes" class="service-icon"}}
     </span>
     {{/unless}}
   </div>

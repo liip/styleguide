@@ -1,30 +1,46 @@
 ---
 notes: |
-  SVG icons ready to be referenced anywhere as long as the source file<sup>1</sup> has been embeded in the page<sup>2</sup>, preferably right after the `body` opening tag<sup>3</sup>.
-
-  Use the following snippet to display an icon:
+  Use the following snippet to display an icon. Not that the path to the icons sprite can differ depending on your setup.
 
   ```markup
   <svg class="icon icon--ID">
-    <use xlink:href="#ID" />
+    <use xlink:href="assets/toolkit/icons/icons.svg#ID" />
   </svg>
   ```
 
   Where `ID` should be replaced by the icon unique identifier (documented under each icon below).
 
-  <ul class="list text-muted mrgb">
-    <li>
-      <sup>1</sup> Source file is located at <a href="assets/toolkit/icons/icons.svg" target="_blank">assets/toolkit/icons/icons.svg</a>
-    </li>
-    <li>
-      <sup>2</sup> You can easily embed the source file in your page, <a href="https://css-tricks.com/using-svg/#article-header-id-7" target="_blank">with PHP</a> for example.
-    </li>
-    <li>
-      <sup>3</sup> Putting it elsewhere could result in unexpected behavior, see <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=349175" target="_blank">Chrome issue</a>.
-    </li>
+  ##### Modifiers
+
+  <table class="table">
+    <tbody>
+      <tr>
+        <td width="20%"><code>.([xs|sm|md|lg]-)icon--75</code></td>
+        <td>75% the default size<sup class="text-muted">1</sup></td>
+      </tr>
+      <tr>
+        <td><code>.([xs|sm|md|lg]-)icon--100</code></td>
+        <td>100% the default size<sup class="text-muted">1</sup></td>
+      </tr>
+      <tr>
+        <td><code>.([xs|sm|md|lg]-)icon--150</code></td>
+        <td>150% the default size<sup class="text-muted">1</sup></td>
+      </tr>
+      <tr>
+        <td><code>.([xs|sm|md|lg]-)icon--200</code></td>
+        <td>200% the default size<sup class="text-muted">1</sup></td>
+      </tr>
+      <tr>
+        <td><code>.([xs|sm|md|lg]-)icon--300</code></td>
+        <td>300% the default size<sup class="text-muted">1</sup></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ul class="list text-muted">
+    <li><sup>1</sup> Default size is 24×24 pixels. Class can be prefixed with a breakpoint name to apply only to corresponding screen size.</li>
   </ul>
 ---
-
 
 {{#each toolkit.icons}}
   <h3 class="mrgt0">{{@key}}</h3>
@@ -32,9 +48,7 @@ notes: |
     {{#each this}}
       <div class="grid__item w-1/2 sm-w-1/3 md-w-1/4 lg-w-1/6 text-center">
         <div class="pdgh+">
-          <svg class="icon icon--{{this}} img-responsive">
-            <use xlink:href="#{{this}}" />
-          </svg>
+          {{> icon id=this class="img-responsive"}}
           <p class="mrgt0">{{this}}</p>
         </div>
       </div>
