@@ -58,16 +58,16 @@
   }
 
 .section--behind-navbar {
-  padding-top: $navbar-height-small + $spacing-unit-small;
+  padding-top: $navbar-height-xs + $spacing-unit-small;
 
   @include media('sm') {
-    padding-top: $navbar-height-small + $spacing-unit-default;
+    padding-top: $navbar-height-xs + $spacing-unit-default;
   }
   @include media('md') {
-    padding-top: $navbar-height + $spacing-unit-large;
+    padding-top: $navbar-height-md + $spacing-unit-large;
   }
   @include media('lg') {
-    padding-top: $navbar-height + $spacing-unit-huge;
+    padding-top: $navbar-height-lg + $spacing-unit-huge;
   }
 }
 
@@ -75,10 +75,13 @@
   padding: 0;
 
   &.section--behind-navbar {
-    padding-top: $navbar-height-small;
+    padding-top: $navbar-height-xs;
 
     @include media('md') {
-      padding-top: $navbar-height;
+      padding-top: $navbar-height-md;
+    }
+    @include media('lg') {
+      padding-top: $navbar-height-lg;
     }
   }
 }

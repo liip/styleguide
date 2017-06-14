@@ -1,0 +1,42 @@
+/*----------------------------------------*\
+  EXPERTISE
+\*----------------------------------------*/
+
+.expertise-nav-toggle {
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color .3s;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $green-400;
+  }
+
+  @include media('md') {
+    font-size: rem(20px);
+  }
+}
+
+  .expertise-nav-toggle__icon {
+    margin-right: $spacing-unit-tiny;
+
+    @include media('md') {
+      margin-right: $spacing-unit-small;
+    }
+  }
+
+  .expertise-nav-toggle__caret {
+    margin-left: $spacing-unit-tiny;
+
+    color: $warm-grey-900;
+    transition: transform .3s;
+
+    @include media('md') {
+      margin-left: $spacing-unit-small;
+    }
+
+    .active > & {
+      transform: scaleY(-1);
+    }
+  }

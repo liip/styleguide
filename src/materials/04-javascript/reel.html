@@ -16,6 +16,10 @@ notes: |
   <table class="table">
     <tbody>
       <tr>
+        <td width="20%"><code>reel.refresh()</code></td>
+        <td>Recalculate dimensions and display navigation accordingly.</td>
+      </tr>
+      <tr>
         <td width="20%"><code>reel.destroy()</code></td>
         <td>Destroy the component, stop listening for events.</td>
       </tr>
@@ -44,6 +48,6 @@ notes: |
 <script type="text/javascript">
   window.addEventListener('DOMContentLoaded', function() {
     var reel = document.querySelector('#reel');
-    new Toolkit.Reel(reel);
+    window.reel = new Toolkit.Reel(reel);
   });
 </script>

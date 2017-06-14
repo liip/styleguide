@@ -36,6 +36,7 @@ import Navbar from './navbar';
 import Weather from './weather';
 import Accordion from './accordion';
 import Reel from './reel';
+import Collapse from './collapse';
 
 /**
  * Expose modules to the Toolkit namespace
@@ -46,4 +47,5 @@ window.Toolkit = {
   Weather,
   Accordion,
   Reel,
+  Collapse,
 };

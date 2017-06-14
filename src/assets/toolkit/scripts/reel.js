@@ -64,10 +64,12 @@ export default class Reel {
    * On window resize recalculate reel sizes and update navigation accordingly
    */
   _handleWindowResize() {
-    debounce(() => {
-      this._setSizes();
-      this._updateNavigation();
-    });
+    debounce(this.refresh.bind(this));
+  }
+
+  refresh() {
+    this._setSizes();
+    this._updateNavigation();
   }
 
   /**

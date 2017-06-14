@@ -3,7 +3,8 @@ import { getDocumentScrollTop } from 'helpers/utils';
 import media from 'helpers/media';
 
 const DESKTOP_MIN_HEIGHT = 80;
-const DESKTOP_MAX_HEIGHT = 160;
+const MEDIUM_MAX_HEIGHT = 160;
+const LARGE_MAX_HEIGHT = 240;
 const MOBILE_HEIGHT = 60;
 
 export default class Navbar {
@@ -82,9 +83,12 @@ export default class Navbar {
   }
 
   _setSizes() {
-    if (media('md')) {
+    if (media('lg')) {
       this._minHeight = DESKTOP_MIN_HEIGHT;
-      this._maxHeight = DESKTOP_MAX_HEIGHT;
+      this._maxHeight = LARGE_MAX_HEIGHT;
+    } else if (media('md')) {
+      this._minHeight = DESKTOP_MIN_HEIGHT;
+      this._maxHeight = MEDIUM_MAX_HEIGHT;
     } else {
       this._minHeight = MOBILE_HEIGHT;
       this._maxHeight = MOBILE_HEIGHT;

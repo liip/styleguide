@@ -119,9 +119,17 @@
 @import 'components/accordion';
 @import 'components/quote';
 @import 'components/article';
+@import 'components/collapse';
 
 // Composed components
 @import 'components/navbar';
 @import 'components/reel';
 @import 'components/services-tiles';
 @import 'components/contact-form';
+
+
+/**
+ * Pages
+ */
+
+@import 'pages/expertise';

@@ -3,10 +3,13 @@
 \*----------------------------------------*/
 
 .navbar {
-  height: $navbar-height-small;
-  color: $text-color;
+  height: $navbar-height-xs;
+  padding-left: $spacing-unit-small;
+  padding-right: $spacing-unit-small;
 
   position: relative;
+
+  color: $text-color;
 
   transition-property: color, background;
   transition-duration: .5s;
@@ -23,42 +26,41 @@
     }
   }
 
-    .logo {
-      font-size: rem(10px);
-    }
+  .logo {
+    font-size: rem(10px);
+  }
 
   @include media('md') {
-    height: $navbar-height;
+    padding-left: $spacing-unit-default;
+    padding-right: $spacing-unit-default;
 
     .logo {
       font-size: rem(24px);
     }
   }
+
+  @include media('md') {
+    height: $navbar-height-md;
+    padding-left: $spacing-unit-large;
+    padding-right: $spacing-unit-large;
+  }
+
+  @include media('lg') {
+    height: $navbar-height-lg;
+    padding-left: $spacing-unit-huge;
+    padding-right: $spacing-unit-huge;
+  }
 }
 
   .navbar__body {
+    max-width: $container-width;
     height: 100%;
-    padding-left: $spacing-unit-small;
-    padding-right: $spacing-unit-small;
+    margin-left: auto;
+    margin-right: auto;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    @include media('sm') {
-      padding-left: $spacing-unit-default;
-      padding-right: $spacing-unit-default;
-    }
-
-    @include media('md') {
-      padding-left: $spacing-unit-large;
-      padding-right: $spacing-unit-large;
-    }
-
-    @include media('lg') {
-      padding-left: $spacing-unit-huge;
-      padding-right: $spacing-unit-huge;
-    }
   }
 
   .navbar__collapse {
@@ -107,12 +109,21 @@
   z-index: 100;
 }
 
+.navbar--secondary {
+  height: 115px;
+}
+
 .navbar--sticky {
   position: fixed;
 }
 
 .navbar--negative {
   color: $web-white;
+}
+
+.navbar--plain {
+  background-color: rgba(255, 255, 255, .5);
+  border-bottom: 1px solid $warm-grey-300;
 }
 
 .navbar--overlay {

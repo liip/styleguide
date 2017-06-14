@@ -1,0 +1,36 @@
+/*----------------------------------------*\
+  COLLAPSE
+\*----------------------------------------*/
+
+@mixin collapse-active() {
+  max-width: 100%;
+  overflow: visible;
+  height: auto;
+}
+
+.collapse {
+  max-width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+
+  transition: height 1s cubic-bezier(.17,.67,.24,1);
+
+  &.transitioning,
+  &.calculating {
+    max-width: 100%;
+  }
+
+  &.calculating {
+    height: auto !important;
+    min-height: 0 !important;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &.active {
+    @include collapse-active();
+  }
+}
