@@ -4,59 +4,53 @@ notes: |
 ---
 
 <div id="{{#if id}}{{id}}{{else}}my-accordion{{/if}}" class="accordion{{#if class}} {{class}}{{/if}}" data-current="1">
-  <ul class="accordion-list">
-    <li id="{{#if id}}{{id}}-{{/if}}panel-1" class="accordion-list__item is-active">
-      <h2 class="accordion-list__title">
-        <a href="#{{#if id}}{{id}}-{{/if}}panel-1" class="accordion__toggle" data-toggle="accordion">Ideation</a>
-      </h2>
-      <div class="accordion__collapse">
-        <p class="text-lead">Conception, Business Strategy, Strategy, Visual Design eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </li>
-    <li id="{{#if id}}{{id}}-{{/if}}panel-2" class="accordion-list__item">
-      <h2 class="accordion-list__title">
-        <a href="#{{#if id}}{{id}}-{{/if}}panel-2" class="accordion__toggle" data-toggle="accordion">Information</a>
-      </h2>
-      <div class="accordion__collapse">
-        <p class="text-lead">Scope, Wireframes, Concept, Informatino Architectur, User Stories incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </li>
-    <li id="{{#if id}}{{id}}-{{/if}}panel-3" class="accordion-list__item">
-      <h2 class="accordion-list__title">
-        <a href="#{{#if id}}{{id}}-{{/if}}panel-3" class="accordion__toggle" data-toggle="accordion">Implementation</a>
-      </h2>
-      <div class="accordion__collapse">
-        <p class="text-lead">Developement, Code, Frontend, Backend, Scrum, Agile, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </li>
-    <li id="{{#if id}}{{id}}-{{/if}}panel-4" class="accordion-list__item">
-      <h2 class="accordion-list__title">
-        <a href="#{{#if id}}{{id}}-{{/if}}panel-4" class="accordion__toggle" data-toggle="accordion">Iteration</a>
-      </h2>
-      <div class="accordion__collapse">
-        <p class="text-lead">Agile, Feedack, Evaluation, Optimization, Service, do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-    </li>
-  </ul>
+  <div class="accordion__body">
+    <ul class="accordion-list">
+      <li id="{{#if id}}{{id}}-{{/if}}panel-1" class="accordion-list__item is-active">
+        <div class="accordion__collapse">
+          <h2 class="accordion-list__title">Ideation</h2>
+          <p class="text-lead">Conception, Business Strategy, Strategy, Visual Design eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </li>
+      <li id="{{#if id}}{{id}}-{{/if}}panel-2" class="accordion-list__item">
+        <div class="accordion__collapse">
+          <h2 class="accordion-list__title">Information</h2>
+          <p class="text-lead">Scope, Wireframes, Concept, Informatino Architectur, User Stories incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </li>
+      <li id="{{#if id}}{{id}}-{{/if}}panel-3" class="accordion-list__item">
+        <div class="accordion__collapse">
+          <h2 class="accordion-list__title">Implementation</h2>
+          <p class="text-lead">Developement, Code, Frontend, Backend, Scrum, Agile, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </li>
+      <li id="{{#if id}}{{id}}-{{/if}}panel-4" class="accordion-list__item">
+        <div class="accordion__collapse">
+          <h2 class="accordion-list__title">Iteration</h2>
+          <p class="text-lead">Agile, Feedack, Evaluation, Optimization, Service, do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </li>
+    </ul>
 
-  {{#unless no-playground}}
-    <div class="accordion-playground">
-      <!-- .rectangles is not part of the styleguide but just an example of what you can do ! -->
-      <div class="rectangles">
-        <div class="rectangle rectangle-1"></div>
-        <div class="rectangle rectangle-2"></div>
-        <div class="rectangle rectangle-3"></div>
-        <div class="rectangle rectangle-4"></div>
-        <div class="rectangle rectangle-5"></div>
-        <div class="rectangle rectangle-6"></div>
-        <div class="rectangle rectangle-7"></div>
-        <div class="rectangle rectangle-8 rectangle--alt"></div>
-        <div class="rectangle rectangle-9 rectangle--alt"></div>
-        <div class="rectangle rectangle-10 rectangle--alt"></div>
-        <div class="rectangle rectangle-11 rectangle--alt"></div>
+    {{#unless no-playground}}
+      <div class="accordion-playground">
+        <!-- .rectangles is not part of the styleguide but just an example of what you can do ! -->
+        <div class="rectangles">
+          <div class="rectangle rectangle-1"></div>
+          <div class="rectangle rectangle-2"></div>
+          <div class="rectangle rectangle-3"></div>
+          <div class="rectangle rectangle-4"></div>
+          <div class="rectangle rectangle-5"></div>
+          <div class="rectangle rectangle-6"></div>
+          <div class="rectangle rectangle-7"></div>
+          <div class="rectangle rectangle-8 rectangle--alt"></div>
+          <div class="rectangle rectangle-9 rectangle--alt"></div>
+          <div class="rectangle rectangle-10 rectangle--alt"></div>
+          <div class="rectangle rectangle-11 rectangle--alt"></div>
+        </div>
       </div>
-    </div>
-  {{/unless}}
+    {{/unless}}
+  </div>
 
   {{#unless no-nav}}
     <ul class="accordion-nav">

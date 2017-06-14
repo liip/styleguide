@@ -6,34 +6,14 @@
   display: flex;
   align-items: center;
   position: relative;
-
-  @include media('md', $breakpoints-desc) {
-    min-height: auto !important;
-  }
 }
 
   .accordion__body {
     display: flex;
     align-items: center;
 
-    @include media('md', $breakpoints-desc) {
+    @include media('sm', $breakpoints-desc) {
       flex-direction: column;
-    }
-  }
-
-  .accordion__toggle {
-    color: $warm-grey-500;
-
-    transition: all .3s;
-
-    &:hover,
-    &:focus {
-      color: $web-black;
-      text-decoration: none;
-
-      .accordion--negative & {
-        color: $web-white;
-      }
     }
   }
 
@@ -63,21 +43,6 @@
   }
 
   .accordion-list__item  {
-    padding-top: 11px;
-    padding-bottom: 11px;
-
-    &.is-active {
-      .accordion__toggle {
-        font-size: 150%;
-        font-weight: 700px;
-        color: $brand-color;
-
-        .accordion--negative & {
-          color: inherit;
-        }
-      }
-    }
-
     &:not(.is-active) .accordion__collapse.is-ready {
       height: 0 !important;
     }
@@ -92,11 +57,15 @@
 
 .accordion-playground {
   min-width: 45%;
-  margin-left: $spacing-unit-default;
-  margin-bottom: 0;
 
-  @include media('md', $breakpoints-desc) {
-    display: none;
+  @include media('sm') {
+    margin-left: $spacing-unit-default;
+  }
+
+  @include media('sm', $breakpoints-desc) {
+    width: 100%;
+    order: -1;
+    margin-bottom: $spacing-unit-default;
   }
 }
 
@@ -109,7 +78,7 @@
   @extend %list;
 
   padding: 6px;
-  margin-left: $spacing-unit-default;
+  margin-left: $spacing-unit-large;
 
   border-radius: 15px;
   background-color: rgba(0,0,0,0.1);
@@ -119,6 +88,8 @@
   }
 
   @include media('md', $breakpoints-desc) {
+    margin-left: $spacing-unit-default;
+
     position: sticky;
     top: $spacing-unit-huge;
     bottom: $spacing-unit-default;
