@@ -62,11 +62,13 @@
   position: relative;
   z-index: 2;
 
-  background-color: white;
-  border: 1px solid #eaeaea;
-  border-bottom-color: darken(#eaeaea, 5%);
+  background-color: $web-white;
+  border: 1px solid $warm-grey-200;
   border-radius: 2px;
 }
+  .f-item-preview-light {
+    background-color: white;
+  }
   .f-item-preview-dark {
     background-color: $warm-grey-800;
     border-color: $web-black;
