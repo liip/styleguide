@@ -2,7 +2,7 @@
 title: Work
 ---
 
-{{>navbar.default class="navbar--floating" work="true"}}
+{{>navbar.default class="navbar--sticky" work="true"}}
 
 <section class="section section--middle section--behind-navbar">
   <div class="section__body">
@@ -23,3 +23,10 @@ title: Work
 </section>
 
 {{>footer}}
+
+<script type="text/javascript">
+  window.addEventListener('DOMContentLoaded', function() {
+    var navbar = document.querySelector('.navbar');
+    new Toolkit.Navbar(navbar);
+  });
+</script>

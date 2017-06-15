@@ -63,18 +63,14 @@ export default class Navbar {
       this._el.removeAttribute('style');
     }
 
-    if (this._threshold - scrollY <= this._minHeight) {
-      this._logoEl.classList.add('logo--shrinked');
-    } else {
-      this._logoEl.classList.remove('logo--shrinked');
-    }
-
     if (this._threshold - scrollY <= this._minHeight / 2) {
+      this._logoEl.classList.add('logo--shrinked');
       if (this._isNegative) {
         this._el.classList.remove('navbar--negative');
       }
       this._el.classList.add('navbar--overlay');
     } else {
+      this._logoEl.classList.remove('logo--shrinked');
       if (this._isNegative) {
         this._el.classList.add('navbar--negative');
       }
