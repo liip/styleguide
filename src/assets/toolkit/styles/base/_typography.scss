@@ -76,7 +76,8 @@ p {
 }
 
 .text-lead {
-  font-size: rem(18px);
+  color: $warm-grey-700;
+  font-size: rem(24px);
   line-height: 1.5;
 
   @include media('md') {
