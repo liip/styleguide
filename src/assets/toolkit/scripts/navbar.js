@@ -15,6 +15,7 @@ export default class Navbar {
     this._el = el;
     this._options = options;
 
+    this._bodyEl = this._el.querySelector('.navbar__body');
     this._logoEl = this._el.querySelector('.logo');
     this._isNegative = this._el.classList.contains('navbar--negative');
 
@@ -57,10 +58,10 @@ export default class Navbar {
 
     if (media('md')) {
       this._logoEl.style.transform = `scale(${logoScale})`;
-      this._el.style.height = `${navbarHeight}px`;
+      this._bodyEl.style.height = `${navbarHeight}px`;
     } else {
       this._logoEl.removeAttribute('style');
-      this._el.removeAttribute('style');
+      this._bodyEl.removeAttribute('style');
     }
 
     if (this._threshold - scrollY <= this._minHeight / 2) {
@@ -69,12 +70,14 @@ export default class Navbar {
         this._el.classList.remove('navbar--negative');
       }
       this._el.classList.add('navbar--overlay');
+      this._el.classList.add('navbar--shrinked');
     } else {
       this._logoEl.classList.remove('logo--shrinked');
       if (this._isNegative) {
         this._el.classList.add('navbar--negative');
       }
       this._el.classList.remove('navbar--overlay');
+      this._el.classList.remove('navbar--shrinked');
     }
   }
 

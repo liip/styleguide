@@ -3,10 +3,6 @@
 \*----------------------------------------*/
 
 .navbar {
-  height: $navbar-height-xs;
-  padding-left: $spacing-unit-small;
-  padding-right: $spacing-unit-small;
-
   position: relative;
 
   color: $web-black;
@@ -32,36 +28,36 @@
   }
 
   @include media('md') {
-    padding-left: $spacing-unit-default;
-    padding-right: $spacing-unit-default;
-
     .logo {
       font-size: rem(24px);
     }
   }
-
-  @include media('md') {
-    height: $navbar-height-md;
-    padding-left: $spacing-unit-large;
-    padding-right: $spacing-unit-large;
-  }
-
-  @include media('lg') {
-    height: $navbar-height-lg;
-    padding-left: $spacing-unit-huge;
-    padding-right: $spacing-unit-huge;
-  }
 }
 
   .navbar__body {
-    max-width: $container-width;
-    height: 100%;
+    width: 100%;
+    max-width: calc(#{$container-width} + #{$spacing-unit-huge*2});
+    height: $navbar-height-xs;
     margin-left: auto;
     margin-right: auto;
+    padding-left: $spacing-unit-small;
+    padding-right: $spacing-unit-small;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include media('md') {
+      height: $navbar-height-md;
+      padding-left: $spacing-unit-large;
+      padding-right: $spacing-unit-large;
+    }
+
+    @include media('lg') {
+      height: $navbar-height-lg;
+      padding-left: $spacing-unit-huge;
+      padding-right: $spacing-unit-huge;
+    }
   }
 
   .navbar__collapse {
@@ -74,8 +70,6 @@
       right: 0;
       left: 0;
       z-index: 101;
-
-      color: $text-color;
 
       background-color: rgba(255,255,255,.9);
       border-top: 1px solid $warm-grey-200;
@@ -111,7 +105,9 @@
 }
 
 .navbar--secondary {
-  height: 115px;
+  .navbar__body {
+    height: 115px;
+  }
 }
 
 .navbar--sticky {
@@ -201,7 +197,13 @@
     text-align: center;
 
     border-bottom: 4px solid rgba(255,255,255,0);
-    transition: border .3s;
+    transition-property: border, font-size;
+    transition-duration: .3s;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
 
     @include media('md') {
       display: inline-block;
@@ -211,7 +213,6 @@
       &:focus,
       &:hover {
         border-bottom: 4px solid;
-        text-decoration: none;
       }
     }
 
@@ -225,5 +226,9 @@
           color: white;
         }
       }
+    }
+
+    .navbar--shrinked & {
+      font-size: rem(18px);
     }
   }
