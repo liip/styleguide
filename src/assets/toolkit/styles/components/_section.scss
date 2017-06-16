@@ -115,6 +115,10 @@
 .section--primary,
 .section--dark {
   color: $web-white;
+
+  @include headings() {
+    color: inherit;
+  }
 }
 
 .section--primary {

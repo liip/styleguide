@@ -33,7 +33,7 @@ $font-family-default:               'Liip Etica', Arial, sans-serif;
 
 $line-height-default:               1.5;
 
-$text-color:                        $web-black;
+$text-color:                        $warm-grey-700;
 // $link-color:                        $brand-color;
 // $muted-color:                       transparentize($text-color,.4);
 
@@ -109,9 +109,9 @@ $btn-small-border-radius:           0;
 // $btn-large-font-size:               $font-size-large;
 $btn-large-border-radius:           0;
 
-$btn-default-color:                 $text-color;
+$btn-default-color:                 $web-black;
 $btn-default-bkg-color:             transparent;
-$btn-default-hover-bkg-color:       $text-color;
+$btn-default-hover-bkg-color:       $web-black;
 $btn-default-active-bkg-color:      $warm-grey-700;
 
 $btn-primary-color:                 $brand-color;
@@ -124,7 +124,7 @@ $btn-primary-active-bkg-color:      $green-500;
  * Forms
  */
 
- $field-use-padding-ratio:          false;
+$field-use-padding-ratio:           false;
 
 // $field-padding:                     $spacing-unit-small;
 

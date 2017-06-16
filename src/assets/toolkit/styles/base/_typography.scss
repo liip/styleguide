@@ -6,62 +6,52 @@
  * Headings
  */
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  font-weight: 500;
+@include headings() {
+  color: $web-black;
+  font-weight: 700;
 }
 
 h1,
 .h1 {
   font-size: rem(36px);
-  font-weight: 700;
 }
 
 h2,
 .h2 {
-  font-size: rem(26px);
+  font-size: rem(32px);
 }
 
 h3,
 .h3 {
-  font-size: rem(22px);
+  font-size: rem(28px);
 }
 
 h4,
 .h4 {
-  font-size: rem(18px);
+  font-size: rem(24px);
 }
 
 h5,
 .h5 {
-  font-size: rem(16px);
+  font-size: rem(20px);
+  font-weight: 500;
 }
 
 h6,
 .h6 {
-  font-size: rem(14px);
+  font-size: rem(16px);
+  font-weight: 500;
 }
 
 @include media('md') {
   h1,
   .h1 {
     font-size: rem(52px);
-    font-weight: 700;
   }
 
   h2,
   .h2 {
-    font-size: rem(30px);
-  }
-
-  h3,
-  .h3 {
-    font-size: rem(24px);
-  }
-
-  h4,
-  .h4 {
-    font-size: rem(20px);
+    font-size: rem(42px);
   }
 }
 
@@ -76,7 +66,6 @@ p {
 }
 
 .text-lead {
-  color: $warm-grey-700;
   font-size: rem(24px);
   line-height: 1.5;
 
@@ -100,12 +89,12 @@ a {
 }
 
 .link-text {
-  color: $web-black;
+  color: $text-color;
   text-decoration: none;
 
   &:hover,
   &:focus {
-    color: $warm-grey-700;
+    color: $web-black;
   }
 }
 

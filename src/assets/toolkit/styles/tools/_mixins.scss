@@ -35,3 +35,14 @@
   -webkit-hyphens: auto;
   hyphens: auto;
 }
+
+
+/**
+ * Shortcut to apply style to all headings
+ */
+@mixin headings() {
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    @content;
+  }
+}

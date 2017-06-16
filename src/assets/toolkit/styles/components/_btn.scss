@@ -17,11 +17,11 @@
 }
 
 .btn--default {
-  border-color: $text-color;
+  border-color: $btn-default-color;
 }
 
 .btn--primary {
-  border-color: $brand-color;
+  border-color: $btn-primary-color;
 
   &:hover,
   &:focus {

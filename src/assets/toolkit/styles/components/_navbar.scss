@@ -9,7 +9,7 @@
 
   position: relative;
 
-  color: $text-color;
+  color: $web-black;
 
   transition-property: color, background;
   transition-duration: .5s;
@@ -27,6 +27,7 @@
   }
 
   .logo {
+    color: inherit;
     font-size: rem(10px);
   }
 
