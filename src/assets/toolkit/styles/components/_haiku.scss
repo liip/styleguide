@@ -3,45 +3,41 @@
 \*----------------------------------------*/
 
 .haiku {
-  line-height: 1;
+  line-height: 1.1;
 }
 
-  .haiku__date {
-    margin-bottom: $spacing-unit-small;
+  .haiku__intro {
+    display: inline-block;
+    margin-bottom: $spacing-unit-default;
 
     color: $brand-color;
     font-weight: 500;
-    font-size: rem(22px);
+    font-size: rem(14px);
+    text-transform: uppercase;
+
+    @supports (-webkit-background-clip: text) {
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(to right, $green-700 50%, $green-400);
+      -webkit-background-clip: text;
+    }
   }
 
-  .haiku__list {
+  .haiku__title {
     font-weight: 700;
-    font-size: rem(36px);
-  }
-
-  .haiku__number {
-    color: $brand-color;
-  }
-
-.haiku--negative {
-  color: $web-white;
-
-  .haiku__date {
-    color: transparentize($web-white, .44);
-  }
-
-  .haiku__number {
-    color: inherit;
-  }
-}
-
-
-@include media('md') {
-  .haiku__date {
     font-size: rem(32px);
   }
 
   .haiku__list {
-    font-size: rem(60px);
+    font-weight: 700;
+    font-size: rem(28px);
+  }
+
+  .haiku__number {
+    color: $brand-color;
+  }
+
+@include media('md') {
+  .haiku__title {
+    font-size: rem(42px);
   }
 }
