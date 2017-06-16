@@ -2,18 +2,20 @@
 title: Home
 ---
 
-{{>navbar.default class="navbar--negative navbar--sticky" home="true"}}
+{{>navbar.default class="navbar--sticky" home="true"}}
 
-<div class="section-spacer">
-  <section class="section section--primary section--fit section--fixed section--behind-navbar">
-    <div class="section__bg">
-      <canvas id="section-multiplier"></canvas>
+<section class="section section--fit section--behind-navbar">
+  <div class="section__body">
+    <div class="grid grid--tight">
+      <div class="grid__item md-w-2/3 lg-w-1/2">
+        {{>haiku.single}}
+      </div>
     </div>
-    <div class="section__body">
-      {{>haiku.negative}}
-    </div>
-  </section>
-</div>
+  </div>
+  <div class="section__continue">
+    {{>icon id="chevron-down" class="icon--100 md-icon--200"}}
+  </div>
+</section>
 
 <section class="section">
   <div class="section__body">
@@ -21,7 +23,7 @@ title: Home
   </div>
 </section>
 
-<section class="section section--alt">
+<section class="section">
   <div class="section__body">
     <h1>Digital product expertise</h1>
     {{>services-tiles}}
@@ -57,10 +59,10 @@ title: Home
   </div>
 </section>
 
-<section class="section section--dark">
+<section class="section">
   <div class="section__body">
     <h2 class="mrgb0">Looking good?</h2>
-    {{>contact-form.default negative="true"}}
+    {{>contact-form}}
   </div>
 </section>
 
@@ -68,10 +70,7 @@ title: Home
 
 <script type="text/javascript">
   window.addEventListener('DOMContentLoaded', function() {
-    var multiplier = document.querySelector('#section-multiplier');
-    new Toolkit.Multiplier(multiplier, '/assets/fabricator/images/multiplier.png');
-
     var navbar = document.querySelector('.navbar');
-    new Toolkit.Navbar(navbar, { mode: 'window' });
+    new Toolkit.Navbar(navbar);
   });
 </script>

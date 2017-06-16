@@ -3,7 +3,7 @@
 \*----------------------------------------*/
 
 .section {
-  padding: $spacing-unit-small;
+  padding: $spacing-unit-small $spacing-unit-small $spacing-unit-large;
 
   position: relative;
 
@@ -55,6 +55,19 @@
     z-index: 2;
 
     @include spaceless-children();
+  }
+
+  .section__continue {
+    position: absolute;
+    bottom: $spacing-unit-tiny;
+    left: 50%;
+    z-index: 2;
+
+    transform: translateX(-50%);
+
+    @include media('md') {
+      bottom: $spacing-unit-small;
+    }
   }
 
 .section--behind-navbar {

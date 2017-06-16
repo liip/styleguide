@@ -7,11 +7,7 @@ notes: |
   <table class="table">
     <tbody>
       <tr>
-        <td width="20%"><code>.section--alt</code></td>
-        <td>Slightly darker background for odd/even lists of sections</td>
-      </tr>
-      <tr>
-        <td><code>.section--primary</code></td>
+        <td width="20%"><code>.section--primary</code></td>
         <td>Green gradient background and light text color</td>
       </tr>
       <tr>
@@ -19,16 +15,12 @@ notes: |
         <td>Light text color</td>
       </tr>
       <tr>
-        <td><code>.section--dark</code></td>
-        <td>Dark solid background and light text color</td>
-      </tr>
-      <tr>
         <td><code>.section--light</code></td>
         <td>White background</td>
       </tr>
       <tr>
         <td><code>.section--fit</code></td>
-        <td>Take at least the viewport height</td>
+        <td>Take at least the viewport height. When this kind of section is the first in the page, it’s recommended to add an arrow icon at the bottom to indicate there is more content coming. See example below.</td>
       </tr>
       <tr>
         <td><code>.section--tight</code></td>
@@ -72,14 +64,8 @@ notes: |
       <li>Content vertically centered</li>
     </ol>
   </div>
-</section>
-
-<section class="section section--alt">
-  <div class="section__body">
-    <h1>Alt section</h1>
-    <ol>
-      <li>Medium light background</li>
-    </ol>
+  <div class="section__continue">
+    {{>icon id="chevron-down" class="icon--100 md-icon--200"}}
   </div>
 </section>
 
@@ -88,16 +74,6 @@ notes: |
     <h1>Primary section</h1>
     <ol>
       <li>Green gradient background</li>
-      <li>Light text color</li>
-    </ol>
-  </div>
-</section>
-
-<section class="section section--dark">
-  <div class="section__body">
-    <h1>Dark section</h1>
-    <ol>
-      <li>Dark warm grey background</li>
       <li>Light text color</li>
     </ol>
   </div>
@@ -114,6 +90,9 @@ notes: |
       <li>Dark background image</li>
       <li>Light text color</li>
     </ol>
+  </div>
+  <div class="section__continue">
+    {{>icon id="chevron-down" class="icon--100 md-icon--200"}}
   </div>
 </section>
 
