@@ -5,6 +5,11 @@
 
 .btn {
   font-weight: 500;
+
+  &:hover,
+  &:focus {
+    color: $warm-grey-700;
+  }
 }
 
 .btn--default,

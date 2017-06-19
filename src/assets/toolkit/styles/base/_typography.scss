@@ -89,12 +89,12 @@ a {
 }
 
 .link-text {
-  color: $text-color;
+  color: $web-black;
   text-decoration: none;
 
   &:hover,
   &:focus {
-    color: $web-black;
+    color: $warm-grey-700;
   }
 }
 

@@ -1,0 +1,28 @@
+/*----------------------------------------*\
+  ACTIONS
+\*----------------------------------------*/
+
+.actions {
+  @extend %list;
+
+  @include media('xs', $breakpoints-desc) {
+    .btn {
+      display: block;
+      width: 100%;
+    }
+
+    > li:not(:last-child) {
+      margin-bottom: $spacing-unit-small;
+    }
+  }
+
+  @include media('sm') {
+    > li {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: $spacing-unit-default;
+      }
+    }
+  }
+}
