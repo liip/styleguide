@@ -112,6 +112,11 @@ gulp.task('assembler', (done) => {
   assembler({
     logErrors: config.dev,
     dest: config.dest,
+    helpers: {
+      placeholder: (a, b) => {
+        return a ? a : b;
+      },
+    },
   });
   done();
 });

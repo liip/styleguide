@@ -164,17 +164,10 @@ $field-large-border-radius:         0;
  */
 
 // $box-default-color:                 inherit;
-// $box-default-bkg-color:             $alt-color-lighter;
+$box-default-bkg-color:             white;
 
 // $box-primary-color:                 white;
 // $box-primary-bkg-color:             $brand-color;
-
-
-/**
- * Grid
- */
-
-$grid-flex:                         true;
 
 
 /**
@@ -197,10 +190,3 @@ $widths-columns:                    7,6,5,4,3,2,1;
  */
 
 // $media-collapse:                    $screen-sm-max;
-
-
-/**
- * Mosaic responsive
- */
-
-// $mosaic-collapse:                   $screen-sm-max;
