@@ -204,6 +204,7 @@ icons:
     - open-source
     - performance
     - user-experience
+    - seo
     - service-design
   Social:
     - facebook
@@ -251,5 +252,7 @@ services:
     icon: performance
   - name: Finance
     icon: fintech
+  - name: SEO
+    icon: seo
   - name: Service Design
     icon: service-design
