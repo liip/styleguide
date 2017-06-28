@@ -1,8 +1,8 @@
 /*----------------------------------------*\
-  SERVICES TILES
+  EXPERTISES TILES
 \*----------------------------------------*/
 
-.services-tiles {
+.expertises-tiles {
   @extend %list;
 
   display: flex;
@@ -11,7 +11,7 @@
   margin: -1px;
 }
 
-  .service-tiles__item {
+  .expertise-tiles__item {
     width: percentage(1/2);
     flex: 0 1 auto;
 

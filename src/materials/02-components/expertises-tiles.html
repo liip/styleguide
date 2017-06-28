@@ -1,0 +1,12 @@
+---
+notes: |
+  A mosaic of expertise tiles.
+---
+
+<ul class="expertises-tiles">
+  {{#each expertises}}
+    <li class="expertise-tiles__item">
+      {{>expertise-tile icon=this.icon name=this.name }}
+    </li>
+  {{/each}}
+</ul>

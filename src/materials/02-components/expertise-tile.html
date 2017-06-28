@@ -4,17 +4,17 @@ notes: |
   Portrays a Liip expertise. It should always link to the corresponding expertise page.
 ---
 
-<a href="#" class="service-tile{{#if small}} service-tile--small{{/if}}">
-  <div class="service-tile__body">
+<a href="#" class="expertise-tile{{#if small}} expertise-tile--small{{/if}}">
+  <div class="expertise-tile__body">
     {{#if icon}}
-      {{>icon id=icon class="service-tile__icon"}}
+      {{>icon id=icon class="expertise-tile__icon"}}
     {{else}}
-      {{>icon id="ecommerce" class="service-tile__icon"}}
+      {{>icon id="ecommerce" class="expertise-tile__icon"}}
     {{/if}}
     <span>
     {{#if name}}{{name}}{{else}}Ecommerce{{/if}}
     {{#unless small}}
-      {{>icon id="slashes" class="service-icon"}}
+      {{>icon id="slashes" class="expertise-icon"}}
     </span>
     {{/unless}}
   </div>

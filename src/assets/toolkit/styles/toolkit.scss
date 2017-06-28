@@ -104,11 +104,11 @@
 // Simple components
 @import 'components/icon';
 @import 'components/btn';
-@import 'components/label';
+@import 'components/tag';
 @import 'components/pusher';
 @import 'components/avatar';
-@import 'components/service-label';
-@import 'components/service-tile';
+@import 'components/expertise-tag';
+@import 'components/expertise-tile';
 @import 'components/haiku';
 @import 'components/section';
 @import 'components/logo';
@@ -126,7 +126,7 @@
 // Composed components
 @import 'components/navbar';
 @import 'components/reel';
-@import 'components/services-tiles';
+@import 'components/expertises-tiles';
 
 
 /**

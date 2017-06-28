@@ -1,8 +1,8 @@
 /*----------------------------------------*\
-  SERVICE TILE
+  EXPERTISE TILE
 \*----------------------------------------*/
 
-.service-tile {
+.expertise-tile {
   display: flex;
   height: 100%;
   overflow: hidden;
@@ -61,13 +61,13 @@
         opacity: 1;
       }
 
-      .service-tile__body {
+      .expertise-tile__body {
         transform: scale(1.1);
       }
     }
 
     &:active {
-      .service-tile__body {
+      .expertise-tile__body {
         transform: scale(1.2);
 
         @include media('lg') {
@@ -78,19 +78,19 @@
   }
 }
 
-.service-tile--small {
+.expertise-tile--small {
   font-size: rem(10px);
 
   @include media('sm') {
     font-size: rem(12px);
   }
 
-  .service-tile__body {
+  .expertise-tile__body {
     padding: $spacing-unit-small;
   }
 }
 
-  .service-tile__body {
+  .expertise-tile__body {
     width: 100%;
     padding: $spacing-unit-tiny;
     display: flex;
@@ -111,19 +111,19 @@
       padding: $spacing-unit-default;
     }
 
-    .service-icon {
+    .expertise-icon {
       width: 0.875em;
       height: 0.75em;
     }
   }
 
-  .service-tile__icon {
+  .expertise-tile__icon {
     width: 46px;
     height: 46px;
 
     margin-bottom: 15%;
 
-    .service-tile--small & {
+    .expertise-tile--small & {
       width: 36px;
       height: 36px;
     }
