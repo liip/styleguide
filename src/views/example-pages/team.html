@@ -8,15 +8,15 @@ title: Team
   <div class="section__body">
     <div class="grid grid--multiline mrgb">
       <div class="grid__item md-w-1/3">
-        <select class="select--large">
-          <option></option>
+        <select class="field field--large field--ghost field--primary">
+          <option>All offices</option>
           {{#each offices}}
             <option>{{this.name}}</option>
           {{/each}}
         </select>
       </div>
       <div class="grid__item md-w-1/3">
-        <select class="select--large">
+        <select class="field field--large field--ghost field--primary">
           <option>All expertises</option>
           {{#each expertises}}
             <option>{{this.name}}</option>
@@ -24,7 +24,7 @@ title: Team
         </select>
       </div>
       <div class="grid__item md-w-1/3">
-        <input type="search" placeholder="Search…" class="input--large">
+        <input type="search" placeholder="Search…" class="field field--large field--ghost field--primary">
       </div>
     </div>
 

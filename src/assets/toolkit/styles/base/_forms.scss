@@ -2,73 +2,32 @@
   FORMS
 \*----------------------------------------*/
 
-/**
- * Inputs
- */
-
-input[type='text'],
-input[type='search'],
-input[type='email'],
-input[type='tel'],
-input[type='url'],
-input[type='password'],
-input[type='date'],
-input[type='datetime'],
-input[type='datetime-local'],
-input[type='month'],
-input[type='week'],
-input[type='time'],
-input[type='number'],
-input[type='file'],
-select,
-textarea {
+.field {
   text-overflow: ellipsis;
 
   &[disabled] {
     border-color: $warm-grey-200;
   }
 
-  &.input--negative {
-    color: $web-white;
-
-    background-color: $web-black;
-    border-color: transparent;
-
-    &:focus {
-      border-color: $warm-grey-500;
-    }
-  }
-
-  &.input--large {
-    border-width: 2px;
+  &::placeholder {
+    color: $warm-grey-400;
+    opacity: 1;
   }
 }
 
-/**
- * Selects
- */
-
-select {
+select.field {
   appearance: none;
 
-  padding-left: 0;
-  padding-right: 1.5em;
+  padding-right: 32px;
 
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-left-color: transparent;
-
-  background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4%207h16l-8%2010z%22%20fill%3D%22%23414141%22%2F%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4%207h16l-8%2010z%22%20fill%3D%22%23C0C1BC%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 1.5em auto;
+  background-position: calc(100% - 4px) center;
+  background-size: 20px;
+  cursor: pointer;
 
-  &:hover,
   &:focus {
-    outline: 0;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-left-color: transparent;
+    background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4%207h16l-8%2010z%22%20fill%3D%22%236E6E64%22%2F%3E%3C%2Fsvg%3E');
   }
 
   // Hide select arrow on IE/Edge
@@ -83,23 +42,37 @@ select {
   }
 }
 
-  .select--small,
-  .select--large {
-    padding-left: 0 !important;
+select.field--primary {
+  background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4%207h16l-8%2010z%22%20fill%3D%22%236EA644%22%2F%3E%3C%2Fsvg%3E');
+
+  &:focus {
+    background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4%207h16l-8%2010z%22%20fill%3D%22%23A4C339%22%2F%3E%3C%2Fsvg%3E');
   }
+}
 
-  .select--primary {
-    border-bottom-color: currentColor;
-    border-bottom-width: 2px;
+.field--large {
+  font-weight: 500;
+}
 
-    color: $green-500;
+.field--primary {
+  color: $green-700;
+  border-color: $green-700;
 
-    background-color: transparent;
-    background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4%207h16l-8%2010z%22%20fill%3D%22%2392B93D%22%2F%3E%3C%2Fsvg%3E');
-
-    &:focus {
-      color: $green-700;
-      border-bottom-color: $green-700;
-      background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4%207h16l-8%2010z%22%20fill%3D%22%236EA644%22%2F%3E%3C%2Fsvg%3E');
-    }
+  &:focus {
+    color: $green-400;
+    border-color: $green-400;
   }
+}
+
+.field--ghost {
+  padding-left: 0;
+
+  background-color: transparent;
+  border-top-color: transparent;
+  border-right: 0;
+  border-left: 0;
+
+  &:focus {
+    border-top-color: transparent;
+  }
+}

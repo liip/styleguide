@@ -97,20 +97,22 @@ $breakpoints-desc:                  (
  * Buttons
  */
 
-// $btn-use-padding-ratio:             true;
-
-$btn-padding:                       $spacing-unit-default;
+$btn-padding:                       $spacing-unit-default/$ratio $spacing-unit-default;
 $btn-color:                         $web-black;
+// $btn-font-size:                     inherit;
+// $btn-font-family:                   inherit;
 $btn-border:                        1px solid transparent;
 // $btn-bkg:                           transparent;
 $btn-border-radius:                 0;
 
-$btn-small-padding:                 $spacing-unit-small;
+$btn-small-padding:                 $spacing-unit-small/$ratio $spacing-unit-small;
 // $btn-small-font-size:               $font-size-small;
+// $btn-small-border:                  $btn-border;
 $btn-small-border-radius:           0;
 
-// $btn-large-padding:                 $spacing-unit-default;
+// $btn-large-padding:                 $spacing-unit-default/$ratio $spacing-unit-default;
 // $btn-large-font-size:               $font-size-large;
+$btn-large-border:                  2px solid transparent;
 $btn-large-border-radius:           0;
 
 $btn-default-color:                 $web-black;
@@ -128,9 +130,7 @@ $btn-primary-active-bkg-color:      $green-500;
  * Forms
  */
 
-$field-use-padding-ratio:           false;
-
-// $field-padding:                     $spacing-unit-small;
+$field-padding:                     $spacing-unit-small $spacing-unit-small;
 
 // $field-color:                       inherit;
 // $field-font-size:                   inherit;
@@ -147,10 +147,12 @@ $field-disabled-bkg-color:          $warm-grey-100;
 
 // $field-small-padding:               $spacing-unit-tiny;
 // $field-small-font-size:             $font-size-small;
+$field-small-border:                $field-border;
 $field-small-border-radius:         0;
 
-// $field-large-padding:               $spacing-unit-default;
-// $field-large-font-size:             $font-size-large;
+// $field-large-padding:               $spacing-unit-small $spacing-unit-default;
+$field-large-font-size:             1.875rem;
+$field-large-border:                2px solid $warm-grey-100;
 $field-large-border-radius:         0;
 
 // $field-help-color:                  $alt-color-light;
