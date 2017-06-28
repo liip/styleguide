@@ -6,7 +6,8 @@
  * Vendors
  */
 
-import 'prismjs';
+import Prism from 'prismjs';
+import 'prismjs/plugins/custom-class/prism-custom-class';
 import 'prismjs/components/prism-scss';
 import 'prismjs/components/prism-bash';
 import 'prismjs/components/prism-csharp';
@@ -20,6 +21,9 @@ import 'prismjs/components/prism-swift';
 import 'prismjs/components/prism-twig';
 import 'prismjs/components/prism-typescript';
 import 'prismjs/components/prism-yaml';
+
+Prism.plugins.customClass.map({});
+Prism.plugins.customClass.prefix('prism--');
 
 /**
  * Globals
