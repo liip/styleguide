@@ -53,8 +53,6 @@
 
     position: relative;
     z-index: 2;
-
-    @include spaceless-children();
   }
 
   .section__continue {

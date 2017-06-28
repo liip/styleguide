@@ -61,17 +61,13 @@ h6,
  */
 
 p {
-  margin-top: $spacing-unit-small;
-  margin-bottom: $spacing-unit-small;
+  margin-top: $spacing-unit-default;
+  margin-bottom: $spacing-unit-default;
 }
 
 .text-lead {
-  font-size: rem(24px);
+  font-size: rem(20px);
   line-height: 1.5;
-
-  @include media('md') {
-    font-size: rem(20px);
-  }
 }
 
 

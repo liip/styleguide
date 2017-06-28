@@ -196,6 +196,7 @@
     font-weight: 700;
     text-align: center;
 
+    border-top: 4px solid transparent; // Compensate bottom for perfect vertical-alignment
     border-bottom: 4px solid rgba(255,255,255,0);
     transition-property: border, font-size;
     transition-duration: .3s;
