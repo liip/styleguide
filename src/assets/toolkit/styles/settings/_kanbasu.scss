@@ -63,17 +63,21 @@ $spacing-unit-default:              20px;
 // $screen-md-min:                     769px  / 16px * 1em;
 // $screen-md-max:                     1024px / 16px * 1em;
 // $screen-lg-min:                     1025px / 16px * 1em;
+$screen-lg-max:                     1199px / 16px * 1em;
+$screen-xl-min:                     1200px / 16px * 1em;
 
-// $breakpoints-default:               (
-//                                      'sm' '(min-width: #{$screen-sm-min})',
-//                                      'md' '(min-width: #{$screen-md-min})',
-//                                      'lg' '(min-width: #{$screen-lg-min})'
-//                                    );
-// $breakpoints-desc:                  (
-//                                      'xs' '(max-width: #{$screen-xs-max})',
-//                                      'sm' '(max-width: #{$screen-sm-max})',
-//                                      'md' '(max-width: #{$screen-md-max})'
-//                                    );
+$breakpoints-default:               (
+                                     'sm' '(min-width: #{$screen-sm-min})',
+                                     'md' '(min-width: #{$screen-md-min})',
+                                     'lg' '(min-width: #{$screen-lg-min})',
+                                     'xl' '(min-width: #{$screen-xl-min})'
+                                   );
+$breakpoints-desc:                  (
+                                     'xs' '(max-width: #{$screen-xs-max})',
+                                     'sm' '(max-width: #{$screen-sm-max})',
+                                     'md' '(max-width: #{$screen-md-max})',
+                                     'lg' '(max-width: #{$screen-lg-max})'
+                                   );
 
 
 /**
@@ -175,7 +179,7 @@ $box-default-bkg-color:             white;
  */
 
 $widths-columns:                    7,6,5,4,3,2,1;
-// $widths-breakpoints:                $breakpoints-default;
+$widths-breakpoints:                $breakpoints-default;
 
 
 /**

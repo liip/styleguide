@@ -108,11 +108,23 @@ gulp.task('fonts', () => {
 
 
 // assembler
-gulp.task('assembler', (done) => {
+gulp.task('assembler', done => {
   assembler({
     logErrors: config.dev,
     dest: config.dest,
     helpers: {
+      shuffle: array => {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          const temp = array[i];
+          array[i] = array[j];
+          array[j] = temp;
+        }
+        return array;
+      },
+      limit: (arr, limit) => {
+        return arr.slice(0, limit);
+      },
       placeholder: (a, b) => {
         return a ? a : b;
       },

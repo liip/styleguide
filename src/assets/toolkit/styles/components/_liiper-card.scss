@@ -1,0 +1,39 @@
+/*----------------------------------------*\
+  LIIPER CARD
+\*----------------------------------------*/
+
+.liiper-card {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+
+    .liiper-card__avatar {
+      transform: scale(1.1627907);
+    }
+  }
+}
+
+  .liiper-card__avatar {
+    width: 64px;
+    height: 64px;
+
+    transition: transform .2s cubic-bezier(.32,.63,.43,1.34);
+    will-change: transform;
+
+    @include media('lg') {
+      width: 86px;
+      height: 86px;
+    }
+  }
+
+  .liiper-card__name {
+    margin-bottom: $spacing-unit-tiny;
+
+    color: $web-black;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+
+  .liiper-card__role {
+    line-height: 1.5;
+  }
