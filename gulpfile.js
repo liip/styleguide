@@ -125,6 +125,9 @@ gulp.task('assembler', done => {
         }
         return array;
       },
+      random: (array) => {
+        return array[Math.floor(Math.random() * array.length)];
+      },
       limit: (arr, limit) => {
         return arr.slice(0, limit);
       },

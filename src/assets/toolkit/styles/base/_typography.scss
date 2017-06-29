@@ -9,6 +9,10 @@
 @include headings() {
   color: $web-black;
   font-weight: 700;
+
+  a {
+    color: inherit;
+  }
 }
 
 h1,
