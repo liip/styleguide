@@ -111,6 +111,9 @@ gulp.task('fonts', () => {
 gulp.task('assembler', done => {
   assembler({
     logErrors: config.dev,
+    onError: () => {
+      console.log('\u0007');
+    },
     dest: config.dest,
     helpers: {
       shuffle: array => {

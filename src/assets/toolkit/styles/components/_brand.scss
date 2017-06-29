@@ -11,3 +11,13 @@
   .brand__img {
     max-height: 80px;
   }
+
+.brand--grayscale {
+  filter: grayscale(100%);
+  transition: filter .2s ease-out;
+
+  &:hover,
+  &:focus, {
+    filter: grayscale(0);
+  }
+}
