@@ -13,18 +13,9 @@ const DEFAULT_OPTIONS = {
 export default class Collapse {
 
   constructor(el, options) {
-    if (typeof el === 'string') {
-      this._el = el;
-      this._collapse = document.querySelector(this._el);
-    } else if (el instanceof Element) {
-      this._collapse = el;
-      this._el = `#${this._collapse.id}`;
-    } else {
-      return;
-    }
-
+    this._collapse = el;
     this._options = Object.assign({}, DEFAULT_OPTIONS, options);
-    this._triggers = [...document.querySelectorAll(`[data-toggle="collapse"][data-target="${this._el}"]`)];
+    this._triggers = [...document.querySelectorAll(`[data-toggle="collapse"][data-target="#${this._collapse.id}"]`)];
     this._active = this._collapse.classList.contains('active');
 
     this.toggle = this.toggle.bind(this);

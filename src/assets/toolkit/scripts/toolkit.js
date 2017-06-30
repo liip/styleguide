@@ -35,12 +35,13 @@ import 'polyfills';
  * Components
  */
 
-import Multiplier from './multiplier';
-import Navbar from './navbar';
-import Weather from './weather';
-import Accordion from './accordion';
-import Reel from './reel';
-import Collapse from './collapse';
+import Multiplier from 'components/Multiplier';
+import Navbar from 'components/Navbar';
+import Weather from 'components/Weather';
+import Accordion from 'components/Accordion';
+import Reel from 'components/Reel';
+import Collapse from 'components/Collapse';
+import ContactForm from 'components/ContactForm';
 
 /**
  * Expose modules to the Toolkit namespace
