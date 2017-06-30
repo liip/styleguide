@@ -1,0 +1,42 @@
+---
+title: Blog
+---
+
+{{>navbar.default class="navbar--sticky" blog="true"}}
+
+<section class="section section--behind-navbar">
+  <div class="section__body">
+    <div class="grid grid--multiline mrgb+">
+      <div class="grid__item sm-w-1/2">
+        <select class="field field--large field--primary field--ghost text-bold">
+          <option>All topics</option>
+          <optgroup label="Topics">
+            {{#each expertises}}
+              <option>{{this.name}}</option>
+            {{/each}}
+          </optgroup>
+        </select>
+      </div>
+      <div class="grid__item sm-w-1/2">
+        <input type="search" placeholder="Search…" class="field field--large field--ghost field--primary field--search text-bold">
+      </div>
+    </div>
+
+    {{>article.hero}}
+  </div>
+</section>
+
+<section class="section">
+  <div class="section__body">
+    {{>article.showcase}}
+  </div>
+</section>
+
+{{>footer}}
+
+<script type="text/javascript">
+  window.addEventListener('DOMContentLoaded', function() {
+    var navbar = document.querySelector('.navbar');
+    new Toolkit.Navbar(navbar);
+  });
+</script>

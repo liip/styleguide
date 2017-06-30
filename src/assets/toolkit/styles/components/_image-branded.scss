@@ -3,7 +3,6 @@
 \*----------------------------------------*/
 
 .image-branded {
-  display: inline-block;
   position: relative;
 
   &::after {
@@ -11,6 +10,8 @@
     display: block;
     width: 100%;
     height: 4%;
+    min-height: 10px;
+    max-height: 20px;
 
     position: absolute;
     right: 0;
@@ -20,5 +21,14 @@
 
     background-image: linear-gradient(212.6deg, $green-400 0%, $green-700 100%);
     opacity: .8;
+    transition: transform .2s;
+    transform-origin: bottom center;
+  }
+}
+
+a:hover,
+a:focus {
+  .image-branded::after {
+    transform: scaleY(0);
   }
 }

@@ -75,10 +75,10 @@
     padding-top: $navbar-height-xs + $spacing-unit-default;
   }
   @include media('md') {
-    padding-top: $navbar-height-md + $spacing-unit-large;
+    padding-top: $navbar-height-md + $spacing-unit-default;
   }
   @include media('lg') {
-    padding-top: $navbar-height-lg + $spacing-unit-huge;
+    padding-top: $navbar-height-lg + $spacing-unit-default;
   }
 }
 
