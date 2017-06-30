@@ -2,7 +2,9 @@
   LIIPER CARD
 \*----------------------------------------*/
 
-.liiper-card {
+.liiper-card {}
+
+a.liiper-card {
   &:hover,
   &:focus {
     text-decoration: none;
@@ -42,5 +44,43 @@
   .liiper-card__avatar {
     width: 50px;
     height: 50px;
+  }
+}
+
+.liiper-card--large {
+  @include media('sm') {
+    .liiper-card__avatar {
+      width: 86px;
+      height: 86px;
+    }
+
+    .liiper-card__name {
+      font-size: rem(32px);
+    }
+  }
+  @include media('lg') {
+    .liiper-card__avatar {
+      width: 136px;
+      height: 136px;
+    }
+
+    .liiper-card__name {
+      font-size: rem(42px);
+    }
+  }
+  @include media('xl') {
+    .liiper-card__avatar {
+      width: 180px;
+      height: 180px;
+    }
+  }
+}
+
+a.liiper-card--large {
+  &:hover,
+  &:focus {
+    .liiper-card__avatar {
+      transform: scale(1.1);
+    }
   }
 }

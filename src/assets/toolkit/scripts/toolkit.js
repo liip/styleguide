@@ -53,4 +53,5 @@ window.Toolkit = {
   Accordion,
   Reel,
   Collapse,
+  ContactForm,
 };

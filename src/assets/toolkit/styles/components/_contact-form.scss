@@ -1,0 +1,44 @@
+/*----------------------------------------*\
+  CONTACT FORM
+\*----------------------------------------*/
+
+.contact-form {}
+
+.contact-form--personal {
+  padding-top: 22%;
+
+  background-image: url('/assets/toolkit/images/contact.svg');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  @include media('sm') {
+    padding-top: 20%;
+    background-size: 90% auto;
+  }
+
+  @include media('lg') {
+    padding-top: 16%;
+    background-size: 80% auto;
+  }
+
+  @include media('xl') {
+    padding-top: 14%;
+  }
+}
+
+  .contact-form__topic {
+    color: $warm-grey-400;
+    transition: color .4s ease-out;
+
+    &.active {
+      color: $brand-color;
+    }
+  }
+
+  .contact-form__step {
+    &.collapsed {
+      width: 0;
+      overflow: hidden;
+    }
+  }

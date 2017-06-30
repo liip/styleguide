@@ -73,6 +73,12 @@ select.field--primary {
   }
 }
 
+.field--ghost {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
 .field--search {
   padding-right: $spacing-unit-large;
 

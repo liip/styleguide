@@ -39,3 +39,12 @@
     background-color: $green-400;
   }
 }
+
+.btn--plain {
+  border: transparent;
+
+  &.btn--primary {
+    color: $btn-primary-bkg-color;
+    background-color: $btn-primary-color;
+  }
+}
