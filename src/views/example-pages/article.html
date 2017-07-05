@@ -7,13 +7,13 @@ title: Article
 {{#with (random liipers) as |liiper|}}
   <section Class="section">
     <div class="section__body">
-      {{>image-branded image="/assets/fabricator/images/hero/1.jpg"}}
+      {{>image-branded image="/assets/fabricator/images/hero/1.jpg" class="mrgb md-mrgb+ lg-mrgb++"}}
 
-      <article class="article mrgt md-mrgt+ lg-mrgt++">
+      <article class="article">
         <header>
-          <h1>Liip wins at Best of Swiss Web 2017!</h1>
+         <h1>Liip wins at Best of Swiss Web 2017!</h1>
           <ul class="list-inline">
-            <li><time datetime="2017-04-07" class="text-bold">April 7, 2017</time></li>
+            <li><time datetime="2017-04-07" pubdate="pubdate" class="text-bold">April 7, 2017</time></li>
             <li>{{liiper.name}}</li>
           </ul>
         </header>
