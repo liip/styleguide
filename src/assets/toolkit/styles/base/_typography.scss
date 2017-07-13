@@ -100,7 +100,7 @@ a {
 
 
 /**
- * Code and preformatted text
+ * Various defaults
  */
 
 pre,
@@ -138,19 +138,9 @@ code {
   box-shadow: 0 -1px 0 0 $web-black, 0 2px 0 0 $web-black;
 }
 
-
-/**
- * Address
- */
-
 address {
   font-style: normal;
 }
-
-
-/**
- * Quotes
- */
 
 blockquote {
   margin: 0;
@@ -162,10 +152,9 @@ cite {
   font-style: normal;
 }
 
-
-/**
- * Separators
- */
+abbr[title] {
+  text-decoration: none;
+}
 
 hr {
   margin: $spacing-unit-default 0;

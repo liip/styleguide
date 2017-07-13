@@ -18,7 +18,7 @@
       <div class="grid grid--even grid--tight">
         <div class="grid__item sm-w-6/7 lg-w-11/12">
           <div class="box box--default">
-            <label for="message" class="field-label pdgt0">Your Message</label>
+            <label for="message" class="field-label pdgt0">Message <abbr class="text-muted" title="Required field">*</abbr></label>
             <textarea id="message" name="message" rows="4" class="contact-form__message field field--large field--primary field--ghost" placeholder="Write your message here…" required></textarea>
           </div>
         </div>
@@ -38,8 +38,18 @@
         </div>
         <div class="grid__item sm-w-5/7 lg-w-5/6">
           <div class="box box--default">
-            <label for="email" class="field-label pdgt0">Your e-mail address</label>
-            <input type="email" id="email" name="email" class="contact-form__email field field--large field--primary field--ghost" required>
+            <div class="form-group">
+              <label for="name" class="field-label pdgt0">Name <abbr class="text-muted" title="Required field">*</abbr></label>
+              <input type="text" id="name" name="name" class="contact-form__name field field--primary field--light pdgt0" required>
+            </div>
+            <div class="form-group mrgt">
+              <label for="email" class="field-label pdgt0">E-mail <abbr class="text-muted" title="Required field">*</abbr></label>
+              <input type="email" id="email" name="email" class="contact-form__email field field--primary field--light pdgt0" required>
+            </div>
+            <div class="form-group mrgt">
+              <label for="phone" class="field-label pdgt0">Phone</label>
+              <input type="phone" id="phone" name="phone" class="contact-form__phone field field--primary field--light pdgt0">
+            </div>
           </div>
         </div>
         <div class="grid__item sm-w-1/7 lg-w-1/12">

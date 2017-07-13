@@ -5,7 +5,6 @@ export default class ContactForm {
     this._contactFormStepOne = this._contactForm.querySelector('.contact-form__step-1');
     this._contactFormStepTwo = this._contactForm.querySelector('.contact-form__step-2');
     this._contactFormMessage = this._contactForm.querySelector('.contact-form__message');
-    this._contactFormEmail = this._contactForm.querySelector('.contact-form__email');
     this._contactFormNextBtn = this._contactForm.querySelector('.contact-form__next-btn');
     this._contactFormPreviousBtn = this._contactForm.querySelector('.contact-form__previous-btn');
     this._contactFormSubmitBtn = this._contactForm.querySelector('.contact-form__submit-btn');
@@ -13,21 +12,21 @@ export default class ContactForm {
 
     this._userTyped = false;
 
-    this.addEventListeners();
+    this._addEventListeners();
   }
 
-  addEventListeners() {
+  _addEventListeners() {
     this._topics.forEach(topic => {
-      topic.addEventListener('click', this.setTopic.bind(this));
+      topic.addEventListener('click', this._setTopic.bind(this));
     });
     this._contactFormMessage.addEventListener('keypress', () => {
       this._userTyped = true;
     });
-    this._contactFormNextBtn.addEventListener('click', this.next.bind(this));
-    this._contactFormPreviousBtn.addEventListener('click', this.previous.bind(this));
+    this._contactFormNextBtn.addEventListener('click', this._next.bind(this));
+    this._contactFormPreviousBtn.addEventListener('click', this._previous.bind(this));
   }
 
-  setTopic(e) {
+  _setTopic(e) {
     e.preventDefault();
 
     const btn = e.currentTarget;
@@ -42,24 +41,36 @@ export default class ContactForm {
       this._contactFormMessage.value = message;
     }
 
-    this.previous();
+    this._previous();
   }
 
-  next() {
+  _next() {
     if (this._contactFormMessage.checkValidity()) {
-      this._contactFormStepOne.classList.add('hidden');
-      this._contactFormStepTwo.classList.remove('hidden');
-      this._contactFormEmail.focus();
+      this.showStepTwo();
     } else {
       // Trigger browser native validation messages
       this._contactFormSubmitBtn.click();
     }
   }
 
-  previous() {
+  _previous() {
+    this.showStepOne();
+  }
+
+
+  /*----------------------------------------*\
+    PUBLIC
+  \*----------------------------------------*/
+
+  showStepOne() {
     this._contactFormStepOne.classList.remove('hidden');
     this._contactFormStepTwo.classList.add('hidden');
     this._contactFormMessage.focus();
+  }
+
+  showStepTwo() {
+    this._contactFormStepOne.classList.add('hidden');
+    this._contactFormStepTwo.classList.remove('hidden');
   }
 
 }
