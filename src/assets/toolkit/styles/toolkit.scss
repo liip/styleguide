@@ -22,7 +22,7 @@
  * Settings
  */
 
-@import '../../../../node_modules/kanbasu/src/assets/scss/settings/settings';
+@import 'kanbasu/src/assets/scss/settings/settings';
 @import 'settings/settings';
 @import 'settings/kanbasu';
 
@@ -31,8 +31,8 @@
  * Tools
  */
 
-@import '../../../../node_modules/kanbasu/src/assets/scss/tools/functions';
-@import '../../../../node_modules/kanbasu/src/assets/scss/tools/mixins';
+@import 'kanbasu/src/assets/scss/tools/functions';
+@import 'kanbasu/src/assets/scss/tools/mixins';
 @import 'tools/mixins';
 
 
@@ -40,7 +40,7 @@
  * Vendors
  */
 
-@import '../../../../node_modules/kanbasu/src/assets/scss/vendor/normalize';
+@import 'kanbasu/src/assets/scss/vendor/normalize';
 @import 'vendor/code';
 
 
@@ -55,25 +55,25 @@
  * Defaults
  */
 
-@import '../../../../node_modules/kanbasu/src/assets/scss/defaults/box-model';
-@import '../../../../node_modules/kanbasu/src/assets/scss/defaults/elements';
-@import '../../../../node_modules/kanbasu/src/assets/scss/defaults/typography';
-@import '../../../../node_modules/kanbasu/src/assets/scss/defaults/table';
-@import '../../../../node_modules/kanbasu/src/assets/scss/defaults/forms';
+@import 'kanbasu/src/assets/scss/defaults/box-model';
+@import 'kanbasu/src/assets/scss/defaults/elements';
+@import 'kanbasu/src/assets/scss/defaults/typography';
+@import 'kanbasu/src/assets/scss/defaults/table';
+@import 'kanbasu/src/assets/scss/defaults/forms';
 
 
 /**
  * Helpers
  */
 
-@import '../../../../node_modules/kanbasu/src/assets/scss/helpers/text';
-@import '../../../../node_modules/kanbasu/src/assets/scss/helpers/text-responsive';
-@import '../../../../node_modules/kanbasu/src/assets/scss/helpers/float';
-@import '../../../../node_modules/kanbasu/src/assets/scss/helpers/spacings';
-@import '../../../../node_modules/kanbasu/src/assets/scss/helpers/spacings-responsive';
-@import '../../../../node_modules/kanbasu/src/assets/scss/helpers/images';
-@import '../../../../node_modules/kanbasu/src/assets/scss/helpers/display';
-@import '../../../../node_modules/kanbasu/src/assets/scss/helpers/align';
+@import 'kanbasu/src/assets/scss/helpers/text';
+@import 'kanbasu/src/assets/scss/helpers/text-responsive';
+@import 'kanbasu/src/assets/scss/helpers/float';
+@import 'kanbasu/src/assets/scss/helpers/spacings';
+@import 'kanbasu/src/assets/scss/helpers/spacings-responsive';
+@import 'kanbasu/src/assets/scss/helpers/images';
+@import 'kanbasu/src/assets/scss/helpers/display';
+@import 'kanbasu/src/assets/scss/helpers/align';
 
 @import 'helpers/text';
 
@@ -92,17 +92,17 @@
  * Components
  */
 
-@import '../../../../node_modules/kanbasu/src/assets/scss/components/grid';
-@import '../../../../node_modules/kanbasu/src/assets/scss/components/widths';
-@import '../../../../node_modules/kanbasu/src/assets/scss/components/widths-responsive';
-@import '../../../../node_modules/kanbasu/src/assets/scss/components/btn';
-@import '../../../../node_modules/kanbasu/src/assets/scss/components/box';
-@import '../../../../node_modules/kanbasu/src/assets/scss/components/media';
-// @import '../../../../node_modules/kanbasu/src/assets/scss/components/media-responsive';
-@import '../../../../node_modules/kanbasu/src/assets/scss/components/list';
-@import '../../../../node_modules/kanbasu/src/assets/scss/components/list-inline';
-@import '../../../../node_modules/kanbasu/src/assets/scss/components/list-stacked';
-// @import '../../../../node_modules/kanbasu/src/assets/scss/components/embed-responsive';
+@import 'kanbasu/src/assets/scss/components/grid';
+@import 'kanbasu/src/assets/scss/components/widths';
+@import 'kanbasu/src/assets/scss/components/widths-responsive';
+@import 'kanbasu/src/assets/scss/components/btn';
+@import 'kanbasu/src/assets/scss/components/box';
+@import 'kanbasu/src/assets/scss/components/media';
+// @import 'kanbasu/src/assets/scss/components/media-responsive';
+@import 'kanbasu/src/assets/scss/components/list';
+@import 'kanbasu/src/assets/scss/components/list-inline';
+@import 'kanbasu/src/assets/scss/components/list-stacked';
+// @import 'kanbasu/src/assets/scss/components/embed-responsive';
 
 // Simple components
 @import 'components/icon';
