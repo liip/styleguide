@@ -58,6 +58,11 @@ a.liiper-card {
       font-size: rem(32px);
     }
   }
+  @include media('md') {
+    .media__left {
+      margin-right: $spacing-unit-large;
+    }
+  }
   @include media('lg') {
     .liiper-card__avatar {
       width: 136px;

@@ -134,6 +134,9 @@ gulp.task('assembler', done => {
       placeholder: (a, b) => {
         return a ? a : b;
       },
+      concat: (a, b) => {
+        return a + b;
+      },
     },
   });
   done();
