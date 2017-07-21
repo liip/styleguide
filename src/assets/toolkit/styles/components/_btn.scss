@@ -7,8 +7,7 @@
   font-weight: 500;
   line-height: 1.5;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: $warm-grey-700;
   }
 }
@@ -16,7 +15,6 @@
 .btn--default,
 .btn--primary {
   &:hover,
-  &:focus,
   &:active {
     color: $white;
   }
@@ -24,13 +22,26 @@
 
 .btn--default {
   border-color: $btn-default-color;
+
+  &:focus {
+    background: $btn-default-bkg-color;
+    box-shadow: 0 0 0 4px rgba(0,0,0,.1);
+  }
+
+  &:hover {
+    background: $btn-default-hover-bkg-color;
+  }
 }
 
 .btn--primary {
   border-color: $btn-primary-color;
 
-  &:hover,
   &:focus {
+    background: $btn-primary-bkg-color;
+    box-shadow: 0 0 0 4px rgba(0,0,0,.1);
+  }
+
+  &:hover {
     background-image: linear-gradient(to right, $green-700 50%, $green-400);
   }
 
