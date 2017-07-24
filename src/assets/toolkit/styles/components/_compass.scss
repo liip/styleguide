@@ -1,0 +1,135 @@
+.compass {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: $white;
+  border: $spacing-unit-tiny solid $warm-grey-200;
+  box-shadow: 0 0 0 $spacing-unit-small $brand-color;
+  margin: 0 auto;
+
+  @include media('sm', $breakpoints-desc) {
+    width: 80px;
+    height: 80px;
+    border: $spacing-unit-tiny/2 solid $warm-grey-200;
+    box-shadow: 0 0 0 $spacing-unit-tiny $brand-color;
+  }
+
+  &:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: $white;
+    border-radius: 50%;
+    border: $spacing-unit-tiny/2 solid $warm-grey-400;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    @include media('sm', $breakpoints-desc) {
+      width: 8px;
+      height: 8px;
+      border: 2px solid $warm-grey-400;
+    }
+  }
+}
+
+.compass__title {
+  font-size: 365px;
+  line-height: 76%;
+  margin-bottom: 0;
+  color: $brand-color;
+  font-weight: 500;
+
+  @include media('sm', $breakpoints-desc) {
+    font-size: 120px;
+  }
+}
+
+.compass__dial {
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    border: 10px solid transparent;
+    z-index: 2;
+
+    @include media('sm', $breakpoints-desc) {
+      border: 5px solid transparent;
+    }
+  }
+
+  &:before {
+    top: 0;
+    left: 50%;
+    width: 20px;
+    height: 236px;
+    border-top-color: $warm-grey-200;
+    border-bottom-color: $warm-grey-200;
+    transform: translateX(-50%);
+
+    @include media('sm', $breakpoints-desc) {
+      width: 10px;
+      height: 73px;
+    }
+  }
+
+  &:after {
+    left: 0;
+    top: 50%;
+    width: 236px;
+    height: 20px;
+    border-left-color: $warm-grey-200;
+    border-right-color: $warm-grey-200;
+    transform: translateY(-50%);
+
+    @include media('sm', $breakpoints-desc) {
+      height: 10px;
+      width: 73px;
+    }
+  }
+}
+
+.compass__needle-container {
+  animation: compass-rotate 4s infinite ease-in-out;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.compass__needle {
+  position: absolute;
+  left: calc(50% - 25px);
+  top: calc(50% - 125px);
+  width: 0;
+  height: 0;
+  border: 25px solid transparent;
+  border-bottom: 100px solid $brand-color;
+
+  @include media('sm', $breakpoints-desc) {
+    left: calc(50% - 8px);
+    top: calc(50% - 33px);
+    border: 8px solid transparent;
+    border-bottom: 25px solid $brand-color;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: 101px;
+    width: 0;
+    height: 0;
+    border: 25px solid transparent;
+    border-top: 100px solid $warm-grey-200;
+
+    @include media('sm', $breakpoints-desc) {
+      left: -8px;
+      top: 26px;
+      border: 8px solid transparent;
+      border-top: 25px solid $warm-grey-200;
+    }
+  }
+}
