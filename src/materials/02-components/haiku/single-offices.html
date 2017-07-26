@@ -1,0 +1,14 @@
+<div class="haiku haiku-offices{{#if class}} {{class}}{{/if}}">
+  <div class="haiku__intro">Tuesday 10:21</div>
+  <div class="haiku__title">
+    <span class="haiku__number">150</span>
+    self managed experts working  in
+    {{#each offices}}
+      {{#if @last}}
+        and <a href="#" id="mapOffice-{{class}}" class="haiku__link">{{name}}</a>.
+      {{else}}
+        <a href="#" id="mapOffice-{{class}}" class="haiku__link">{{name}}</a>,
+      {{/if}}
+    {{/each}}
+  </div>
+</div>
