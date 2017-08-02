@@ -67,23 +67,19 @@ export default class Map {
   _toggleMapBackground(e) {
     e.stopPropagation();
     const office = e.target.id.split('office-');
-    if (office[1]) {
+    if (office[1] && e.type === 'mouseover') {
       const radialOfficeClass = 'map__radial-' + office[1];
 
-      setTimeout(() => {
-        this._mapRadialEl.style.top = OFFICES_COORDINATES[office[1]].top;
-        this._mapRadialEl.style.left = OFFICES_COORDINATES[office[1]].left;
-        this._mapRadialEl.style.width = OFFICES_COORDINATES[office[1]].width;
-        this._mapRadialEl.style.height = OFFICES_COORDINATES[office[1]].height;
+      this._mapRadialEl.style.top = OFFICES_COORDINATES[office[1]].top;
+      this._mapRadialEl.style.left = OFFICES_COORDINATES[office[1]].left;
+      this._mapRadialEl.style.width = OFFICES_COORDINATES[office[1]].width;
+      this._mapRadialEl.style.height = OFFICES_COORDINATES[office[1]].height;
 
-        this._mapRadialEl.classList.add(radialOfficeClass, 'map__radial--fadein');
-      }, 500);
+      this._mapRadialEl.classList.add(radialOfficeClass, 'map__radial--fadein');
     }
     if (e.type === 'mouseout') {
       this._mapRadialEl.classList.remove('map__radial--fadein');
-      setTimeout(() => {
-        this._mapRadialEl.className = 'map__radial';
-      }, 500);
+      this._mapRadialEl.className = 'map__radial';
     }
   }
 
