@@ -1,4 +1,4 @@
-const OFFICE_COORDINATES = {
+const OFFICES_COORDINATES = {
   zh: {
     top: '0.092em',
     left: '0.336em',
@@ -38,7 +38,9 @@ export default class Map {
 
     this._haikuEl = this._el.querySelector('.haiku');
     this._mapRadialEl = this._el.querySelector('.map__radial');
+    this._officesFilterEl = document.querySelector('#officesFilter');
     this._toggleMapBackground = this._toggleMapBackground.bind(this);
+    this._selectOffice = this._selectOffice.bind(this);
 
     this._addEventListeners();
   }
@@ -46,24 +48,33 @@ export default class Map {
   _addEventListeners() {
     this._haikuEl.addEventListener('mouseover', this._toggleMapBackground.bind(this));
     this._haikuEl.addEventListener('mouseout', this._toggleMapBackground.bind(this));
+    this._haikuEl.addEventListener('click', this._selectOffice.bind(this));
   }
 
   _removeEventListeners() {
     this._haikuEl.removeEventListener('mouseover', this._toggleMapBackground);
     this._haikuEl.removeEventListener('mouseout', this._toggleMapBackground);
+    this._haikuEl.removeEventListener('click', this._selectOffice);
+  }
+
+  _selectOffice(e) {
+    const office = e.target.id.split('office-');
+    if (office[1]) {
+      this._officesFilterEl.options[office[1]].selected = 'selected';
+    }
   }
 
   _toggleMapBackground(e) {
     e.stopPropagation();
-    const office = e.target.id.split('mapOffice-');
+    const office = e.target.id.split('office-');
     if (office[1]) {
       const radialOfficeClass = 'map__radial-' + office[1];
 
       setTimeout(() => {
-        this._mapRadialEl.style.top = OFFICE_COORDINATES[office[1]].top;
-        this._mapRadialEl.style.left = OFFICE_COORDINATES[office[1]].left;
-        this._mapRadialEl.style.width = OFFICE_COORDINATES[office[1]].width;
-        this._mapRadialEl.style.height = OFFICE_COORDINATES[office[1]].height;
+        this._mapRadialEl.style.top = OFFICES_COORDINATES[office[1]].top;
+        this._mapRadialEl.style.left = OFFICES_COORDINATES[office[1]].left;
+        this._mapRadialEl.style.width = OFFICES_COORDINATES[office[1]].width;
+        this._mapRadialEl.style.height = OFFICES_COORDINATES[office[1]].height;
 
         this._mapRadialEl.classList.add(radialOfficeClass, 'map__radial--fadein');
       }, 500);

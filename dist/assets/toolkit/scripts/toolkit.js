@@ -866,7 +866,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var OFFICE_COORDINATES = {
+var OFFICES_COORDINATES = {
   zh: {
     top: '0.092em',
     left: '0.336em',
@@ -907,7 +907,9 @@ var Map = function () {
 
     this._haikuEl = this._el.querySelector('.haiku');
     this._mapRadialEl = this._el.querySelector('.map__radial');
+    this._officesFilterEl = document.querySelector('#officesFilter');
     this._toggleMapBackground = this._toggleMapBackground.bind(this);
+    this._selectOffice = this._selectOffice.bind(this);
 
     this._addEventListeners();
   }
@@ -917,12 +919,22 @@ var Map = function () {
     value: function _addEventListeners() {
       this._haikuEl.addEventListener('mouseover', this._toggleMapBackground.bind(this));
       this._haikuEl.addEventListener('mouseout', this._toggleMapBackground.bind(this));
+      this._haikuEl.addEventListener('click', this._selectOffice.bind(this));
     }
   }, {
     key: '_removeEventListeners',
     value: function _removeEventListeners() {
       this._haikuEl.removeEventListener('mouseover', this._toggleMapBackground);
       this._haikuEl.removeEventListener('mouseout', this._toggleMapBackground);
+      this._haikuEl.removeEventListener('click', this._selectOffice);
+    }
+  }, {
+    key: '_selectOffice',
+    value: function _selectOffice(e) {
+      var office = e.target.id.split('office-');
+      if (office[1]) {
+        this._officesFilterEl.options[office[1]].selected = 'selected';
+      }
     }
   }, {
     key: '_toggleMapBackground',
@@ -930,15 +942,15 @@ var Map = function () {
       var _this = this;
 
       e.stopPropagation();
-      var office = e.target.id.split('mapOffice-');
+      var office = e.target.id.split('office-');
       if (office[1]) {
         var radialOfficeClass = 'map__radial-' + office[1];
 
         setTimeout(function () {
-          _this._mapRadialEl.style.top = OFFICE_COORDINATES[office[1]].top;
-          _this._mapRadialEl.style.left = OFFICE_COORDINATES[office[1]].left;
-          _this._mapRadialEl.style.width = OFFICE_COORDINATES[office[1]].width;
-          _this._mapRadialEl.style.height = OFFICE_COORDINATES[office[1]].height;
+          _this._mapRadialEl.style.top = OFFICES_COORDINATES[office[1]].top;
+          _this._mapRadialEl.style.left = OFFICES_COORDINATES[office[1]].left;
+          _this._mapRadialEl.style.width = OFFICES_COORDINATES[office[1]].width;
+          _this._mapRadialEl.style.height = OFFICES_COORDINATES[office[1]].height;
 
           _this._mapRadialEl.classList.add(radialOfficeClass, 'map__radial--fadein');
         }, 500);

@@ -5,9 +5,9 @@
     self managed experts working  in
     {{#each offices}}
       {{#if @last}}
-        and <a href="#" id="mapOffice-{{class}}" class="haiku__link">{{name}}</a>.
+        and <a href="#" id="office-{{class}}" class="haiku__link">{{name}}</a>.
       {{else}}
-        <a href="#" id="mapOffice-{{class}}" class="haiku__link">{{name}}</a>,
+        <a href="#officesSection" id="office-{{class}}" class="haiku__link">{{name}}</a>,
       {{/if}}
     {{/each}}
   </div>
