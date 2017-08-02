@@ -27,54 +27,34 @@
 
   .map__radial {
     opacity: 0;
-    transition: top .5s ease, left .5s ease, opacity .3s ease;
+    transition: opacity 1s ease;
     display: block;
     position: absolute;
     z-index: 1;
-    top: relativeValue(90);
-    left: relativeValue(460);
     width: relativeValue(280);
     height: relativeValue(190);
     background: radial-gradient(ellipse at center,
       $green-700 0,
       $green-700 15%,
       $green-500 40%,
-      $green-100 65%,
+      $green-500 55%,
       $warm-grey-300 75%,
       $warm-grey-300 100%);
     transform: rotate(130deg);
 
     @include media('sm', $breakpoints-desc) {
-      width: relativeValue(220);
-      height: relativeValue(140);
+      display: none;
     }
 
-    &.map__radial-zh,
-    &.map__radial-be,
-    &.map__radial-fr,
-    &.map__radial-ls,
-    &.map__radial-sg {
-      opacity: 1;
-    }
-
-    &.map__radial-zh {
-      top: relativeValue(120);
-      left: relativeValue(500);
-    }
-    &.map__radial-be {
-      top: relativeValue(210);
-      left: relativeValue(260);
-    }
-    &.map__radial-fr {
-      top: relativeValue(240);
-      left: relativeValue(190);
-    }
-    &.map__radial-ls {
-      top: relativeValue(330);
-      left: relativeValue(35);
-    }
     &.map__radial-sg {
       top: relativeValue(70);
       left: relativeValue(660);
+      width: relativeValue(350);
+      height: relativeValue(220);
     }
+  }
+
+  .map__radial--fadein {
+    opacity: 1;
+    transition: opacity 1s ease;
   }

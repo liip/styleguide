@@ -866,6 +866,39 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+var OFFICE_COORDINATES = {
+  zh: {
+    top: '0.092em',
+    left: '0.336em',
+    width: '0.260em',
+    height: '0.183em'
+  },
+  be: {
+    top: '0.160em',
+    left: '0.198em',
+    width: '0.229em',
+    height: '0.168em'
+  },
+  fr: {
+    top: '0.183em',
+    left: '0.145em',
+    width: '0.183em',
+    height: '0.115em'
+  },
+  ls: {
+    top: '0.290em',
+    left: '0.046em',
+    width: '0.198em',
+    height: '0.130em'
+  },
+  sg: {
+    top: '0.053em',
+    left: '0.504em',
+    width: '0.267em',
+    height: '0.168em'
+  }
+};
+
 var Map = function () {
   function Map(el) {
     _classCallCheck(this, Map);
@@ -894,13 +927,27 @@ var Map = function () {
   }, {
     key: '_toggleMapBackground',
     value: function _toggleMapBackground(e) {
+      var _this = this;
+
+      e.stopPropagation();
       var office = e.target.id.split('mapOffice-');
       if (office[1]) {
         var radialOfficeClass = 'map__radial-' + office[1];
-        this._mapRadialEl.classList.add(radialOfficeClass);
+
+        setTimeout(function () {
+          _this._mapRadialEl.style.top = OFFICE_COORDINATES[office[1]].top;
+          _this._mapRadialEl.style.left = OFFICE_COORDINATES[office[1]].left;
+          _this._mapRadialEl.style.width = OFFICE_COORDINATES[office[1]].width;
+          _this._mapRadialEl.style.height = OFFICE_COORDINATES[office[1]].height;
+
+          _this._mapRadialEl.classList.add(radialOfficeClass, 'map__radial--fadein');
+        }, 500);
       }
       if (e.type === 'mouseout') {
-        this._mapRadialEl.className = 'map__radial';
+        this._mapRadialEl.classList.remove('map__radial--fadein');
+        setTimeout(function () {
+          _this._mapRadialEl.className = 'map__radial';
+        }, 500);
       }
     }
 

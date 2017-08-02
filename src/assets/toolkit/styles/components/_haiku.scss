@@ -12,6 +12,10 @@
   top: $spacing-unit-huge;
   width: 50%;
   z-index: 4;
+
+  @include media('sm', $breakpoints-desc) {
+    width: 100%;
+  }
 }
 
   .haiku__intro {
