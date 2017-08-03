@@ -7,18 +7,14 @@
  */
 
 @keyframes rotate-counterclockwise {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
 }
 
 @keyframes compass-rotate {
-  0%   { transform: rotate(20deg); }
-  20%   { transform: rotate(68deg); }
-  50%   { transform: rotate(156deg); }
-  70%   { transform: rotate(360deg); }
-  100%   { transform: rotate(20deg); }
+  0% { transform: rotate(20deg); }
+  20% { transform: rotate(68deg); }
+  50% { transform: rotate(156deg); }
+  70% { transform: rotate(360deg); }
+  100% { transform: rotate(20deg); }
 }
