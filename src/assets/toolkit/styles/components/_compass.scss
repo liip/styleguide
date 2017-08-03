@@ -1,12 +1,13 @@
 .compass {
-  width: 250px;
-  height: 250px;
-  margin: 0 auto;
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  height: 200px;
   position: relative;
   background-color: $white;
   border: $spacing-unit-tiny solid $warm-grey-200;
   border-radius: 50%;
-  box-shadow: 0 0 0 $spacing-unit-small $brand-color;
+  box-shadow: 0 0 0 32px $brand-color;
 
   @include media('sm', $breakpoints-desc) {
     width: 80px;
@@ -37,17 +38,32 @@
 }
 
   .compass__title {
-    display: block;
-    margin-bottom: 0;
+    display: inline-block;
+    margin-top: -10px;
     line-height: 76%;
-    font-size: 365px;
+    font-size: 325px;
     font-weight: 500;
     color: $brand-color;
 
     @include media('sm', $breakpoints-desc) {
-      font-size: 120px;
+      font-size: 110px;
+      line-height: 100%;
     }
   }
+    .compass__title--left {
+      margin-right: $spacing-unit-large;
+
+      @include media('sm', $breakpoints-desc) {
+        margin-right: $spacing-unit-small;
+      }
+    }
+    .compass__title--right {
+      margin-left: $spacing-unit-large;
+
+      @include media('sm', $breakpoints-desc) {
+        margin-left: $spacing-unit-small;
+      }
+    }
 
   .compass__dial {
     &::before,
@@ -64,7 +80,7 @@
 
     &::before {
       width: 20px;
-      height: 236px;
+      height: 186px;
       top: 0;
       left: 50%;
       border-bottom-color: $warm-grey-200;
@@ -78,7 +94,7 @@
     }
 
     &::after {
-      width: 236px;
+      width: 186px;
       height: 20px;
       left: 0;
       top: 50%;
