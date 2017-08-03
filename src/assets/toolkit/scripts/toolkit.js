@@ -42,6 +42,7 @@ import Accordion from 'components/Accordion';
 import Reel from 'components/Reel';
 import Collapse from 'components/Collapse';
 import ContactForm from 'components/ContactForm';
+import Map from 'components/Map';
 
 /**
  * Expose modules to the Toolkit namespace
@@ -54,4 +55,5 @@ window.Toolkit = {
   Reel,
   Collapse,
   ContactForm,
+  Map
 };

@@ -1,5 +1,10 @@
-- name: Lausanne
-- name: Fribourg
-- name: Bern
 - name: Zürich
+  class: zh
+- name: Bern
+  class: be
+- name: Fribourg
+  class: fr
+- name: Lausanne
+  class: ls
 - name: St.Gallen
+  class: sg

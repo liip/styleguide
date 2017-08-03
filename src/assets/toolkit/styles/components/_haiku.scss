@@ -7,6 +7,17 @@
   line-height: 1.1;
 }
 
+.haiku-offices {
+  position: absolute;
+  top: $spacing-unit-huge;
+  width: 50%;
+  z-index: 4;
+
+  @include media('sm', $breakpoints-desc) {
+    width: 100%;
+  }
+}
+
   .haiku__intro {
     display: inline-block;
     margin-bottom: $spacing-unit-default;
@@ -35,6 +46,14 @@
 
   .haiku__number {
     color: $brand-color;
+  }
+
+  .haiku__link {
+    color: $web-black;
+
+    &:hover {
+      color: $brand-color;
+    }
   }
 
 @include media('md') {

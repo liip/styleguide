@@ -4,15 +4,29 @@ title: Team
 
 {{>navbar.default class="navbar--sticky" team="true"}}
 
-<section class="section section--behind-navbar">
+<section class="section section--fit  section--behind-navbar">
+  <div class="section__body">
+    <div id="map">
+      <div class="map">
+        <img class="map__img" src="/assets/toolkit/images/swissmap.svg" />
+        <i class="map__radial"></i>
+      </div>
+      {{>haiku.single-offices}}
+    </div>
+  </div>
+  <div class="section__continue">
+    {{>icon id="chevron-down" class="icon--100 md-icon--200"}}
+  </div>
+</section>
+<section id="officesSection" class="section">
   <div class="section__body">
     <div class="grid grid--multiline mrgb">
       <div class="grid__item md-w-1/3">
-        <select class="field field--large field--light field--primary text-bold">
+        <select id="officesFilter" class="field field--large field--light field--primary text-bold">
           <option>All offices</option>
           <optgroup label="Offices">
             {{#each offices}}
-              <option>{{this.name}}</option>
+              <option name="{{this.class}}">{{this.name}}</option>
             {{/each}}
           </optgroup>
         </select>
@@ -60,7 +74,9 @@ title: Team
 
 <script type="text/javascript">
   window.addEventListener('DOMContentLoaded', function() {
-    var navbar = document.querySelector('.navbar');
+    const navbar = document.querySelector('.navbar');
+    const map = document.querySelector('#map');
     new Toolkit.Navbar(navbar);
+    new Toolkit.Map(map);
   });
 </script>
