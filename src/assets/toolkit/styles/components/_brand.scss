@@ -17,7 +17,7 @@
   transition: filter .2s ease-out;
 
   &:hover,
-  &:focus, {
+  &:focus {
     filter: grayscale(0);
   }
 }
