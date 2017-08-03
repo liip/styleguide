@@ -4,3 +4,5 @@ dist/example-pages
 dist/assets/fabricator
 .sass-cache
 /npm-debug.log
+*.js.map
+*.css.map
