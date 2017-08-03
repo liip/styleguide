@@ -30,7 +30,7 @@
     "babel-preset-env": "^1.1.5",
     "browser-sync": "^2.13.0",
     "csscomb": "^4.2.0",
-    "csscomb-config-rawbot": "^0.1.0",
+    "csscomb-config-rawbot": "^0.2.0",
     "del": "^2.2.1",
     "eslint": "^3.12.2",
     "eslint-config-airbnb-base": "^11.0.0",
