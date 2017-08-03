@@ -9,7 +9,12 @@
     "build": "gulp",
     "start": "gulp --dev",
     "deploy": "rsync -avzP --exclude='.*' dist/ demo:/var/www/styleguide.liip.ch/web/",
-    "lint": "eslint src/assets/toolkit/scripts --ignore-pattern='polyfills'"
+    "lint:js": "eslint src/assets/toolkit/scripts --ignore-pattern='polyfills'",
+    "lint:js:fix": "eslint --fix src/assets/toolkit/scripts --ignore-pattern='polyfills'",
+    "lint:style": "csscomb -lv -c node_modules/csscomb-config-rawbot/index.json src/assets/toolkit/styles/**/*.scss",
+    "lint:style:fix": "csscomb -c node_modules/csscomb-config-rawbot/index.json src/assets/toolkit/styles/**/*.scss",
+    "lint": "npm run lint:js && npm run lint:style",
+    "test": "npm run lint"
   },
   "author": "Liip AG",
   "repository": "liip/styleguide",
@@ -24,6 +29,8 @@
     "babel-loader": "^6.2.4",
     "babel-preset-env": "^1.1.5",
     "browser-sync": "^2.13.0",
+    "csscomb": "^4.2.0",
+    "csscomb-config-rawbot": "^0.1.0",
     "del": "^2.2.1",
     "eslint": "^3.12.2",
     "eslint-config-airbnb-base": "^11.0.0",
