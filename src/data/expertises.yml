@@ -12,8 +12,8 @@
   icon: api
 - name: Open Data
   icon: open-source
-- name: Performance
-  icon: performance
+- name: Analytics
+  icon: analytics
 - name: Finance
   icon: fintech
 - name: SEO
