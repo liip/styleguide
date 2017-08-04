@@ -10,4 +10,8 @@
   font-size: rem(18px);
 
   @include spaceless-children();
+
+  img {
+    @extend %img-responsive;
+  }
 }

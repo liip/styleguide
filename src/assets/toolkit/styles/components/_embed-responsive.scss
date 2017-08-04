@@ -1,0 +1,10 @@
+/*----------------------------------------*\
+  EMBED RESPONSIVE
+  @extend Kanbasu
+\*----------------------------------------*/
+
+.embed-responsive {
+  > iframe {
+    @extend %embed-responsive__item;
+  }
+}
