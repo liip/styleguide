@@ -121,10 +121,10 @@
     width: 0;
     height: 0;
     position: absolute;
-    left: calc(50% - 25px);
-    top: calc(50% - 125px);
-    border: 25px solid transparent;
-    border-bottom: 100px solid $brand-color;
+    left: calc(50% - 20px);
+    top: calc(50% - 95px);
+    border: 20px solid transparent;
+    border-bottom: 75px solid $brand-color;
 
     @include media('sm', $breakpoints-desc) {
       left: calc(50% - 8px);
@@ -138,10 +138,10 @@
       width: 0;
       height: 0;
       position: absolute;
-      left: -25px;
-      top: 101px;
-      border: 25px solid transparent;
-      border-top: 100px solid $warm-grey-200;
+      left: -20px;
+      top: 76px;
+      border: 20px solid transparent;
+      border-top: 75px solid $warm-grey-200;
 
       @include media('sm', $breakpoints-desc) {
         left: -8px;
