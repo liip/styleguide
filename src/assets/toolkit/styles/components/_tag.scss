@@ -16,7 +16,9 @@
   background-color: $warm-grey-100;
   transition-property: color, background-color;
   transition-duration: .25s;
+}
 
+a.tag {
   &:hover,
   &:focus {
     color: white;
