@@ -1,0 +1,29 @@
+---
+title: 404
+---
+
+{{>navbar.default class="navbar--sticky" 404="true"}}
+
+<section class="section section--behind-navbar">
+  <div class="section__body">
+    <h1 class="visible-sr">404</h1>
+    <div class="text-center">
+      <span class="compass__title mrgr-- md-mrgr">4</span>
+      {{>compass}}
+      <span class="compass__title mrgl-- md-mrgl">4</span>
+
+      <h2>Seems that you’re lost</h2>
+      <p>This page doesn’t exist. Please use the following link to go back to our homepage.</p>
+      <a class="btn btn--primary" href="/">Back to home</a>
+    </div>
+  </div>
+</section>
+
+{{>footer}}
+
+<script type="text/javascript">
+  window.addEventListener('DOMContentLoaded', function() {
+    var navbar = document.querySelector('.navbar');
+    new Toolkit.Navbar(navbar);
+  });
+</script>

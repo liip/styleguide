@@ -102,7 +102,7 @@
 @import 'kanbasu/src/assets/scss/components/list';
 @import 'kanbasu/src/assets/scss/components/list-inline';
 @import 'kanbasu/src/assets/scss/components/list-stacked';
-// @import 'kanbasu/src/assets/scss/components/embed-responsive';
+@import 'kanbasu/src/assets/scss/components/embed-responsive';
 
 // Simple components
 @import 'components/icon';
@@ -126,6 +126,8 @@
 @import 'components/brand';
 @import 'components/liiper-card';
 @import 'components/image-branded';
+@import 'components/compass';
+@import 'components/embed-responsive';
 
 // Composed components
 @import 'components/navbar';

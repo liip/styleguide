@@ -1,0 +1,137 @@
+.compass {
+  display: inline-block;
+  width: 94px;
+  height: 94px;
+
+  position: relative;
+
+  vertical-align: text-bottom;
+
+  background-color: $white;
+  border: 7px solid $brand-color;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px $warm-grey-200 inset;
+
+  @include media('md') {
+    width: 264px;
+    height: 264px;
+
+    border-width: 32px;
+  }
+
+  &::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+
+    background-color: $white;
+    border-radius: 50%;
+    border: 2px solid $warm-grey-400;
+    transform: translate(-50%, -50%);
+
+    @include media('md') {
+      width: 20px;
+      height: 20px;
+
+      border-width: $spacing-unit-tiny/2;
+    }
+  }
+}
+
+  .compass__title {
+    display: inline-block;
+
+    color: $brand-color;
+    font-size: 110px;
+    font-weight: 500;
+    line-height: 1;
+
+    @include media('md') {
+      font-size: 325px;
+      line-height: 76%;
+    }
+  }
+
+  .compass__dial {
+    &::before,
+    &::after {
+      content: '';
+      width: 10px;
+      height: 73px;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+
+      border: 5px solid transparent;
+      border-bottom-color: $warm-grey-200;
+      border-top-color: $warm-grey-200;
+      transform: translate(-50%, -50%);
+
+      @include media('md') {
+        width: 20px;
+        height: 192px;
+        border-width: 10px;
+      }
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
+
+  .compass__needle-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    animation: compass-rotate 4s infinite ease-in-out;
+  }
+
+  .compass__needle {
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    left: calc(50% - 8px);
+    top: calc(50% - 33px);
+
+    border: 8px solid transparent;
+    border-bottom: 25px solid $brand-color;
+
+    @include media('md') {
+      left: calc(50% - 20px);
+      top: calc(50% - 95px);
+
+      border-width: 20px;
+      border-bottom-width: 75px;
+    }
+
+    &::after {
+      content: '';
+      width: 0;
+      height: 0;
+
+      position: absolute;
+      left: -8px;
+      top: 26px;
+
+      border: 8px solid transparent;
+      border-top: 25px solid $warm-grey-200;
+
+      @include media('md') {
+        left: -20px;
+        top: 76px;
+
+        border-width: 20px;
+        border-top-width: 75px;
+      }
+    }
+  }
