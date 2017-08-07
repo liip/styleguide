@@ -1,111 +1,88 @@
 .compass {
   display: inline-block;
-  vertical-align: top;
-  width: 200px;
-  height: 200px;
-  position: relative;
-  background-color: $white;
-  border: $spacing-unit-tiny solid $warm-grey-200;
-  border-radius: 50%;
-  box-shadow: 0 0 0 32px $brand-color;
+  width: 94px;
+  height: 94px;
 
-  @include media('sm', $breakpoints-desc) {
-    width: 80px;
-    height: 80px;
-    border: $spacing-unit-tiny/2 solid $warm-grey-200;
-    box-shadow: 0 0 0 $spacing-unit-tiny $brand-color;
+  position: relative;
+
+  vertical-align: text-bottom;
+
+  background-color: $white;
+  border: 7px solid $brand-color;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px $warm-grey-200 inset;
+
+  @include media('md') {
+    width: 264px;
+    height: 264px;
+
+    border-width: 32px;
   }
 
   &::before {
     content: '';
-    width: 20px;
-    height: 20px;
+    width: 8px;
+    height: 8px;
+
     position: absolute;
     left: 50%;
     top: 50%;
     z-index: 2;
+
     background-color: $white;
     border-radius: 50%;
-    border: $spacing-unit-tiny/2 solid $warm-grey-400;
+    border: 2px solid $warm-grey-400;
     transform: translate(-50%, -50%);
 
-    @include media('sm', $breakpoints-desc) {
-      width: 8px;
-      height: 8px;
-      border: 2px solid $warm-grey-400;
+    @include media('md') {
+      width: 20px;
+      height: 20px;
+
+      border-width: $spacing-unit-tiny/2;
     }
   }
 }
 
   .compass__title {
     display: inline-block;
-    margin-top: -10px;
-    line-height: 76%;
-    font-size: 325px;
-    font-weight: 500;
-    color: $brand-color;
 
-    @include media('sm', $breakpoints-desc) {
-      font-size: 110px;
-      line-height: 100%;
+    color: $brand-color;
+    font-size: 110px;
+    font-weight: 500;
+    line-height: 1;
+
+    @include media('md') {
+      font-size: 325px;
+      line-height: 76%;
     }
   }
-    .compass__title--left {
-      margin-right: $spacing-unit-large;
-
-      @include media('sm', $breakpoints-desc) {
-        margin-right: $spacing-unit-small;
-      }
-    }
-    .compass__title--right {
-      margin-left: $spacing-unit-large;
-
-      @include media('sm', $breakpoints-desc) {
-        margin-left: $spacing-unit-small;
-      }
-    }
 
   .compass__dial {
     &::before,
     &::after {
       content: '';
+      width: 10px;
+      height: 73px;
+
       position: absolute;
-      z-index: 2;
-      border: 10px solid transparent;
-
-      @include media('sm', $breakpoints-desc) {
-        border: 5px solid transparent;
-      }
-    }
-
-    &::before {
-      width: 20px;
-      height: 186px;
-      top: 0;
+      top: 50%;
       left: 50%;
+      z-index: 2;
+
+      border: 5px solid transparent;
       border-bottom-color: $warm-grey-200;
       border-top-color: $warm-grey-200;
-      transform: translateX(-50%);
+      transform: translate(-50%, -50%);
 
-      @include media('sm', $breakpoints-desc) {
-        width: 10px;
-        height: 73px;
+      @include media('md') {
+        width: 20px;
+        height: 192px;
+        border-width: 10px;
       }
     }
 
     &::after {
-      width: 186px;
-      height: 20px;
-      left: 0;
-      top: 50%;
-      border-left-color: $warm-grey-200;
-      border-right-color: $warm-grey-200;
-      transform: translateY(-50%);
-
-      @include media('sm', $breakpoints-desc) {
-        height: 10px;
-        width: 73px;
-      }
+      transform: translate(-50%, -50%) rotate(90deg);
     }
   }
 
@@ -113,6 +90,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+
     transform: translate(-50%, -50%);
     animation: compass-rotate 4s infinite ease-in-out;
   }
@@ -120,34 +98,40 @@
   .compass__needle {
     width: 0;
     height: 0;
-    position: absolute;
-    left: calc(50% - 20px);
-    top: calc(50% - 95px);
-    border: 20px solid transparent;
-    border-bottom: 75px solid $brand-color;
 
-    @include media('sm', $breakpoints-desc) {
-      left: calc(50% - 8px);
-      top: calc(50% - 33px);
-      border: 8px solid transparent;
-      border-bottom: 25px solid $brand-color;
+    position: absolute;
+    left: calc(50% - 8px);
+    top: calc(50% - 33px);
+
+    border: 8px solid transparent;
+    border-bottom: 25px solid $brand-color;
+
+    @include media('md') {
+      left: calc(50% - 20px);
+      top: calc(50% - 95px);
+
+      border-width: 20px;
+      border-bottom-width: 75px;
     }
 
     &::after {
       content: '';
       width: 0;
       height: 0;
-      position: absolute;
-      left: -20px;
-      top: 76px;
-      border: 20px solid transparent;
-      border-top: 75px solid $warm-grey-200;
 
-      @include media('sm', $breakpoints-desc) {
-        left: -8px;
-        top: 26px;
-        border: 8px solid transparent;
-        border-top: 25px solid $warm-grey-200;
+      position: absolute;
+      left: -8px;
+      top: 26px;
+
+      border: 8px solid transparent;
+      border-top: 25px solid $warm-grey-200;
+
+      @include media('md') {
+        left: -20px;
+        top: 76px;
+
+        border-width: 20px;
+        border-top-width: 75px;
       }
     }
   }
