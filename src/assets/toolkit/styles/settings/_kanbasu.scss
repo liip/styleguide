@@ -6,7 +6,7 @@
 \*----------------------------------------*/
 
 // Use this setting to prefix all the components classes
-// $namespace:                         '';
+$namespace:                         '';
 
 
 /**
@@ -14,11 +14,11 @@
  */
 
 $brand-color:                       $green-700;
-// $alt-color-lighter:                 #eee;
-// $alt-color-light:                   #999;
-// $alt-color:                         #777;
-// $alt-color-dark:                    #555;
-// $alt-color-darker:                  #333;
+$alt-color-lighter:                 #eee;
+$alt-color-light:                   #999;
+$alt-color:                         #777;
+$alt-color-dark:                    #555;
+$alt-color-darker:                  #333;
 
 
 /**
@@ -27,29 +27,36 @@ $brand-color:                       $green-700;
 
 $font-family-default:               'Liip Etica', Arial, sans-serif;
 
-// $font-size-default:                 16px;
-// $font-size-small:                   0.75rem;
-// $font-size-large:                   1.5rem;
+$font-size-default:                 16px;
+$font-size-small:                   0.75rem;
+$font-size-large:                   1.5rem;
 
 $line-height-default:               1.75;
 
 $text-color:                        $warm-grey-700;
-// $link-color:                        $brand-color;
-// $muted-color:                       transparentize($text-color,.4);
+$link-color:                        $brand-color;
+$muted-color:                       transparentize($text-color,.4);
 
 
 /**
  * Spacings
  */
 
-// $ratio:                             1.61803398875;
+$ratio:                             1.61803398875;
 
 $spacing-unit-default:              20px;
-// $spacing-unit-tiny:                 floor($spacing-unit-default / ($ratio * 2));
-// $spacing-unit-small:                floor($spacing-unit-default / $ratio);
-// $spacing-unit-large:                floor($spacing-unit-default * $ratio);
-// $spacing-unit-huge:                 floor($spacing-unit-default * ($ratio * 2));
+$spacing-unit-tiny:                 floor($spacing-unit-default / ($ratio * 2));
+$spacing-unit-small:                floor($spacing-unit-default / $ratio);
+$spacing-unit-large:                floor($spacing-unit-default * $ratio);
+$spacing-unit-huge:                 floor($spacing-unit-default * ($ratio * 2));
 
+$spacings:                          (
+                                      'tight' 0,
+                                      'tiny' $spacing-unit-tiny,
+                                      'small' $spacing-unit-small,
+                                      'large' $spacing-unit-large,
+                                      'huge' $spacing-unit-huge
+                                    ) !default;
 
 /**
  * Responsiveness
@@ -57,12 +64,12 @@ $spacing-unit-default:              20px;
 
 // Use EM media-queries for better browser consistency
 // See http://zellwk.com/blog/media-query-units
-// $screen-xs-max:                     640px  / 16px * 1em;
-// $screen-sm-min:                     641px  / 16px * 1em;
-// $screen-sm-max:                     768px  / 16px * 1em;
-// $screen-md-min:                     769px  / 16px * 1em;
-// $screen-md-max:                     1024px / 16px * 1em;
-// $screen-lg-min:                     1025px / 16px * 1em;
+$screen-xs-max:                     640px  / 16px * 1em;
+$screen-sm-min:                     641px  / 16px * 1em;
+$screen-sm-max:                     768px  / 16px * 1em;
+$screen-md-min:                     769px  / 16px * 1em;
+$screen-md-max:                     1024px / 16px * 1em;
+$screen-lg-min:                     1025px / 16px * 1em;
 $screen-lg-max:                     1199px / 16px * 1em;
 $screen-xl-min:                     1200px / 16px * 1em;
 
@@ -84,9 +91,9 @@ $breakpoints-desc:                  (
  * Miscellaneous
  */
 
-// $border-radius-default:             4px;
-// $border-radius-small:               2px;
-// $border-radius-large:               6px;
+$border-radius-default:             4px;
+$border-radius-small:               2px;
+$border-radius-large:               6px;
 
 
 /*----------------------------------------*\
@@ -99,19 +106,19 @@ $breakpoints-desc:                  (
 
 $btn-padding:                       $spacing-unit-default/$ratio $spacing-unit-default;
 $btn-color:                         $web-black;
-// $btn-font-size:                     inherit;
-// $btn-font-family:                   inherit;
+$btn-font-size:                     inherit;
+$btn-font-family:                   inherit;
 $btn-border:                        1px solid transparent;
-// $btn-bkg:                           transparent;
+$btn-bkg:                           transparent;
 $btn-border-radius:                 0;
 
 $btn-small-padding:                 $spacing-unit-small/$ratio $spacing-unit-small;
-// $btn-small-font-size:               $font-size-small;
-// $btn-small-border:                  $btn-border;
+$btn-small-font-size:               $font-size-small;
+$btn-small-border:                  $btn-border;
 $btn-small-border-radius:           0;
 
-// $btn-large-padding:                 $spacing-unit-default/$ratio $spacing-unit-default;
-// $btn-large-font-size:               $font-size-large;
+$btn-large-padding:                 $spacing-unit-default/$ratio $spacing-unit-default;
+$btn-large-font-size:               $font-size-large;
 $btn-large-border:                  2px solid transparent;
 $btn-large-border-radius:           0;
 
@@ -132,48 +139,48 @@ $btn-primary-active-bkg-color:      $green-500;
 
 $field-padding:                     $spacing-unit-small $spacing-unit-small;
 
-// $field-color:                       inherit;
-// $field-font-size:                   inherit;
-// $field-font-family:                 inherit;
-// $field-line-height:                 $line-height-default;
+$field-color:                       inherit;
+$field-font-size:                   inherit;
+$field-font-family:                 inherit;
+$field-line-height:                 $line-height-default;
 
-// $field-bkg-color:                   white;
+$field-bkg-color:                   white;
 $field-border:                      1px solid $warm-grey-100;
 $field-focus-border-color:          $warm-grey-500;
 $field-border-radius:               0;
 
 $field-disabled-bkg-color:          $warm-grey-100;
-// $field-disabled-color:              $alt-color;
+$field-disabled-color:              $alt-color;
 
-// $field-small-padding:               $spacing-unit-tiny;
-// $field-small-font-size:             $font-size-small;
+$field-small-padding:               $spacing-unit-tiny;
+$field-small-font-size:             $font-size-small;
 $field-small-border:                $field-border;
 $field-small-border-radius:         0;
 
-// $field-large-padding:               $spacing-unit-small $spacing-unit-default;
+$field-large-padding:               $spacing-unit-small $spacing-unit-default;
 $field-large-font-size:             1.875rem;
 $field-large-border:                2px solid $warm-grey-100;
 $field-large-border-radius:         0;
 
-// $field-help-color:                  $alt-color-light;
+$field-help-color:                  $alt-color-light;
 
 
 /**
  * Lists
  */
 
-// $list-separator-style:              1px solid $alt-color-lighter;
+$list-separator-style:              1px solid $alt-color-lighter;
 
 
 /**
  * Box
  */
 
-// $box-default-color:                 inherit;
+$box-default-color:                 inherit;
 $box-default-bkg-color:             white;
 
-// $box-primary-color:                 white;
-// $box-primary-bkg-color:             $brand-color;
+$box-primary-color:                 white;
+$box-primary-bkg-color:             $brand-color;
 
 
 /**
@@ -188,11 +195,11 @@ $widths-breakpoints:                $breakpoints-default;
  * Media
  */
 
-// $media-gutter:                      $spacing-unit-default;
+$media-gutter:                      $spacing-unit-default;
 
 
 /**
  * Media responsive
  */
 
-// $media-collapse:                    $screen-sm-max;
+$media-collapse:                    $screen-sm-max;
