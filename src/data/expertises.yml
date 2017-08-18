@@ -1,4 +1,4 @@
-- name: Ecommerce
+- name: E-commerce
   icon: ecommerce
 - name: Content Management
   icon: content-management
@@ -6,7 +6,7 @@
   icon: user-experience
 - name: Mobile
   icon: mobile
-- name: Elearning
+- name: E-learning
   icon: elearning
 - name: API
   icon: api
