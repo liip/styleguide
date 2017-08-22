@@ -46,7 +46,7 @@
     }
 
     p:first-of-type::before {
-      content: open-quote;
+      content: "“";
       position: absolute;
       left: 0;
     }
@@ -54,7 +54,7 @@
       margin-bottom: $spacing-unit-tiny;
 
       &::after {
-        content: close-quote;
+        content: "”";
         position: absolute;
       }
     }
