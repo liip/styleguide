@@ -37,7 +37,6 @@ import 'polyfills';
 
 import Multiplier from 'components/Multiplier';
 import Navbar from 'components/Navbar';
-import Weather from 'components/Weather';
 import Accordion from 'components/Accordion';
 import Reel from 'components/Reel';
 import Collapse from 'components/Collapse';
@@ -49,7 +48,6 @@ import ContactForm from 'components/ContactForm';
 window.Toolkit = {
   Multiplier,
   Navbar,
-  Weather,
   Accordion,
   Reel,
   Collapse,
