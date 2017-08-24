@@ -97,7 +97,7 @@
 @import 'kanbasu/src/assets/scss/components/btn';
 @import 'kanbasu/src/assets/scss/components/box';
 @import 'kanbasu/src/assets/scss/components/media';
-// @import 'kanbasu/src/assets/scss/components/media-responsive';
+@import 'kanbasu/src/assets/scss/components/media-responsive';
 @import 'kanbasu/src/assets/scss/components/list';
 @import 'kanbasu/src/assets/scss/components/list-inline';
 @import 'kanbasu/src/assets/scss/components/list-stacked';
@@ -126,6 +126,7 @@
 @import 'components/image-branded';
 @import 'components/compass';
 @import 'components/embed-responsive';
+@import 'components/box';
 
 // Composed components
 @import 'components/navbar';
