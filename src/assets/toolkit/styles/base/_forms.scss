@@ -50,6 +50,18 @@ select.field--primary {
   }
 }
 
+@include media('md') {
+  .field--large {
+    padding: $spacing-unit-tiny $spacing-unit-default;
+    font-size: rem(30px);
+    border-width: 2px;
+  }
+
+  select.field--large {
+    height: 68px;
+  }
+}
+
 .field--primary {
   color: $green-700;
   border-color: $green-700;

@@ -157,9 +157,9 @@ $field-small-font-size:             $font-size-small;
 $field-small-border:                $field-border;
 $field-small-border-radius:         0;
 
-$field-large-padding:               $spacing-unit-small $spacing-unit-default;
-$field-large-font-size:             1.875rem;
-$field-large-border:                2px solid $warm-grey-100;
+$field-large-padding:               $spacing-unit-tiny $spacing-unit-small;
+$field-large-font-size:             1.5rem;
+$field-large-border:                1px solid $warm-grey-100;
 $field-large-border-radius:         0;
 
 $field-help-color:                  $alt-color-light;
