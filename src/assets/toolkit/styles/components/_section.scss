@@ -3,14 +3,14 @@
 \*----------------------------------------*/
 
 .section {
-  padding: $spacing-unit-small $spacing-unit-small $spacing-unit-large;
+  padding: $spacing-unit-large $spacing-unit-small;
 
   position: relative;
 
   background-color: $web-white;
 
   @include media('sm') {
-    padding: $spacing-unit-default;
+    padding: $spacing-unit-large $spacing-unit-default;
   }
 
   @include media('md') {
