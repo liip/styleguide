@@ -21,14 +21,16 @@
 }
 
 .btn--default {
-  border-color: $btn-default-color;
+  border-color: $warm-grey-200;
 
   &:focus {
+    border-color: $warm-grey-400;
     background: $btn-default-bkg-color;
     box-shadow: 0 0 0 4px rgba(0,0,0,.1);
   }
 
   &:hover {
+    border-color: $btn-default-hover-bkg-color;
     background: $btn-default-hover-bkg-color;
   }
 }
