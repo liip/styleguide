@@ -1,8 +1,5 @@
 /*----------------------------------------*\
   KANBASU SETTINGS
-
-  Check the following page for details:
-  kanbasu.liip.ch/settings.html
 \*----------------------------------------*/
 
 // Use this setting to prefix all the components classes
@@ -192,14 +189,22 @@ $widths-breakpoints:                $breakpoints-default;
 
 
 /**
- * Media
- */
-
-$media-gutter:                      $spacing-unit-default;
-
-
-/**
  * Media responsive
  */
 
 $media-collapse:                    $screen-sm-max;
+
+
+/**
+ * Container
+ */
+
+$container-gutter-width:            $spacing-unit-small;
+$container-max-width:               1142px;
+
+
+/**
+ * Table responsive
+ */
+
+$table-responsive-collapse:         $screen-sm-max;

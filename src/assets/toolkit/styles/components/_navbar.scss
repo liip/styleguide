@@ -36,7 +36,7 @@
 
   .navbar__body {
     width: 100%;
-    max-width: calc(#{$container-width} + #{$spacing-unit-huge*2});
+    max-width: calc(#{$container-max-width} + #{$spacing-unit-huge*2});
     height: $navbar-height-xs;
     margin-left: auto;
     margin-right: auto;
