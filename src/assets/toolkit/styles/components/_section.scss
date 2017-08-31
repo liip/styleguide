@@ -3,15 +3,11 @@
 \*----------------------------------------*/
 
 .section {
-  padding: $spacing-unit-large $spacing-unit-small;
+  padding: $spacing-unit-large $spacing-unit-default;
 
   position: relative;
 
   background-color: $web-white;
-
-  @include media('sm') {
-    padding: $spacing-unit-large $spacing-unit-default;
-  }
 
   @include media('md') {
     padding: $spacing-unit-large;
