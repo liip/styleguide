@@ -10,8 +10,17 @@
   color: $web-black;
   font-weight: 700;
 
+  transition: color .2s ease-out;
+
   a {
     color: inherit;
+    transition: inherit;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $green-700;
+    }
   }
 }
 
@@ -85,6 +94,11 @@ a {
   &:hover,
   &:focus {
     text-decoration: underline;
+
+    @include headings {
+      text-decoration: none;
+      color: $green-700;
+    }
   }
 }
 
