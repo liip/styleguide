@@ -22,8 +22,8 @@ select.field {
 
   background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4%207h16l-8%2010z%22%20fill%3D%22%23C0C1BC%22%2F%3E%3C%2Fsvg%3E');
   background-repeat: no-repeat;
-  background-position: calc(100% - 4px) center;
-  background-size: 20px;
+  background-position: calc(100% - 10px) center;
+  background-size: 16px;
   cursor: pointer;
 
   &:hover,
@@ -94,6 +94,10 @@ select.field--primary {
   &:focus {
     border-top-color: transparent;
   }
+}
+
+select.field--light {
+  background-position: 100% center;
 }
 
 .field--ghost {
