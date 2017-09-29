@@ -67,7 +67,7 @@
   }
 
   .navbar__collapse {
-    @include media('sm', $breakpoints-desc) {
+    @include media('xs', $breakpoints-desc) {
       padding-top: $spacing-unit-tiny;
       padding-bottom: $spacing-unit-tiny;
 
@@ -97,7 +97,7 @@
     display: inline-block;
     transition: background .3s;
 
-    @include media('md') {
+    @include media('sm') {
       display: none;
     }
   }
@@ -185,7 +185,7 @@
   @extend %list;
 
   > li {
-    @include media('md') {
+    @include media('sm') {
       display: inline-block;
 
       + li {
@@ -219,16 +219,19 @@
       outline: none;
     }
 
-    @include media('md') {
+    @include media('sm') {
       display: inline-block;
       padding: 0;
+    }
+
+    @include media('md') {
       font-size: rem(24px);
     }
 
     &.is-active {
       color: $brand-color;
 
-      @include media('md') {
+      @include media('sm') {
         border-bottom-color: currentcolor;
 
         .navbar--negative & {
