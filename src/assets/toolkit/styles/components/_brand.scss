@@ -8,6 +8,24 @@
   align-items: center;
 }
 
+a.brand {
+  .brand__img {
+    transition: transform .2s cubic-bezier(.32,.63,.43,1.34);
+    will-change: transform;
+  }
+
+  &:hover,
+  &:focus {
+    .brand__img {
+      transform: scale(1.1);
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
   .brand__img {
     max-height: 80px;
   }
