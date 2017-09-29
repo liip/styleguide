@@ -14,12 +14,6 @@
     flex-shrink: 0;
 
     color: inherit;
-    transition: opacity .3s;
-
-    &:hover,
-    &:focus {
-      opacity: .7;
-    }
   }
 
   .logo {
@@ -152,10 +146,10 @@
   .navbar-hamburger__first,
   .navbar-hamburger__third {
     transform-origin: 50% 50%;
-    transition: transform .3s ease;
+    transition: transform .3s;
   }
   .navbar-hamburger__second {
-    transition: opacity .3s ease;
+    transition: opacity .3s;
   }
 
   .navbar--expanded {
@@ -200,15 +194,13 @@
 
     border-top: 3px solid transparent; // Compensate bottom for perfect vertical-alignment
     border-bottom: 3px solid rgba(255,255,255,0);
-    transition-property: border, font-size, line-height;
+    transition-property: color, border, font-size, line-height;
     transition-duration: .3s;
 
     &:hover,
     &:focus {
       color: $brand-color;
       text-decoration: none;
-
-      transition: color .2s ease-out;
     }
 
     @include media('md') {
