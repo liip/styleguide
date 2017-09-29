@@ -33,7 +33,6 @@
     padding-left: $spacing-unit-default;
     padding-right: $spacing-unit-default;
 
-    color: $brand-color;
     font-size: rem(32px);
     font-weight: 500;
     line-height: 1.2;
@@ -42,6 +41,7 @@
 
     p:first-of-type::before,
     p:last-of-type::after {
+      color: $brand-color;
       font-size: 1.5em;
     }
 
@@ -49,6 +49,7 @@
       content: "“";
       position: absolute;
       left: 0;
+      top: -3px;
     }
     p:last-of-type {
       margin-bottom: $spacing-unit-tiny;
@@ -71,4 +72,12 @@
   .quote__author {
     color: $web-black;
     font-weight: 500;
+
+    transition: color .2s;
+
+    &:hover,
+    &:focus {
+      color: $brand-color;
+      text-decoration: none;
+    }
   }
