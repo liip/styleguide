@@ -26,6 +26,7 @@ select.field {
   background-size: 20px;
   cursor: pointer;
 
+  &:hover,
   &:focus {
     background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4%207h16l-8%2010z%22%20fill%3D%22%236E6E64%22%2F%3E%3C%2Fsvg%3E');
   }
@@ -45,6 +46,7 @@ select.field {
 select.field--primary {
   background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4%207h16l-8%2010z%22%20fill%3D%22%236EA644%22%2F%3E%3C%2Fsvg%3E');
 
+  &:hover,
   &:focus {
     background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4%207h16l-8%2010z%22%20fill%3D%22%23A4C339%22%2F%3E%3C%2Fsvg%3E');
   }
@@ -63,12 +65,20 @@ select.field--primary {
 }
 
 .field--primary {
-  color: $green-700;
   border-color: $green-700;
 
+  &:hover,
+  &:focus {
+    border-color: $green-400;
+  }
+}
+
+select.field--primary {
+  color: $green-700;
+
+  &:hover,
   &:focus {
     color: $green-400;
-    border-color: $green-400;
   }
 }
 
@@ -80,6 +90,7 @@ select.field--primary {
   border-right: 0;
   border-left: 0;
 
+  &:hover,
   &:focus {
     border-top-color: transparent;
   }
@@ -100,6 +111,7 @@ select.field--primary {
   background-size: 24px;
   cursor: pointer;
 
+  &:hover,
   &:focus {
     background-image: url('data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%3E%3Cpath%20fill=%22#6E6E64%22%20d=%22M23.71,22.29l-8.54-8.54a8.52,8.52,0,1,0-1.41,1.41l8.54,8.54a1,1,0,0,0,1.41-1.41ZM2,8.5A6.5,6.5,0,1,1,8.5,15,6.51,6.51,0,0,1,2,8.5Z%22/%3E%3C/svg%3E');
   }
@@ -107,6 +119,7 @@ select.field--primary {
   &.field--primary {
     background-image: url('data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%3E%3Cpath%20fill=%22#6EA644%22%20d=%22M23.71,22.29l-8.54-8.54a8.52,8.52,0,1,0-1.41,1.41l8.54,8.54a1,1,0,0,0,1.41-1.41ZM2,8.5A6.5,6.5,0,1,1,8.5,15,6.51,6.51,0,0,1,2,8.5Z%22/%3E%3C/svg%3E');
 
+    &:hover,
     &:focus {
       background-image: url('data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%3E%3Cpath%20fill=%22#A4C339%22%20d=%22M23.71,22.29l-8.54-8.54a8.52,8.52,0,1,0-1.41,1.41l8.54,8.54a1,1,0,0,0,1.41-1.41ZM2,8.5A6.5,6.5,0,1,1,8.5,15,6.51,6.51,0,0,1,2,8.5Z%22/%3E%3C/svg%3E');
     }
