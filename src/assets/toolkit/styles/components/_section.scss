@@ -49,6 +49,10 @@
 
     position: relative;
     z-index: 2;
+
+    .section--wide & {
+      width: $container-wide-max-width;
+    }
   }
 
   .section__continue {
