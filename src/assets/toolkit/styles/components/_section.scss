@@ -106,8 +106,7 @@
 }
 
 .section--negative,
-.section--primary,
-.section--dark {
+.section--primary {
   color: $web-white;
 
   @include headings() {
@@ -117,10 +116,6 @@
 
 .section--primary {
   background-image: linear-gradient(14deg, $green-400 0%, $green-700 58%);
-}
-
-.section--dark {
-  background-color: $warm-grey-900;
 }
 
 
