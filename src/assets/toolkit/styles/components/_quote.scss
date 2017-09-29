@@ -85,7 +85,9 @@
     font-weight: 500;
 
     transition: color .2s;
+  }
 
+  a.quote__author {
     &:hover,
     &:focus {
       color: $brand-color;
