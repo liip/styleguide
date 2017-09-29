@@ -21,6 +21,10 @@
       text-decoration: none;
       color: $green-700;
     }
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 
@@ -110,6 +114,10 @@ a {
   &:focus {
     color: $brand-color;
     transition: color .2s;
+  }
+
+  &:focus {
+    outline: none;
   }
 }
 

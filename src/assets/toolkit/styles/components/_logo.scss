@@ -18,14 +18,6 @@
     transition-property: fill, opacity, transform;
     transition-duration: .5s;
   }
-
-  &:hover,
-  &:focus {
-    svg {
-      fill: $brand-color;
-      transition-duration: .3s;
-    }
-  }
 }
 
   .logo__L {

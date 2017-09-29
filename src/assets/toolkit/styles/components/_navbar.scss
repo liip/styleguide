@@ -14,6 +14,18 @@
     flex-shrink: 0;
 
     color: inherit;
+
+    &:hover,
+    &:focus {
+      .logo svg {
+        fill: $brand-color;
+        transition-duration: .3s;
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
   }
 
   .logo {
@@ -201,6 +213,10 @@
     &:focus {
       color: $brand-color;
       text-decoration: none;
+    }
+
+    &:focus {
+      outline: none;
     }
 
     @include media('md') {

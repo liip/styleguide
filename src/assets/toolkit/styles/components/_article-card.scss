@@ -17,6 +17,10 @@
         color: $green-700;
       }
     }
+
+    &:focus {
+      outline: none;
+    }
   }
 
   .article-card__title {

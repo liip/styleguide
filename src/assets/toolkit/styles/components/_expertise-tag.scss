@@ -53,6 +53,10 @@
     }
   }
 
+  &:focus {
+    outline: none;
+  }
+
   @supports (-webkit-background-clip: text) {
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(to right, $green-700 50%, $green-400);

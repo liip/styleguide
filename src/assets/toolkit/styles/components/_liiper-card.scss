@@ -13,6 +13,10 @@ a.liiper-card {
       transform: scale(1.1627907);
     }
   }
+
+  &:focus {
+    outline: none;
+  }
 }
 
   .liiper-card__avatar {
