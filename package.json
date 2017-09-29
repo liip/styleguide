@@ -27,6 +27,7 @@
     "del": "^3.0.0",
     "eslint": "^3.12.2",
     "eslint-config-rawbot": "^0.3.0",
+    "expanding-textareas": "^1.0.2",
     "fabricator-assemble": "^1.1.11",
     "gulp": "^3.9.1",
     "gulp-batch": "^1.0.5",

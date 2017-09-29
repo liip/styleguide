@@ -1,8 +1,4 @@
-<form action="" id="contact-form-personal" class="contact-form contact-form--personal">
-  {{#with (random liipers) as |liiper|}}
-    {{>liiper-card.large liiper=liiper class="mrgb md-mrgb+"}}
-  {{/with}}
-
+<form action="" id="contact-form" class="contact-form">
   <div class="contact-form__body box box--default md-pdg+">
     <div class="contact-form__step-1">
       <div class="form-group">
@@ -36,7 +32,7 @@
 
 <script type="text/javascript">
   window.addEventListener('DOMContentLoaded', function() {
-    var form = document.querySelector('#contact-form-personal');
+    var form = document.querySelector('#contact-form');
     if (form) {
       new Toolkit.ContactForm(form);
     }
