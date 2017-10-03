@@ -15,16 +15,14 @@
     list-style: none;
 
     &::before {
-      content: '';
-      display: block;
-      width: 1em;
-      height: 0.0625em * 2  ;
+      content: '—';
+      display: inline-block;
 
       position: absolute;
+      top: -2px;
       left: -1.8em;
-      top: 0.77em;
 
-      background-color: $brand-color;
+      color: $brand-color;
     }
   }
 }
