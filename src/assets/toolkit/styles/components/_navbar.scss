@@ -157,7 +157,7 @@
 }
   .navbar-hamburger__first,
   .navbar-hamburger__third {
-    transform-origin: 50% 50%;
+    transform-origin: 12px 12px;
     transition: transform .3s;
   }
   .navbar-hamburger__second {
@@ -166,13 +166,13 @@
 
   .navbar--expanded {
     .navbar-hamburger__first {
-      transform: translateY(6px) rotate(-45deg);
+      transform: rotate(-45deg) translateY(6px);
     }
     .navbar-hamburger__second {
       opacity: 0;
     }
     .navbar-hamburger__third {
-      transform: translateY(-6px) rotate(45deg);
+      transform: rotate(45deg) translateY(-6px);
     }
   }
 
