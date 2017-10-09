@@ -41,8 +41,8 @@
 
   .quote__text {
     flex: 1;
-    padding-left: $spacing-unit-default;
-    padding-right: $spacing-unit-default;
+    padding-left: $spacing-unit-large;
+    padding-right: $spacing-unit-large;
 
     font-size: rem(32px);
     font-weight: 500;
@@ -54,19 +54,21 @@
     p:last-of-type::after {
       color: $brand-color;
       font-size: 1.5em;
+      line-height: 0.7;
     }
 
     p:first-of-type::before {
-      content: "“";
+      content: "«";
       position: absolute;
       left: 0;
-      top: -3px;
     }
     p:last-of-type {
       margin-bottom: $spacing-unit-tiny;
 
       &::after {
-        content: "”";
+        content: "»";
+        margin-left: $spacing-unit-tiny;
+
         position: absolute;
       }
     }
