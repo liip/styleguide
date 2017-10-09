@@ -62,16 +62,6 @@
         transform: scale(1.1);
       }
     }
-
-    &:active {
-      .expertise-tile__body {
-        transform: scale(1.2);
-
-        @include media('lg') {
-          transform: scale(1.4);
-        }
-      }
-    }
   }
 }
 
