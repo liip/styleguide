@@ -68,9 +68,6 @@
 
   .navbar__collapse {
     @include media('xs', $breakpoints-desc) {
-      padding-top: $spacing-unit-tiny;
-      padding-bottom: $spacing-unit-tiny;
-
       position: absolute;
       top: 100%;
       right: 0;
@@ -79,17 +76,17 @@
 
       background-color: rgba(255,255,255,.9);
       border-top: 1px solid $warm-grey-200;
+      box-shadow: 0 3px 3px rgba(0,0,0,.1);
+      backdrop-filter: blur(3px);
 
-      transform: scaleY(0);
-      transform-origin: top right;
-      opacity: 0;
-      transition-property: transform opacity;
-      transition-duration: .3s;
-
-      .navbar--expanded & {
-        opacity: 1;
-        transform: scaleY(1);
+      .navbar-menu {
+        padding: $spacing-unit-small;
       }
+    }
+
+    @include media('sm') {
+      max-width: none;
+      height: auto;
     }
   }
 
@@ -127,21 +124,22 @@
 }
 
 .navbar--plain {
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(255,255,255,.5);
   border-bottom: 1px solid $warm-grey-300;
 }
 
 .navbar--overlay {
   color: $web-black;
 
-  background-color: rgba(255, 255, 255, .9);
+  background-color: rgba(255,255,255,.9);
 }
 
 @include media('sm', $breakpoints-desc) {
   .navbar--expanded {
     color: $web-black;
 
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(255,255,255,.9);
+    backdrop-filter: blur(3px);
   }
 }
 
@@ -164,7 +162,7 @@
     transition: opacity .3s;
   }
 
-  .navbar--expanded {
+  .navbar__toggle.active {
     .navbar-hamburger__first {
       transform: rotate(-45deg) translateY(6px);
     }
@@ -183,6 +181,7 @@
 
 .navbar-menu {
   @extend %list;
+  text-align: center;
 
   > li {
     @include media('sm') {
@@ -196,8 +195,8 @@
 }
 
   .navbar-menu__link {
-    display: block;
-    padding: $spacing-unit-tiny $spacing-unit-small;
+    display: inline-block;
+    margin: $spacing-unit-tiny 0;
 
     color: inherit;
     font-size: rem(20px);
@@ -220,8 +219,11 @@
     }
 
     @include media('sm') {
-      display: inline-block;
-      padding: 0;
+      .navbar--shrinked & {
+        border-bottom-width: 2px;
+        font-size: rem(18px);
+        line-height: 1.2;
+      }
     }
 
     @include media('md') {
@@ -231,18 +233,12 @@
     &.is-active {
       color: $brand-color;
 
-      @include media('sm') {
-        border-bottom-color: currentcolor;
+      border-bottom-color: currentcolor;
 
+      @include media('sm') {
         .navbar--negative & {
           color: white;
         }
       }
-    }
-
-    .navbar--shrinked & {
-      border-bottom-width: 2px;
-      font-size: rem(18px);
-      line-height: 1.2;
     }
   }

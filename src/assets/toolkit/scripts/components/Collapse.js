@@ -15,17 +15,21 @@ export default class Collapse {
 
   constructor(el, options) {
     if (typeof el === 'string') {
-      this._el = el;
       this._collapse = document.querySelector(this._el);
     } else if (el instanceof Element) {
       this._collapse = el;
-      this._el = `#${this._collapse.id}`;
     } else {
       return;
     }
 
     this._options = Object.assign({}, DEFAULT_OPTIONS, options);
-    this._triggers = [...document.querySelectorAll(`[data-toggle="collapse"][data-target="${this._el}"]`)];
+    this._triggers = [...document.querySelectorAll('[data-toggle="collapse"]')].filter(trigger => {
+      const target = trigger.dataset && trigger.dataset.target;
+      if (target) {
+        return this._collapse.matches(target);
+      }
+      return false;
+    });
     this._active = this._collapse.classList.contains('active');
 
     this.toggle = this.toggle.bind(this);
