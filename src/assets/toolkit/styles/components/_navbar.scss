@@ -140,13 +140,23 @@
     }
   }
 
-  .navbar__toggle,
-  .navbar-menu__link {
+  &:not(.navbar--expanded) .navbar__toggle {
     color: white; // We can’t inherit otherwise transition gets delayed by parent transition
 
     &:hover,
     &:focus {
       color: rgba(255,255,255,.6);
+    }
+  }
+
+  @include media('sm') {
+    .navbar-menu__link {
+      color: white; // We can’t inherit otherwise transition gets delayed by parent transition
+
+      &:hover,
+      &:focus {
+        color: rgba(255,255,255,.6);
+      }
     }
   }
 }
