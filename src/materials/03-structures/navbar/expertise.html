@@ -1,12 +1,12 @@
 <div class="navbar{{#if class}} {{class}}{{/if}}">
   <div class="navbar__body">
+    <a href="/example-pages/home.html" class="navbar__brand" title="Liip">{{>logo}}</a>
+
     <a href="#" data-toggle="collapse" data-target="#expertise-nav" class="expertise-nav-toggle">
       {{> icon id="ecommerce" class="icon--100 md-icon--200 lg-icon--300 expertise-nav-toggle__icon"}}
       Ecommerce
       {{> icon id="chevron-down" class="icon--75 md-icon--100 expertise-nav-toggle__caret"}}
     </a>
-
-    <a href="/example-pages/home.html" class="navbar__brand" title="Liip">{{>logo}}</a>
   </div>
 
   <div id="expertise-nav" class="collapse">
