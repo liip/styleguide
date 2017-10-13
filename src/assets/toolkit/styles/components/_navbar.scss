@@ -132,6 +132,8 @@
   }
 
   .navbar-menu__link {
+    color: white; // We can’t inherit otherwise transition gets delayed by parent transition
+
     &:hover,
     &:focus {
       color: rgba(255,255,255,.6);
@@ -214,7 +216,7 @@
     display: inline-block;
     margin: $spacing-unit-tiny 0;
 
-    color: inherit;
+    color: $web-black; // We can’t inherit otherwise transition gets delayed by parent transition
     font-size: rem(20px);
     font-weight: 700;
     text-align: center;
@@ -222,12 +224,13 @@
     border-top: 3px solid transparent; // Compensate bottom for perfect vertical-alignment
     border-bottom: 3px solid rgba(255,255,255,0);
     transition-property: color, border, font-size, line-height;
-    transition-duration: .3s;
+    transition-duration: .5s;
 
     &:hover,
     &:focus {
       color: $brand-color;
       text-decoration: none;
+      transition-duration: .3s;
     }
 
     &:focus {
