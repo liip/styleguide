@@ -5,6 +5,15 @@
 .haiku {
   color: $web-black;
   line-height: 1.1;
+
+  a {
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
 }
 
   .haiku__intro {
