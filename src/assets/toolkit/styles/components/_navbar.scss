@@ -121,6 +121,22 @@
 
 .navbar--negative {
   color: $web-white;
+
+  .navbar__brand {
+    &:hover,
+    &:focus {
+      .logo svg {
+        fill: rgba(255,255,255,.6);
+      }
+    }
+  }
+
+  .navbar-menu__link {
+    &:hover,
+    &:focus {
+      color: rgba(255,255,255,.6);
+    }
+  }
 }
 
 .navbar--plain {
