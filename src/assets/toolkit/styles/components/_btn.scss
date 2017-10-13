@@ -7,6 +7,10 @@
   font-weight: 500;
   line-height: 1.5;
 
+  transition-property: background-color, border, color;
+  transition-duration: .2s;
+  transition-timing-function: ease-out;
+
   &:hover,
   &:focus {
     color: $brand-color;
@@ -42,12 +46,7 @@
   border-color: $btn-primary-color;
 
   &:focus {
-    background: $btn-primary-bkg-color;
     box-shadow: 0 0 0 4px rgba($btn-primary-color,.25);
-  }
-
-  &:hover {
-    background-image: linear-gradient(to right, $green-700 50%, $green-400);
   }
 
   &:active {
