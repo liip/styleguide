@@ -92,7 +92,16 @@
 
   .navbar__toggle {
     display: inline-block;
-    transition: background .3s;
+
+    color: $web-black;
+
+    transition-property: color, background;
+    transition-duration: .3s;
+
+    &:hover,
+    &:focus {
+      color: $brand-color;
+    }
 
     @include media('sm') {
       display: none;
@@ -131,6 +140,7 @@
     }
   }
 
+  .navbar__toggle,
   .navbar-menu__link {
     color: white; // We can’t inherit otherwise transition gets delayed by parent transition
 
