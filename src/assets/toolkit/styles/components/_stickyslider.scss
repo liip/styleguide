@@ -7,7 +7,7 @@ body.no-overflow {
   top: 0;
   width: 100%;
   height: auto;
-	background: white;
+	background-color: $web-white;
 }
 .scroll__view {
   display: flex;
@@ -19,7 +19,7 @@ body.no-overflow {
 .scroll__overlays,
 .scroll__hero {
   flex: 1 0 50%;
-  @media screen and (max-width: 768px) {
+	@include media('sm', $breakpoints-desc) {
     flex: 1 0 100%;
   }
 }
@@ -33,19 +33,18 @@ body.no-overflow {
   height: 100vh;
   top: 0;
   position: relative;
-  @media screen and (min-width: 768px) {
+	@include media('sm') {
     position: sticky;
   }
   .scroll__text {
-    background: white;
+    background: $web-white;
     padding: 2em;
     word-break: break-word;
     &:before {
       content: "";
       width: 100%;
       height: 50vh;
-      background: red;
-      background: linear-gradient(rgba(255, 255, 255, 0), white);
+      background: linear-gradient(rgba(255, 255, 255, 0), $web-white);
       position: absolute;
       top: 0;
       transform: translateY(calc(-100% + 1px));
@@ -87,70 +86,70 @@ body.no-overflow {
 /* STATE 1 */
 .scroll__view[data-current="1"] {
   .rectangle-1 {
-    background: #b3cc35;
+    background: $green-300;
     left: 38.327%;
     top: 29.239%;
     transform: translate(-50%, -50%) rotate(-24deg);
   }
   .rectangle-2 {
-    background: #a4c339;
+    background: $green-400;
     left: 62.575%;
     top: 30.343%;
     transform: translate(-50%, -50%) rotate(88deg);
   }
   .rectangle-3 {
-    background: #92b93d;
+    background: $green-500;
     left: 50.543%;
     top: 49.013%;
     transform: translate(-50%, -50%) rotate(32deg);
   }
   .rectangle-4 {
-    background: #80b040;
+    background: $green-600;
     left: 44.362%;
     top: 70.482%;
     transform: translate(-50%, -50%) rotate(75deg);
   }
   .rectangle-5 {
-    background: #b3cc35;
+    background: $green-300;
     left: 38.327%;
     top: 29.239%;
     transform: translate(-50%, -50%) rotate(-24deg);
   }
   .rectangle-6 {
-    background: #a4c339;
+    background: $green-400;
     left: 62.575%;
     top: 30.343%;
     transform: translate(-50%, -50%) rotate(88deg);
     opacity: 0;
   }
   .rectangle-7 {
-    background: #92b93d;
+    background: $green-500;
     left: 50.543%;
     top: 49.013%;
     transform: translate(-50%, -50%) rotate(32deg);
     opacity: 0;
   }
   .rectangle-8 {
-    background: #c1d430;
+    background: $green-200;
     left: 28.038%;
     top: 44.5%;
     transform: translate(-50%, -50%) rotate(-73deg);
   }
   .rectangle-9 {
-    background: #6ea644;
+    background: $green-700;
     left: 70.912%;
     top: 59.376%;
     transform: translate(-50%, -50%) rotate(-207deg);
   }
   .rectangle-10 {
-    background: #d0dd2c;
+    background: $green-100;
     left: 28.038%;
     top: 44.5%;
     transform: translate(-50%, -50%) rotate(-73deg) scaleY(1);
     opacity: 0;
   }
   .rectangle-11 {
-    background: #92b93d;
+    background: $green-500;
     left: 70.912%;
     top: 59.376%;
     transform: translate(-50%, -50%) rotate(-207deg) scaleY(1);
@@ -162,71 +161,71 @@ body.no-overflow {
 
 .scroll__view[data-current="2"] {
   .rectangle-1 {
-    background: #b3cc35;
+    background: $green-300;
     left: 34.398%;
     top: 60.665%;
     transform: translate(-50%, -50%) rotate(27deg);
   }
   .rectangle-2 {
-    background: #a4c339;
+    background: $green-400;
     left: 44.698%;
     top: 60.665%;
     transform: translate(-50%, -50%) rotate(27deg);
   }
   .rectangle-3 {
-    background: #92b93d;
+    background: $green-500;
     left: 54.898%;
     top: 60.665%;
     transform: translate(-50%, -50%) rotate(27deg);
   }
   .rectangle-4 {
-    background: #80b040;
+    background: $green-600;
     left: 65.298%;
     top: 60.665%;
     transform: translate(-50%, -50%) rotate(27deg);
   }
   .rectangle-5 {
-    background: #b3cc35;
+    background: $green-300;
     left: 34.398%;
     top: 60.665%;
     transform: translate(-50%, -50%) rotate(27deg);
     opacity: 0;
   }
   .rectangle-6 {
-    background: #a4c339;
+    background: $green-400;
     left: 44.698%;
     top: 60.665%;
     transform: translate(-50%, -50%) rotate(27deg);
     opacity: 0;
   }
   .rectangle-7 {
-    background: #92b93d;
+    background: $green-500;
     left: 54.898%;
     top: 60.665%;
     transform: translate(-50%, -50%) rotate(27deg);
     opacity: 0;
   }
   .rectangle-8 {
-    background: #c1d430;
+    background: $green-200;
     left: 24.898%;
     top: 60.665%;
     transform: translate(-50%, -50%) rotate(27deg);
   }
   .rectangle-9 {
-    background: #6ea644;
+    background: $green-700;
     left: 74.998%;
     top: 60.665%;
     transform: translate(-50%, -50%) rotate(27deg);
   }
   .rectangle-10 {
-    background: #d0dd2c;
+    background: $green-100;
     left: 44.898%;
     top: 39.265%;
     transform: translate(-50%, -50%) rotate(27deg) scaleY(1);
     opacity: 0;
   }
   .rectangle-11 {
-    background: #92b93d;
+    background: $green-500;
     left: 54.998%;
     top: 39.265%;
     transform: translate(-50%, -50%) rotate(27deg) scaleY(1);
@@ -238,58 +237,58 @@ body.no-overflow {
 
 .scroll__view[data-current="3"] {
   .rectangle-1 {
-    background: #6ea644;
+    background: $green-700;
     left: 42.4%;
     top: 56.9%;
     transform: translate(-50%, -50%) rotate(0deg);
   }
   .rectangle-2 {
-    background: #6ea644;
+    background: $green-700;
     left: 49.9%;
     top: 49.3%;
     transform: translate(-50%, -50%) rotate(90deg);
   }
   .rectangle-3 {
-    background: #6ea644;
+    background: $green-700;
     left: 57.6%;
     top: 56.9%;
     transform: translate(-50%, -50%) rotate(180deg);
   }
   .rectangle-4 {
-    background: #6ea644;
+    background: $green-700;
     left: 50%;
     top: 64.4%;
     transform: translate(-50%, -50%) rotate(270deg);
   }
   .rectangle-5 {
-    background: #6ea644;
+    background: $green-700;
     left: 49.9%;
     top: 49.3%;
     transform: translate(-50%, -50%) rotate(90deg);
     opacity: 0;
   }
   .rectangle-6 {
-    background: #6ea644;
+    background: $green-700;
     left: 49.9%;
     top: 49.3%;
     transform: translate(-50%, -50%) rotate(90deg);
     opacity: 0;
   }
   .rectangle-7 {
-    background: #6ea644;
+    background: $green-700;
     left: 50%;
     top: 64.4%;
     transform: translate(-50%, -50%) rotate(270deg);
     opacity: 0;
   }
   .rectangle-8 {
-    background: #92b93d;
+    background: $green-500;
     left: 44.456%;
     top: 41.827%;
     transform: translate(-50%, -50%) rotate(45deg);
   }
   .rectangle-9 {
-    background: #92b93d;
+    background: $green-500;
     left: 55.327%;
     top: 41.756%;
     transform: translate(-50%, -50%) rotate(-45deg);
@@ -301,7 +300,7 @@ body.no-overflow {
     opacity: 0;
   }
   .rectangle-11 {
-    background: #92b93d;
+    background: $green-500;
     left: 55.327%;
     top: 41.756%;
     transform: translate(-50%, -50%) rotate(-45deg) scaleY(1);
@@ -313,72 +312,72 @@ body.no-overflow {
 
 .scroll__view[data-current="4"] {
   .rectangle-1 {
-    background: #6ea644;
+    background: $green-700;
     left: 36.5%;
     top: 56.8%;
     transform: translate(-50%, -50%) rotate(0deg);
   }
   .rectangle-2 {
-    background: #6ea644;
+    background: $green-700;
     left: 44%;
     top: 49.2%;
     transform: translate(-50%, -50%) rotate(90deg);
   }
   .rectangle-3 {
-    background: #6ea644;
+    background: $green-700;
     left: 55.8%;
     top: 56.9%;
     transform: translate(-50%, -50%) rotate(180deg);
   }
   .rectangle-4 {
-    background: #6ea644;
+    background: $green-700;
     left: 44%;
     top: 64.5%;
     transform: translate(-50%, -50%) rotate(270deg);
   }
   .rectangle-5 {
-    background: #6ea644;
+    background: $green-700;
     left: 58.4%;
     top: 49.2%;
     transform: translate(-50%, -50%) rotate(90deg);
     opacity: 1;
   }
   .rectangle-6 {
-    background: #6ea644;
+    background: $green-700;
     left: 66.1%;
     top: 56.9%;
     transform: translate(-50%, -50%) rotate(180deg);
     opacity: 1;
   }
   .rectangle-7 {
-    background: #6ea644;
+    background: $green-700;
     left: 58.4%;
     top: 64.5%;
     transform: translate(-50%, -50%) rotate(270deg);
     opacity: 1;
   }
   .rectangle-8 {
-    background: #92b93d;
+    background: $green-500;
     left: 38.529%;
     top: 41.8%;
     transform: translate(-50%, -50%) rotate(45deg);
   }
   .rectangle-9 {
-    background: #92b93d;
+    background: $green-500;
     left: 49.327%;
     top: 41.656%;
     transform: translate(-50%, -50%) rotate(-45deg);
     z-index: 1; // kamin überdecken
   }
   .rectangle-10 {
-    background: #d0dd2c;
+    background: $green-100;
     left: 51.698%;
     top: 38.149%;
     transform: translate(-50%, -50%) rotate(0) scaleY(0.5);
     opacity: 1;
   }
   .rectangle-11 {
-    background: #92b93d;
+    background: $green-500;
     left: 62%;
     top: 48.098%;
     transform: translate(-50%, -50%) rotate(90deg) scaleY(0.75);
