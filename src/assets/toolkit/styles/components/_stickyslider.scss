@@ -1,0 +1,387 @@
+body.no-overflow {
+	overflow: visible!important;
+}
+
+.scroll {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: auto;
+	background: white;
+}
+.scroll__view {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.scroll__overlays,
+.scroll__hero {
+  flex: 1 0 50%;
+  @media screen and (max-width: 768px) {
+    flex: 1 0 100%;
+  }
+}
+.scroll__overlays {
+  position: relative;
+  z-index: 3;
+}
+.scroll__content {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    position: sticky;
+  }
+  .scroll__text {
+    background: white;
+    padding: 2em;
+    word-break: break-word;
+    &:before {
+      content: "";
+      width: 100%;
+      height: 50vh;
+      background: red;
+      background: linear-gradient(rgba(255, 255, 255, 0), white);
+      position: absolute;
+      top: 0;
+      transform: translateY(calc(-100% + 1px));
+      //that one pixel prevents border glitches in chrome
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}
+.scroll__hero {
+  position: sticky;
+}
+.scroll__sectionwrapper {
+  position: relative;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.rectangles {
+  position: relative;
+  padding-top: 100%;
+}
+.rectangle {
+  width: 4.6%;
+  height: 19.8%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: background 1s cubic-bezier(0.41, 1.68, 0.55, 0.89);
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  // use transition for mobile or if skrollr fails
+  .no-skrollr &{
+    transition: all 1s cubic-bezier(0.41, 1.68, 0.55, 0.89);
+  }
+}
+
+/* STATE 1 */
+.scroll__view[data-current="1"] {
+  .rectangle-1 {
+    background: #b3cc35;
+    left: 38.327%;
+    top: 29.239%;
+    transform: translate(-50%, -50%) rotate(-24deg);
+  }
+  .rectangle-2 {
+    background: #a4c339;
+    left: 62.575%;
+    top: 30.343%;
+    transform: translate(-50%, -50%) rotate(88deg);
+  }
+  .rectangle-3 {
+    background: #92b93d;
+    left: 50.543%;
+    top: 49.013%;
+    transform: translate(-50%, -50%) rotate(32deg);
+  }
+  .rectangle-4 {
+    background: #80b040;
+    left: 44.362%;
+    top: 70.482%;
+    transform: translate(-50%, -50%) rotate(75deg);
+  }
+  .rectangle-5 {
+    background: #b3cc35;
+    left: 38.327%;
+    top: 29.239%;
+    transform: translate(-50%, -50%) rotate(-24deg);
+  }
+  .rectangle-6 {
+    background: #a4c339;
+    left: 62.575%;
+    top: 30.343%;
+    transform: translate(-50%, -50%) rotate(88deg);
+    opacity: 0;
+  }
+  .rectangle-7 {
+    background: #92b93d;
+    left: 50.543%;
+    top: 49.013%;
+    transform: translate(-50%, -50%) rotate(32deg);
+    opacity: 0;
+  }
+  .rectangle-8 {
+    background: #c1d430;
+    left: 28.038%;
+    top: 44.5%;
+    transform: translate(-50%, -50%) rotate(-73deg);
+  }
+  .rectangle-9 {
+    background: #6ea644;
+    left: 70.912%;
+    top: 59.376%;
+    transform: translate(-50%, -50%) rotate(-207deg);
+  }
+  .rectangle-10 {
+    background: #d0dd2c;
+    left: 28.038%;
+    top: 44.5%;
+    transform: translate(-50%, -50%) rotate(-73deg) scaleY(1);
+    opacity: 0;
+  }
+  .rectangle-11 {
+    background: #92b93d;
+    left: 70.912%;
+    top: 59.376%;
+    transform: translate(-50%, -50%) rotate(-207deg) scaleY(1);
+    opacity: 0;
+  }
+}
+
+/* STATE 2 */
+
+.scroll__view[data-current="2"] {
+  .rectangle-1 {
+    background: #b3cc35;
+    left: 34.398%;
+    top: 60.665%;
+    transform: translate(-50%, -50%) rotate(27deg);
+  }
+  .rectangle-2 {
+    background: #a4c339;
+    left: 44.698%;
+    top: 60.665%;
+    transform: translate(-50%, -50%) rotate(27deg);
+  }
+  .rectangle-3 {
+    background: #92b93d;
+    left: 54.898%;
+    top: 60.665%;
+    transform: translate(-50%, -50%) rotate(27deg);
+  }
+  .rectangle-4 {
+    background: #80b040;
+    left: 65.298%;
+    top: 60.665%;
+    transform: translate(-50%, -50%) rotate(27deg);
+  }
+  .rectangle-5 {
+    background: #b3cc35;
+    left: 34.398%;
+    top: 60.665%;
+    transform: translate(-50%, -50%) rotate(27deg);
+    opacity: 0;
+  }
+  .rectangle-6 {
+    background: #a4c339;
+    left: 44.698%;
+    top: 60.665%;
+    transform: translate(-50%, -50%) rotate(27deg);
+    opacity: 0;
+  }
+  .rectangle-7 {
+    background: #92b93d;
+    left: 54.898%;
+    top: 60.665%;
+    transform: translate(-50%, -50%) rotate(27deg);
+    opacity: 0;
+  }
+  .rectangle-8 {
+    background: #c1d430;
+    left: 24.898%;
+    top: 60.665%;
+    transform: translate(-50%, -50%) rotate(27deg);
+  }
+  .rectangle-9 {
+    background: #6ea644;
+    left: 74.998%;
+    top: 60.665%;
+    transform: translate(-50%, -50%) rotate(27deg);
+  }
+  .rectangle-10 {
+    background: #d0dd2c;
+    left: 44.898%;
+    top: 39.265%;
+    transform: translate(-50%, -50%) rotate(27deg) scaleY(1);
+    opacity: 0;
+  }
+  .rectangle-11 {
+    background: #92b93d;
+    left: 54.998%;
+    top: 39.265%;
+    transform: translate(-50%, -50%) rotate(27deg) scaleY(1);
+    opacity: 0;
+  }
+}
+
+/* STATE 3 */
+
+.scroll__view[data-current="3"] {
+  .rectangle-1 {
+    background: #6ea644;
+    left: 42.4%;
+    top: 56.9%;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  .rectangle-2 {
+    background: #6ea644;
+    left: 49.9%;
+    top: 49.3%;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  .rectangle-3 {
+    background: #6ea644;
+    left: 57.6%;
+    top: 56.9%;
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  .rectangle-4 {
+    background: #6ea644;
+    left: 50%;
+    top: 64.4%;
+    transform: translate(-50%, -50%) rotate(270deg);
+  }
+  .rectangle-5 {
+    background: #6ea644;
+    left: 49.9%;
+    top: 49.3%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    opacity: 0;
+  }
+  .rectangle-6 {
+    background: #6ea644;
+    left: 49.9%;
+    top: 49.3%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    opacity: 0;
+  }
+  .rectangle-7 {
+    background: #6ea644;
+    left: 50%;
+    top: 64.4%;
+    transform: translate(-50%, -50%) rotate(270deg);
+    opacity: 0;
+  }
+  .rectangle-8 {
+    background: #92b93d;
+    left: 44.456%;
+    top: 41.827%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .rectangle-9 {
+    background: #92b93d;
+    left: 55.327%;
+    top: 41.756%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  .rectangle-10 {
+    left: 55.327%;
+    top: 41.756%;
+    transform: translate(-50%, -50%) rotate(-45deg) scaleY(1);
+    opacity: 0;
+  }
+  .rectangle-11 {
+    background: #92b93d;
+    left: 55.327%;
+    top: 41.756%;
+    transform: translate(-50%, -50%) rotate(-45deg) scaleY(1);
+    opacity: 0;
+  }
+}
+
+/* STATE 4 */
+
+.scroll__view[data-current="4"] {
+  .rectangle-1 {
+    background: #6ea644;
+    left: 36.5%;
+    top: 56.8%;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  .rectangle-2 {
+    background: #6ea644;
+    left: 44%;
+    top: 49.2%;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  .rectangle-3 {
+    background: #6ea644;
+    left: 55.8%;
+    top: 56.9%;
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  .rectangle-4 {
+    background: #6ea644;
+    left: 44%;
+    top: 64.5%;
+    transform: translate(-50%, -50%) rotate(270deg);
+  }
+  .rectangle-5 {
+    background: #6ea644;
+    left: 58.4%;
+    top: 49.2%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    opacity: 1;
+  }
+  .rectangle-6 {
+    background: #6ea644;
+    left: 66.1%;
+    top: 56.9%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    opacity: 1;
+  }
+  .rectangle-7 {
+    background: #6ea644;
+    left: 58.4%;
+    top: 64.5%;
+    transform: translate(-50%, -50%) rotate(270deg);
+    opacity: 1;
+  }
+  .rectangle-8 {
+    background: #92b93d;
+    left: 38.529%;
+    top: 41.8%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .rectangle-9 {
+    background: #92b93d;
+    left: 49.327%;
+    top: 41.656%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1; // kamin überdecken
+  }
+  .rectangle-10 {
+    background: #d0dd2c;
+    left: 51.698%;
+    top: 38.149%;
+    transform: translate(-50%, -50%) rotate(0) scaleY(0.5);
+    opacity: 1;
+  }
+  .rectangle-11 {
+    background: #92b93d;
+    left: 62%;
+    top: 48.098%;
+    transform: translate(-50%, -50%) rotate(90deg) scaleY(0.75);
+    opacity: 1;
+  }
+}
