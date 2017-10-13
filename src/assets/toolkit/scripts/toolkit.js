@@ -38,6 +38,7 @@ import 'polyfills';
 import Multiplier from 'components/Multiplier';
 import Navbar from 'components/Navbar';
 import Accordion from 'components/Accordion';
+import StickySlider from 'components/StickySlider';
 import Reel from 'components/Reel';
 import Collapse from 'components/Collapse';
 import ContactForm from 'components/ContactForm';
@@ -52,4 +53,5 @@ window.Toolkit = {
   Reel,
   Collapse,
   ContactForm,
+	StickySlider
 };
