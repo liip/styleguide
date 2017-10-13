@@ -1,8 +1,5 @@
 /*----------------------------------------*\
   KANBASU SETTINGS
-
-  Check the following page for details:
-  kanbasu.liip.ch/settings.html
 \*----------------------------------------*/
 
 // Use this setting to prefix all the components classes
@@ -33,9 +30,9 @@ $font-size-large:                   1.5rem;
 
 $line-height-default:               1.75;
 
-$text-color:                        $warm-grey-700;
+$text-color:                        $web-black;
 $link-color:                        $brand-color;
-$muted-color:                       transparentize($text-color,.4);
+$muted-color:                       $warm-grey-700;
 
 
 /**
@@ -72,6 +69,8 @@ $screen-md-max:                     1024px / 16px * 1em;
 $screen-lg-min:                     1025px / 16px * 1em;
 $screen-lg-max:                     1199px / 16px * 1em;
 $screen-xl-min:                     1200px / 16px * 1em;
+
+$screen-xxl-min:                    1500px / 16px * 1em;
 
 $breakpoints-default:               (
                                      'sm' '(min-width: #{$screen-sm-min})',
@@ -129,7 +128,7 @@ $btn-default-active-bkg-color:      $warm-grey-700;
 
 $btn-primary-color:                 $brand-color;
 $btn-primary-bkg-color:             white;
-$btn-primary-hover-bkg-color:       transparent;
+$btn-primary-hover-bkg-color:       $brand-color;
 $btn-primary-active-bkg-color:      $green-500;
 
 
@@ -157,9 +156,9 @@ $field-small-font-size:             $font-size-small;
 $field-small-border:                $field-border;
 $field-small-border-radius:         0;
 
-$field-large-padding:               $spacing-unit-small $spacing-unit-default;
-$field-large-font-size:             1.875rem;
-$field-large-border:                2px solid $warm-grey-100;
+$field-large-padding:               $spacing-unit-tiny $spacing-unit-small;
+$field-large-font-size:             1.5rem;
+$field-large-border:                1px solid $warm-grey-100;
 $field-large-border-radius:         0;
 
 $field-help-color:                  $alt-color-light;
@@ -188,14 +187,7 @@ $box-primary-bkg-color:             $brand-color;
  */
 
 $widths-columns:                    12,7,6,5,4,3,2,1;
-$widths-breakpoints:                $breakpoints-default;
-
-
-/**
- * Media
- */
-
-$media-gutter:                      $spacing-unit-default;
+$widths-breakpoints:                append($breakpoints-default, ('xxl' '(min-width: #{$screen-xxl-min})'));
 
 
 /**
@@ -203,3 +195,19 @@ $media-gutter:                      $spacing-unit-default;
  */
 
 $media-collapse:                    $screen-sm-max;
+
+
+/**
+ * Container
+ */
+
+$container-gutter-width:            $spacing-unit-small;
+$container-max-width:               1142px;
+$container-wide-max-width:          1920px;
+
+
+/**
+ * Table responsive
+ */
+
+$table-responsive-collapse:         $screen-sm-max;

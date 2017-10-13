@@ -10,6 +10,7 @@
   position: relative;
 
   color: $brand-color;
+  font-size: fluid(12, 18);
   font-weight: 500;
   text-transform: uppercase;
   line-height: 1.2;
@@ -17,14 +18,6 @@
   background-color: white;
   transition-property: background, color, transform;
   transition-duration: .3s;
-
-  @include media('md', $breakpoints-desc) {
-    font-size: rem(14px);
-  }
-
-  @include media('sm', $breakpoints-desc) {
-    font-size: rem(12px);
-  }
 
   &::before {
     content: '';
@@ -52,6 +45,10 @@
     text-decoration: none;
   }
 
+  &:focus {
+    outline: none;
+  }
+
   @include media('md') {
     &:hover,
     &:focus {
@@ -63,16 +60,6 @@
 
       .expertise-tile__body {
         transform: scale(1.1);
-      }
-    }
-
-    &:active {
-      .expertise-tile__body {
-        transform: scale(1.2);
-
-        @include media('lg') {
-          transform: scale(1.4);
-        }
       }
     }
   }
@@ -118,28 +105,13 @@
   }
 
   .expertise-tile__icon {
-    width: 46px;
-    height: 46px;
+    width: fluid(46, 92);
+    height: fluid(46, 92);
 
     margin-bottom: 15%;
 
     .expertise-tile--small & {
       width: 36px;
       height: 36px;
-    }
-
-    @include media('sm') {
-      width: 56px;
-      height: 56px;
-    }
-
-    @include media('md') {
-      width: 66px;
-      height: 66px;
-    }
-
-    @include media('lg') {
-      width: 76px;
-      height: 76px;
     }
   }

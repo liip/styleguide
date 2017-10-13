@@ -1,0 +1,20 @@
+/*----------------------------------------*\
+  WYSIWYG
+\*----------------------------------------*/
+
+.wysiwyg {
+  img {
+    @extend %img-responsive;
+  }
+
+  ul {
+    @extend %list-branded;
+  }
+
+  ol,
+  ul {
+    li + li {
+      margin-top: $spacing-unit-tiny;
+    }
+  }
+}

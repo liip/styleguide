@@ -1,0 +1,29 @@
+/*----------------------------------------*\
+  BOX
+  @extend Kanbasu
+\*----------------------------------------*/
+
+.box {
+  display: block;
+}
+
+.box--danger {
+  color: white;
+  background-color: $cranberry-700;
+}
+
+.box--highlight {
+  color: inherit;
+
+  transition: background-color .2s ease-out;
+
+  &:hover,
+  &:focus {
+    background-color: white;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -7,8 +7,13 @@
   font-weight: 500;
   line-height: 1.5;
 
-  &:hover {
-    color: $warm-grey-700;
+  transition-property: background-color, border, color;
+  transition-duration: .2s;
+  transition-timing-function: ease-out;
+
+  &:hover,
+  &:focus {
+    color: $brand-color;
   }
 }
 
@@ -21,14 +26,18 @@
 }
 
 .btn--default {
-  border-color: $btn-default-color;
+  border-color: $warm-grey-200;
 
   &:focus {
+    color: $btn-default-color;
+
+    border-color: $warm-grey-400;
     background: $btn-default-bkg-color;
     box-shadow: 0 0 0 4px rgba(0,0,0,.1);
   }
 
   &:hover {
+    border-color: $btn-default-hover-bkg-color;
     background: $btn-default-hover-bkg-color;
   }
 }
@@ -37,25 +46,11 @@
   border-color: $btn-primary-color;
 
   &:focus {
-    background: $btn-primary-bkg-color;
     box-shadow: 0 0 0 4px rgba($btn-primary-color,.25);
-  }
-
-  &:hover {
-    background-image: linear-gradient(to right, $green-700 50%, $green-400);
   }
 
   &:active {
     background-image: none;
     background-color: $green-400;
-  }
-}
-
-.btn--plain {
-  border: transparent;
-
-  &.btn--primary {
-    color: $btn-primary-bkg-color;
-    background-color: $btn-primary-color;
   }
 }

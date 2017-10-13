@@ -3,15 +3,11 @@
 \*----------------------------------------*/
 
 .section {
-  padding: $spacing-unit-small $spacing-unit-small $spacing-unit-large;
+  padding: $spacing-unit-large $spacing-unit-default;
 
   position: relative;
 
   background-color: $web-white;
-
-  @include media('sm') {
-    padding: $spacing-unit-default;
-  }
 
   @include media('md') {
     padding: $spacing-unit-large;
@@ -47,12 +43,16 @@
   }
 
   .section__body {
-    width: $container-width;
+    width: $container-max-width;
     max-width: 100%;
     margin: 0 auto;
 
     position: relative;
     z-index: 2;
+
+    .section--wide & {
+      width: $container-wide-max-width;
+    }
   }
 
   .section__continue {
@@ -101,30 +101,8 @@
  * Alternative colors
  */
 
-.section--alt {
-  background-color: $warm-grey-100;
-}
-
 .section--light {
   background-color: $white;
-}
-
-.section--negative,
-.section--primary,
-.section--dark {
-  color: $web-white;
-
-  @include headings() {
-    color: inherit;
-  }
-}
-
-.section--primary {
-  background-image: linear-gradient(14deg, $green-400 0%, $green-700 58%);
-}
-
-.section--dark {
-  background-color: $warm-grey-900;
 }
 
 
@@ -149,6 +127,10 @@
 .section--middle {
   display: flex;
   align-items: center;
+}
+
+.section--spaced {
+  min-height: 60vh;
 }
 
 .section--fit {

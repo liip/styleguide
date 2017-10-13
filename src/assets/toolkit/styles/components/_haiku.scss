@@ -30,7 +30,7 @@
 
   .haiku__list {
     font-weight: 700;
-    font-size: rem(28px);
+    font-size: rem(21px);
   }
 
   .haiku__number {
@@ -40,5 +40,15 @@
 @include media('md') {
   .haiku__title {
     font-size: rem(42px);
+  }
+
+  .haiku__list {
+    font-size: rem(25px);
+  }
+}
+
+@include media('lg') {
+  .haiku__list {
+    font-size: rem(28px);
   }
 }

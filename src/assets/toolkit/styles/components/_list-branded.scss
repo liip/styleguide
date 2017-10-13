@@ -1,0 +1,28 @@
+/*----------------------------------------*\
+  LIST BRANDED
+\*----------------------------------------*/
+
+.list-branded,
+%list-branded {
+  &,
+  ul {
+    padding-left: 1.8em;
+  }
+
+  li {
+    position: relative;
+
+    list-style: none;
+
+    &::before {
+      content: '—';
+      display: inline-block;
+
+      position: absolute;
+      top: -2px;
+      left: -1.8em;
+
+      color: $brand-color;
+    }
+  }
+}

@@ -30,8 +30,9 @@
  * Tools
  */
 
-@import 'kanbasu/src/assets/scss/tools/functions';
-@import 'kanbasu/src/assets/scss/tools/mixins';
+@import 'kanbasu/src/scss/tools/functions';
+@import 'tools/functions';
+@import 'kanbasu/src/scss/tools/mixins';
 @import 'tools/mixins';
 
 
@@ -39,7 +40,7 @@
  * Vendors
  */
 
-@import 'kanbasu/src/assets/scss/vendor/normalize';
+@import 'kanbasu/src/scss/vendor/normalize';
 @import 'vendor/code';
 
 
@@ -54,25 +55,25 @@
  * Defaults
  */
 
-@import 'kanbasu/src/assets/scss/defaults/box-model';
-@import 'kanbasu/src/assets/scss/defaults/elements';
-@import 'kanbasu/src/assets/scss/defaults/typography';
-@import 'kanbasu/src/assets/scss/defaults/table';
-@import 'kanbasu/src/assets/scss/defaults/forms';
+@import 'kanbasu/src/scss/defaults/box-model';
+@import 'kanbasu/src/scss/defaults/elements';
+@import 'kanbasu/src/scss/defaults/typography';
+@import 'kanbasu/src/scss/defaults/table';
+@import 'kanbasu/src/scss/defaults/forms';
 
 
 /**
  * Helpers
  */
 
-@import 'kanbasu/src/assets/scss/helpers/text';
-@import 'kanbasu/src/assets/scss/helpers/text-responsive';
-@import 'kanbasu/src/assets/scss/helpers/float';
-@import 'kanbasu/src/assets/scss/helpers/spacings';
-@import 'kanbasu/src/assets/scss/helpers/spacings-responsive';
-@import 'kanbasu/src/assets/scss/helpers/images';
-@import 'kanbasu/src/assets/scss/helpers/display';
-@import 'kanbasu/src/assets/scss/helpers/align';
+@import 'kanbasu/src/scss/helpers/text';
+@import 'kanbasu/src/scss/helpers/text-responsive';
+@import 'kanbasu/src/scss/helpers/float';
+@import 'kanbasu/src/scss/helpers/spacings';
+@import 'kanbasu/src/scss/helpers/spacings-responsive';
+@import 'kanbasu/src/scss/helpers/images';
+@import 'kanbasu/src/scss/helpers/display';
+@import 'kanbasu/src/scss/helpers/align';
 
 @import 'helpers/text';
 
@@ -91,30 +92,32 @@
  * Components
  */
 
-@import 'kanbasu/src/assets/scss/components/grid';
-@import 'kanbasu/src/assets/scss/components/widths';
-@import 'kanbasu/src/assets/scss/components/widths-responsive';
-@import 'kanbasu/src/assets/scss/components/btn';
-@import 'kanbasu/src/assets/scss/components/box';
-@import 'kanbasu/src/assets/scss/components/media';
-// @import 'kanbasu/src/assets/scss/components/media-responsive';
-@import 'kanbasu/src/assets/scss/components/list';
-@import 'kanbasu/src/assets/scss/components/list-inline';
-@import 'kanbasu/src/assets/scss/components/list-stacked';
-@import 'kanbasu/src/assets/scss/components/embed-responsive';
+@import 'kanbasu/src/scss/components/grid';
+@import 'kanbasu/src/scss/components/widths';
+@import 'kanbasu/src/scss/components/widths-responsive';
+@import 'kanbasu/src/scss/components/btn';
+@import 'kanbasu/src/scss/components/box';
+@import 'kanbasu/src/scss/components/media';
+@import 'kanbasu/src/scss/components/media-responsive';
+@import 'kanbasu/src/scss/components/list';
+@import 'kanbasu/src/scss/components/list-inline';
+@import 'kanbasu/src/scss/components/list-stacked';
+@import 'kanbasu/src/scss/components/embed-responsive';
+@import 'kanbasu/src/scss/components/container';
+@import 'kanbasu/src/scss/components/pusher';
+// @import 'kanbasu/src/scss/components/table-responsive';
 
 // Simple components
+@import 'components/box';
 @import 'components/icon';
 @import 'components/btn';
 @import 'components/tag';
-@import 'components/pusher';
 @import 'components/avatar';
 @import 'components/expertise-tag';
 @import 'components/expertise-tile';
 @import 'components/haiku';
 @import 'components/section';
 @import 'components/logo';
-@import 'components/weather';
 @import 'components/address';
 @import 'components/accordion';
 @import 'components/quote';
@@ -126,7 +129,8 @@
 @import 'components/liiper-card';
 @import 'components/image-branded';
 @import 'components/compass';
-@import 'components/embed-responsive';
+@import 'components/list-branded';
+@import 'components/wysiwyg';
 
 // Composed components
 @import 'components/navbar';

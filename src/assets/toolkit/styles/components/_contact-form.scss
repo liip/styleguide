@@ -26,24 +26,3 @@
     padding-top: 14%;
   }
 }
-
-  .contact-form__topic {
-    color: $warm-grey-400;
-    transition: color .4s ease-out;
-
-    &:hover,
-    &:focus {
-      color: $warm-grey-700;
-    }
-
-    &.active {
-      color: $brand-color;
-    }
-  }
-
-  .contact-form__step {
-    &.collapsed {
-      width: 0;
-      overflow: hidden;
-    }
-  }

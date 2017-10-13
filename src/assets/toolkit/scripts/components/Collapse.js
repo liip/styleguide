@@ -7,15 +7,29 @@
 const DEFAULT_OPTIONS = {
   onShow: () => {},
   onHide: () => {},
+  onHidden: () => {},
   hideOnClick: false,
 };
 
 export default class Collapse {
 
   constructor(el, options) {
-    this._collapse = el;
+    if (typeof el === 'string') {
+      this._collapse = document.querySelector(this._el);
+    } else if (el instanceof Element) {
+      this._collapse = el;
+    } else {
+      return;
+    }
+
     this._options = Object.assign({}, DEFAULT_OPTIONS, options);
-    this._triggers = [...document.querySelectorAll(`[data-toggle="collapse"][data-target="#${this._collapse.id}"]`)];
+    this._triggers = [...document.querySelectorAll('[data-toggle="collapse"]')].filter(trigger => {
+      const target = trigger.dataset && trigger.dataset.target;
+      if (target) {
+        return this._collapse.matches(target);
+      }
+      return false;
+    });
     this._active = this._collapse.classList.contains('active');
 
     this.toggle = this.toggle.bind(this);
@@ -41,6 +55,9 @@ export default class Collapse {
 
   _setHeight() {
     this._collapse.classList.add('calculating');
+
+    const width = this._collapse.parentElement.getBoundingClientRect().width;
+    this._collapse.style.width = `${width}px`;
     const height = this._collapse.getBoundingClientRect().height;
     this._collapse.style.width = null;
     const duration = Math.min(1000, Math.max(height * 3, 300));
@@ -73,6 +90,7 @@ export default class Collapse {
   _deactivate() {
     this._collapse.classList.remove('transitioning');
     this._collapse.removeEventListener('transitionend', this._deactivate);
+    this._options.onHidden.call(this, this._collapse);
   }
 
 
@@ -87,7 +105,6 @@ export default class Collapse {
   toggle(e) {
     if (e) {
       e.preventDefault();
-      e.currentTarget.blur();
     }
     this._active ? this.hide() : this.show();
   }

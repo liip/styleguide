@@ -17,6 +17,10 @@
         color: $green-700;
       }
     }
+
+    &:focus {
+      outline: none;
+    }
   }
 
   .article-card__title {
@@ -26,6 +30,8 @@
 
   .article-card__excerpt {
     margin-top: 0;
+
+    color: $muted-color;
   }
 
 .article-card--hero {

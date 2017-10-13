@@ -10,8 +10,21 @@
   color: $web-black;
   font-weight: 700;
 
+  transition: color .2s ease-out;
+
   a {
     color: inherit;
+    transition: inherit;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $green-700;
+    }
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 
@@ -69,11 +82,6 @@ p {
   margin-bottom: $spacing-unit-default;
 }
 
-.text-lead {
-  font-size: rem(20px);
-  line-height: 1.5;
-}
-
 
 /**
  * Links
@@ -85,6 +93,11 @@ a {
   &:hover,
   &:focus {
     text-decoration: underline;
+
+    @include headings {
+      text-decoration: none;
+      color: $green-700;
+    }
   }
 }
 
@@ -94,7 +107,12 @@ a {
 
   &:hover,
   &:focus {
-    color: $warm-grey-700;
+    color: $brand-color;
+    transition: color .2s;
+  }
+
+  &:focus {
+    outline: none;
   }
 }
 
