@@ -7,14 +7,6 @@ notes: |
   <table class="table">
     <tbody>
       <tr>
-        <td width="20%"><code>.section--primary</code></td>
-        <td>Green gradient background and light text color</td>
-      </tr>
-      <tr>
-        <td><code>.section--negative</code></td>
-        <td>Light text color</td>
-      </tr>
-      <tr>
         <td><code>.section--light</code></td>
         <td>White background</td>
       </tr>
@@ -23,12 +15,16 @@ notes: |
         <td>Take at least the viewport height. When this kind of section is the first in the page, it’s recommended to add an arrow icon at the bottom to indicate there is more content coming. See example below.</td>
       </tr>
       <tr>
+        <td><code>.section--spaced</code></td>
+        <td>Take at least 60% of the viewport height.</td>
+      </tr>
+      <tr>
         <td><code>.section--tight</code></td>
         <td>No padding (can be combined with <code>.section--behind-navbar</code>.)</td>
       </tr>
       <tr>
         <td><code>.section--fixed</code></td>
-        <td>Keep it fixed while the content around scroll.<br><strong>Warning:</strong> Can be used only with <code>.section--fit</code>. It has to be wrapper inside a <code>.section-spacer</code> element.</td>
+        <td>Keep it fixed while the content around scroll.<br><strong>Warning:</strong> Can be used only with <code>.section--fit</code>. It has to be wrapped inside a <code>.section-spacer</code> element.</td>
       </tr>
       <tr>
         <td><code>.section--behind-navbar</code></td>
@@ -69,30 +65,9 @@ notes: |
   </div>
 </section>
 
-<section class="section section--primary">
+<section class="section section--spaced section--middle">
   <div class="section__body">
-    <h1>Primary section</h1>
-    <ol>
-      <li>Green gradient background</li>
-      <li>Light text color</li>
-    </ol>
-  </div>
-</section>
-
-<section class="section section--negative section--fit">
-  <div class="section__bg">
-    <canvas id="section-multiplier"></canvas>
-  </div>
-  <div class="section__body">
-    <h1>Dark background image fitted</h1>
-    <ol>
-      <li>Fitted to the viewport height</li>
-      <li>Dark background image</li>
-      <li>Light text color</li>
-    </ol>
-  </div>
-  <div class="section__continue">
-    {{>icon id="chevron-down" class="icon--100 md-icon--200"}}
+    <h1>Vertically spaced section</h1>
   </div>
 </section>
 
