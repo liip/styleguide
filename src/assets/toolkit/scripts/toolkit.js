@@ -53,5 +53,5 @@ window.Toolkit = {
   Reel,
   Collapse,
   ContactForm,
-	StickySlider
+  StickySlider,
 };

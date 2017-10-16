@@ -1,90 +1,107 @@
-body.no-overflow {
-	overflow: visible!important;
-}
+/*----------------------------------------*\
+  STICKY SLIDER
+\*----------------------------------------*/
 
-.scroll {
-  position: relative;
-  top: 0;
+.sticky-slider {
   width: 100%;
   height: auto;
-	background-color: $web-white;
+
+  position: relative;
+  top: 0;
+
+  background-color: $web-white;
 }
-.scroll__view {
+
+.sticky-slider__view {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
+
   top: 0;
 }
-.scroll__overlays,
-.scroll__hero {
+
+.sticky-slider__overlays,
+.sticky-slider__hero {
   flex: 1 0 50%;
-	@include media('sm', $breakpoints-desc) {
+
+  @include media('sm', $breakpoints-desc) {
     flex: 1 0 100%;
   }
 }
-.scroll__overlays {
+
+.sticky-slider__overlays {
   position: relative;
   z-index: 3;
 }
-.scroll__content {
-  overflow: hidden;
+
+.sticky-slider__content {
   width: 100%;
   height: 100vh;
+  overflow: hidden;
+
   top: 0;
   position: relative;
-	@include media('sm') {
+
+  @include media('md') {
     position: sticky;
+
+    background-image: linear-gradient(to bottom, rgba($web-white, 0), $web-white 20%);
   }
-  .scroll__text {
-    background: $web-white;
-    padding: 2em;
-    word-break: break-word;
-    &:before {
-      content: "";
-      width: 100%;
-      height: 50vh;
-      background: linear-gradient(rgba(255, 255, 255, 0), $web-white);
-      position: absolute;
-      top: 0;
-      transform: translateY(calc(-100% + 1px));
-      //that one pixel prevents border glitches in chrome
-      @media screen and (max-width: 768px) {
-        display: none;
-      }
+
+  .sticky-slider__text {
+    @include spaceless-children();
+    @include wrap-words();
+
+    padding: $spacing-unit-large 0;
+
+    background-color: rgba($web-white, .8);
+    backdrop-filter: blur(7px);
+
+    @include media('md') {
+      backdrop-filter: none;
+      background-color: transparent;
     }
   }
 }
-.scroll__hero {
+
+.sticky-slider__hero {
   position: sticky;
 }
-.scroll__sectionwrapper {
+
+.sticky-slider__sectionwrapper {
   position: relative;
   width: 100%;
   top: 50%;
+
   transform: translateY(-50%);
 }
+
 .rectangles {
   position: relative;
   padding-top: 100%;
 }
+
 .rectangle {
   width: 4.6%;
   height: 19.8%;
+
   position: absolute;
   top: 50%;
   left: 50%;
+
   transition: background 1s cubic-bezier(0.41, 1.68, 0.55, 0.89);
   transform: translate(-50%, -50%);
   opacity: 1;
-  // use transition for mobile or if skrollr fails
-  .no-skrollr &{
+
+  // Use transition for mobile or if skrollr fails
+  .no-skrollr & {
     transition: all 1s cubic-bezier(0.41, 1.68, 0.55, 0.89);
   }
 }
 
 /* STATE 1 */
-.scroll__view[data-current="1"] {
+.sticky-slider[data-current="1"] {
   .rectangle-1 {
     background: $green-300;
     left: 38.327%;
@@ -158,8 +175,7 @@ body.no-overflow {
 }
 
 /* STATE 2 */
-
-.scroll__view[data-current="2"] {
+.sticky-slider[data-current="2"] {
   .rectangle-1 {
     background: $green-300;
     left: 34.398%;
@@ -234,8 +250,7 @@ body.no-overflow {
 }
 
 /* STATE 3 */
-
-.scroll__view[data-current="3"] {
+.sticky-slider[data-current="3"] {
   .rectangle-1 {
     background: $green-700;
     left: 42.4%;
@@ -309,8 +324,7 @@ body.no-overflow {
 }
 
 /* STATE 4 */
-
-.scroll__view[data-current="4"] {
+.sticky-slider[data-current="4"] {
   .rectangle-1 {
     background: $green-700;
     left: 36.5%;

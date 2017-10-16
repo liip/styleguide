@@ -7,15 +7,15 @@ notes: |
   ```javascript
   window.addEventListener('DOMContentLoaded', function() {
     var el = document.querySelector('#stickyview');
-    new Toolkit.StickySlider(el, 'the/image/url.png');
+    new Toolkit.StickySlider(el);
   });
   ```
 ---
 
-<section class="scroll">
-  <div class="scroll__view no-skrollr" id="stickyview" data-current="1">
-    <div class="scroll__content scroll__hero is-alwayssticky">
-      <div class="scroll__sectionwrapper section__hero">
+<section class="sticky-slider" id="stickyview" data-current="1">
+  <div class="sticky-slider__view no-skrollr">
+    <div class="sticky-slider__content sticky-slider__hero is-alwayssticky">
+      <div class="sticky-slider__sectionwrapper section__hero">
         <div class="rectangles">
           <div class="rectangle rectangle-1" data-anchor-target="#stickyview" data-0p-top="background: #B3CC35; left: 38.327%; top: 29.239%; transform: translate(-50%, -50%) rotate(-24deg);" data-_distance-top="background: #B3CC35; left: 34.398%; top: 50.665%; transform: translate(-50%, -50%) rotate(27deg);" data-_distance2-top="background: #6EA644; left: 42.4%; top: 56.9%; transform: translate(-50%, -50%) rotate(0deg);" data-_distance3-top="background: #6EA644; left: 36.5%; top: 56.8%; transform: translate(-50%, -50%) rotate(0deg);"></div>
           <div class="rectangle rectangle-2" data-anchor-target="#stickyview" data-0p-top="background: #A4C339; left: 62.575%; top: 30.343%; transform: translate(-50%, -50%) rotate(88deg);" data-_distance-top="background: #A4C339; left: 44.698%; top: 50.665%; transform: translate(-50%, -50%) rotate(27deg);" data-_distance2-top="background: #6EA644; left: 49.9%; top: 49.3%; transform: translate(-50%, -50%) rotate(90deg);" data-_distance3-top="background: #6EA644; left: 44%; top: 49.2%; transform: translate(-50%, -50%) rotate(90deg);"></div>
@@ -31,42 +31,43 @@ notes: |
         </div>
       </div>
     </div>
-    <div class="scroll__overlays" id="scrolloverlays">
-      <div class="scroll__content is-desktopsticky">
-        <div class="scroll__sectionwrapper">
-          <div class="scroll__text">
+    <div class="sticky-slider__overlays">
+      <div class="sticky-slider__content is-desktopsticky">
+        <div class="sticky-slider__sectionwrapper">
+          <div class="sticky-slider__text">
             <h1>Ideation</h1>
-            <p class="text-lead">First Text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, culpa! Labore corrupti deleniti animi velit maiores dignissimos asperiores culpa explicabo, illo dolorem! Dolor sapiente nesciunt dolorum saepe, ab fugiat ipsam?      </p>
+            <p class="text-lead">First Text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, culpa! Labore corrupti deleniti animi velit maiores dignissimos asperiores culpa explicabo, illo dolorem! Dolor sapiente nesciunt dolorum saepe, ab fugiat ipsam?</p>
           </div>
         </div>
       </div>
-      <div class="scroll__content is-desktopsticky">
-        <div class="scroll__sectionwrapper">
-          <div class="scroll__text">
+      <div class="sticky-slider__content is-desktopsticky">
+        <div class="sticky-slider__sectionwrapper">
+          <div class="sticky-slider__text">
             <h1>Information</h1>
-            <p class="text-lead">Second Text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, culpa! Labore corrupti deleniti animi velit maiores dignissimos asperiores culpa explicabo, illo dolorem! Dolor sapiente nesciunt dolorum saepe, ab fugiat ipsam?       </p>
+            <p class="text-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolores iusto explicabo? Recusandae labore suscipit mollitia esse vero magnam minus consequuntur, voluptas pariatur ipsam? Pariatur, necessitatibus soluta ab, quisquam repudiandae nihil enim. Officia consequuntur repudiandae eligendi modi saepe soluta, ipsum fugit dignissimos quibusdam similique est, aliquam provident quia, eaque sed! Consequuntur iure nemo sunt dolores illum officia architecto aliquid expedita porro voluptatibus. Praesentium rem autem, sed error hic eligendi accusamus!</p>
           </div>
         </div>
       </div>
-      <div class="scroll__content is-desktopsticky">
-        <div class="scroll__sectionwrapper">
-          <div class="scroll__text">
+      <div class="sticky-slider__content is-desktopsticky">
+        <div class="sticky-slider__sectionwrapper">
+          <div class="sticky-slider__text">
             <h1>Implementation</h1>
-            <p class="text-lead">Second Text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, culpa! Labore corrupti deleniti animi velit maiores dignissimos asperiores culpa explicabo, illo dolorem! Dolor sapiente nesciunt dolorum saepe, ab fugiat ipsam? </p>
+            <p class="text-lead">Second Text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, culpa! Labore corrupti deleniti animi velit maiores dignissimos asperiores culpa explicabo, illo dolorem! Dolor sapiente nesciunt dolorum saepe, ab fugiat ipsam?</p>
           </div>
         </div>
       </div>
-      <div class="scroll__content is-desktopsticky">
-        <div class="scroll__sectionwrapper">
-          <div class="scroll__text">
+      <div class="sticky-slider__content is-desktopsticky">
+        <div class="sticky-slider__sectionwrapper">
+          <div class="sticky-slider__text">
             <h1>Iteration</h1>
-            <p class="text-lead">Second Text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, culpa! Labore corrupti deleniti animi velit maiores dignissimos asperiores culpa explicabo, illo dolorem! Dolor sapiente nesciunt dolorum saepe, ab fugiat ipsam? </p>
+            <p class="text-lead">Second Text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, culpa! Labore corrupti deleniti animi velit maiores dignissimos asperiores culpa explicabo, illo dolorem! Dolor sapiente nesciunt dolorum saepe, ab fugiat ipsam?</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 <script type="text/javascript">
   window.addEventListener('DOMContentLoaded', function() {
     var stickyview = document.querySelector('#stickyview');
