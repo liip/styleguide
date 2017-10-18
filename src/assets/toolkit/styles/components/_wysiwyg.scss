@@ -5,6 +5,8 @@
 .wysiwyg {
   img {
     @extend %img-responsive;
+    margin-top: $spacing-unit-default;
+    margin-bottom: $spacing-unit-default;
   }
 
   ul {
@@ -13,6 +15,9 @@
 
   ol,
   ul {
+    margin-top: $spacing-unit-default;
+    margin-bottom: $spacing-unit-default;
+
     li + li {
       margin-top: $spacing-unit-tiny;
     }
