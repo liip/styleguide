@@ -3,50 +3,18 @@
 \*----------------------------------------*/
 
 .quote {
-  display: flex;
-  align-items: center;
-
-  @include media('sm', $breakpoints-desc) {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  max-width: 810px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-  .quote__avatar  {
-    width: 180px;
-    max-width: 30%;
-    margin-bottom: $spacing-unit-default;
-    margin-left: $spacing-unit-default;
-
-    @include media('md') {
-      margin-bottom: 0;
-      margin-left: 0;
-      margin-right: $spacing-unit-default;
-    }
-    @include media('lg') {
-      margin-right: $spacing-unit-large;
-    }
-
-    > a.avatar {
-      transition: transform .2s cubic-bezier(.32,.63,.43,1.34);
-      will-change: transform;
-
-      &:hover,
-      &:focus {
-        transform: scale(1.1627907);
-        outline: none;
-      }
-    }
-  }
-
   .quote__text {
-    flex: 1;
-    padding-left: $spacing-unit-large;
-    padding-right: $spacing-unit-large;
+    padding-left: $spacing-unit-default;
+    margin-bottom: $spacing-unit-default;
 
-    font-size: rem(32px);
+    font-size: rem(20px);
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 1.3;
 
     position: relative;
 
@@ -72,27 +40,31 @@
         position: absolute;
       }
     }
-  }
 
-  .quote__cite {
-    display: inline-block;
+    @include media('sm') {
+      padding-left: $spacing-unit-default * 1.5;
 
-    color: $muted-color;
-    font-weight: normal;
-    font-size: $font-size-default;
+      font-size: rem(23px);
+    }
+
+    @include media('md') {
+      font-size: rem(26px);
+    }
+
+    @include media('lg') {
+      margin-left: -$spacing-unit-default * 1.5;
+
+      font-size: rem(28px);
+    }
   }
 
   .quote__author {
-    color: $web-black;
-    font-weight: 500;
+    margin-left: $spacing-unit-default;
 
-    transition: color .2s;
-  }
-
-  a.quote__author {
-    &:hover,
-    &:focus {
-      color: $brand-color;
-      text-decoration: none;
+    @include media('sm') {
+      margin-left: $spacing-unit-default * 1.5;
+    }
+    @include media('lg') {
+      margin-left: 0;
     }
   }
