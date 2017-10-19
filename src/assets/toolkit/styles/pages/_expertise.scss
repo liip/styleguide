@@ -10,7 +10,7 @@
   &:hover,
   &:focus {
     text-decoration: none;
-    color: $green-400;
+    color: $web-black;
   }
 
   @include media('md') {
