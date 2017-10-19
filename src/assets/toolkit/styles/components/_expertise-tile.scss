@@ -66,9 +66,29 @@
 }
 
 .expertise-tile--small {
+  color: $web-black;
   font-size: rem(10px);
 
-  @include media('sm') {
+  transition: color .2s;
+
+  &:hover,
+  &:focus {
+    color: $brand-color;
+
+    &:after {
+      content: none;
+    }
+
+    .expertise-tile__body {
+      transform: none;
+    }
+  }
+
+  @include media('md') {
+    font-size: rem(11px);
+  }
+
+  @include media('xl') {
     font-size: rem(12px);
   }
 
