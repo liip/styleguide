@@ -3,7 +3,7 @@ notes: |
   To be used in subpages where the main navigation is not desired. Back button text should describe the page it links to, for example "Back to team".
 ---
 
-<div class="navbar navbar--secondary{{#if class}} {{class}}{{/if}}">
+<div class="navbar navbar--secondary{{#if navbarClass}} {{navbarClass}}{{/if}}">
   <div class="navbar__body">
     <a href="{{#if backUrl}}{{backUrl}}{{else}}#{{/if}}" class="btn btn--bare">
       {{> icon id="chevron-left" class="icon--100 mrgr--"}}
