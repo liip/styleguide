@@ -28,17 +28,11 @@
 .btn--default {
   border-color: $warm-grey-200;
 
+  &:hover,
   &:focus {
-    color: $btn-default-color;
+    color: white;
 
-    border-color: $warm-grey-400;
-    background: $btn-default-bkg-color;
-    box-shadow: 0 0 0 4px rgba(0,0,0,.1);
-  }
-
-  &:hover {
     border-color: $btn-default-hover-bkg-color;
-    background: $btn-default-hover-bkg-color;
   }
 }
 
@@ -47,11 +41,5 @@
 
   &:focus {
     color: white;
-    box-shadow: 0 0 0 4px rgba($btn-primary-color,.25);
-  }
-
-  &:active {
-    background-image: none;
-    background-color: $green-400;
   }
 }
