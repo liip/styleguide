@@ -61,3 +61,18 @@
     font-size: rem(28px);
   }
 }
+
+.haiku--negative {
+  color: $web-white;
+
+  .haiku__intro {
+    color: transparentize($web-white, .44);
+    -webkit-text-fill-color: initial;
+    background-image: none;
+    -webkit-background-clip: normal;
+  }
+
+  .haiku__number {
+    color: white;
+  }
+}
