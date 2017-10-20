@@ -105,6 +105,14 @@
   background-color: $white;
 }
 
+.section--negative {
+  color: $web-white;
+
+  @include headings() {
+    color: inherit;
+  }
+}
+
 
 /**
  * Fixed sections
