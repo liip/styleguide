@@ -138,7 +138,7 @@ $btn-primary-active-bkg-color:      darken($brand-color, 15%);
 
 $field-padding:                     $spacing-unit-small $spacing-unit-small;
 
-$field-color:                       inherit;
+$field-color:                       $text-color;
 $field-font-size:                   inherit;
 $field-font-family:                 inherit;
 $field-line-height:                 $line-height-default;

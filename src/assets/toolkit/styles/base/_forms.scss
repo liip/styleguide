@@ -52,11 +52,14 @@ select.field--primary {
   }
 }
 
+.field--large {
+  border-width: 2px;
+}
+
 @include media('md') {
   .field--large {
     padding: $spacing-unit-tiny $spacing-unit-default;
     font-size: rem(30px);
-    border-width: 2px;
   }
 
   select.field--large {
@@ -70,15 +73,6 @@ select.field--primary {
   &:hover,
   &:focus {
     border-color: $green-400;
-  }
-}
-
-select.field--primary {
-  color: $green-700;
-
-  &:hover,
-  &:focus {
-    color: $green-400;
   }
 }
 
