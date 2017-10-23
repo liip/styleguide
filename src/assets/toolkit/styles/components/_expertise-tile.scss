@@ -84,6 +84,10 @@
     }
   }
 
+  &.is-active {
+    color: $warm-grey-500;
+  }
+
   @include media('md') {
     font-size: rem(11px);
   }

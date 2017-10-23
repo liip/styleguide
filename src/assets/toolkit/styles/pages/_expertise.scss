@@ -13,23 +13,26 @@
     color: $web-black;
   }
 
+  &:focus {
+    outline: none;
+  }
+
   @include media('md') {
     font-size: rem(20px);
   }
 }
 
   .expertise-nav-toggle__icon {
-    margin-right: $spacing-unit-tiny;
+    margin-left: $spacing-unit-tiny;
 
     @include media('md') {
-      margin-right: $spacing-unit-small;
+      margin-left: $spacing-unit-small;
     }
   }
 
   .expertise-nav-toggle__caret {
     margin-left: $spacing-unit-tiny;
 
-    color: $warm-grey-900;
     transition: transform .3s;
 
     @include media('md') {
