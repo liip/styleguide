@@ -7,10 +7,14 @@
   line-height: 1.1;
 
   a {
+    color: inherit;
     text-decoration: underline;
+
+    transition: all .2s ease-out;
 
     &:hover,
     &:focus {
+      color: $brand-color;
       text-decoration: none;
     }
   }
@@ -74,5 +78,12 @@
 
   .haiku__number {
     color: white;
+  }
+
+  a {
+    &:hover,
+    &:focus {
+      color: white;
+    }
   }
 }
