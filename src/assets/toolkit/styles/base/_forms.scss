@@ -4,6 +4,7 @@
 
 .field {
   text-overflow: ellipsis;
+  -webkit-appearance: none;
 
   &[disabled] {
     border-color: $warm-grey-200;
