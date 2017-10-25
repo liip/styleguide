@@ -136,12 +136,12 @@ $btn-primary-active-bkg-color:      darken($brand-color, 15%);
  * Forms
  */
 
-$field-padding:                     $spacing-unit-small $spacing-unit-small;
+$field-padding:                     $spacing-unit-small;
 
 $field-color:                       $text-color;
 $field-font-size:                   inherit;
 $field-font-family:                 inherit;
-$field-line-height:                 $line-height-default;
+$field-line-height:                 1;
 
 $field-bkg-color:                   white;
 $field-border:                      1px solid $warm-grey-100;

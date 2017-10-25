@@ -28,6 +28,8 @@ a.brand {
 
   .brand__img {
     max-height: 80px;
+    // Fix calculation on IE
+    max-width: calc(100% - 1px);
   }
 
 .brand--grayscale {

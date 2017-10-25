@@ -126,6 +126,11 @@
       width: 0.875em;
       height: 0.75em;
     }
+
+    // Prevent text from not wrapping on IE
+    > * {
+      max-width: 100%;
+    }
   }
 
   .expertise-tile__icon {

@@ -16,6 +16,10 @@
   }
 }
 
+textarea.field {
+  line-height: 1.5;
+}
+
 select.field {
   appearance: none;
 
@@ -64,7 +68,7 @@ select.field--primary {
   }
 
   select.field--large {
-    height: 68px;
+    height: 57px;
   }
 }
 
@@ -96,7 +100,7 @@ select.field--light {
 }
 
 .field--ghost {
-  padding: 0;
+  padding: $spacing-unit-tiny 0;
   border: 0;
   background: transparent;
 }

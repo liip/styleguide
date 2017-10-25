@@ -5,6 +5,10 @@
 .actions {
   @extend %list;
 
+  > li {
+    vertical-align: middle;
+  }
+
   @include media('xs', $breakpoints-desc) {
     .btn {
       display: block;
