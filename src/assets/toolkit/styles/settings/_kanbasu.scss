@@ -136,12 +136,12 @@ $btn-primary-active-bkg-color:      darken($brand-color, 15%);
  * Forms
  */
 
-$field-padding:                     $spacing-unit-small;
+$field-padding:                     $spacing-unit-tiny $spacing-unit-small;
 
 $field-color:                       $text-color;
 $field-font-size:                   inherit;
 $field-font-family:                 inherit;
-$field-line-height:                 1;
+$field-line-height:                 $line-height-default;
 
 $field-bkg-color:                   white;
 $field-border:                      1px solid $warm-grey-100;
@@ -156,9 +156,9 @@ $field-small-font-size:             $font-size-small;
 $field-small-border:                $field-border;
 $field-small-border-radius:         0;
 
-$field-large-padding:               $spacing-unit-tiny $spacing-unit-small;
+$field-large-padding:               $field-padding;
 $field-large-font-size:             1.5rem;
-$field-large-border:                1px solid $warm-grey-100;
+$field-large-border:                2px solid $warm-grey-100;
 $field-large-border-radius:         0;
 
 $field-help-color:                  $alt-color-light;
