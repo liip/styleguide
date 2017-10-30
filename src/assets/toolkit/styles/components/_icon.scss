@@ -17,6 +17,10 @@
   fill: currentColor;
 }
 
+  .icon--50 {
+    @include icon-size(12px);
+  }
+
   .icon--75 {
     @include icon-size(18px);
   }
