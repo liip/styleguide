@@ -21,7 +21,7 @@
     "build:fractal": "NODE_ENV=production fractal build",
     "lint": "eslint assets/scripts --ignore-pattern='polyfills'",
     "deploy": "rsync -avzP --delete --exclude='.*' dist/ demo:/var/www/styleguide.liip.ch/web/",
-    "test": "npm run lint"
+    "test": "npm run lint && npm run build:webpack"
   },
   "main": "public/common.js",
   "devDependencies": {
