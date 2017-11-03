@@ -1,0 +1,1022 @@
+[
+  {
+    "name": "Hannes Gassert",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/d1996e9334b17b85162f7f9b9f65ad19403e44a7.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/d1996e9334b17b85162f7f9b9f65ad19403e44a7.jpeg"
+    }
+  },
+  {
+    "name": "Nadja Perroulaz",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/fe9af5612b6b9b5f4c89c2f067a6148903934a2d.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/fe9af5612b6b9b5f4c89c2f067a6148903934a2d.jpeg"
+    }
+  },
+  {
+    "name": "Gerhard Andrey",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/50f1c94fc7d926f6a29e80b7edcd2cd9ffb04b74.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/50f1c94fc7d926f6a29e80b7edcd2cd9ffb04b74.jpeg"
+    }
+  },
+  {
+    "name": "Brian King",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/66ef3db52a066525e6769644a5e248092be5ed49.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/66ef3db52a066525e6769644a5e248092be5ed49.jpeg"
+    }
+  },
+  {
+    "name": "Christian Stocker",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/b537639e539efcc3df4459ef87c5963aa5079ca6.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/b537639e539efcc3df4459ef87c5963aa5079ca6.jpeg"
+    }
+  },
+  {
+    "name": "Adrian Schlegel",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/1b0ece9c2eb862a4dd151a48f135f94f440e4eb6.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/1b0ece9c2eb862a4dd151a48f135f94f440e4eb6.jpeg"
+    }
+  },
+  {
+    "name": "David Buchmann",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/6b2c6d04335a90b5b9f9f04218b6955ae4ad6fd4.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/6b2c6d04335a90b5b9f9f04218b6955ae4ad6fd4.jpeg"
+    }
+  },
+  {
+    "name": "Benjamin Wohlwend",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/c32ffcf03142c133a405f609a2dfe094f8eeccb8.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/c32ffcf03142c133a405f609a2dfe094f8eeccb8.jpeg"
+    }
+  },
+  {
+    "name": "Lukas Kahwe Smith",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/7fd5ff8888ea580f6f6388b5aaf9860a6fe2aafb.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/7fd5ff8888ea580f6f6388b5aaf9860a6fe2aafb.jpeg"
+    }
+  },
+  {
+    "name": "Pascal Helfenstein",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/71af1da1d9803c01fad45271ed6be984a0a373d1.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/71af1da1d9803c01fad45271ed6be984a0a373d1.jpeg"
+    }
+  },
+  {
+    "name": "Jean-Christophe Zulian",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/80d1c7a194a3f0cc88fbf2c018a1b2c4e1e9ace5.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/80d1c7a194a3f0cc88fbf2c018a1b2c4e1e9ace5.jpeg"
+    }
+  },
+  {
+    "name": "Kevin Müller",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/23d4cfc3da49820a106c2c6ec402f0e8a62cc155.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/23d4cfc3da49820a106c2c6ec402f0e8a62cc155.jpeg"
+    }
+  },
+  {
+    "name": "Thomas Botton",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/4906043129d24e2de21e20763dee3aae4d756419.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/4906043129d24e2de21e20763dee3aae4d756419.jpeg"
+    }
+  },
+  {
+    "name": "Tonio Zemp",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/7608a1879cab18ae98b168fe2566fbe2acee7532.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/7608a1879cab18ae98b168fe2566fbe2acee7532.jpeg"
+    }
+  },
+  {
+    "name": "Jonas Vonlanthen",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/56047d3f6510ac9e25049fa1eeba7e90e09238b4.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/56047d3f6510ac9e25049fa1eeba7e90e09238b4.jpeg"
+    }
+  },
+  {
+    "name": "Laurent Prodon",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/9a6e4e039325007f185f501c7cc25b319d9fc9b4.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/9a6e4e039325007f185f501c7cc25b319d9fc9b4.jpeg"
+    }
+  },
+  {
+    "name": "Benoît Pointet",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/134656a229d9debdf16306e854bdb8af99a4f529.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/134656a229d9debdf16306e854bdb8af99a4f529.jpeg"
+    }
+  },
+  {
+    "name": "Zahida Huber",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/798f26af9f8856ea94332303dc9efbec07261248.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/798f26af9f8856ea94332303dc9efbec07261248.jpeg"
+    }
+  },
+  {
+    "name": "Philipp Egli",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/76912ad62ae380826b5cc5bb8f26cd6ffe189ef1.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/76912ad62ae380826b5cc5bb8f26cd6ffe189ef1.jpeg"
+    }
+  },
+  {
+    "name": "Sylvain Fankhauser",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/a1e3bb55f1fa078996c01542fc9182024760f477.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/a1e3bb55f1fa078996c01542fc9182024760f477.jpeg"
+    }
+  },
+  {
+    "name": "Donato Rotunno",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/aba39a1483a52b24a9acf800223e534181b8e583.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/aba39a1483a52b24a9acf800223e534181b8e583.jpeg"
+    }
+  },
+  {
+    "name": "Colin Frei",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/e9fce3c6a1e86ecb4132aa155e6c287ed155bac2.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/e9fce3c6a1e86ecb4132aa155e6c287ed155bac2.jpeg"
+    }
+  },
+  {
+    "name": "Geoffroy Perriard",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/6c766ec7924fd6b6d98a7761ac36d8f23353b64d.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/6c766ec7924fd6b6d98a7761ac36d8f23353b64d.jpeg"
+    }
+  },
+  {
+    "name": "Andreas Amsler",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/1cf73618f9b49243344809df44ea5124765102f6.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/1cf73618f9b49243344809df44ea5124765102f6.jpeg"
+    }
+  },
+  {
+    "name": "David Jeanmonod",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/ce8785b49c319b17a7e20acf772de449aa4a0680.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/ce8785b49c319b17a7e20acf772de449aa4a0680.jpeg"
+    }
+  },
+  {
+    "name": "Boris Hofer",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/8d2506eb8e050b82125a872f44734ebc9a54a9d8.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/8d2506eb8e050b82125a872f44734ebc9a54a9d8.jpeg"
+    }
+  },
+  {
+    "name": "Noora Suurnäkki",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/10cd2e343a37a7f9ec4387ecb8564595dee8288e.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/10cd2e343a37a7f9ec4387ecb8564595dee8288e.jpeg"
+    }
+  },
+  {
+    "name": "Dorian Villet",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/40e86ead6976ee5b80b6987aa94e95b008511b1c.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/40e86ead6976ee5b80b6987aa94e95b008511b1c.jpeg"
+    }
+  },
+  {
+    "name": "Didier Raboud",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/d244587eb94db7ba721bb1008b2b00c3e9a931be.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/d244587eb94db7ba721bb1008b2b00c3e9a931be.jpeg"
+    }
+  },
+  {
+    "name": "Christoph Meier",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/cd7269446dfb84f339ef670104479a3e286551a8.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/cd7269446dfb84f339ef670104479a3e286551a8.jpeg"
+    }
+  },
+  {
+    "name": "Melanie Mächler",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/3ecc89c259acbbbb20aec2532619832b9401c710.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/3ecc89c259acbbbb20aec2532619832b9401c710.jpeg"
+    }
+  },
+  {
+    "name": "Tobias Schultze",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/f562a03ff9f7738f13399de88a9c188d395bc702.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/f562a03ff9f7738f13399de88a9c188d395bc702.jpeg"
+    }
+  },
+  {
+    "name": "Cédric Hofstetter",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/78851412d830f7f6446f6d0286a6577aa4dc15cb.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/78851412d830f7f6446f6d0286a6577aa4dc15cb.jpeg"
+    }
+  },
+  {
+    "name": "Stefan Oderbolz",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/b7d007cc0f2bfd96472b766ec45c6bca6e50794a.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/b7d007cc0f2bfd96472b766ec45c6bca6e50794a.jpeg"
+    }
+  },
+  {
+    "name": "Tiziano Rullo",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/de61471b4e4c7431829f238163163645426c2921.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/de61471b4e4c7431829f238163163645426c2921.jpeg"
+    }
+  },
+  {
+    "name": "Jan Hug",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/885160d7d78bbc763a379684715f02f92b8a5ecd.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/885160d7d78bbc763a379684715f02f92b8a5ecd.jpeg"
+    }
+  },
+  {
+    "name": "Andreas Frey Sang",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/8b0351cf494581f88637636c20ed1ae25ac463a7.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/8b0351cf494581f88637636c20ed1ae25ac463a7.jpeg"
+    }
+  },
+  {
+    "name": "Rita Barracha",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/02111c9a0564dd1dfcdf277974b3f12bfac85c4c.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/02111c9a0564dd1dfcdf277974b3f12bfac85c4c.jpeg"
+    }
+  },
+  {
+    "name": "Daniel Frey",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/1071f47e912f78d3a1587e8db089937110b514e5.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/1071f47e912f78d3a1587e8db089937110b514e5.jpeg"
+    }
+  },
+  {
+    "name": "Martin Janser",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/c2195c36709f4b76d6fb0a45cdab50ffd670be7d.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/c2195c36709f4b76d6fb0a45cdab50ffd670be7d.jpeg"
+    }
+  },
+  {
+    "name": "Noé Froidevaux",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/1693b9c30121ef5b67130b471c632234bb13fce1.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/1693b9c30121ef5b67130b471c632234bb13fce1.jpeg"
+    }
+  },
+  {
+    "name": "Fabian Schweizer",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/0251807e7dc281731e6f63ccccb5528c2e1bcbbf.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/0251807e7dc281731e6f63ccccb5528c2e1bcbbf.jpeg"
+    }
+  },
+  {
+    "name": "Matthieu Cornut",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/9f2af2535358ec849d1bb955e689805e4481372a.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/9f2af2535358ec849d1bb955e689805e4481372a.jpeg"
+    }
+  },
+  {
+    "name": "Christian Riesen",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/f439e5034cd83c1fad1cae2e1a983fb0cc0ad82e.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/f439e5034cd83c1fad1cae2e1a983fb0cc0ad82e.jpeg"
+    }
+  },
+  {
+    "name": "François Bruneau",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/e355745ff9d444e9b665dabd6506b42496afc246.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/e355745ff9d444e9b665dabd6506b42496afc246.jpeg"
+    }
+  },
+  {
+    "name": "Daniel Lanz",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/8276d02973e283407a473b0aa8ea71585a6d0000.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/8276d02973e283407a473b0aa8ea71585a6d0000.jpeg"
+    }
+  },
+  {
+    "name": "Pascal Thormeier",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/181f2a704f3cde4bd0cae4e790728c5f1dbc7ee6.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/181f2a704f3cde4bd0cae4e790728c5f1dbc7ee6.jpeg"
+    }
+  },
+  {
+    "name": "Rae Knowler",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/fdce424983dea400525c5f2ec48499d145236d48.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/fdce424983dea400525c5f2ec48499d145236d48.jpeg"
+    }
+  },
+  {
+    "name": "Nadia Fischer",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/a475cd0044c258bd6febf44f856d371a2a0bcb36.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/a475cd0044c258bd6febf44f856d371a2a0bcb36.jpeg"
+    }
+  },
+  {
+    "name": "Michelle Sanver",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/2545e444c6b43cb97a3f5159c60f253a7b10ca07.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/2545e444c6b43cb97a3f5159c60f253a7b10ca07.jpeg"
+    }
+  },
+  {
+    "name": "Nicolas Dougoud",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/75dfce993993303a4bc4c9b5ed162c1258e5a038.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/75dfce993993303a4bc4c9b5ed162c1258e5a038.jpeg"
+    }
+  },
+  {
+    "name": "Theres Scherrer",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/3458b1d977968dc1f1e8b60e3be7423e6ecca165.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/3458b1d977968dc1f1e8b60e3be7423e6ecca165.jpeg"
+    }
+  },
+  {
+    "name": "Pascal Cudré",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/7e812c45798f7d528a56a1fb0cb57f0e282c7753.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/7e812c45798f7d528a56a1fb0cb57f0e282c7753.jpeg"
+    }
+  },
+  {
+    "name": "Benoît Burgener",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/ee55d4df1b1475cbd278311185b2a5740c4cfdc9.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/ee55d4df1b1475cbd278311185b2a5740c4cfdc9.jpeg"
+    }
+  },
+  {
+    "name": "Marlene Stroj-Rullo",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/6b43ee08887985cee734d5008a7228ddfec3a0f9.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/6b43ee08887985cee734d5008a7228ddfec3a0f9.jpeg"
+    }
+  },
+  {
+    "name": "Yves Bertrand",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/40270077658ad9940f340050220ea9a5a833c2a5.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/40270077658ad9940f340050220ea9a5a833c2a5.jpeg"
+    }
+  },
+  {
+    "name": "Maxim Gubar",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/7e10c4f975e6c8662fdc3de16de358f3d83fb896.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/7e10c4f975e6c8662fdc3de16de358f3d83fb896.jpeg"
+    }
+  },
+  {
+    "name": "Olivia Müller",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/2129be20080aeadbd05c408dc5eb8571eaa1fd6b.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/2129be20080aeadbd05c408dc5eb8571eaa1fd6b.jpeg"
+    }
+  },
+  {
+    "name": "Jonathan Macheret",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/e2a1aedd9c74d7073ba3b2c30882e77382969051.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/e2a1aedd9c74d7073ba3b2c30882e77382969051.jpeg"
+    }
+  },
+  {
+    "name": "Lennart Jegge",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/ef3a19d9508890d2114ebb3422efc16aa8d50ccc.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/ef3a19d9508890d2114ebb3422efc16aa8d50ccc.jpeg"
+    }
+  },
+  {
+    "name": "Darja Gartner",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/90677823827e0f468c63481599040fba00a3955e.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/90677823827e0f468c63481599040fba00a3955e.jpeg"
+    }
+  },
+  {
+    "name": "Dominique Sorg",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/aef32ff84340a560490f86420a295ba96b438775.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/aef32ff84340a560490f86420a295ba96b438775.jpeg"
+    }
+  },
+  {
+    "name": "Marc Brühwiler",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/53621f3f8e379ec75ec0e64e59775a1c147bcdfe.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/53621f3f8e379ec75ec0e64e59775a1c147bcdfe.jpeg"
+    }
+  },
+  {
+    "name": "Jennifer Bächtold",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/124ecadc4c5311d5ff05b065663639a3ec1d2612.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/124ecadc4c5311d5ff05b065663639a3ec1d2612.jpeg"
+    }
+  },
+  {
+    "name": "Kilian Schefer",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/9b42a053cf2bd11ce4005d80527cbfecd8b391c8.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/9b42a053cf2bd11ce4005d80527cbfecd8b391c8.jpeg"
+    }
+  },
+  {
+    "name": "Fabio Santschi",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/d95bd1a844869008cf35773a151598f72572849e.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/d95bd1a844869008cf35773a151598f72572849e.jpeg"
+    }
+  },
+  {
+    "name": "Tatjana Nebel",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/9944e5add255c563d41ab22ceb13ec06eaafa201.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/9944e5add255c563d41ab22ceb13ec06eaafa201.jpeg"
+    }
+  },
+  {
+    "name": "Maximilian Lemke",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/bd4805586ccb82a1f599ce3104e79210602eec8f.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/bd4805586ccb82a1f599ce3104e79210602eec8f.jpeg"
+    }
+  },
+  {
+    "name": "Bettina Brennwald",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/cc8898782e14b35f27d24e3bf7533176a5ed6f9b.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/cc8898782e14b35f27d24e3bf7533176a5ed6f9b.jpeg"
+    }
+  },
+  {
+    "name": "Pedro Couto",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/f33d0117be4dd474f6551cb5d800b6202d8ae9f6.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/f33d0117be4dd474f6551cb5d800b6202d8ae9f6.jpeg"
+    }
+  },
+  {
+    "name": "Sylvain Aerni",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/acfc20e5b9c26ab3ac603192d95fe6f10b06707c.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/acfc20e5b9c26ab3ac603192d95fe6f10b06707c.jpeg"
+    }
+  },
+  {
+    "name": "Philippe Savary",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/ba86f518243215bdb8e6de3f3bc0ff6b0451c56b.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/ba86f518243215bdb8e6de3f3bc0ff6b0451c56b.jpeg"
+    }
+  },
+  {
+    "name": "Jürg Hunziker",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/4bee8b607dbd0131aa6a3fa6b37db23696b4e113.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/4bee8b607dbd0131aa6a3fa6b37db23696b4e113.jpeg"
+    }
+  },
+  {
+    "name": "Emanuele Panzeri",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/ba3462765617c21d95700ccbb8962791f23399b7.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/ba3462765617c21d95700ccbb8962791f23399b7.jpeg"
+    }
+  },
+  {
+    "name": "Ludovic Turmel",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/1f2052974d02513cae8fa2a3c6d5ff8e698f439c.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/1f2052974d02513cae8fa2a3c6d5ff8e698f439c.jpeg"
+    }
+  },
+  {
+    "name": "Karine Chor",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/22a8134e4effa3e4a4a8d599e83412541fd7ac54.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/22a8134e4effa3e4a4a8d599e83412541fd7ac54.jpeg"
+    }
+  },
+  {
+    "name": "David Jordan",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/961b857ab12f6495049d6662de0a3e73079d1799.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/961b857ab12f6495049d6662de0a3e73079d1799.jpeg"
+    }
+  },
+  {
+    "name": "Mathieu Barras",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/4ad27d39e859a9f99d724bf7b209c30326cde42c.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/4ad27d39e859a9f99d724bf7b209c30326cde42c.jpeg"
+    }
+  },
+  {
+    "name": "Laura Helfer",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/92e7e4bd76ca54965eb738a578a2d088493920fd.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/92e7e4bd76ca54965eb738a578a2d088493920fd.jpeg"
+    }
+  },
+  {
+    "name": "Martin Meier",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/cb1df65df8e5ee59273dba41066d4d4e6e480e5c.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/cb1df65df8e5ee59273dba41066d4d4e6e480e5c.jpeg"
+    }
+  },
+  {
+    "name": "Łukasz Gintowt",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/7e2501881edae1cdd1b68c6319075bc900568574.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/7e2501881edae1cdd1b68c6319075bc900568574.jpeg"
+    }
+  },
+  {
+    "name": "András Czövek",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/5b3b5cc7277e7dc63c45494854b49d2b6eff6c86.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/5b3b5cc7277e7dc63c45494854b49d2b6eff6c86.jpeg"
+    }
+  },
+  {
+    "name": "Thierry Krummenacher",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/a423c3b95c567dc5bb8ee85586944b635a5eb93a.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/a423c3b95c567dc5bb8ee85586944b635a5eb93a.jpeg"
+    }
+  },
+  {
+    "name": "Tim Keller",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/88920033615941080f144fdd84877f303d9ded64.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/88920033615941080f144fdd84877f303d9ded64.jpeg"
+    }
+  },
+  {
+    "name": "Patrick Stadler",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/310018864edaeec53e7b49b319f51bcf3d2009a8.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/310018864edaeec53e7b49b319f51bcf3d2009a8.jpeg"
+    }
+  },
+  {
+    "name": "Romina Borga",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/aaa846d96d1809b9bf37dbe1cf682317d089e9e9.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/aaa846d96d1809b9bf37dbe1cf682317d089e9e9.jpeg"
+    }
+  },
+  {
+    "name": "Stéphanie Möckli",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/8f792c7b4505c1d58a3b503fe399aec02b870903.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/8f792c7b4505c1d58a3b503fe399aec02b870903.jpeg"
+    }
+  },
+  {
+    "name": "Luca Sardonini",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/0001cfcaa9fe13331ce41f3db403b4714670fbef.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/0001cfcaa9fe13331ce41f3db403b4714670fbef.jpeg"
+    }
+  },
+  {
+    "name": "Christina Henkel",
+    "avatar": null
+  },
+  {
+    "name": "Andrea Meyer",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/4e5afc143412665482c1d71839bae711d017c483.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/4e5afc143412665482c1d71839bae711d017c483.jpeg"
+    }
+  },
+  {
+    "name": "Tri Nhan Nguyen",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/93db581bfa44ed9ed062a766d534e3327dac8281.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/93db581bfa44ed9ed062a766d534e3327dac8281.jpeg"
+    }
+  },
+  {
+    "name": "Clarissa Küchler",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/108979f7c42625851ce5194d1d4a09c8b6572fcb.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/108979f7c42625851ce5194d1d4a09c8b6572fcb.jpeg"
+    }
+  },
+  {
+    "name": "Andrii Poplavskyi",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/c4c1ac9d1e5c4ca700947f098b934582e3eeb830.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/c4c1ac9d1e5c4ca700947f098b934582e3eeb830.jpeg"
+    }
+  },
+  {
+    "name": "Vera Lorenzi",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/6eef4e2a3bb27b306483ccb3a688b3125fbb4326.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/6eef4e2a3bb27b306483ccb3a688b3125fbb4326.jpeg"
+    }
+  },
+  {
+    "name": "Elena Rigamonti",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/28af72753d15da2418889d8a7beba3450daff8d0.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/28af72753d15da2418889d8a7beba3450daff8d0.jpeg"
+    }
+  },
+  {
+    "name": "Thomas Riotte",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/03ab64a217bc2a78b58ac2659a5848592733aaeb.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/03ab64a217bc2a78b58ac2659a5848592733aaeb.jpeg"
+    }
+  },
+  {
+    "name": "Eléonore Leibzig",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/692842efb5aa1ada75d20f3ac7c006983a823b47.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/692842efb5aa1ada75d20f3ac7c006983a823b47.jpeg"
+    }
+  },
+  {
+    "name": "Miriam Pretzlaff",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/806e2756f45f259c7bbe7b2256d10e24860da769.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/806e2756f45f259c7bbe7b2256d10e24860da769.jpeg"
+    }
+  },
+  {
+    "name": "Alain Frapolli",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/78fbdf03c418eca0a6c69ecfb38703488254cf91.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/78fbdf03c418eca0a6c69ecfb38703488254cf91.jpeg"
+    }
+  },
+  {
+    "name": "Michael Weibel",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/a3f9101bca57a2ee78cd7e43f522bfed22a84401.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/a3f9101bca57a2ee78cd7e43f522bfed22a84401.jpeg"
+    }
+  },
+  {
+    "name": "Isaline Mülhauser",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/7cadeaaa4eec1bf05452ae1e73b957e89cd8afc9.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/7cadeaaa4eec1bf05452ae1e73b957e89cd8afc9.jpeg"
+    }
+  },
+  {
+    "name": "Fabian Ryf",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/34a1fa530b3f6f25084c44d492429bf721f372b2.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/34a1fa530b3f6f25084c44d492429bf721f372b2.jpeg"
+    }
+  },
+  {
+    "name": "Marcel Tanner",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/04496e5f09de05b27799751cadebe173e7721366.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/04496e5f09de05b27799751cadebe173e7721366.jpeg"
+    }
+  },
+  {
+    "name": "Biram Ly",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/fac224afbe7adc76c9fe83dbecb49f07ff99639f.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/fac224afbe7adc76c9fe83dbecb49f07ff99639f.jpeg"
+    }
+  },
+  {
+    "name": "David Pacassi Torrico",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/bb3cd390c99b41aca650867257c6cb3d04dba589.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/bb3cd390c99b41aca650867257c6cb3d04dba589.jpeg"
+    }
+  },
+  {
+    "name": "Stefanie Taepke",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/3f46a91ca11ae079cedfd6b8c23f1dbb34e828e5.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/3f46a91ca11ae079cedfd6b8c23f1dbb34e828e5.jpeg"
+    }
+  },
+  {
+    "name": "Yaren Kurt",
+    "avatar": null
+  },
+  {
+    "name": "Thomas Ebermann",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/c8c15bc7cf5d31e20e1fed8171a0fba4c365943f.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/c8c15bc7cf5d31e20e1fed8171a0fba4c365943f.jpeg"
+    }
+  },
+  {
+    "name": "Yuri Bänninger",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/5a656374b4c46c553a05f9a9dec578799483b994.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/5a656374b4c46c553a05f9a9dec578799483b994.jpeg"
+    }
+  },
+  {
+    "name": "Marton Orehovszky",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/e524fd9d2271a77d7e9b906712915e5cebb9c638.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/e524fd9d2271a77d7e9b906712915e5cebb9c638.jpeg"
+    }
+  },
+  {
+    "name": "Christof Leuenberger",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/c9d2f885c1d1001c743322d16965c99e62129dbb.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/c9d2f885c1d1001c743322d16965c99e62129dbb.jpeg"
+    }
+  },
+  {
+    "name": "Stefan Schweingruber",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/3badb152227bca02c180c21d0e5d988e968c701d.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/3badb152227bca02c180c21d0e5d988e968c701d.jpeg"
+    }
+  },
+  {
+    "name": "Philipp Klein",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/41a69077347878790df4da3b7ebca859a30378a4.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/41a69077347878790df4da3b7ebca859a30378a4.jpeg"
+    }
+  },
+  {
+    "name": "Sascha Aeppli",
+    "avatar": null
+  },
+  {
+    "name": "Fabio Anderegg",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/14c0b1e3e31afd3275b0458b61d381f4a192bc9b.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/14c0b1e3e31afd3275b0458b61d381f4a192bc9b.jpeg"
+    }
+  },
+  {
+    "name": "Joscha Jenni",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/11e8ad00f4e7f6cb12212997278ffc70eab8ac1d.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/11e8ad00f4e7f6cb12212997278ffc70eab8ac1d.jpeg"
+    }
+  },
+  {
+    "name": "Viktoria Kluckner",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/b47318240c933133ce85b9b8600eb17e05f8d55f.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/b47318240c933133ce85b9b8600eb17e05f8d55f.jpeg"
+    }
+  },
+  {
+    "name": "Claes Lennman",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/fb2cc8366791101735ca68ce8457545e59ce5c9a.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/fb2cc8366791101735ca68ce8457545e59ce5c9a.jpeg"
+    }
+  },
+  {
+    "name": "Robert Filipponi",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/055fb5927052664a41b1e54b9fb1843a9563770b.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/055fb5927052664a41b1e54b9fb1843a9563770b.jpeg"
+    }
+  },
+  {
+    "name": "Krisztian Kovacs",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/4f6ba46fdb03972827e771aa9674252d1277d0ec.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/4f6ba46fdb03972827e771aa9674252d1277d0ec.jpeg"
+    }
+  },
+  {
+    "name": "Urs Stucki",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/9fa12182067e5c5ed3dab7210e412ea38ccca17b.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/9fa12182067e5c5ed3dab7210e412ea38ccca17b.jpeg"
+    }
+  },
+  {
+    "name": "Julia Hertrich",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/9330e1f70e90c79f4681b00814784dfa4ca14754.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/9330e1f70e90c79f4681b00814784dfa4ca14754.jpeg"
+    }
+  },
+  {
+    "name": "Jonas Schmid",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/6faa6426c257058bbeae570c285e5469464f381c.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/6faa6426c257058bbeae570c285e5469464f381c.jpeg"
+    }
+  },
+  {
+    "name": "Ksénia Jonin",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/24fa7ad0fe78e5f309fb36d3f37c3d0a317a60df.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/24fa7ad0fe78e5f309fb36d3f37c3d0a317a60df.jpeg"
+    }
+  },
+  {
+    "name": "Raphaël Santos",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/f436dfa764a883d45c24d4d25ecbc6a0269118c1.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/f436dfa764a883d45c24d4d25ecbc6a0269118c1.jpeg"
+    }
+  },
+  {
+    "name": "Romain Sickenberg",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/068ab091799e4843044a9d695d32e77a6b3bc9bf.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/068ab091799e4843044a9d695d32e77a6b3bc9bf.jpeg"
+    }
+  },
+  {
+    "name": "Janina Kürsteiner",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/c6a616c992490e400c5626ccce2189db12752ebb.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/c6a616c992490e400c5626ccce2189db12752ebb.jpeg"
+    }
+  },
+  {
+    "name": "Jonas Wyssen",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/d25995ccefa39d12527fc8bed6b070be421a9ba3.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/d25995ccefa39d12527fc8bed6b070be421a9ba3.jpeg"
+    }
+  },
+  {
+    "name": "Sonja Nydegger",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/d9efdc28f4567d83b93ed26a3d385918f52d6354.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/d9efdc28f4567d83b93ed26a3d385918f52d6354.jpeg"
+    }
+  },
+  {
+    "name": "Sina Marty",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/a98aa8262ada149399268ca36ff10cd637c2f758.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/a98aa8262ada149399268ca36ff10cd637c2f758.jpeg"
+    }
+  },
+  {
+    "name": "Matteo Piatti",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/e6017b0218fa8efcefb188fc6f97862690634371.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/e6017b0218fa8efcefb188fc6f97862690634371.jpeg"
+    }
+  },
+  {
+    "name": "Weronika Sieradzka",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/149799c46d85bbc5b01bb8d07038bd0a525b5fc3.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/149799c46d85bbc5b01bb8d07038bd0a525b5fc3.jpeg"
+    }
+  },
+  {
+    "name": "Manuel Escrig",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/1e3260d90c0ebb041a3ba1885c46669ab8048640.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/1e3260d90c0ebb041a3ba1885c46669ab8048640.jpeg"
+    }
+  },
+  {
+    "name": "Ursina Spadin",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/55dda75db2f5c6bca77f68a87c52a9ef1640ae6d.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/55dda75db2f5c6bca77f68a87c52a9ef1640ae6d.jpeg"
+    }
+  },
+  {
+    "name": "Lars Peyer",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/f1d2e3d12a7ecaeab45e7db59069aae9b1b982b2.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/f1d2e3d12a7ecaeab45e7db59069aae9b1b982b2.jpeg"
+    }
+  },
+  {
+    "name": "Simone Wegelin",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/f6c64ad7bf2fc6dcbf8ff719c9984c7a264f1fe8.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/f6c64ad7bf2fc6dcbf8ff719c9984c7a264f1fe8.jpeg"
+    }
+  },
+  {
+    "name": "Giorgio Nadig",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/6112f780809e3ef29e6a25dc808f7385ada0f1d5.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/6112f780809e3ef29e6a25dc808f7385ada0f1d5.jpeg"
+    }
+  },
+  {
+    "name": "Jonathan Droz",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/002edf6c98dae85315e7d6f9bf80668724a5ad9c.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/002edf6c98dae85315e7d6f9bf80668724a5ad9c.jpeg"
+    }
+  },
+  {
+    "name": "David Lopez Pazos",
+    "avatar": null
+  },
+  {
+    "name": "Denis Haramincic",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/25a74895deaf4fa21f0ff7affb09a16f054f7481.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/25a74895deaf4fa21f0ff7affb09a16f054f7481.jpeg"
+    }
+  },
+  {
+    "name": "Stefan Heinemann",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/d7e4a269d996ede7c70059464ccef461e0575fc5.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/d7e4a269d996ede7c70059464ccef461e0575fc5.jpeg"
+    }
+  },
+  {
+    "name": "Tina Hegi",
+    "avatar": null
+  },
+  {
+    "name": "Hugo Torres",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/9d542bf710b80f3b6a9a0483e62a7ba18ed6b377.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/9d542bf710b80f3b6a9a0483e62a7ba18ed6b377.jpeg"
+    }
+  },
+  {
+    "name": "Rami Jumaah",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/486d3f78489536c1d6bcf37dbd39d37596640a56.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/486d3f78489536c1d6bcf37dbd39d37596640a56.jpeg"
+    }
+  },
+  {
+    "name": "Patrik Dummermuth",
+    "avatar": null
+  },
+  {
+    "name": "Patrick Retornaz",
+    "avatar": null
+  },
+  {
+    "name": "Léo Davesne",
+    "avatar": {
+      "square": "https://liip.rokka.io/zebra_squared/3b26ff6bd533baf1c25cbb0cde30fc888359fd3d.jpeg",
+      "large": "https://liip.rokka.io/zebra_big/3b26ff6bd533baf1c25cbb0cde30fc888359fd3d.jpeg"
+    }
+  },
+  {
+    "name": "Joëlle Mary",
+    "avatar": null
+  },
+  {
+    "name": "Doran Kayoumi",
+    "avatar": null
+  },
+  {
+    "name": "Mannar Hielal",
+    "avatar": null
+  }
+]

@@ -1,0 +1,60 @@
+<footer class="footer section">
+  <div class="section__body">
+    <div class="addresses grid grid--multiline">
+      <div class="grid__item sm-w-1/2 md-w-1/3 lg-w-1/5">
+        {% render '@address', { city: "Lausanne", level: "300" } %}
+      </div>
+      <div class="grid__item sm-w-1/2 md-w-1/3 lg-w-1/5">
+        {% render '@address', { city: "Fribourg", level: "400" } %}
+      </div>
+      <div class="grid__item sm-w-1/2 md-w-1/3 lg-w-1/5">
+        {% render '@address', { city: "Bern", level: "500" } %}
+      </div>
+      <div class="grid__item sm-w-1/2 md-w-1/3 lg-w-1/5">
+        {% render '@address', { city: "Zürich", level: "600" } %}
+      </div>
+      <div class="grid__item sm-w-1/2 md-w-1/3 lg-w-1/5">
+        {% render '@address', { city: "St Gallen", level: "700" } %}
+      </div>
+    </div>
+
+    <div class="grid grid--middle grid--multiline mrgt md-mrgt+">
+      <div class="grid__item sm-w-3/5">
+        <ul class="actions">
+          <li><a href="#" class="btn btn--default">Français</a></li>
+          <li><a href="#" class="btn btn--default">Deutsch</a></li>
+          <li><a href="#" class="btn">Jobs</a></li>
+        </ul>
+      </div>
+      <div class="grid__item sm-w-2/5">
+        <ul class="list-inline list-inline--justified">
+          <li>
+            <a href="https://www.facebook.com/liipag" class="link-text" title="Facebook">
+              {% render '@icon', { id: "facebook", class: "icon--100 md-icon--150" } %}
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/liip" class="link-text" title="Twitter">
+              {% render '@icon', { id: "twitter", class: "icon--100 md-icon--150" } %}
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/liip_ch" class="link-text" title="Instagram">
+              {% render '@icon', { id: "instagram", class: "icon--100 md-icon--150" } %}
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/liip" class="link-text" title="GitHub">
+              {% render '@icon', { id: "github", class: "icon--100 md-icon--150" } %}
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-text" title="RSS Feed">
+              {% render '@icon', { id: "rss", class: "icon--100 md-icon--150" } %}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

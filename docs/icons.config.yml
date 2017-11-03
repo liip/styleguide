@@ -1,0 +1,31 @@
+context:
+  icons:
+    Brand:
+    - logo
+    - slashes
+    Expertises:
+    - api
+    - audit
+    - content-management
+    - ecommerce
+    - elearning
+    - fintech
+    - mobile
+    - open-source
+    - analytics
+    - user-experience
+    - seo
+    - service-design
+    Social:
+    - facebook
+    - twitter
+    - instagram
+    - github
+    - rss
+    Miscellaneous:
+    - chevron-left
+    - chevron-right
+    - chevron-up
+    - chevron-down
+    - paper-plane
+    - caret

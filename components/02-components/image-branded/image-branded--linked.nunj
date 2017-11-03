@@ -1,0 +1,5 @@
+<a href="#">
+  <figure class="image-branded{% if class %} {{ class }}{% endif %}">
+    <img src="{{ image | default('/assets/images/hero/1.jpg') }}" alt="{{ alt | default('Happy Liipers who just won the Best of Swiss Web gold award in creation') }}" class="img-block">
+  </figure>
+</a>

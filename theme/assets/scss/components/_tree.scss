@@ -1,0 +1,33 @@
+.Tree-collectionLabel {
+  color: white;
+
+  span::before {
+    width: 0.5rem;
+    top: 0.4rem;
+  }
+
+  &:hover {
+    color: white;
+    background-color: #50504D;
+  }
+}
+
+.Tree-depth-2 {
+  > h4 {
+    font-weight: bold;
+  }
+}
+
+.Tree-entityLink {
+  color: rgba(255,255,255,.7);
+
+  &:hover {
+    color: white;
+    background-color: #50504D;
+  }
+
+  .is-current & {
+    color: white;
+    background-color: #6E6E64;
+  }
+}

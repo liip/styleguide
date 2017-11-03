@@ -1,0 +1,4 @@
+variants:
+  - name: lead
+    context:
+      class: text-lead

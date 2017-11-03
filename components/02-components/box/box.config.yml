@@ -1,0 +1,10 @@
+variants:
+  - name: primary
+    context:
+      modifier: box--primary
+  - name: danger
+    context:
+      modifier: box--danger
+  - name: highlight
+    context:
+      modifier: box--highlight

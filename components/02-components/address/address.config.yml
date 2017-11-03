@@ -1,0 +1,17 @@
+prefix: address
+variants:
+  - name: "300"
+    context:
+      level: 300
+  - name: "400"
+    context:
+      level: 400
+  - name: "500"
+    context:
+      level: 500
+  - name: "600"
+    context:
+      level: 600
+  - name: "700"
+    context:
+      level: 700

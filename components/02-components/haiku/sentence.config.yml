@@ -1,0 +1,6 @@
+variants:
+  - name: negative
+    context:
+      class: haiku--negative
+    display:
+      background-color: "#414141"

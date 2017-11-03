@@ -1,0 +1,25 @@
+notes: By default, we normalize button style to the minimum. Use the sizes, styles and variants classes to make them shinier. You can also use this as a base for any custom button.
+variants:
+  - name: base
+  - name: default
+    context:
+      modifier: btn--default
+  - name: primary
+    context:
+      modifier: btn--primary
+  - name: small
+    context:
+      modifier: btn--default btn--small
+  - name: large
+    context:
+      modifier: btn--default btn--large
+  - name: block
+    context:
+      modifier: btn--default btn--block
+  - name: disabled
+    context:
+      modifier: btn--default btn--disabled
+  - name: bare
+    context:
+      modifier: btn--bare
+  - name: with-icon

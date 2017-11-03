@@ -1,0 +1,34 @@
+<div class="navbar navbar--plain">
+  <div class="navbar__body">
+    <a href="#" class="navbar__brand" title="Liip">{% render '@logo' %}</a>
+
+    <a href="#" data-toggle="collapse" data-target="#expertise-nav" class="expertise-nav-toggle">
+      E-commerce
+      {% render '@icon', { id: "ecommerce", class: "icon--100 md-icon--200 lg-icon--300 expertise-nav-toggle__icon" } %}
+      {% render '@icon', { id: "caret", class: "icon--50 md-icon--75 expertise-nav-toggle__caret" } %}
+    </a>
+  </div>
+
+  <div id="expertise-nav" class="collapse">
+    <div class="section section--light section--tight sm-pdgb md-pdb+ lg-pdgb++">
+      <div class="section__body">
+        {% render '@reel' %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+window.addEventListener('DOMContentLoaded', function() {
+  var expertiseNav = document.querySelector('#expertise-nav');
+  if (expertiseNav) {
+    new Toolkit.Collapse(expertiseNav, {
+      onShow: function() {
+        setTimeout(function() {
+          window.reel.refresh();
+        }, 50);
+      }
+    });
+  }
+})
+</script>

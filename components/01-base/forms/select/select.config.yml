@@ -1,0 +1,11 @@
+prefix: select
+variants:
+  - name: primary
+    context:
+      modifier: field--primary
+  - name: light
+    context:
+      modifier: field--light
+  - name: light-primary
+    context:
+      modifier: field--light field--primary

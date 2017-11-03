@@ -1,0 +1,24 @@
+<div id="reel" class="reel">
+  <button class="reel__previous btn btn--bare btn--disabled" data-navigate="previous">
+    {% render '@icon', { id: "chevron-left" } %}
+  </button>
+  <div class="reel__body">
+    <div class="reel__roll">
+      {% for expertise in expertises %}
+        <div class="reel__item">
+          {% render '@expertise-tile--small', { icon: expertise.icon, name: expertise.name, small: true } %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <button class="reel__next btn btn--bare btn--disabled" data-navigate="next">
+    {% render '@icon', { id: "chevron-right" } %}
+  </button>
+</div>
+
+<script type="text/javascript">
+  window.addEventListener('DOMContentLoaded', function() {
+    var reel = document.querySelector('#reel');
+    window.reel = new Toolkit.Reel(reel);
+  });
+</script>

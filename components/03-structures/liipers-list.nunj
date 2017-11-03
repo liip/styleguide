@@ -1,0 +1,7 @@
+<div class="grid grid--multiline">
+  {% for liiper in liipers | batch(13) %}
+    <div class="grid__item sm-w-1/2 md-w-1/3 xl-w-1/4 sm-pdgt+ xl-pdgt++">
+      {% render '@liiper-card' %}
+    </div>
+  {% endfor %}
+</div>

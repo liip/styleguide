@@ -1,0 +1,29 @@
+notes: |
+  Useful to structure a page. The content is automatically spaced from the sides. By default it has no background but you are free to add a `.section__bg` child which will cover the whole space. Ensure the contrast with the text is good enough according to the image chosen.
+variants:
+  - name: light
+    notes: Light background
+    context:
+      modifier: section--light
+  - name: negative
+    notes: Negative text to be used on top of a dark background
+  - name: fit
+    notes: Cover the whole screen height
+  - name: spaced
+    notes: Cover at least 60% of the screen height
+    context:
+      modifier: section--spaced section--middle section--light
+  - name: tight
+    notes: Remove spacings around the content
+    context:
+      modifier: section--tight
+  - name: fixed
+    notes: Fix the section in the viewport so it gets covered by the next one when the user scroll.
+  - name: behind-navbar
+    notes: Add space at the top to prevent the content from overlapping with the navbar.
+    context:
+      modifier: section--behind-navbar
+  - name: middle
+    notes: Vertically align the content in the middle, usually coupled with "fit" or "spaced" version.
+    context:
+      modifier: section--middle section--fit

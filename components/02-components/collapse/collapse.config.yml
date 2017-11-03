@@ -1,0 +1,21 @@
+notes: |
+  Toggle an element height with a smooth transition. The triggers (they can be multiple) gets an `active` class when the collapse is open.
+
+  ⚠️  You should never alter the `.collapse` element box model properties (margin, padding, height, …) as it will break the transition. Do it on a child element instead.
+
+  ## Initialization
+
+  ```js
+  window.addEventListener('DOMContentLoaded', function() {
+    var collapse = document.querySelector('#my-collapse');
+    if (collapse) {
+      new Toolkit.Collapse(collapse, { ...options });
+    }
+  })
+  ```
+
+  ## Options
+
+  - `onShow` **Function** _(default: null)_ Callback after the collapse is shown
+  - `onHide` **Function** _(default: null)_ Callback after the collapse is hidden
+  - `hideOnClick` **Boolean** _(default: false)_ Automatically close the dropdown once the user click anywhere in the document

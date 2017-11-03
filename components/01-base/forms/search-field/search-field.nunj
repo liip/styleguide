@@ -1,0 +1,1 @@
+<input type="search" placeholder="Search…" class="field field--search{% if modifier %} {{ modifier }}{% endif %}">

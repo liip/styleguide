@@ -1,0 +1,140 @@
+context:
+  colors:
+    Main Colors:
+      Liip Green 700:
+        var: "$green-700"
+        hex: "#6EA644"
+      Liip Green 400:
+        var: "$green-400"
+        hex: "#A4C339"
+      Liip Green 100:
+        var: "$green-100"
+        hex: "#D0DD2C"
+      Web Black:
+        var: "$web-black"
+        hex: "#414141"
+      Web White:
+        var: "$web-white"
+        hex: "#F7F7F5"
+    Green:
+      '100':
+        var: "$green-100"
+        hex: "#D0DD2C"
+      '200':
+        var: "$green-200"
+        hex: "#C1D430"
+      '300':
+        var: "$green-300"
+        hex: "#B3CC35"
+      '400':
+        var: "$green-400"
+        hex: "#A4C339"
+      '500':
+        var: "$green-500"
+        hex: "#92B93D"
+      '600':
+        var: "$green-600"
+        hex: "#80B040"
+      '700':
+        var: "$green-700"
+        hex: "#6EA644"
+    Warm Grey:
+      '50':
+        var: "$warm-grey-50"
+        hex: "#F7F7F5"
+      '100':
+        var: "$warm-grey-100"
+        hex: "#EBEBE6"
+      '200':
+        var: "$warm-grey-200"
+        hex: "#DDDDD8"
+      '300':
+        var: "$warm-grey-300"
+        hex: "#CECFCA"
+      '400':
+        var: "$warm-grey-400"
+        hex: "#C0C1BC"
+      '500':
+        var: "$warm-grey-500"
+        hex: "#A5A59F"
+      '600':
+        var: "$warm-grey-600"
+        hex: "#898A81"
+      '700':
+        var: "$warm-grey-700"
+        hex: "#6E6E64"
+      '800':
+        var: "$warm-grey-800"
+        hex: "#5F5F58"
+      '900':
+        var: "$warm-grey-900"
+        hex: "#50504D"
+      '1000':
+        var: "$warm-grey-1000"
+        hex: "#414141"
+    Orange:
+      '100':
+        var: "$orange-100"
+        hex: "#F8C026"
+      '200':
+        var: "$orange-200"
+        hex: "#F5B61F"
+      '300':
+        var: "$orange-300"
+        hex: "#F2AB17"
+      '400':
+        var: "$orange-400"
+        hex: "#EFA00F"
+      '500':
+        var: "$orange-500"
+        hex: "#EC9506"
+      '600':
+        var: "$orange-600"
+        hex: "#E98A00"
+      '700':
+        var: "$orange-700"
+        hex: "#E58000"
+    Teal:
+      '100':
+        var: "$teal-100"
+        hex: "#19B3A6"
+      '200':
+        var: "$teal-200"
+        hex: "#13A99C"
+      '300':
+        var: "$teal-300"
+        hex: "#0E9F93"
+      '400':
+        var: "$teal-400"
+        hex: "#089589"
+      '500':
+        var: "$teal-500"
+        hex: "#05837C"
+      '600':
+        var: "$teal-600"
+        hex: "#03736C"
+      '700':
+        var: "$teal-700"
+        hex: "#00615D"
+    Cranberry:
+      '100':
+        var: "$cranberry-100"
+        hex: "#F26380"
+      '200':
+        var: "$cranberry-200"
+        hex: "#E85876"
+      '300':
+        var: "$cranberry-300"
+        hex: "#DD4E6B"
+      '400':
+        var: "$cranberry-400"
+        hex: "#D34361"
+      '500':
+        var: "$cranberry-500"
+        hex: "#C23E59"
+      '600':
+        var: "$cranberry-600"
+        hex: "#B23852"
+      '700':
+        var: "$cranberry-700"
+        hex: "#A1334A"

@@ -1,0 +1,5 @@
+<code class="language-js">const foo = 'bar';</code>
+
+<pre><code class="language-scss">.class {
+  foo: bar;
+}</code></pre>

@@ -1,0 +1,3 @@
+<a href="#" class="btn{% if modifier %} {{ modifier }}{% endif %}">Anchor</a>
+<button class="btn{% if modifier %} {{ modifier }}{% endif %}">Button</button>
+<input type="submit" value="Input" class="btn{% if modifier %} {{ modifier }}{% endif %}">

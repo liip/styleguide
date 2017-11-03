@@ -1,0 +1,7 @@
+<div class="form-group form-group--has-error">
+  <label class="field-label" for="error">Required field with error <abbr title="Required field" class="text-danger">*</abbr></label>
+  <input type="text" id="error" class="field" required>
+  <ul class="field-errors">
+    <li>This field is required</li>
+  </ul>
+</div>

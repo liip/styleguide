@@ -1,0 +1,10 @@
+{% set liiper = liiper | default(liipers | random) %}
+<a href="#" class="liiper-card media media--middle{% if class %} {{ class }}{% endif %}">
+  <div class="media__left">
+    <div class="liiper-card__avatar avatar" style="background-image:url('{{ liiper.avatar.square | default('/assets/images/avatar-placeholder.png') }}')"></div>
+  </div>
+  <div class="media__body">
+    <div class="liiper-card__name">{{ liiper.name | default('Elena Cumberbatch') }}</div>
+    <div class="liiper-card__role">Awesome liiper</div>
+  </div>
+</a>

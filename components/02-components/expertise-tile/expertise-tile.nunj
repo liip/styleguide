@@ -1,0 +1,11 @@
+<a href="#" class="expertise-tile{% if small %} expertise-tile--small{% endif %}">
+  <div class="expertise-tile__body">
+    {% render '@icon', { id: icon | default('ecommerce'), class: "expertise-tile__icon" } %}
+    <span>
+      {{ name | default('E-commerce') }}
+      {% if not small %}
+        {% render '@icon', { id: "slashes", class: "expertise-icon" } %}
+      {% endif %}
+    </span>
+  </div>
+</a>

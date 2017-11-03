@@ -1,0 +1,6 @@
+notes: A responsive image aligned in the center of both axis with a maximum height. Dedicated to display vendor logos such as technologies or clients.
+variants:
+  - name: grayscale
+    notes: Fade the brand color when it’s not hovered or focused.
+    context:
+      modifier: brand--grayscale

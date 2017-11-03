@@ -1,0 +1,8 @@
+<button class="btn btn--default">
+  {% render '@icon', { id: "chevron-left", class: "icon--75 mrgr--" } %}
+  Default
+</button>
+<button class="btn btn--primary">
+  Primary
+  {% render '@icon', { id: "chevron-right", class: "icon--75 mrgl--" } %}
+</button>

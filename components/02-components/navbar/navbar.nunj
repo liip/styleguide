@@ -1,0 +1,20 @@
+<div class="navbar{% if modifier %} {{ modifier }}{% endif %}">
+  <div class="navbar__body">
+    <a href="#" class="navbar__brand" title="Liip">{% render '@logo' %}</a>
+
+    <button class="navbar__toggle btn btn--bare" data-toggle="collapse" data-target=".navbar__collapse" title="Toggle navbar">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="navbar-hamburger icon">
+        <rect x="4" y="5" width="16" height="2" class="navbar-hamburger__first"/>
+        <rect x="4" y="11" width="16" height="2" class="navbar-hamburger__second"/>
+        <rect x="4" y="17" width="16" height="2" class="navbar-hamburger__third"/>
+      </svg>
+    </button>
+    <nav class="navbar__collapse collapse">
+      <ul class="navbar-menu">
+        <li><a href="/example-pages/work.html" class="navbar-menu__link">Work</a></li>
+        <li><a href="/example-pages/team.html" class="navbar-menu__link">Team</a></li>
+        <li><a href="/example-pages/blog.html" class="navbar-menu__link">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>

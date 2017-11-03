@@ -1,0 +1,46 @@
+[
+  {
+    "name": "E-commerce",
+    "icon": "ecommerce"
+  },
+  {
+    "name": "Content Management",
+    "icon": "content-management"
+  },
+  {
+    "name": "User Experience",
+    "icon": "user-experience"
+  },
+  {
+    "name": "Mobile",
+    "icon": "mobile"
+  },
+  {
+    "name": "E-learning",
+    "icon": "elearning"
+  },
+  {
+    "name": "API",
+    "icon": "api"
+  },
+  {
+    "name": "Open Data",
+    "icon": "open-source"
+  },
+  {
+    "name": "Analytics",
+    "icon": "analytics"
+  },
+  {
+    "name": "Finance",
+    "icon": "fintech"
+  },
+  {
+    "name": "SEO",
+    "icon": "seo"
+  },
+  {
+    "name": "Service Design",
+    "icon": "service-design"
+  }
+]

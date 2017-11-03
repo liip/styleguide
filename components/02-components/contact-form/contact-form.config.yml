@@ -1,0 +1,11 @@
+notes: |
+  # Initialization
+
+  ```javascript
+  window.addEventListener('DOMContentLoaded', function() {
+    var el = document.querySelector('#my-contact-form');
+    var contactForm = new Toolkit.ContactForm(el);
+  });
+  ```
+variants:
+  - name: personal

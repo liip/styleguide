@@ -1,0 +1,11 @@
+<div class="grid grid--large grid--multiline">
+  <div class="grid__item md-w-1/2 lg-w-1/3">
+    {% render '@article-card' %}
+  </div>
+  <div class="grid__item md-w-1/2 lg-w-1/3">
+    {% render '@article-card', { image: "/assets/images/news/2.jpg", alt: "Brainstorming" } %}
+  </div>
+  <div class="grid__item md-w-1/2 lg-w-1/3 hidden-md-down">
+    {% render '@article-card', { image: "/assets/images/news/3.jpg", alt: "Le Meilleur du Web Awards" } %}
+  </div>
+</div>

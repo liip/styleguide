@@ -1,0 +1,21 @@
+notes: |
+  Default size is 24×24 pixels. Size classes can be prefixed with a breakpoint name to apply only to corresponding screen size, for example: `md-icon--100 lg-icon--200`.
+variants:
+  - name: "50"
+    context:
+      class: icon--50
+  - name: "75"
+    context:
+      class: icon--75
+  - name: "100"
+    context:
+      class: icon--100
+  - name: "150"
+    context:
+      class: icon--150
+  - name: "200"
+    context:
+      class: icon--200
+  - name: "300"
+    context:
+      class: icon--300

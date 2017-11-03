@@ -1,0 +1,11 @@
+notes: Portrays a Liip expertise. It should always link to the corresponding expertise page.
+display:
+  max-width: 300px
+context:
+  small: false
+variants:
+  - name: small
+    context:
+      small: true
+    display:
+      max-width: 150px

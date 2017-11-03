@@ -1,0 +1,1 @@
+<input type="text" placeholder="Lorem ipsum dolor sit amet" class="field{% if modifier %} {{ modifier }}{% endif %}">

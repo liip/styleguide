@@ -1,0 +1,13 @@
+<div class="relative-parent">
+  {% render '@navbar', { modifier: 'navbar--sticky' } %}
+</div>
+<section class="section section--behind-navbar">
+  <div class="section__body">
+    <h1>A title in a section</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam cumque reiciendis voluptate doloremque in repellendus nobis eligendi? Cupiditate quaerat, sit ipsam fugiat. Aliquid consequatur recusandae mollitia impedit quo quas cumque minima eum odio, sunt labore iste dignissimos, quasi reprehenderit temporibus maiores ullam nobis animi voluptatibus repellat, assumenda libero ipsam laboriosam.</p>
+    <ol>
+      <li>Light background</li>
+      <li>Default text color</li>
+    </ol>
+  </div>
+</section>

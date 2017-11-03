@@ -1,0 +1,2 @@
+notes: |
+  Special logo splitted into multiple elements intended to be animated. If you just need a static logo, use the dedicated icon. You can increase the logo size by changing the `font-size` on the `.logo` itself.

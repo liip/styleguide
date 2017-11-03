@@ -1,0 +1,4 @@
+<a href="#" class="expertise-tag">
+  <span class="expertise-tag__body">E-Commerce</span>
+  {% render '@icon', { id: "slashes", class: "expertise-icon" } %}
+</a>

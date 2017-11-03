@@ -1,0 +1,3 @@
+<label for="checkbox-4" class="label">
+  <input id="checkbox-4" type="checkbox" class="checkbox"> Checkbox
+</label>

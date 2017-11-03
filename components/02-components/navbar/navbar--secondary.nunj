@@ -1,0 +1,9 @@
+<div class="navbar navbar--secondary navbar--plain">
+  <div class="navbar__body">
+    <a href="#" class="btn btn--bare">
+      {% render '@icon', { id: "chevron-left", class:"icon--100 mrgr--" } %}
+      {{ back | default('Back to…') }}
+    </a>
+    <a href="#" class="navbar__brand" title="Liip">{% render '@logo' %}</a>
+  </div>
+</div>

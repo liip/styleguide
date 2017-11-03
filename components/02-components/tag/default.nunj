@@ -1,0 +1,2 @@
+<span class="tag">{{ text | default('Static tag') }}</span>
+<a href="#" class="tag">{{ text | default('Linked tag') }}</a>

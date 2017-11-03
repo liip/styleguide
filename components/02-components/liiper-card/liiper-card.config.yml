@@ -1,0 +1,7 @@
+variants:
+  - name: large
+    context:
+      class: liiper-card--large media--large
+  - name: small
+    context:
+      class: liiper-card--small media--small

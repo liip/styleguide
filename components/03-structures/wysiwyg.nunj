@@ -1,0 +1,17 @@
+<div class="wysiwyg">
+  <h1>The Quick Brown Fox Jumps Over The Lazy Dog</h1>
+
+  <p>
+    <img src="{{ image | default('/assets/images/news/1.jpg' | path) }}" alt="Liip Lausanne office">
+  </p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde delectus harum quas. Quis nemo unde praesentium repudiandae delectus accusantium ex dolorem facere voluptate ad libero placeat consequatur iste accusamus itaque ullam odit sapiente adipisci quia suscipit debitis quaerat, reiciendis deserunt vel rerum. Sint ut eum provident tempora id, sequi voluptatum.</p>
+
+  <ul>
+    <li>Debitis dignissimos sed, quae voluptas tempora error!</li>
+    <li>Similique iure ratione, assumenda unde doloremque eius!</li>
+    <li>Ipsum doloribus deleniti qui fuga, earum dolor!</li>
+    <li>Enim consequuntur quidem in, pariatur provident saepe?</li>
+    <li>Quo a, alias cupiditate magnam corrupti earum!</li>
+  </ul>
+</div>
