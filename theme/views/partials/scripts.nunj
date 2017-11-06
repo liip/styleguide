@@ -1,0 +1,10 @@
+{% for script in frctl.theme.get('scripts') %}
+<script src="{{ path(script) }}?cachebust={{ frctl.theme.get('version') }}"></script>
+{% endfor %}
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-424540-20"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-424540-20');
+</script>
