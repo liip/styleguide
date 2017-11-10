@@ -2,3 +2,4 @@ node_modules
 /dist
 public/playground.js
 public/playground.css
+public/icons.js

@@ -16,7 +16,7 @@ const entry = {
 // Skip icons if there’s none or Webpack will throw an error
 const icons = glob.sync('./assets/icons/**/*.svg');
 if (icons.length) {
-  entry.common = [...entry.common, ...icons];
+  entry.icons = icons;
 }
 
 // Extract CSS to a dedicated file when we’re not developing
