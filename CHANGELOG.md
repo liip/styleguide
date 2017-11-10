@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+* Add table component and auto-style table inside wysiwyg
+* Enable Kanbasu table responsive component
+
 ## 1.0.1
 * Add LinkedIn svg icon
 * Add title to all svg icons
