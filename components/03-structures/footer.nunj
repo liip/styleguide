@@ -19,14 +19,22 @@
     </div>
 
     <div class="grid grid--middle grid--multiline mrgt md-mrgt+">
-      <div class="grid__item sm-w-3/5">
+      <div class="grid__item sm-w-1/2">
         <ul class="actions">
-          <li><a href="#" class="btn btn--default">Français</a></li>
-          <li><a href="#" class="btn btn--default">Deutsch</a></li>
+          <li>
+            <span>
+              <label for="language-switcher" class="visible-sr">Language</label>
+              <select class="language-switcher field" id="language-switcher">
+                <option>English</option>
+                <option>Deutsch</option>
+                <option>Français</option>
+              </select>
+            </span>
+          </li>
           <li><a href="#" class="btn">Jobs</a></li>
         </ul>
       </div>
-      <div class="grid__item sm-w-2/5">
+      <div class="grid__item sm-w-1/2">
         <ul class="list-inline list-inline--justified">
           <li>
             <a href="https://www.facebook.com/liipag" class="link-text" title="Facebook">
@@ -46,6 +54,11 @@
           <li>
             <a href="https://github.com/liip" class="link-text" title="GitHub">
               {% render '@icon', { id: "github", class: "icon--100 md-icon--150" } %}
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/267051" class="link-text" title="LinkedIn">
+              {% render '@icon', { id: "linkedin", class: "icon--100 md-icon--150" } %}
             </a>
           </li>
           <li>
