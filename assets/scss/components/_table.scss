@@ -1,0 +1,53 @@
+/*----------------------------------------*\
+  TABLE
+\*----------------------------------------*/
+
+.table,
+%table {
+  margin-top: $spacing-unit-default;
+  margin-bottom: $spacing-unit-default;
+
+  font-size: rem(14px);
+
+  th,
+  td {
+    padding: $spacing-unit-tiny;
+
+    vertical-align: top;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  thead {
+    tr {
+      border-bottom: 2px solid;
+    }
+  }
+
+  tbody {
+    tr {
+      border-top: 1px solid $warm-grey-200;
+    }
+  }
+
+  tfoot {
+    tr {
+      border-top: 2px solid;
+    }
+  }
+
+  @include media('md') {
+    font-size: rem(16px);
+
+    th,
+    td {
+      padding: $spacing-unit-small;
+    }
+  }
+}

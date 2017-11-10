@@ -1,0 +1,4 @@
+variants:
+  - name: responsive
+    context:
+      class: table-responsive

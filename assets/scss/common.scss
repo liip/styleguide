@@ -106,7 +106,7 @@
 @import 'kanbasu/src/scss/components/embed-responsive';
 @import 'kanbasu/src/scss/components/container';
 @import 'kanbasu/src/scss/components/pusher';
-// @import 'kanbasu/src/scss/components/table-responsive';
+@import 'kanbasu/src/scss/components/table-responsive';
 
 // Simple components
 @import 'components/box';
@@ -131,6 +131,7 @@
 @import 'components/image-branded';
 @import 'components/compass';
 @import 'components/list-branded';
+@import 'components/table';
 @import 'components/wysiwyg';
 
 // Composed components

@@ -1,0 +1,43 @@
+<table class="table{% if class %} {{ class }}{% endif %}">
+  <thead>
+    <tr>
+      <th>Author</th>
+      <th>Laloux</th>
+      <th>Heyse & Erpenbeck</th>
+      <th>Malik</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Description</th>
+      <td>Evolutionary Teal</td>
+      <td>Learning companies</td>
+      <td>Systemic- evolutionary variation</td>
+    </tr>
+    <tr>
+      <th>Characteristics</th>
+      <td>Self-Management, Wholeness, Evolutionary Purpose</td>
+      <td>Building company strategies as self-organized process of learning</td>
+      <td>Companies know, that they will never have enough information and knowledge about complex systems</td>
+    </tr>
+    <tr>
+      <th>Company policy</th>
+      <td>System of equals where collaboration is not built on consensus</td>
+      <td>Participatory</td>
+      <td>Classical hierarchy but the management acts self-organized</td>
+    </tr>
+    <tr>
+      <th>Why self-organization?</th>
+      <td>Reduce overhead, more meaningful workplace</td>
+      <td>Faster adaption to economical-market driven or political changes</td>
+      <td>Maximization of viability</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Author</th>
+      <th>Laloux</th>
+      <th>Heyse & Erpenbeck</th>
+      <th>Malik</th>
+    </tr>  </tfoot>
+</table>

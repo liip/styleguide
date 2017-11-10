@@ -22,4 +22,9 @@
       margin-top: $spacing-unit-tiny;
     }
   }
+
+  table {
+    @extend %table;
+    @extend %table-responsive;
+  }
 }
