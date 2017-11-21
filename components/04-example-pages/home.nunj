@@ -1,0 +1,38 @@
+{% render '@navbar', { modifier: 'navbar--sticky' } %}
+
+<div class="section section--fit section--behind-navbar">
+  <div class="section__body">
+    {% render '@sentence--default' %}
+  </div>
+  <div class="section__continue">
+    {% render '@icon', { id: "chevron-down", class: "icon--100 md-icon--200" } %}
+  </div>
+</div>
+
+<div class="section">
+  <div class="section__body">
+    {% render '@expertises-tiles' %}
+  </div>
+</div>
+
+<div class="section">
+  <div class="section__body">
+    {% render '@article-cards-list' %}
+  </div>
+</div>
+
+<div class="section">
+  <div class="section__body">
+    <h2 class="text-center mrgb+">Contact us</h2>
+    {% render '@contact-form' %}
+  </div>
+</div>
+
+{% render '@footer' %}
+
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  var navbar = document.querySelector('.navbar');
+  new Toolkit.Navbar(navbar);
+});
+</script>

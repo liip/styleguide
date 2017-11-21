@@ -8,8 +8,9 @@ export default class ContactForm {
     this._contactFormStepTwo = this._contactForm.querySelector('.contact-form__step-2');
     this._contactFormName = this._contactForm.querySelector('.contact-form__name');
     this._contactFormEmail = this._contactForm.querySelector('.contact-form__email');
+    this._contactFormPhone = this._contactForm.querySelector('.contact-form__phone');
     this._contactFormMessage = this._contactForm.querySelector('.contact-form__message');
-    this._fields = [this._contactFormName, this._contactFormEmail, this._contactFormMessage];
+    this._fields = [this._contactFormName, this._contactFormEmail, this._contactFormPhone, this._contactFormMessage];
     this._isOpen = false;
 
     this.collapse = new Collapse(this._contactFormStepTwo);

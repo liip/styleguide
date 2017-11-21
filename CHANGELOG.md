@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0
+* Add phone field to contact form
+* Add “Home” example page
+
 ## 1.0.2
 * Add table component and auto-style table inside wysiwyg
 * Enable Kanbasu table responsive component
