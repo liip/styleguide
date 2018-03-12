@@ -2,11 +2,11 @@
   LIIPER CARD
 \*----------------------------------------*/
 
-.liiper-card {}
+.liiper-card {
+  line-height: 1.3;
+}
 
 a.liiper-card {
-  line-height: 1.3;
-
   &:hover,
   &:focus {
     text-decoration: none;
