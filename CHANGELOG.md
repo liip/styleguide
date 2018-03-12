@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1
+
+* Review liiper cards line-height and margins to allow extra content
+
 ## 1.1.0
 * Add phone field to contact form
 * Add “Home” example page

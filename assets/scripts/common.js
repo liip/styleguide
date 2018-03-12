@@ -33,12 +33,6 @@ Prism.plugins.customClass.prefix('prism--');
 import 'polyfills';
 
 /**
- * Icons
- */
-
-import '../icons/analytics.svg';
-
-/**
  * Components
  */
 

@@ -5,6 +5,8 @@
 .liiper-card {}
 
 a.liiper-card {
+  line-height: 1.3;
+
   &:hover,
   &:focus {
     text-decoration: none;
@@ -33,16 +35,13 @@ a.liiper-card {
   }
 
   .liiper-card__name {
-    margin-bottom: $spacing-unit-tiny;
-
     color: $web-black;
     font-weight: 500;
-    line-height: 1.3;
   }
 
   .liiper-card__role {
+    margin-top: $spacing-unit-tiny;
     color: $warm-grey-500;
-    line-height: 1.3;
   }
 
 .liiper-card--small {
