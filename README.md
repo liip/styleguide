@@ -23,7 +23,21 @@ npm run build
 
 The output goes to the `dist` directory.
 
+## Release a new version
+
+Bump the version in package.json, update the Changelog, build, commit, tag, push and deploy automatically:
+
+```bash
+npm run release [patch|minor|major]
+```
+
+Build is done in the `dist` folder and website deployed to [styleguide.liip.ch](https://styleguide.liip.ch).
+
 ## Contribute
+
+### Commit guidelines
+
+Follow the [Angular commit guidelines](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines) to help generating a clean and readable Changelog.
 
 ### Issues
 
