@@ -1,3 +1,13 @@
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/liip/styleguide/compare/1.1.2...1.1.3) (2018-04-09)
+
+
+### Features
+
+* **wysiwyg:** Center images on the horizontal axis ([176c2fc](https://github.com/liip/styleguide/commit/176c2fc))
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/liip/styleguide/compare/1.1.1...1.1.2) (2018-04-09)
 
