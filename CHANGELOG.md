@@ -1,10 +1,18 @@
-# Changelog
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/liip/styleguide/compare/1.1.1...1.1.2) (2018-04-09)
+
+
+### Features
+
+* **wysiwyg:** Remove first/last element top/bottom margins ([768b4df](https://github.com/liip/styleguide/commit/768b4df))
+
+
 
 ## 1.1.1
 
 * Review liiper cards line-height and margins to allow extra content
 
-## 1.1.0
+# 1.1.0
 * Add phone field to contact form
 * Add “Home” example page
 
@@ -17,5 +25,5 @@
 * Add title to all svg icons
 * Update footer layout with language switcher as a select and LinkedIn icon
 
-## 1.0.0
+# 1.0.0
 Initial release
