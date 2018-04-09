@@ -3,6 +3,8 @@
 \*----------------------------------------*/
 
 .wysiwyg {
+  @include spaceless-children();
+
   img {
     @extend %img-responsive;
     margin-top: $spacing-unit-default;
