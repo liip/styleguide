@@ -7,8 +7,7 @@
 
   img {
     @extend %img-responsive;
-    margin-top: $spacing-unit-default;
-    margin-bottom: $spacing-unit-default;
+    margin: $spacing-unit-default auto;
   }
 
   ul {
