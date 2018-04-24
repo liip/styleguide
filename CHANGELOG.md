@@ -1,3 +1,13 @@
+<a name="1.1.4"></a>
+## [1.1.4](https://github.com/liip/styleguide/compare/1.1.3...1.1.4) (2018-04-24)
+
+
+### Features
+
+* **wysiwyg:** Style blockquotes ([25b70e6](https://github.com/liip/styleguide/commit/25b70e6))
+
+
+
 <a name="1.1.3"></a>
 ## [1.1.3](https://github.com/liip/styleguide/compare/1.1.2...1.1.3) (2018-04-09)
 
