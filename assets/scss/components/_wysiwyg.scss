@@ -28,4 +28,17 @@
     @extend %table;
     @extend %table-responsive;
   }
+
+  blockquote {
+    padding-left: $spacing-unit-default;
+
+    font-style: italic;
+
+    border-left: 2px solid currentColor;
+
+    p {
+      margin-top: $spacing-unit-small;
+      margin-bottom: $spacing-unit-small;
+    }
+  }
 }

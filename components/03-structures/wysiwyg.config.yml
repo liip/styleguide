@@ -1,4 +1,7 @@
 notes: |
   Automatically style children depending on their type for content coming straight out a wysiwyg. To be used when you can’t add classes on the elements. It will:
   - Make the images responsive
-  - Use the "branded" styling for the unordered lists
+  - Use the "branded" styling for unordered lists
+  - Prevent images from overflowing the container
+  - Distinguish blockquotes from normal paragraphs
+  - Style tables
