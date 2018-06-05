@@ -1,3 +1,19 @@
+<a name="1.1.5"></a>
+## [1.1.5](https://github.com/liip/styleguide/compare/1.1.4...1.1.5) (2018-06-05)
+
+
+### Bug Fixes
+
+* **Brand:** Remove state change on non-interactive elements ([52257d3](https://github.com/liip/styleguide/commit/52257d3))
+* **Navbar:** Ensure style matches scroll position on page load ([deaf2ec](https://github.com/liip/styleguide/commit/deaf2ec))
+
+
+### Features
+
+* **Expertises:** Add SEA icon ([2582f87](https://github.com/liip/styleguide/commit/2582f87))
+
+
+
 <a name="1.1.4"></a>
 ## [1.1.4](https://github.com/liip/styleguide/compare/1.1.3...1.1.4) (2018-04-24)
 
