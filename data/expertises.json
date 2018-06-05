@@ -42,5 +42,9 @@
   {
     "name": "Service Design",
     "icon": "service-design"
+  },
+  {
+    "name": "SEA",
+    "icon": "sea"
   }
 ]
