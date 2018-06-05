@@ -23,8 +23,9 @@ export default class Navbar {
     this._handleScroll = this._handleScroll.bind(this);
     this._handleWindowResize = this._handleWindowResize.bind(this);
 
-    this._setSizes();
     this._addEventListeners();
+    this._setSizes();
+    this._handleScroll();
   }
 
   _addEventListeners() {

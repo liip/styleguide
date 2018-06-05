@@ -111,7 +111,7 @@
 .navbar--sticky {
   width: 100%;
 
-  position: absolute;
+  position: fixed;
   z-index: 100;
 }
 
@@ -121,10 +121,6 @@
       height: 115px;
     }
   }
-}
-
-.navbar--sticky {
-  position: fixed;
 }
 
 .navbar--negative {
