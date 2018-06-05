@@ -35,9 +35,9 @@ a.brand {
 .brand--grayscale {
   filter: grayscale(100%);
   transition: filter .2s ease-out;
+}
 
-  &:hover,
-  &:focus {
+  a.brand--grayscale:hover,
+  a.brand--grayscale:focus {
     filter: grayscale(0);
   }
-}
