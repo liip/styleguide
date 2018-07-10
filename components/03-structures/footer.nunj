@@ -1,73 +1,94 @@
-<footer class="footer section">
-  <div class="section__body">
-    <div class="addresses grid grid--multiline">
-      <div class="grid__item sm-w-1/2 md-w-1/3 lg-w-1/5">
-        {% render '@address', { city: "Lausanne", level: "300" } %}
-      </div>
-      <div class="grid__item sm-w-1/2 md-w-1/3 lg-w-1/5">
-        {% render '@address', { city: "Fribourg", level: "400" } %}
-      </div>
-      <div class="grid__item sm-w-1/2 md-w-1/3 lg-w-1/5">
-        {% render '@address', { city: "Bern", level: "500" } %}
-      </div>
-      <div class="grid__item sm-w-1/2 md-w-1/3 lg-w-1/5">
-        {% render '@address', { city: "Zürich", level: "600" } %}
-      </div>
-      <div class="grid__item sm-w-1/2 md-w-1/3 lg-w-1/5">
-        {% render '@address', { city: "St Gallen", level: "700" } %}
+<footer class="footer">
+  <div class="section">
+    <div class="section__body">
+      <div class="addresses grid grid--multiline">
+        <div class="grid__item sm-w-1/2 md-w-1/3 lg-w-1/5">
+          {% render '@address', { city: "Lausanne", level: "300" } %}
+        </div>
+        <div class="grid__item sm-w-1/2 md-w-1/3 lg-w-1/5">
+          {% render '@address', { city: "Fribourg", level: "400" } %}
+        </div>
+        <div class="grid__item sm-w-1/2 md-w-1/3 lg-w-1/5">
+          {% render '@address', { city: "Bern", level: "500" } %}
+        </div>
+        <div class="grid__item sm-w-1/2 md-w-1/3 lg-w-1/5">
+          {% render '@address', { city: "Zürich", level: "600" } %}
+        </div>
+        <div class="grid__item sm-w-1/2 md-w-1/3 lg-w-1/5">
+          {% render '@address', { city: "St Gallen", level: "700" } %}
+        </div>
       </div>
     </div>
+  </div>
 
-    <div class="grid grid--middle grid--multiline mrgt md-mrgt+">
-      <div class="grid__item sm-w-1/2">
-        <ul class="actions">
-          <li>
-            <span>
+  <hr class="mrgv0">
+
+  <div class="section pdgv md-pdgv+">
+    <div class="section__body">
+      <ul class="list-inline list-inline--tight list-inline--center">
+        <li class="mrgv-- mrgh- md-mrgh"><a href="#" class="btn btn--bare">Jobs</a></li>
+        <li class="mrgv-- mrgh- md-mrgh"><a href="#" class="btn btn--bare">Contact</a></li>
+        <li class="mrgv-- mrgh- md-mrgh"><a href="#" class="btn btn--bare">Open-source</a></li>
+        <li class="mrgv-- mrgh- md-mrgh"><a href="#" class="btn btn--bare">Press</a></li>
+        <li class="mrgv-- mrgh- md-mrgh"><a href="#" class="btn btn--bare">Code of Conduct</a></li>
+        <li class="mrgv-- mrgh- md-mrgh"><a href="#" class="btn btn--bare">Privacy Policy</a></li>
+        <li class="mrgv-- mrgh- md-mrgh"><a href="#" class="btn btn--bare">Impressum</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="mrgv0">
+
+  <div class="section">
+    <div class="section__body">
+      <div class="grid grid--large grid--middle grid--multiline">
+        <div class="grid__item sm-w-1/2 lg-w-2/3">
+          <ul class="actions">
+            <li>
               <label for="language-switcher" class="visible-sr">Language</label>
-              <select class="language-switcher field" id="language-switcher">
+              <select class="language-switcher field " id="language-switcher">
                 <option>English</option>
                 <option>Deutsch</option>
                 <option>Français</option>
               </select>
-            </span>
-          </li>
-          <li><a href="#" class="btn">Jobs</a></li>
-        </ul>
-      </div>
-      <div class="grid__item sm-w-1/2">
-        <ul class="list-inline list-inline--justified">
-          <li>
-            <a href="https://www.facebook.com/liipag" class="link-text" title="Facebook">
-              {% render '@icon', { id: "facebook", class: "icon--100 md-icon--150" } %}
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/liip" class="link-text" title="Twitter">
-              {% render '@icon', { id: "twitter", class: "icon--100 md-icon--150" } %}
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/liip_ch" class="link-text" title="Instagram">
-              {% render '@icon', { id: "instagram", class: "icon--100 md-icon--150" } %}
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/liip" class="link-text" title="GitHub">
-              {% render '@icon', { id: "github", class: "icon--100 md-icon--150" } %}
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/company/267051" class="link-text" title="LinkedIn">
-              {% render '@icon', { id: "linkedin", class: "icon--100 md-icon--150" } %}
-            </a>
-          </li>
-          <li>
-            <a href="#" class="link-text" title="RSS Feed">
-              {% render '@icon', { id: "rss", class: "icon--100 md-icon--150" } %}
-            </a>
-          </li>
-        </ul>
-      </div>
+            </li>
+          </ul>
+        </div>
+        <div class="grid__item sm-w-1/2 lg-w-1/3">
+          <ul class="list-inline list-inline--justified">
+            <li>
+              <a href="https://www.facebook.com/liipag" class="link-text" title="Facebook">
+                {% render '@icon', { id: "facebook", class: "icon--100 md-icon--150" } %}
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/liip" class="link-text" title="Twitter">
+                {% render '@icon', { id: "twitter", class: "icon--100 md-icon--150" } %}
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/liip_ch" class="link-text" title="Instagram">
+                {% render '@icon', { id: "instagram", class: "icon--100 md-icon--150" } %}
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/liip" class="link-text" title="GitHub">
+                {% render '@icon', { id: "github", class: "icon--100 md-icon--150" } %}
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/267051" class="link-text" title="LinkedIn">
+                {% render '@icon', { id: "linkedin", class: "icon--100 md-icon--150" } %}
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link-text" title="RSS Feed">
+                {% render '@icon', { id: "rss", class: "icon--100 md-icon--150" } %}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
   </div>
 </footer>
