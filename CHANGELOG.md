@@ -1,3 +1,14 @@
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/liip/styleguide/compare/1.1.5...1.2.0) (2018-07-10)
+
+
+### Features
+
+* **Code:** Add syntax highlighting for Kotlin ([0ec6c33](https://github.com/liip/styleguide/commit/0ec6c33))
+* **Footer:** Reorganize to allow more navigation items ([66344d8](https://github.com/liip/styleguide/commit/66344d8))
+
+
+
 <a name="1.1.5"></a>
 ## [1.1.5](https://github.com/liip/styleguide/compare/1.1.4...1.1.5) (2018-06-05)
 
