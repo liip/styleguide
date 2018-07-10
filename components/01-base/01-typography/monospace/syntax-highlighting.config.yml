@@ -1,4 +1,4 @@
 notes: |
   [Prism](http://prismjs.com/) is used to highlight code.
 
-  Add a class `language-[html, xml, mathml, svg, css, js, bash, c, clike, csharp, java, json, objectivec, php, python, ruby, swift, twig, typescript, yaml]` to a `code` element and let the magic happen.
+  Add a class `language-[html, xml, mathml, svg, css, js, bash, c, clike, csharp, java, json, objectivec, php, python, ruby, swift, twig, typescript, yaml, kotlin]` to a `code` element and let the magic happen.

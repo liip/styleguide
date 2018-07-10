@@ -22,6 +22,7 @@ import 'prismjs/components/prism-swift';
 import 'prismjs/components/prism-twig';
 import 'prismjs/components/prism-typescript';
 import 'prismjs/components/prism-yaml';
+import 'prismjs/components/prism-kotlin';
 
 Prism.plugins.customClass.map({});
 Prism.plugins.customClass.prefix('prism--');
