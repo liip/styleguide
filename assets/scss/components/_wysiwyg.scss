@@ -12,7 +12,9 @@
   }
 
   figure {
-    width: max-content;
+    &:not(.embed-responsive) {
+      width: max-content;
+    }
 
     img {
       margin-top: 0;
