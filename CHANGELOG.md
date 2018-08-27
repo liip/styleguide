@@ -1,3 +1,13 @@
+<a name="1.3.1"></a>
+## [1.3.1](https://github.com/liip/styleguide/compare/1.3.0...1.3.1) (2018-08-27)
+
+
+### Bug Fixes
+
+* **wysiwyg:** prevent invisibility of embeds within figures ([89eb0aa](https://github.com/liip/styleguide/commit/89eb0aa))
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/liip/styleguide/compare/1.2.0...1.3.0) (2018-08-27)
 
