@@ -5,9 +5,24 @@
 .wysiwyg {
   @include spaceless-children();
 
-  img {
+  img,
+  figure {
     @extend %img-responsive;
     margin: $spacing-unit-default auto;
+  }
+
+  figure {
+    width: max-content;
+
+    img {
+      margin-top: 0;
+      margin-bottom: $spacing-unit-small;
+    }
+  }
+
+  figcaption {
+    color: $alt-color-dark;
+    font-style: italic;
   }
 
   ul {
