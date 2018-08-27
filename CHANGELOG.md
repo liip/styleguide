@@ -1,3 +1,13 @@
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/liip/styleguide/compare/1.2.0...1.3.0) (2018-08-27)
+
+
+### Features
+
+* **wysiwyg:** add support for figure with caption ([8eb113c](https://github.com/liip/styleguide/commit/8eb113c))
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/liip/styleguide/compare/1.1.5...1.2.0) (2018-07-10)
 
