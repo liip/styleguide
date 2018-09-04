@@ -50,5 +50,9 @@
   {
     "name": "Content",
     "icon": "content"
+  },
+  {
+    "name": "Data Science",
+    "icon": "data-science"
   }
 ]
