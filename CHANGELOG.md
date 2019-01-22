@@ -1,3 +1,21 @@
+# [2.0.0-beta.0](https://github.com/liip/styleguide/compare/1.3.3...2.0.0-beta.0) (2019-01-22)
+
+
+### Code Refactoring
+
+* **Accordion:** Remove unused composant ([d3d2f08](https://github.com/liip/styleguide/commit/d3d2f08))
+
+
+* Update Webpack, Babel & other dependencies ([bf7f1e2](https://github.com/liip/styleguide/commit/bf7f1e2))
+
+
+### BREAKING CHANGES
+
+* Library is now exposed as an UMD module under the `Styleguide` namespace instead of `Toolkit`. Advanced Polyfills such as Promise or Fetch have been removed, you must polyfill these manually on your own depending on your needs.
+* **Accordion:** Accordion component has been removed
+
+
+
 <a name="1.3.3"></a>
 ## [1.3.3](https://github.com/liip/styleguide/compare/1.3.2...1.3.3) (2018-09-04)
 
