@@ -12,7 +12,7 @@
       <li class="Header-version">{{ frctl.get('project.version') }}</li>
     {% endif %}
     <li>
-      <a href="https://github.com/liip/styleguide" title="Kanbasu on Github">
+      <a href="https://github.com/liip/styleguide" title="Liip Styleguide on Github">
         <img src="{{ path('/subtheme/img/github.svg') }}" height="30">
       </a>
     </li>
