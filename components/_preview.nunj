@@ -5,7 +5,6 @@
   <title>Preview Layout</title>
 
   <link rel="stylesheet" href="{{ '/common.css' | path }}">
-  <link rel="stylesheet" href="{{ '/playground.css' | path }}">
 </head>
 
 <body{% if _target.display %} style="{% for property, value in _target.display %}{{ property }}:{{ value }};{% endfor %}"{% endif %}>

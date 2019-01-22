@@ -38,7 +38,6 @@ import 'polyfills';
  */
 
 import Navbar from 'components/Navbar';
-import Accordion from 'components/Accordion';
 import Reel from 'components/Reel';
 import Collapse from 'components/Collapse';
 import ContactForm from 'components/ContactForm';
@@ -48,7 +47,6 @@ import ContactForm from 'components/ContactForm';
  */
 window.Toolkit = {
   Navbar,
-  Accordion,
   Reel,
   Collapse,
   ContactForm,
