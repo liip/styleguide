@@ -12,7 +12,6 @@ const DEFAULT_OPTIONS = {
 };
 
 export default class Collapse {
-
   constructor(el, options) {
     if (typeof el === 'string') {
       this._collapse = document.querySelector(this._el);
@@ -23,7 +22,9 @@ export default class Collapse {
     }
 
     this._options = Object.assign({}, DEFAULT_OPTIONS, options);
-    this._triggers = [...document.querySelectorAll('[data-toggle="collapse"]')].filter(trigger => {
+    this._triggers = [
+      ...document.querySelectorAll('[data-toggle="collapse"]'),
+    ].filter(trigger => {
       const target = trigger.dataset && trigger.dataset.target;
       if (target) {
         return this._collapse.matches(target);
@@ -93,7 +94,6 @@ export default class Collapse {
     this._options.onHidden.call(this, this._collapse);
   }
 
-
   /*----------------------------------------*\
     PUBLIC
   \*----------------------------------------*/
@@ -137,7 +137,9 @@ export default class Collapse {
    * Hide the collapse
    */
   hide() {
-    this._collapse.style.height = `${this._collapse.getBoundingClientRect().height}px`;
+    this._collapse.style.height = `${
+      this._collapse.getBoundingClientRect().height
+    }px`;
     setTimeout(() => {
       this._collapse.style.height = null;
     }, 20);
@@ -165,5 +167,4 @@ export default class Collapse {
   destroy() {
     this._removeEventListeners();
   }
-
 }

@@ -5,7 +5,6 @@ import { outExpo, inOutSine } from 'ease-component';
 const DISABLED_BTN_CLASS = 'btn--disabled';
 
 export default class Reel {
-
   /**
    * @param  {String} el  A selector for a .reel element
    */
@@ -16,7 +15,9 @@ export default class Reel {
     this._rollNode = this._el.querySelector('.reel__roll');
     this._children = [...this._el.querySelectorAll('.reel__item')];
     this._nextBtnNode = this._el.querySelector('[data-navigate="next"]');
-    this._previousBtnNode = this._el.querySelector('[data-navigate="previous"]');
+    this._previousBtnNode = this._el.querySelector(
+      '[data-navigate="previous"]'
+    );
     this._position = 0;
     this._lastPosition = 0;
     this._minPosition = 0;
@@ -40,10 +41,13 @@ export default class Reel {
 
     this._touchManager = new Hammer.Manager(this._rollNode, {
       recognizers: [
-        [Hammer.Pan, {
-          direction: Hammer.DIRECTION_HORIZONTAL,
-          threshold: 5,
-        }],
+        [
+          Hammer.Pan,
+          {
+            direction: Hammer.DIRECTION_HORIZONTAL,
+            threshold: 5,
+          },
+        ],
       ],
     });
     this._touchManager.on('panstart', this._stopAnimation);
@@ -52,7 +56,10 @@ export default class Reel {
     this._touchManager.on('panend', this._handlePanEnd);
 
     this._nextBtnNode.addEventListener('click', this._handleNavigationClick);
-    this._previousBtnNode.addEventListener('click', this._handleNavigationClick);
+    this._previousBtnNode.addEventListener(
+      'click',
+      this._handleNavigationClick
+    );
   }
 
   _removeEventsListeners() {
@@ -110,10 +117,14 @@ export default class Reel {
    */
   _setSizes() {
     this._reelWidth = this._bodyNode.getBoundingClientRect().width;
-    this._rollWidth = parseInt(this._children.reduce((prev, item) => {
-      return prev + item.getBoundingClientRect().width;
-    }, 0).toFixed(), 10);
-    this._maxPosition = -1 * parseInt((this._rollWidth - this._reelWidth).toFixed(), 10);
+    this._rollWidth = parseInt(
+      this._children
+        .reduce((prev, item) => prev + item.getBoundingClientRect().width, 0)
+        .toFixed(),
+      10
+    );
+    this._maxPosition =
+      -1 * parseInt((this._rollWidth - this._reelWidth).toFixed(), 10);
 
     const scopedPosition = this._getMinMaxPosition(this._position);
     if (scopedPosition !== this._position) {
@@ -252,5 +263,4 @@ export default class Reel {
   destroy() {
     this._removeEventsListeners();
   }
-
 }

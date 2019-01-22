@@ -1,5 +1,5 @@
 {
-  "extends": "rawbot",
+  "extends": ["rawbot", "plugin:prettier/recommended"],
   "env": {
     "browser": true
   }

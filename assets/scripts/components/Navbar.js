@@ -8,10 +8,12 @@ const LARGE_MAX_HEIGHT = 240;
 const MOBILE_HEIGHT = 60;
 
 export default class Navbar {
-
-  constructor(el, options = {
-    mode: 'instant',
-  }) {
+  constructor(
+    el,
+    options = {
+      mode: 'instant',
+    }
+  ) {
     this._el = el;
     this._options = options;
 
@@ -53,9 +55,18 @@ export default class Navbar {
 
   _handleScroll() {
     const scrollY = getDocumentScrollTop();
-    const animationBase = Math.max(Math.min(1, (scrollY - this._threshold + this._maxHeight) / this._minHeight), 0);
-    const logoScale = 1 - (animationBase / 2);
-    const navbarHeight = Math.max(Math.min(this._maxHeight, this._threshold - scrollY), 60);
+    const animationBase = Math.max(
+      Math.min(
+        1,
+        (scrollY - this._threshold + this._maxHeight) / this._minHeight
+      ),
+      0
+    );
+    const logoScale = 1 - animationBase / 2;
+    const navbarHeight = Math.max(
+      Math.min(this._maxHeight, this._threshold - scrollY),
+      60
+    );
 
     if (media('md')) {
       this._logoEl.style.transform = `scale(${logoScale})`;
@@ -111,7 +122,6 @@ export default class Navbar {
   destroy() {
     this._removeEventListeners();
   }
-
 }
 
 /**
