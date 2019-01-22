@@ -19,6 +19,6 @@
 <script type="text/javascript">
   window.addEventListener('DOMContentLoaded', function() {
     var reel = document.querySelector('#reel');
-    window.reel = new Toolkit.Reel(reel);
+    window.reel = new Styleguide.Reel(reel);
   });
 </script>

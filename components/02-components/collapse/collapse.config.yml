@@ -9,7 +9,7 @@ notes: |
   window.addEventListener('DOMContentLoaded', function() {
     var collapse = document.querySelector('#my-collapse');
     if (collapse) {
-      new Toolkit.Collapse(collapse, { ...options });
+      new Styleguide.Collapse(collapse, { ...options });
     }
   })
   ```

@@ -40,7 +40,7 @@
   window.addEventListener('DOMContentLoaded', function() {
     var form = document.querySelector('#contact-form');
     if (form) {
-      new Toolkit.ContactForm(form);
+      new Styleguide.ContactForm(form);
     }
   })
 </script>

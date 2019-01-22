@@ -1,7 +1,7 @@
 /* eslint-env node */
 const path = require('path');
 
-const fractal = module.exports = require('@frctl/fractal').create();
+const fractal = (module.exports = require('@frctl/fractal').create());
 const pkg = require(path.join(__dirname, 'package.json'));
 
 /*-------------------------------------------------------*\
@@ -26,7 +26,7 @@ fractal.web.set('static.path', path.join(__dirname, 'public'));
  * Build options
  */
 // If you change the build destination, you should adapt webpack.common.js "output.path" too.
-fractal.web.set('builder.dest', 'dist');
+fractal.web.set('builder.dest', 'build');
 
 /**
  * Templating
@@ -76,7 +76,6 @@ fractal.components.set('statuses', {
  */
 const theme = require('./theme');
 fractal.web.theme(theme);
-
 
 /*----------------------------------------*\
   Change the following at your own risk

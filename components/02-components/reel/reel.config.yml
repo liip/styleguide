@@ -6,7 +6,7 @@ notes: |
   ```javascript
   window.addEventListener('DOMContentLoaded', function() {
     var reel = document.querySelector('#reel');
-    new Toolkit.Reel(reel);
+    new Styleguide.Reel(reel);
   });
   ```
 

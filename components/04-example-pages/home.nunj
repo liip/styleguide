@@ -33,6 +33,6 @@
 <script>
 window.addEventListener('DOMContentLoaded', function() {
   var navbar = document.querySelector('.navbar');
-  new Toolkit.Navbar(navbar);
+  new Styleguide.Navbar(navbar);
 });
 </script>

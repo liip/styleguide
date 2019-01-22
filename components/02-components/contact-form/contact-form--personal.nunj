@@ -44,7 +44,7 @@
   window.addEventListener('DOMContentLoaded', function() {
     var form = document.querySelector('#contact-form-personal');
     if (form) {
-      new Toolkit.ContactForm(form);
+      new Styleguide.ContactForm(form);
     }
   })
 </script>

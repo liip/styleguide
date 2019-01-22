@@ -8,7 +8,7 @@ notes: |
   ```javascript
   window.addEventListener('DOMContentLoaded', function() {
     var navbar = document.querySelector('#my-sticky-navbar');
-    new Toolkit.Navbar(navbar, { mode: 'window' });
+    new Styleguide.Navbar(navbar, { mode: 'window' });
   });
   ```
 

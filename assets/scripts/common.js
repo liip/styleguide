@@ -31,7 +31,8 @@ Prism.plugins.customClass.prefix('prism--');
  * Globals
  */
 
-import 'polyfills';
+import 'ui';
+import '../scss/common.scss';
 
 /**
  * Components
@@ -42,10 +43,7 @@ import Reel from 'components/Reel';
 import Collapse from 'components/Collapse';
 import ContactForm from 'components/ContactForm';
 
-/**
- * Expose modules to the Toolkit namespace
- */
-window.Toolkit = {
+export default {
   Navbar,
   Reel,
   Collapse,

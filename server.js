@@ -1,3 +1,4 @@
+/* eslint-env node */
 const fractal = require('./fractal.js');
 const server = fractal.web.server();
 

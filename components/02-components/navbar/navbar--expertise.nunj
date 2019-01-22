@@ -22,7 +22,7 @@
 window.addEventListener('DOMContentLoaded', function() {
   var expertiseNav = document.querySelector('#expertise-nav');
   if (expertiseNav) {
-    new Toolkit.Collapse(expertiseNav, {
+    new Styleguide.Collapse(expertiseNav, {
       onShow: function() {
         setTimeout(function() {
           window.reel.refresh();

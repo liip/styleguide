@@ -21,17 +21,18 @@ Go to [localhost:3000](http://localhost:3000/).
 npm run build
 ```
 
-The output goes to the `dist` directory.
+Webpack bundle files in the `dist` folder which is then copied over to the `build` folder where Fractal exports the documentation. We have two different folder to be able to include `dist` within the npm package while ignoring the `build`.
 
 ## Release a new version
 
-Bump the version in package.json, update the Changelog, build, commit, tag, push and deploy automatically:
+Bump the version in package.json, update the Changelog, build, commit, tag, push, publish to npm repository and deploy automatically:
 
 ```bash
-npm run release [patch|minor|major]
+npm run release
 ```
 
-Build is done in the `dist` folder and website deployed to [styleguide.liip.ch](https://styleguide.liip.ch).
+Package lives at [npmjs.com/package/@liip/styleguide](https://www.npmjs.com/package/@liip/styleguide).
+Documentation is deployed to [styleguide.liip.ch](https://styleguide.liip.ch).
 
 ## Contribute
 

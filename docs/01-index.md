@@ -12,17 +12,43 @@ This project is based on Kanbasu 2 and reuse most of its components. For the sak
 
 ## Usage
 
-You basically need to include those two files in your page:
+Recommended way is to install with npm:
 
-```html
-<link rel="stylesheet" href="public/assets/common.css">
+```bash
+npm install @liip/styleguide
 ```
 
-```html
-<script src="public/assets/common.js"></script>
+### With a module bundler such as Webpack
+
+```js
+// Load style
+import '@liip/styleguide/dist/style.css';
+
+// Load Styleguide module
+import Styleguide from '@liip/styleguide';
+
+// Initialize a Contact Form
+const form = document.querySelector('.my-contact-form');
+new Styleguide.ContactForm(form);
 ```
 
-The CSS depends on a couple of other assets that are all in `public/assets`.
+### With a script tag
+
+```html
+<!-- Load style -->
+<link rel="stylesheet" href="node_modules/@liip/styleguide/dist/common.css">
+
+<!-- Expose "Styleguide" globally -->
+<script src="node_modules/@liip/styleguide/dist/common.js"></script>
+
+<!-- Initialize a Contact Form -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.querySelector('.my-contact-form');
+  new Styleguide.ContactForm(form);
+});
+</script>
+```
 
 ## Contribute
 
