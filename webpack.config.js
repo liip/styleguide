@@ -6,7 +6,11 @@ const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 module.exports = {
   mode: process.env.NODE_ENV,
   resolve: {
-    modules: [path.resolve(__dirname, 'assets/scripts'), path.resolve(__dirname, 'assets'), 'node_modules'],
+    modules: [
+      path.resolve(__dirname, 'assets/scripts'),
+      path.resolve(__dirname, 'assets'),
+      'node_modules',
+    ],
     extensions: ['.js'],
   },
   entry: {
@@ -31,7 +35,10 @@ module.exports = {
         test: /\.scss$/,
         use: [
           {
-            loader: process.env.NODE_ENV === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
+            loader:
+              process.env.NODE_ENV === 'production'
+                ? MiniCssExtractPlugin.loader
+                : 'style-loader',
           },
           'css-loader',
           {
@@ -49,7 +56,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(svg|png|jpe?g|gif|woff|woff2|eot|ttf|otf)$/,
+        test: /\.(svg|png|jpe?g|gif|woff|woff2|eot|ttf|otf|ico)$/,
         exclude: path.resolve('./assets/icons'),
         use: [
           {
