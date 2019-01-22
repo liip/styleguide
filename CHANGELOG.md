@@ -1,3 +1,12 @@
+# [2.0.0-beta.1](https://github.com/liip/styleguide/compare/2.0.0-beta.0...2.0.0-beta.1) (2019-01-22)
+
+
+### Features
+
+* add favicon.ico to the build ([704e6ad](https://github.com/liip/styleguide/commit/704e6ad))
+
+
+
 # [2.0.0-beta.0](https://github.com/liip/styleguide/compare/1.3.3...2.0.0-beta.0) (2019-01-22)
 
 
