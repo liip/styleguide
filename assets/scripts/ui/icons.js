@@ -25,5 +25,6 @@ import 'icons/sea.svg';
 import 'icons/seo.svg';
 import 'icons/service-design.svg';
 import 'icons/slashes.svg';
+import 'icons/teal-agile.svg';
 import 'icons/twitter.svg';
 import 'icons/user-experience.svg';

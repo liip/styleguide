@@ -4,21 +4,22 @@ context:
     - logo
     - slashes
     Expertises:
+    - analytics
     - api
     - audit
+    - content
     - content-management
+    - data-science
     - ecommerce
     - elearning
     - fintech
     - mobile
     - open-source
-    - analytics
-    - user-experience
+    - sea
     - seo
     - service-design
-    - sea
-    - content
-    - data-science
+    - teal-agile
+    - user-experience
     Social:
     - facebook
     - twitter
