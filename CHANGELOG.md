@@ -1,3 +1,12 @@
+# [2.0.0](https://github.com/liip/styleguide/compare/2.0.0-beta.2...2.0.0) (2019-01-23)
+
+
+### Features
+
+* Add Teal & Agile icon ([05d7d5f](https://github.com/liip/styleguide/commit/05d7d5f))
+
+
+
 # [2.0.0-beta.2](https://github.com/liip/styleguide/compare/2.0.0-beta.1...2.0.0-beta.2) (2019-01-23)
 
 
