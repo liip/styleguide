@@ -1,3 +1,7 @@
+# [2.0.0-beta.2](https://github.com/liip/styleguide/compare/2.0.0-beta.1...2.0.0-beta.2) (2019-01-23)
+
+
+
 # [2.0.0-beta.1](https://github.com/liip/styleguide/compare/2.0.0-beta.0...2.0.0-beta.1) (2019-01-22)
 
 
