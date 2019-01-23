@@ -35,6 +35,13 @@ import 'ui';
 import '../scss/common.scss';
 
 /**
+ * Helpers
+ */
+
+import media from 'helpers/media';
+import * as utils from 'helpers/utils';
+
+/**
  * Components
  */
 
@@ -44,6 +51,10 @@ import Collapse from 'components/Collapse';
 import ContactForm from 'components/ContactForm';
 
 export default {
+  helpers: {
+    media,
+    utils,
+  },
   Navbar,
   Reel,
   Collapse,
