@@ -1,3 +1,12 @@
+## [2.0.1](https://github.com/liip/styleguide/compare/2.0.0...2.0.1) (2019-01-25)
+
+
+### Features
+
+* **Haiku:** increase negative variant contrast ([02595a1](https://github.com/liip/styleguide/commit/02595a1))
+
+
+
 # [2.0.0](https://github.com/liip/styleguide/compare/2.0.0-beta.2...2.0.0) (2019-01-23)
 
 
