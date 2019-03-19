@@ -22,7 +22,7 @@ npm install @liip/styleguide
 
 ```js
 // Load style
-import '@liip/styleguide/dist/style.css';
+import '@liip/styleguide/dist/common.css';
 
 // Load Styleguide module
 import Styleguide from '@liip/styleguide';
