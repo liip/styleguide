@@ -8,6 +8,7 @@
 
 import Prism from 'prismjs';
 import 'prismjs/plugins/custom-class/prism-custom-class';
+import 'prismjs/components/prism-markup-templating';
 import 'prismjs/components/prism-php';
 import 'prismjs/components/prism-scss';
 import 'prismjs/components/prism-bash';
