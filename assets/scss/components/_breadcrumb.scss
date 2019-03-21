@@ -1,0 +1,25 @@
+/*----------------------------------------*\
+  BREADCRUMB
+\*----------------------------------------*/
+
+.breadcrumb {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+
+  font-size: rem(14px);
+  text-transform: uppercase;
+  font-weight: 500;
+
+  @include media('md') {
+    font-size: rem(15px);
+  }
+}
+
+  .breadcrumb__item {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-right: $spacing-unit-tiny;
+
+    line-height: 1.3;
+  }

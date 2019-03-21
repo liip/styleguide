@@ -1,0 +1,18 @@
+<ul class="breadcrumb{% if class %} {{ class }}{% endif %}">
+  {% for link in links %}
+    <li class="breadcrumb__item">
+      <div class="media media--tiny">
+        {% if not loop.first %}
+          <div class="media__left">
+            {% render '@icon', { id: 'chevron-alt-right', class: 'text-brand icon--50' } %}
+          </div>
+        {% endif %}
+        <div class="media__body">
+          {% if link.url %}
+            <a href="{{ link.url }}">{{ link.label }}</a>
+          {% endif %}
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>

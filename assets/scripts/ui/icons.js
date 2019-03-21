@@ -6,6 +6,7 @@ import 'icons/chevron-down.svg';
 import 'icons/chevron-left.svg';
 import 'icons/chevron-right.svg';
 import 'icons/chevron-up.svg';
+import 'icons/chevron-alt-right.svg';
 import 'icons/content-management.svg';
 import 'icons/content.svg';
 import 'icons/data-science.svg';

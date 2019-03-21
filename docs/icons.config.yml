@@ -32,5 +32,6 @@ context:
     - chevron-right
     - chevron-up
     - chevron-down
+    - chevron-alt-right
     - paper-plane
     - caret
