@@ -1,3 +1,13 @@
+# [2.1.0](https://github.com/liip/styleguide/compare/2.0.2...2.1.0) (2019-03-21)
+
+
+### Features
+
+* Add Breadcrumb component ([4394320](https://github.com/liip/styleguide/commit/4394320))
+* Add subtitle helper class ([d79b94b](https://github.com/liip/styleguide/commit/d79b94b))
+
+
+
 ## [2.0.2](https://github.com/liip/styleguide/compare/2.0.1...2.0.2) (2019-03-20)
 
 
