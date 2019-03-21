@@ -1,14 +1,14 @@
 <div class="grid grid--even grid--multiline">
   <div class="grid__item w-1/2 md-w-1/4">
-    {% render '@brand--default', { class: "box box--default lg-pdg+", image: "/assets/images/logos/react.svg", alt: "React" } %}
+    {% render '@brand--grayscale', { image: "/assets/images/logos/react.svg", alt: "React" }, true %}
   </div>
   <div class="grid__item w-1/2 md-w-1/4">
-    {% render '@brand--default', { class: "box box--default lg-pdg+", image: "/assets/images/logos/angular.svg", alt: "Angular" } %}
+    {% render '@brand--grayscale', { image: "/assets/images/logos/angular.svg", alt: "Angular" }, true %}
   </div>
   <div class="grid__item w-1/2 md-w-1/4">
-    {% render '@brand--default', { class: "box box--default lg-pdg+", image: "/assets/images/logos/ember.svg", alt: "Ember" } %}
+    {% render '@brand--grayscale', { image: "/assets/images/logos/ember.svg", alt: "Ember" }, true %}
   </div>
   <div class="grid__item w-1/2 md-w-1/4">
-    {% render '@brand--default', { class: "box box--default lg-pdg+", image: "/assets/images/logos/vue.svg", alt: "Vue" } %}
+    {% render '@brand--grayscale', { image: "/assets/images/logos/vue.svg", alt: "Vue" }, true %}
   </div>
 </div>

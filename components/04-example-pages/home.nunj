@@ -23,7 +23,7 @@
 
 <div class="section">
   <div class="section__body">
-    <h2 class="text-center mrgb+">Contact us</h2>
+    <h2 class="text-center mrgt0 mrgb+">Contact us</h2>
     {% render '@contact-form' %}
   </div>
 </div>
