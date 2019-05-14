@@ -26,8 +26,6 @@
 
     color: $brand-color;
     font-weight: 500;
-    font-size: rem(14px);
-    text-transform: uppercase;
 
     @supports (-webkit-background-clip: text) {
       -webkit-text-fill-color: transparent;

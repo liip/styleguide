@@ -9,9 +9,7 @@
   position: relative;
 
   color: $brand-color;
-  font-size: rem(14px);
   font-weight: 500;
-  text-transform: uppercase;
 
   transition-property: padding, color;
   transition-duration: .3s;
@@ -81,6 +79,8 @@
   width: 12px;
   height: 10px;
   margin-left: 5px;
+
+  top: 0;
 
   vertical-align: baseline;
 }
