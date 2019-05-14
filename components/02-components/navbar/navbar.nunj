@@ -11,7 +11,8 @@
     </button>
     <nav class="navbar__collapse collapse">
       <ul class="navbar-menu">
-        <li><a href="#" class="navbar-menu__link">Work</a></li>
+        <li><a href="#" class="navbar-menu__link">Services</a></li>
+        <li><a href="#" class="navbar-menu__link">Projects</a></li>
         <li><a href="#" class="navbar-menu__link">Team</a></li>
         <li><a href="#" class="navbar-menu__link">Blog</a></li>
       </ul>
