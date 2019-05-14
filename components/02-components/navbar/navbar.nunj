@@ -11,9 +11,9 @@
     </button>
     <nav class="navbar__collapse collapse">
       <ul class="navbar-menu">
-        <li><a href="/example-pages/work.html" class="navbar-menu__link">Work</a></li>
-        <li><a href="/example-pages/team.html" class="navbar-menu__link">Team</a></li>
-        <li><a href="/example-pages/blog.html" class="navbar-menu__link">Blog</a></li>
+        <li><a href="#" class="navbar-menu__link">Work</a></li>
+        <li><a href="#" class="navbar-menu__link">Team</a></li>
+        <li><a href="#" class="navbar-menu__link">Blog</a></li>
       </ul>
     </nav>
   </div>
