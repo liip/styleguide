@@ -1,3 +1,12 @@
+## [3.0.1](https://github.com/liip/styleguide/compare/3.0.0...3.0.1) (2019-05-14)
+
+
+### Bug Fixes
+
+* **Typography:** drop difficult to read uppercased texts ([11962d5](https://github.com/liip/styleguide/commit/11962d5))
+
+
+
 # [3.0.0](https://github.com/liip/styleguide/compare/2.1.0...3.0.0) (2019-05-14)
 
 
