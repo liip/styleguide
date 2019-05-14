@@ -3,28 +3,32 @@
 \*----------------------------------------*/
 
 @font-face {
-  font-family: 'Liip Etica';
-  src: url('../fonts/Etica-Book.woff2') format('woff2'),
-       url('../fonts/Etica-Book.woff') format('woff');
+  font-family: Archivo;
+  font-display: swap;
+  src: url('../fonts/Archivo-Regular.woff2') format('woff2'),
+       url('../fonts/Archivo-Regular.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Liip Etica';
+  font-family: Archivo;
   font-weight: 500;
-  src: url('../fonts/Etica-SemiBold.woff2') format('woff2'),
-       url('../fonts/Etica-SemiBold.woff') format('woff');
+  font-display: swap;
+  src: url('../fonts/Archivo-SemiBold.woff2') format('woff2'),
+       url('../fonts/Archivo-SemiBold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Liip Etica';
+  font-family: Archivo;
   font-weight: 700;
-  src: url('../fonts/Etica-Bold.woff2') format('woff2'),
-       url('../fonts/Etica-Bold.woff') format('woff');
+  font-display: swap;
+  src: url('../fonts/Archivo-Bold.woff2') format('woff2'),
+       url('../fonts/Archivo-Bold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Liip Etica';
+  font-family: Archivo;
   font-style: italic;
-  src: url('../fonts/Etica-Book_Italic.woff2') format('woff2'),
-       url('../fonts/Etica-Book_Italic.woff') format('woff');
+  font-display: swap;
+  src: url('../fonts/Archivo-Italic.woff2') format('woff2'),
+       url('../fonts/Archivo-Italic.woff') format('woff');
 }
