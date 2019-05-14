@@ -1,3 +1,25 @@
+# [3.0.0](https://github.com/liip/styleguide/compare/2.1.0...3.0.0) (2019-05-14)
+
+
+### Features
+
+* **Expertise Tile:** Contain text/icon size on large screens ([4407fbb](https://github.com/liip/styleguide/commit/4407fbb))
+* **Typography:** Replace Etica font by Archivo ([e76e0c9](https://github.com/liip/styleguide/commit/e76e0c9))
+* Add new alternate colors ([2860c03](https://github.com/liip/styleguide/commit/2860c03))
+
+
+### Removals
+
+* **Navbar:** Drop expertise variant ([fee435f](https://github.com/liip/styleguide/commit/fee435f))
+
+
+### BREAKING CHANGES
+
+* **Typography:** Etica font has been replaced by Archivo, assets must be updated and mentions of the previous font replaced.
+* **Navbar:** Navbar “expertise” variant with toggle to display expertises reel has been removed.
+
+
+
 # [2.1.0](https://github.com/liip/styleguide/compare/2.0.2...2.1.0) (2019-03-21)
 
 
