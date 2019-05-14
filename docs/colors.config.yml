@@ -72,6 +72,50 @@ context:
       '1000':
         var: "$warm-grey-1000"
         hex: "#414141"
+    Cranberry:
+      '100':
+        var: "$cranberry-100"
+        hex: "#F26380"
+      '200':
+        var: "$cranberry-200"
+        hex: "#E85876"
+      '300':
+        var: "$cranberry-300"
+        hex: "#DD4E6B"
+      '400':
+        var: "$cranberry-400"
+        hex: "#D34361"
+      '500':
+        var: "$cranberry-500"
+        hex: "#C23E59"
+      '600':
+        var: "$cranberry-600"
+        hex: "#B23852"
+      '700':
+        var: "$cranberry-700"
+        hex: "#A1334A"
+    Red:
+      '100':
+        var: "$red-100"
+        hex: "#ff8a65"
+      '200':
+        var: "$red-200"
+        hex: "#ff6e40"
+      '300':
+        var: "$red-300"
+        hex: "#fa5521"
+      '400':
+        var: "$red-400"
+        hex: "#f5460f"
+      '500':
+        var: "$red-500"
+        hex: "#ea3800"
+      '600':
+        var: "$red-600"
+        hex: "#d33301"
+      '700':
+        var: "$red-700"
+        hex: "#c02e00"
     Orange:
       '100':
         var: "$orange-100"
@@ -116,25 +160,47 @@ context:
       '700':
         var: "$teal-700"
         hex: "#00615D"
-    Cranberry:
+    Blue:
       '100':
-        var: "$cranberry-100"
-        hex: "#F26380"
+        var: "$blue-100"
+        hex: "#6da4ff"
       '200':
-        var: "$cranberry-200"
-        hex: "#E85876"
+        var: "$blue-200"
+        hex: "#448aff"
       '300':
-        var: "$cranberry-300"
-        hex: "#DD4E6B"
+        var: "$blue-300"
+        hex: "#3380ff"
       '400':
-        var: "$cranberry-400"
-        hex: "#D34361"
+        var: "$blue-400"
+        hex: "#2979ff"
       '500':
-        var: "$cranberry-500"
-        hex: "#C23E59"
+        var: "$blue-500"
+        hex: "#206ae5"
       '600':
-        var: "$cranberry-600"
-        hex: "#B23852"
+        var: "$blue-600"
+        hex: "#195ccd"
       '700':
-        var: "$cranberry-700"
-        hex: "#A1334A"
+        var: "$blue-700"
+        hex: "#0d4bb1"
+    Purple:
+      '100':
+        var: "$purple-100"
+        hex: "#9565ff"
+      '200':
+        var: "$purple-200"
+        hex: "#824aff"
+      '300':
+        var: "$purple-300"
+        hex: "#7334ff"
+      '400':
+        var: "$purple-400"
+        hex: "#6722ff"
+      '500':
+        var: "$purple-500"
+        hex: "#5314dd"
+      '600':
+        var: "$purple-600"
+        hex: "#470dc7"
+      '700':
+        var: "$purple-700"
+        hex: "#3a09a7"
