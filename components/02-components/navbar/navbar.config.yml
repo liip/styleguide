@@ -34,5 +34,3 @@ variants:
       modifier: navbar--overlay
   - name: secondary
     notes: To be used in subpages where the main navigation is not desired. Back button text should describe the page it links to, for example "Back to team".
-  - name: expertise
-    notes: A custom navbar dedicated to the expertise pages.
