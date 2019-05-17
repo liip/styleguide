@@ -73,7 +73,6 @@
   },
   "files": [
     "assets/*",
-    "!assets/fonts/*",
     "!assets/images/*",
     "dist/*",
     "!.DS_Store"
