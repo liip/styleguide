@@ -1,3 +1,12 @@
+# [3.1.0](https://github.com/liip/styleguide/compare/3.0.2...3.1.0) (2019-06-24)
+
+
+### Features
+
+* allow to customize Sass assets paths ([d43f32f](https://github.com/liip/styleguide/commit/d43f32f))
+
+
+
 ## [3.0.2](https://github.com/liip/styleguide/compare/3.0.1...3.0.2) (2019-05-17)
 
 
