@@ -7,7 +7,7 @@
 .contact-form--personal {
   padding-top: 22%;
 
-  background-image: url('../images/contact.svg');
+  background-image: url('#{$styleguide-images-path}contact.svg');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 100% auto;

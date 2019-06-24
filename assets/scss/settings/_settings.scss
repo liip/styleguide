@@ -3,6 +3,15 @@
 \*----------------------------------------*/
 
 /**
+ * Assets paths
+ */
+
+$styleguide-assets-path:            '../' !default;
+$styleguide-images-path:            $styleguide-assets-path + 'images/' !default;
+$styleguide-fonts-path:             $styleguide-assets-path + 'fonts/' !default;
+
+
+/**
  * Layout
  */
 
