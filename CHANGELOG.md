@@ -1,3 +1,12 @@
+# [3.2.0](https://github.com/liip/styleguide/compare/3.1.0...3.2.0) (2019-06-25)
+
+
+### Features
+
+* **Navbar:** allow tu customize collapsing breakpoint ([bb69b76](https://github.com/liip/styleguide/commit/bb69b76))
+
+
+
 # [3.1.0](https://github.com/liip/styleguide/compare/3.0.2...3.1.0) (2019-06-24)
 
 
