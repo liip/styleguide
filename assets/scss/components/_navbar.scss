@@ -67,7 +67,7 @@
   }
 
   .navbar__collapse {
-    @include media('xs', $breakpoints-desc) {
+    @media (max-width: $navbar-collapse-max) {
       position: absolute;
       top: 100%;
       right: 0;
@@ -84,7 +84,7 @@
       }
     }
 
-    @include media('sm') {
+    @media (min-width: $navbar-collapse-min) {
       max-width: none;
       height: auto;
     }
@@ -103,7 +103,7 @@
       color: $brand-color;
     }
 
-    @include media('sm') {
+    @media (min-width: $navbar-collapse-min) {
       display: none;
     }
   }
@@ -144,7 +144,7 @@
     }
   }
 
-  @include media('sm') {
+  @media (min-width: $navbar-collapse-min) {
     .navbar-menu__link {
       color: white; // We can’t inherit otherwise transition gets delayed by parent transition
 
@@ -168,7 +168,7 @@
   backdrop-filter: blur(3px);
 }
 
-@include media('sm', $breakpoints-desc) {
+@media (max-width: $navbar-collapse-max) {
   .navbar--expanded {
     color: $web-black;
 
@@ -218,7 +218,7 @@
   text-align: center;
 
   > li {
-    @include media('sm') {
+    @media (min-width: $navbar-collapse-min) {
       display: inline-block;
 
       + li {
@@ -253,7 +253,7 @@
       outline: none;
     }
 
-    @include media('sm') {
+    @media (min-width: $navbar-collapse-min) {
       .navbar--shrinked & {
         border-bottom-width: 2px;
         font-size: rem(18px);
@@ -270,7 +270,7 @@
 
       border-bottom-color: currentcolor;
 
-      @include media('sm') {
+      @media (min-width: $navbar-collapse-min) {
         .navbar--negative & {
           color: white;
         }

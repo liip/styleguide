@@ -18,6 +18,9 @@ $styleguide-fonts-path:             $styleguide-assets-path + 'fonts/' !default;
 $navbar-height-xs:      60px;
 $navbar-height-md:      160px;
 $navbar-height-lg:      240px;
+$navbar-collapse-max:   840px !default;
+$navbar-collapse-min:   $navbar-collapse-max + 1px !default;
+
 
 /**
  * Colors
