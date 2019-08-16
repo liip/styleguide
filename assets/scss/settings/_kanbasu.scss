@@ -5,6 +5,8 @@
 // Use this setting to prefix all the components classes
 $namespace:                         '';
 
+$rtl:                               false;
+
 
 /**
  * Colors
@@ -162,6 +164,8 @@ $field-large-border:                2px solid $warm-grey-100;
 $field-large-border-radius:         0;
 
 $field-help-color:                  $alt-color-light;
+
+$form-group-spacing:                $spacing-unit-small;
 
 
 /**

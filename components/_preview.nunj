@@ -8,7 +8,7 @@
 </head>
 
 <body{% if _target.display %} style="{% for property, value in _target.display %}{{ property }}:{{ value }};{% endfor %}"{% endif %}>
-  {{ yield }}
+  {{ yield | safe }}
 
   <script type="text/javascript" src="{{ '/common.js' | path }}"></script>
 </body>
