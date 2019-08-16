@@ -21,6 +21,7 @@ import 'icons/logo.svg';
 import 'icons/mobile.svg';
 import 'icons/open-source.svg';
 import 'icons/paper-plane.svg';
+import 'icons/prototyping.svg';
 import 'icons/rss.svg';
 import 'icons/sea.svg';
 import 'icons/seo.svg';

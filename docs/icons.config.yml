@@ -1,37 +1,38 @@
 context:
   icons:
     Brand:
-    - logo
-    - slashes
+      - logo
+      - slashes
     Expertises:
-    - analytics
-    - api
-    - audit
-    - content
-    - content-management
-    - data-science
-    - ecommerce
-    - elearning
-    - fintech
-    - mobile
-    - open-source
-    - sea
-    - seo
-    - service-design
-    - teal-agile
-    - user-experience
+      - analytics
+      - api
+      - audit
+      - content
+      - content-management
+      - data-science
+      - ecommerce
+      - elearning
+      - fintech
+      - mobile
+      - open-source
+      - prototyping
+      - sea
+      - seo
+      - service-design
+      - teal-agile
+      - user-experience
     Social:
-    - facebook
-    - twitter
-    - instagram
-    - github
-    - linkedin
-    - rss
+      - facebook
+      - twitter
+      - instagram
+      - github
+      - linkedin
+      - rss
     Miscellaneous:
-    - chevron-left
-    - chevron-right
-    - chevron-up
-    - chevron-down
-    - chevron-alt-right
-    - paper-plane
-    - caret
+      - chevron-left
+      - chevron-right
+      - chevron-up
+      - chevron-down
+      - chevron-alt-right
+      - paper-plane
+      - caret
