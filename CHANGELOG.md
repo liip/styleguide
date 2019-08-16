@@ -1,3 +1,12 @@
+# [3.3.0](https://github.com/liip/styleguide/compare/3.2.0...3.3.0) (2019-08-16)
+
+
+### Features
+
+* **icons:** add « prototyping » icon ([20d0b70](https://github.com/liip/styleguide/commit/20d0b70))
+
+
+
 # [3.2.0](https://github.com/liip/styleguide/compare/3.1.0...3.2.0) (2019-06-25)
 
 
