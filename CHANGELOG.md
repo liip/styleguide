@@ -1,3 +1,5 @@
+## [3.3.1](https://github.com/liip/styleguide/compare/3.3.0...3.3.1) (2019-08-16)
+
 # [3.3.0](https://github.com/liip/styleguide/compare/3.2.0...3.3.0) (2019-08-16)
 
 
