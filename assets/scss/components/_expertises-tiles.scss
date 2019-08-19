@@ -7,18 +7,26 @@
 
   display: flex;
   flex-wrap: wrap;
-  margin: -1px;
+  margin: -2px;
+
+  @include media('xs', $breakpoints-desc) {
+    justify-content: center;
+  }
 }
 
   .expertise-tiles__item {
-    width: percentage(1/2);
     flex: 0 1 auto;
+    max-width: 380px;
 
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     background-color: $web-white;
     background-clip: padding-box;
 
     @include media('sm') {
+      width: percentage(1/2);
+    }
+
+    @include media('md') {
       width: percentage(1/3);
     }
   }

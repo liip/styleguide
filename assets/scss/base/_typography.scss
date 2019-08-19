@@ -10,12 +10,11 @@
   color: $web-black;
   font-weight: 700;
   line-height: 1.2;
-
-  transition: color .2s ease-out;
+  transition: color .2s;
 
   a {
     color: inherit;
-    transition: inherit;
+    transition: color .2s;
 
     &:hover,
     &:focus {

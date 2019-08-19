@@ -1,7 +1,7 @@
 <ul class="expertises-tiles">
   {% for expertise in expertises %}
     <li class="expertise-tiles__item">
-      {% render '@expertise-tile', { icon: expertise.icon, name: expertise.name } %}
+      {% render '@expertise-tile', expertise %}
     </li>
   {% endfor %}
 </ul>

@@ -1,58 +1,72 @@
 [
   {
     "name": "E-commerce",
+    "teaser": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, commodi excepturi? Eius, voluptates quia dolorem obcaecat.",
     "icon": "ecommerce"
   },
   {
     "name": "Content Management",
+    "teaser": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "icon": "content-management"
   },
   {
     "name": "User Experience",
+    "teaser": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, commodi excepturi? Eius, voluptates quia dolorem obcaecat.",
     "icon": "user-experience"
   },
   {
     "name": "Mobile",
+    "teaser": "Nam, commodi excepturi? Eius, voluptates quia dolorem obcaecat.",
     "icon": "mobile"
   },
   {
     "name": "E-learning",
+    "teaser": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, commodi excepturi? Eius, voluptates quia dolorem obcaecat.",
     "icon": "elearning"
   },
   {
     "name": "API",
+    "teaser": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "icon": "api"
   },
   {
     "name": "Open Data",
+    "teaser": "Nam, commodi excepturi? Eius, voluptates quia dolorem obcaecat.",
     "icon": "open-source"
   },
   {
     "name": "Analytics",
+    "teaser": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, commodi excepturi? Eius, voluptates quia dolorem obcaecat.",
     "icon": "analytics"
   },
   {
     "name": "Finance",
+    "teaser": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "icon": "fintech"
   },
   {
     "name": "SEO",
+    "teaser": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, commodi excepturi? Eius, voluptates quia dolorem obcaecat.",
     "icon": "seo"
   },
   {
     "name": "Service Design",
+    "teaser": "Nam, commodi excepturi? Eius, voluptates quia dolorem obcaecat.",
     "icon": "service-design"
   },
   {
     "name": "SEA",
+    "teaser": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "icon": "sea"
   },
   {
     "name": "Content",
+    "teaser": "Nam, commodi excepturi? Eius, voluptates quia dolorem obcaecat.",
     "icon": "content"
   },
   {
     "name": "Data Science",
+    "teaser": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, commodi excepturi? Eius, voluptates quia dolorem obcaecat.",
     "icon": "data-science"
   }
 ]
