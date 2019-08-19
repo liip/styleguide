@@ -1,3 +1,21 @@
+# [4.0.0](https://github.com/liip/styleguide/compare/3.3.1...4.0.0) (2019-08-19)
+
+
+### Cleanup
+
+* remove Reel component ([4874704](https://github.com/liip/styleguide/commit/4874704))
+
+
+### Features
+
+* add teaser text to expertise tile ([8e01521](https://github.com/liip/styleguide/commit/8e01521))
+
+
+### BREAKING CHANGES
+
+* Expertise tile component markup has changed and must be adapted. The « small » variant has been removed.
+* Reel component has been removed as well as its dependencies (ease-component and hammerjs libraries) and utilities (debounce and operators functions).
+
 ## [3.3.1](https://github.com/liip/styleguide/compare/3.3.0...3.3.1) (2019-08-16)
 
 # [3.3.0](https://github.com/liip/styleguide/compare/3.2.0...3.3.0) (2019-08-16)
