@@ -47,7 +47,6 @@ import * as utils from 'helpers/utils';
  */
 
 import Navbar from 'components/Navbar';
-import Reel from 'components/Reel';
 import Collapse from 'components/Collapse';
 import ContactForm from 'components/ContactForm';
 
@@ -57,7 +56,6 @@ export default {
     utils,
   },
   Navbar,
-  Reel,
   Collapse,
   ContactForm,
 };
