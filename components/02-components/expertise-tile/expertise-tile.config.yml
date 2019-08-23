@@ -2,10 +2,6 @@ notes: Portrays a Liip expertise. It should always link to the corresponding exp
 display:
   max-width: 300px
 context:
-  small: false
-variants:
-  - name: small
-    context:
-      small: true
-    display:
-      max-width: 150px
+  icon: ecommerce
+  name: E-commerce
+  teaser: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, commodi excepturi? Eius, voluptates quia dolorem obcaecat.

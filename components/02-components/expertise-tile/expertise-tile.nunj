@@ -1,8 +1,8 @@
 <a href="#" class="expertise-tile{% if small %} expertise-tile--small{% endif %}">
   <div class="expertise-tile__body">
-    {% render '@icon', { id: icon | default('ecommerce'), class: "expertise-tile__icon icon--150 sm-icon--200" } %}
+    {% render '@icon', { id: icon, class: "expertise-tile__icon icon--150 sm-icon--200" } %}
     <div class="expertise-tile__title h3 mrgt">
-      {{ name | default('E-commerce') }}
+      {{ name }}
     </div>
     <div class="expertise-tile__teaser">
       {{ teaser }}
