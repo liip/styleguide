@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/liip/styleguide/compare/4.0.0...4.1.0) (2019-08-23)
+
+
+### Features
+
+* **text:** adjust text-small and text-large line-height ([047dff5](https://github.com/liip/styleguide/commit/047dff5))
+
 # [4.0.0](https://github.com/liip/styleguide/compare/3.3.1...4.0.0) (2019-08-19)
 
 
