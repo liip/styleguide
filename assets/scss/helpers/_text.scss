@@ -24,6 +24,11 @@
   }
 }
 
+
+/**
+ * Colors
+ */
+
 .text-brand {
   color: $brand-color;
 }
@@ -34,4 +39,17 @@
 
 .text-danger {
   color: $cranberry-500;
+}
+
+
+/**
+ * Sizes
+ */
+
+.text-small {
+  line-height: 1.6;
+}
+
+.text-large {
+  line-height: 1.4;
 }
