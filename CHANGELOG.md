@@ -1,3 +1,10 @@
+## [4.1.1](https://github.com/liip/styleguide/compare/4.1.0...4.1.1) (2019-10-21)
+
+
+### Bug Fixes
+
+* **Field:** apply custom error style to Firefox invalid selector ([51e03f8](https://github.com/liip/styleguide/commit/51e03f8))
+
 # [4.1.0](https://github.com/liip/styleguide/compare/4.0.0...4.1.0) (2019-08-23)
 
 
