@@ -141,10 +141,10 @@ select.field--light {
  * Errors
  */
 
-.form-group--has-error {
-  .field {
-    border-color: $cranberry-500;
-  }
+.form-group--has-error .field,
+.field:not(output):-moz-ui-invalid {
+  border-color: $cranberry-500;
+  box-shadow: none;
 }
 
 .field-errors.field-errors {
