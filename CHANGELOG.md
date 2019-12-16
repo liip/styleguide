@@ -1,3 +1,10 @@
+## [4.1.2](https://github.com/liip/styleguide/compare/4.1.1...4.1.2) (2019-12-16)
+
+
+### Bug Fixes
+
+* **Expertise tiles:** prevent items width from shrinking ([8576e65](https://github.com/liip/styleguide/commit/8576e65))
+
 ## [4.1.1](https://github.com/liip/styleguide/compare/4.1.0...4.1.1) (2019-10-21)
 
 
