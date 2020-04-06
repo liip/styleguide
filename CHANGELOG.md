@@ -1,3 +1,10 @@
+# [4.2.0](https://github.com/liip/styleguide/compare/4.1.2...4.2.0) (2020-04-06)
+
+
+### Features
+
+* enable Kanbasu flex helper ([da86b60](https://github.com/liip/styleguide/commit/da86b60))
+
 ## [4.1.2](https://github.com/liip/styleguide/compare/4.1.1...4.1.2) (2019-12-16)
 
 
