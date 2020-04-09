@@ -1,3 +1,10 @@
+## [4.2.1](https://github.com/liip/styleguide/compare/4.2.0...4.2.1) (2020-04-09)
+
+
+### Bug Fixes
+
+* **Quote:** proper alignment and allow to grow font-size ([d2d10fe](https://github.com/liip/styleguide/commit/d2d10fe))
+
 # [4.2.0](https://github.com/liip/styleguide/compare/4.1.2...4.2.0) (2020-04-06)
 
 
