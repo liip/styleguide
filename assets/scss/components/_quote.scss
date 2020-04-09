@@ -9,7 +9,7 @@
 }
 
   .quote__text {
-    padding-left: $spacing-unit-default;
+    padding-left: 0.9em;
     margin-bottom: $spacing-unit-default;
 
     font-size: rem(20px);
@@ -21,8 +21,8 @@
     p:first-of-type::before,
     p:last-of-type::after {
       color: $brand-color;
-      font-size: 1.5em;
-      line-height: 0.7;
+      font-size: 1.2em;
+      line-height: 1.05;
     }
 
     p:first-of-type::before {
@@ -42,8 +42,6 @@
     }
 
     @include media('sm') {
-      padding-left: $spacing-unit-default * 1.5;
-
       font-size: rem(23px);
     }
 
@@ -52,7 +50,7 @@
     }
 
     @include media('lg') {
-      margin-left: -$spacing-unit-default * 1.5;
+      margin-left: -0.9em;
 
       font-size: rem(28px);
     }
