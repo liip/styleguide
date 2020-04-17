@@ -1,0 +1,63 @@
+<div class="master">
+  {% block master %}
+    <button class="btn btn--default" data-a11y-dialog-show="{{ id }}">
+      Open the dialog
+    </button>
+  {% endblock %}
+</div>
+
+<div id="{{ id }}" class="dialog{% if class %} {{ class }}{% endif %}" aria-hidden="true">
+  <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+
+  <div class="dialog-content" role="dialog" aria-labelledby="{{ id }}-dialog-title">
+    <div class="dialog__header">
+      <h1 id="{{ id }}-dialog-title" class="h3 mrgv0 flex-grow-1">
+        {{ title }}
+      </h1>
+
+      <button class="btn btn--bare" type="button" aria-label="Close dialog" data-a11y-dialog-hide>
+        {% render '@icon', {
+          id: 'close',
+          class: 'icon--100'
+        } %}
+      </button>
+    </div>
+
+    <div class="dialog__body">
+      {% block body %}
+        <div class="wysiwyg">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem earum at, consequuntur omnis accusamus vitae illo impedit quo soluta quam exercitationem nulla fuga corrupti nihil! Saepe, explicabo. Magni expedita placeat quo, facere quasi reiciendis ipsum, in quam quod corporis ducimus?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis odit nostrum dolor minus velit provident impedit corrupti adipisci quidem natus ut consectetur earum suscipit saepe, doloremque ducimus exercitationem voluptatibus necessitatibus.
+          </p>
+        </div>
+      {% endblock %}
+    </div>
+
+    <div class="dialog__footer">
+      {% block footer %}
+        <ul class="list-inline list-inline--large list-inline--right">
+          <li>
+            <button class="btn btn--bare" data-a11y-dialog-hide>Cancel</button>
+          </li>
+          <li>
+            <button class="btn btn--primary">Submit</button>
+          </li>
+        </ul>
+      {% endblock %}
+    </div>
+  </div>
+</div>
+
+{% block script %}
+<script type="text/javascript">
+  window.addEventListener('DOMContentLoaded', function() {
+    var dialog = document.querySelector('#{{ id }}');
+    if (dialog) {
+      new Styleguide.Dialog(dialog);
+    }
+  })
+</script>
+{% endblock %}

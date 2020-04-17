@@ -1,4 +1,5 @@
 import { getDocumentScrollTop } from 'helpers/utils';
+import { lazySelector } from 'helpers/dom';
 import media from 'helpers/media';
 import Collapse from 'components/Collapse';
 
@@ -14,7 +15,7 @@ export default class Navbar {
       mode: 'instant',
     }
   ) {
-    this._el = el;
+    this._el = lazySelector(el);
     this._options = options;
 
     this._bodyEl = this._el.querySelector('.navbar__body');
@@ -129,7 +130,7 @@ export default class Navbar {
  */
 document.addEventListener('DOMContentLoaded', () => {
   const collapses = [...document.querySelectorAll('.navbar__collapse')];
-  collapses.forEach(collapse => {
+  collapses.forEach((collapse) => {
     const navbar = collapse.closest('.navbar');
     new Collapse(collapse, {
       hideOnClick: true,

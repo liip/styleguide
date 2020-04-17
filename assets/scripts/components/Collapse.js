@@ -4,6 +4,8 @@
   vertically
 \*----------------------------------------*/
 
+import { lazySelector } from 'helpers/dom';
+
 const DEFAULT_OPTIONS = {
   onShow: () => {},
   onHide: () => {},
@@ -13,18 +15,12 @@ const DEFAULT_OPTIONS = {
 
 export default class Collapse {
   constructor(el, options) {
-    if (typeof el === 'string') {
-      this._collapse = document.querySelector(this._el);
-    } else if (el instanceof Element) {
-      this._collapse = el;
-    } else {
-      return;
-    }
+    this._collapse = lazySelector(el);
 
     this._options = Object.assign({}, DEFAULT_OPTIONS, options);
     this._triggers = [
       ...document.querySelectorAll('[data-toggle="collapse"]'),
-    ].filter(trigger => {
+    ].filter((trigger) => {
       const target = trigger.dataset && trigger.dataset.target;
       if (target) {
         return this._collapse.matches(target);
@@ -43,13 +39,13 @@ export default class Collapse {
   }
 
   _addEventListeners() {
-    this._triggers.forEach(trigger => {
+    this._triggers.forEach((trigger) => {
       trigger.addEventListener('click', this.toggle);
     });
   }
 
   _removeEventListeners() {
-    this._triggers.forEach(trigger => {
+    this._triggers.forEach((trigger) => {
       trigger.removeEventListener('click', this.toggle);
     });
   }
@@ -117,7 +113,7 @@ export default class Collapse {
 
     this._collapse.addEventListener('transitionend', this._activate);
 
-    this._triggers.forEach(trigger => {
+    this._triggers.forEach((trigger) => {
       trigger.classList.add('active');
     });
 
@@ -148,7 +144,7 @@ export default class Collapse {
 
     this._collapse.addEventListener('transitionend', this._deactivate);
 
-    this._triggers.forEach(trigger => {
+    this._triggers.forEach((trigger) => {
       trigger.classList.remove('active');
     });
 

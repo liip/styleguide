@@ -49,6 +49,7 @@ import * as utils from 'helpers/utils';
 import Navbar from 'components/Navbar';
 import Collapse from 'components/Collapse';
 import ContactForm from 'components/ContactForm';
+import Dialog from 'components/Dialog';
 
 export default {
   helpers: {
@@ -58,4 +59,5 @@ export default {
   Navbar,
   Collapse,
   ContactForm,
+  Dialog,
 };

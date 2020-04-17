@@ -1,9 +1,10 @@
 import Collapse from 'components/Collapse';
 import Expanding from 'expanding-textareas';
+import { lazySelector } from 'helpers/dom';
 
 export default class ContactForm {
   constructor(contactForm) {
-    this._contactForm = contactForm;
+    this._contactForm = lazySelector(contactForm);
     this._stepTwo = this._contactForm.querySelector('.contact-form__step-2');
     this._name = this._contactForm.querySelector('.contact-form__name');
     this._email = this._contactForm.querySelector('.contact-form__email');
@@ -19,7 +20,7 @@ export default class ContactForm {
   }
 
   _addEventListeners() {
-    this._fields.forEach(field => {
+    this._fields.forEach((field) => {
       field.addEventListener('focus', () => {
         this._isOpen = true;
         this.collapse.show();

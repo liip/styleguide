@@ -1,0 +1,26 @@
+notes: |
+  This component use [A11y-Dialog](https://github.com/edenspiekermann/a11y-dialog) in the background.
+
+  ⚠️ Be sure to check A11y-Dialog documentation on how elements should be placed in the DOM to ensure its accessibility.
+
+  ## Initialization
+
+  ```js
+  window.addEventListener('DOMContentLoaded', function() {
+    var dialog = document.querySelector('#my-dialog');
+    if (dialog) {
+      new Styleguide.Dialog(dialog);
+    }
+  })
+  ```
+
+  ## Methods
+
+  - `show` Display the dialog
+  - `hide` Hide the dialog
+  - `getElement` Return the dialog DOM Node
+  - `getA11yDialog` Return the A11y Dialog instance
+  - `destroy` Destroy the component
+context:
+  id: dialog
+  title: Dialog title
