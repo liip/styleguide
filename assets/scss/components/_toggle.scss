@@ -1,0 +1,77 @@
+/*----------------------------------------*\
+  TOGGLE
+\*----------------------------------------*/
+
+.toggle {
+  display: block;
+
+  position: relative;
+}
+
+.toggle__checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+
+  &:indeterminate + .toggle__label {
+    background-color: $green-400;
+
+    &::before {
+      height: 4px;
+
+      top: 10px;
+      left: calc(50% - 8px);
+
+      border-color: white;
+      border-radius: 3px;
+    }
+  }
+
+  &:checked + .toggle__label {
+    background-color: $green-700;
+
+    &::before {
+      width: 4px;
+
+      left: calc(100% - 14px);
+
+      border-color: white;
+      border-radius: 3px;
+    }
+  }
+
+  &:focus + .toggle__label {
+    box-shadow: 0 0 0 2px $web-white, 0 0 0 6px rgba($green-700,.5);
+  }
+}
+
+.toggle__label {
+  display: block;
+  width: 40px;
+  height: 24px;
+  overflow: hidden;
+
+  position: relative;
+
+  text-indent: -9999px;
+
+  background-color: $warm-grey-200;
+  border-radius: 24px;
+  transition: all .25s cubic-bezier(0.77, 0, 0.175, 1);
+
+  &::before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    position: absolute;
+    top: 4px;
+    left: 4px;
+
+    border-radius: 100%;
+    border: 2px solid $warm-grey-600;
+    transition: inherit;
+  }
+}

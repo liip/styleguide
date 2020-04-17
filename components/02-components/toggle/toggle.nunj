@@ -1,0 +1,4 @@
+<div class="toggle{% if class %} {{ class }}{% endif %}">
+  <input id="{{ id }}" type="checkbox" name="{{ name }}" value="1" class="toggle__checkbox">
+  <label for="{{ id }}" class="toggle__label">{{ label }}</label>
+</div>
