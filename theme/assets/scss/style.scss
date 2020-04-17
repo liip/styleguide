@@ -40,6 +40,7 @@
 @import "@frctl/mandelbrot/assets/scss/components/prose";
 @import "@frctl/mandelbrot/assets/scss/components/status";
 @import "@frctl/mandelbrot/assets/scss/components/tree";
+@import "@frctl/mandelbrot/assets/scss/components/search";
 
 @import "components/header";
 @import "components/preview";
@@ -50,6 +51,7 @@
 @import "components/meta";
 @import "components/pen";
 @import "components/browser";
+@import "components/search";
 
 // Custom components for the docs
 @import "components/grid-list";
