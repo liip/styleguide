@@ -1,0 +1,90 @@
+{% extends "@dialog--default" %}
+
+{% block master %}
+<div id="cookies-banner" class="cookies-banner box box--default hidden">
+  <div class="h4 mrgt0">Who reads what? For how long? And where?</div>
+  <p class="mrgt0 text-muted text-medium">
+    As a digital agency we would like to know what is going on on our website. Therefore we use cookies. They help us to measure exactly this. And no worries - we do not recognise underwear colour and coffee consumption. However, these cookies are stored with you. So we can at least find out how often you come by.
+  </p>
+
+  <div class="grid grid--multiline">
+    <div class="grid__item w-1/2">
+      <button id="cookies-banner-accept-all-btn" class="btn btn--default btn--block">
+        Accept all
+      </button>
+    </div>
+    <div class="grid__item w-1/2">
+      <button id="cookies-banner-disable-all-btn" class="btn btn--default btn--block">
+        Decline all
+      </button>
+    </div>
+    <div class="grid__item">
+      <button class="btn btn--bare" data-a11y-dialog-show="{{ id }}">Customize my preferences</button>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block body %}
+<p class="mrgt0">By allowing these third party services, you accept their cookies and the use of tracking technologies necessary for their proper functioning. Read more in our <a href="#">Privacy Policy</a>.</p>
+
+<ul class="list-stacked">
+  <li>
+    <div class="media media--middle">
+      <div class="media__left">
+        {% render '@toggle', { id: 'cookies-settings-toggle-all', label: '' }, true %}
+      </div>
+      <div class="media__body">
+        <label for="cookies-settings-toggle-all" class="field-label pdgv0">Toggle all</label>
+      </div>
+    </div>
+  </li>
+  <li>
+    <hr class="mrgv0">
+  </li>
+  {% for service in services %}
+    <li>
+      <div class="media">
+        <div class="media__left">
+          {% render '@toggle', { id: service.id, name: service.id, label: '', class: 'cookies-settings-toggle' }, true %}
+        </div>
+        <div class="media__body">
+          <h2 class="h4 mrgt0 mrgb--"><label for="{{ service.id }}">{{ service.label }}</label></h2>
+          <div class="text-muted text-medium">{{ service.description }}</div>
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
+{% endblock %}
+
+{% block footer %}
+  <ul class="list-inline list-inline--right" role="presentation">
+    <li role="presentation">
+      <button class="btn btn--primary" data-a11y-dialog-hide>I’m done</button>
+    </li>
+  </ul>
+{% endblock %}
+
+{% block script %}
+<script type="text/javascript">
+  window.addEventListener('DOMContentLoaded', function() {
+    var cookiesBannerNode = document.querySelector('#cookies-banner');
+    if (cookiesBannerNode) {
+      var cookiesBanner = new Styleguide.CookiesBanner(cookiesBannerNode, {
+        settingsDialog: '#{{ id }}',
+        onAcceptAll: function() {
+          console.log('Accepted all cookies!');
+        },
+        onToggle: function(name, enabled, values) {
+          console.log('Toggle cookie consent for', name, enabled, values);
+        },
+        onToggleAll: function(enabled, values) {
+          console.log('Toggle all', enabled, values);
+        }
+      });
+      cookiesBanner.show();
+    }
+  })
+</script>
+{% endblock %}

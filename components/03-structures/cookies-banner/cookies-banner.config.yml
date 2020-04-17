@@ -1,0 +1,63 @@
+notes: |
+  This component allows you to display a Cookies consent banner including an advanced settings dialog that lets the user enable cookies per services.
+
+  The "Accept all" button triggers a callback you can use to load all services.
+  The "Decline all" button does nothing because **you should not create cookies prior to authorization**.
+
+  Note that such banner should come with a privacy policy page.
+
+  ## Initialization
+
+  ```js
+  window.addEventListener('DOMContentLoaded', function() {
+    var cookiesBannerNode = document.querySelector('#cookies-banner');
+    if (cookiesBannerNode) {
+      var cookiesBanner = new Styleguide.CookiesBanner(cookiesBannerNode, {
+        settingsDialog: '#id-of-the-settings-dialog',
+        onAcceptAll: function() {
+          console.log('Accepted all cookies!');
+        },
+        onToggle: function(name, enabled, values) {
+          console.log('Toggle cookie consent for', name, enabled, values);
+        },
+        onToggleAll: function(enabled, values) {
+          console.log('Toggle all', enabled, values);
+        }
+      });
+      cookiesBanner.show();
+    }
+  })
+  ```
+
+  ## Options
+
+  - `settingsDialog` **String** _(default: null)_ A valid selector to the settings Dialog
+  - `onToggle` **Function** _(default: null)_ Callback when one service status is toggled
+  - `onToggleAll` **Function** _(default: null)_ Callback when all services status is toggled
+  - `onAcceptAll` **Function** _(default: null)_ Callback when "Accept all" button is clicked
+
+  ## Methods
+
+  - `show` Display the dialog
+  - `hide` Hide the dialog
+  - `getValues` Return an object with all services and their corresponding state
+
+context:
+  id: cookies-banner-dialog
+  title: Cookies settings
+  services:
+    - id: facebookPixel
+      label: Facebook Pixel
+      description: Facebook Pixel allows us to measure the impact of Liip publications on Facebook.
+    - id: linkedinInsight
+      label: LinkedIn Insight
+      description: LinkedIn Insight allows us to measure the impact of Liip publications on LinkedIn.
+    - id: hotjar
+      label: Hotjar
+      description: Hotjar is a tool for collecting and analysing the interactions of all users in the form of a heat map. This tool is used to improve the content provided.
+    - id: googleAnalytics
+      label: Google Analytics
+      description: Google Analytics is a tool provided by Google that enables us to collect and analyse information on the properties of the traffic visiting the website, the interactions with the content provided, and the consumption performance of all this content, in order to improve the content supplied.
+    - id: googleOptimize
+      label: Google Optimize
+      description: Google Optimize allows you to offer multiple variants of a website's content or structure in order to determine the version that obtains the best results from users, also known as A/B testing, and to personalise a website based on how it is utilised by its users. This tool is provided by Google.

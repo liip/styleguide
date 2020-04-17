@@ -1,0 +1,24 @@
+/*----------------------------------------*\
+  COOKIES BANNER
+\*----------------------------------------*/
+
+.cookies-banner {
+  width: 100%;
+
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 150;
+
+  box-shadow: 0 8px 22px 3px rgba(0,0,0,.06);
+
+  @include media('sm') {
+    width: calc(100% - #{$spacing-unit-default * 2});
+    max-width: 400px;
+
+    left: auto;
+    right: $spacing-unit-default;
+    bottom: $spacing-unit-default;
+  }
+}

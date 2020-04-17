@@ -50,6 +50,7 @@ import Navbar from 'components/Navbar';
 import Collapse from 'components/Collapse';
 import ContactForm from 'components/ContactForm';
 import Dialog from 'components/Dialog';
+import CookiesBanner from 'components/CookiesBanner';
 
 export default {
   helpers: {
@@ -60,4 +61,5 @@ export default {
   Collapse,
   ContactForm,
   Dialog,
+  CookiesBanner,
 };

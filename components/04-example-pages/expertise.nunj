@@ -1,56 +1,60 @@
-{% render '@navbar', { modifier: 'navbar--sticky' } %}
+<div class="master">
+  {% render '@navbar', { modifier: 'navbar--sticky' } %}
 
-<div class="section section--behind-navbar">
-  <div class="section__body">
-    <div class="article">
-      {% render '@breadcrumb', { class: 'mrgb-' }, true %}
+  <main>
+    <div class="section section--behind-navbar">
+      <div class="section__body">
+        <div class="article">
+          {% render '@breadcrumb', { class: 'mrgb-' }, true %}
 
-      <h1 class="mrgb0">Content Management</h1>
-      <div class="subtitle mrgb">We make your website flexible and attractive</div>
+          <h1 class="mrgb0">Content Management</h1>
+          <div class="subtitle mrgb">We make your website flexible and attractive</div>
 
-      <div class="text-lead wysiwyg">
-        <p>Whether it is a standard product or customized, the content management systems we use satisfy the highest requirements. We base the development of our technically sophisticated solutions on leading open source components, which give you a lot of freedom in the design of your website.</p>
+          <div class="text-lead wysiwyg">
+            <p>Whether it is a standard product or customized, the content management systems we use satisfy the highest requirements. We base the development of our technically sophisticated solutions on leading open source components, which give you a lot of freedom in the design of your website.</p>
 
-        <p>We produce multilingual solutions with blogs or social media integration that fulfill demands that are specific to your company. We facilitate a visually distinct market entry, create a reliable multi-device experience and use and process data from your own business tools such as ERP or CRM.</p>
+            <p>We produce multilingual solutions with blogs or social media integration that fulfill demands that are specific to your company. We facilitate a visually distinct market entry, create a reliable multi-device experience and use and process data from your own business tools such as ERP or CRM.</p>
+          </div>
+
+          {% render '@liiper-card--large', { class: 'mrgt md-mrgt+' }, true %}
+        </div>
       </div>
-
-      {% render '@liiper-card--large', { class: 'mrgt md-mrgt+' }, true %}
     </div>
-  </div>
-</div>
 
-<div class="section">
-  <div class="section__body">
-    {% render '@packages' %}
-  </div>
-</div>
+    <div class="section">
+      <div class="section__body">
+        {% render '@packages' %}
+      </div>
+    </div>
 
-<div class="section">
-  <div class="section__body">
-    {% render '@showcase' %}
-  </div>
-</div>
+    <div class="section">
+      <div class="section__body">
+        {% render '@showcase' %}
+      </div>
+    </div>
 
-<div class="section">
-  <div class="section__body">
-    {% render '@brands-list' %}
-  </div>
-</div>
+    <div class="section">
+      <div class="section__body">
+        {% render '@brands-list' %}
+      </div>
+    </div>
 
-<div class="section">
-  <div class="section__body">
-    {% render '@article-cards-list' %}
-  </div>
-</div>
+    <div class="section">
+      <div class="section__body">
+        {% render '@article-cards-list' %}
+      </div>
+    </div>
 
-<div class="section">
-  <div class="section__body">
-    <h2 class="text-center mrgt0 mrgb+">Contact us</h2>
-    {% render '@contact-form' %}
-  </div>
-</div>
+    <div class="section">
+      <div class="section__body">
+        <h2 class="text-center mrgt0 mrgb+">Contact us</h2>
+        {% render '@contact-form' %}
+      </div>
+    </div>
+  </main>
 
-{% render '@footer' %}
+  {% render '@footer' %}
+</div>
 
 <script>
 window.addEventListener('DOMContentLoaded', function() {
