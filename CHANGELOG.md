@@ -1,3 +1,18 @@
+# [5.0.0](https://github.com/liip/styleguide/compare/4.2.1...5.0.0) (2020-04-20)
+
+
+### Features
+
+* introduce a `text-medium` helper ([1bff457](https://github.com/liip/styleguide/commit/1bff457aeae585595a0ebf36393041bb32c03b30))
+* new Cookies banner component ([2378b4f](https://github.com/liip/styleguide/commit/2378b4fa3fdf182cc32516528bb6492c4cdc6b44))
+* new Dialog component ([ce49141](https://github.com/liip/styleguide/commit/ce491411b094a0892369dc81d4cb3660d45ea1a3))
+* new Toggle component ([7c0de6e](https://github.com/liip/styleguide/commit/7c0de6ef5e70f5c1532d1f2cbadada9e6a8e7e22))
+
+
+### BREAKING CHANGES
+
+Potential breaking changes due to major updates in dependencies.
+
 ## [4.2.1](https://github.com/liip/styleguide/compare/4.2.0...4.2.1) (2020-04-09)
 
 
