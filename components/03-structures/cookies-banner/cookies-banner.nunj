@@ -14,7 +14,7 @@
       </button>
     </div>
     <div class="grid__item w-1/2">
-      <button id="cookies-banner-disable-all-btn" class="btn btn--default btn--block">
+      <button id="cookies-banner-decline-all-btn" class="btn btn--default btn--block">
         Decline all
       </button>
     </div>
@@ -75,6 +75,9 @@
         settingsDialog: '#{{ id }}',
         onAcceptAll: function() {
           console.log('Accepted all cookies!');
+        },
+        onDeclineAll: function() {
+          console.log('Declined all cookies!');
         },
         onToggle: function(name, enabled, values) {
           console.log('Toggle cookie consent for', name, enabled, values);

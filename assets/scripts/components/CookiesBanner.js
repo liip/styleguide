@@ -8,8 +8,8 @@ export default class CookiesBanner {
     this._acceptAllBtn = this._el.querySelector(
       '#cookies-banner-accept-all-btn'
     );
-    this._disableAllBtn = this._el.querySelector(
-      '#cookies-banner-disable-all-btn'
+    this._declineAllBtn = this._el.querySelector(
+      '#cookies-banner-decline-all-btn'
     );
 
     this._addEventsListeners();
@@ -24,7 +24,10 @@ export default class CookiesBanner {
       'click',
       this._handleAcceptAll.bind(this)
     );
-    this._disableAllBtn.addEventListener('click', this.hide.bind(this));
+    this._declineAllBtn.addEventListener(
+      'click',
+      this._handleDeclineAll.bind(this)
+    );
   }
 
   _initDialog() {
@@ -91,7 +94,14 @@ export default class CookiesBanner {
   _handleAcceptAll() {
     this.hide();
     if (typeof this._options.onAcceptAll === 'function') {
-      this._options.onAcceptAll();
+      this._options.onAcceptAll(this.getValues());
+    }
+  }
+
+  _handleDeclineAll() {
+    this.hide();
+    if (typeof this._options.onDeclineAll === 'function') {
+      this._options.onDeclineAll(this.getValues());
     }
   }
 

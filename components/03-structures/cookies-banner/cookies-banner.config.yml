@@ -2,7 +2,7 @@ notes: |
   This component allows you to display a Cookies consent banner including an advanced settings dialog that lets the user enable cookies per services.
 
   The "Accept all" button triggers a callback you can use to load all services.
-  The "Decline all" button does nothing because **you should not create cookies prior to authorization**.
+  The "Decline all" button triggers a callback you can use to remember no services should be loaded. Remember that this should only be used to save the user preferences, services using cookies shouldn’t be loaded prior to user agreement.
 
   Note that such banner should come with a privacy policy page.
 
@@ -16,6 +16,9 @@ notes: |
         settingsDialog: '#id-of-the-settings-dialog',
         onAcceptAll: function() {
           console.log('Accepted all cookies!');
+        },
+        onDeclineAll: function() {
+          console.log('Declined all cookies!');
         },
         onToggle: function(name, enabled, values) {
           console.log('Toggle cookie consent for', name, enabled, values);
@@ -35,6 +38,7 @@ notes: |
   - `onToggle` **Function** _(default: null)_ Callback when one service status is toggled
   - `onToggleAll` **Function** _(default: null)_ Callback when all services status is toggled
   - `onAcceptAll` **Function** _(default: null)_ Callback when "Accept all" button is clicked
+  - `onDeclineAll` **Function** _(default: null)_ Callback when "Decline all" button is clicked
 
   ## Methods
 
