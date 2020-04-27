@@ -1,3 +1,10 @@
+# [5.1.0](https://github.com/liip/styleguide/compare/5.0.0...5.1.0) (2020-04-27)
+
+
+### Features
+
+* **Cookies banner:** add « on disable all » callback ([f090bdd](https://github.com/liip/styleguide/commit/f090bdde2c2f316b53456d0c1adfc1a68ca0aaad))
+
 # [5.0.0](https://github.com/liip/styleguide/compare/4.2.1...5.0.0) (2020-04-20)
 
 
