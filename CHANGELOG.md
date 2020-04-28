@@ -1,3 +1,10 @@
+## [5.1.1](https://github.com/liip/styleguide/compare/5.1.0...5.1.1) (2020-04-28)
+
+
+### Bug Fixes
+
+* **Cookie banner:** pass correct values in accept/reject-all callbacks ([9c672d3](https://github.com/liip/styleguide/commit/9c672d3f31478dee329ad828ccb3b0f69362911a))
+
 # [5.1.0](https://github.com/liip/styleguide/compare/5.0.0...5.1.0) (2020-04-27)
 
 
