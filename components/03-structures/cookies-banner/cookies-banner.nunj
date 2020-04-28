@@ -73,11 +73,11 @@
     if (cookiesBannerNode) {
       var cookiesBanner = new Styleguide.CookiesBanner(cookiesBannerNode, {
         settingsDialog: '#{{ id }}',
-        onAcceptAll: function() {
-          console.log('Accepted all cookies!');
+        onAcceptAll: function(values) {
+          console.log('Accepted all cookies!', values);
         },
-        onDeclineAll: function() {
-          console.log('Declined all cookies!');
+        onDeclineAll: function(values) {
+          console.log('Declined all cookies!', values);
         },
         onToggle: function(name, enabled, values) {
           console.log('Toggle cookie consent for', name, enabled, values);

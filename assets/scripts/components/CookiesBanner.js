@@ -83,9 +83,7 @@ export default class CookiesBanner {
 
   _toggleAll(e) {
     const checked = e.target.checked;
-    this._checkboxes.forEach((toggle) => {
-      toggle.checked = checked;
-    });
+    this._setAllCheckboxesStatus(checked);
     if (typeof this._options.onToggleAll === 'function') {
       this._options.onToggleAll(checked, this.getValues());
     }
@@ -93,6 +91,7 @@ export default class CookiesBanner {
 
   _handleAcceptAll() {
     this.hide();
+    this._setAllCheckboxesStatus(true);
     if (typeof this._options.onAcceptAll === 'function') {
       this._options.onAcceptAll(this.getValues());
     }
@@ -100,9 +99,16 @@ export default class CookiesBanner {
 
   _handleDeclineAll() {
     this.hide();
+    this._setAllCheckboxesStatus(false);
     if (typeof this._options.onDeclineAll === 'function') {
       this._options.onDeclineAll(this.getValues());
     }
+  }
+
+  _setAllCheckboxesStatus(checked) {
+    this._checkboxes.forEach((toggle) => {
+      toggle.checked = checked;
+    });
   }
 
   /*----------------------------------------*\
