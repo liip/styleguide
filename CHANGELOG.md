@@ -1,3 +1,10 @@
+# [5.2.0](https://github.com/liip/styleguide/compare/5.1.1...5.2.0) (2020-07-29)
+
+
+### Features
+
+* **Icons:** add agile-teams, custom-development and ux-design ([f39fbac](https://github.com/liip/styleguide/commit/f39fbacaea5e7feb23230d179924fce5e15be9bd))
+
 ## [5.1.1](https://github.com/liip/styleguide/compare/5.1.0...5.1.1) (2020-04-28)
 
 
