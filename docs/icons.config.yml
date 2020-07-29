@@ -4,11 +4,13 @@ context:
       - logo
       - slashes
     Expertises:
+      - agile-teams
       - analytics
       - api
       - audit
       - content
       - content-management
+      - custom-development
       - data-science
       - ecommerce
       - elearning
@@ -21,19 +23,20 @@ context:
       - service-design
       - teal-agile
       - user-experience
+      - ux-design
     Social:
       - facebook
-      - twitter
-      - instagram
       - github
+      - instagram
       - linkedin
       - rss
+      - twitter
     Miscellaneous:
+      - caret
+      - chevron-alt-right
+      - chevron-down
       - chevron-left
       - chevron-right
       - chevron-up
-      - chevron-down
-      - chevron-alt-right
-      - paper-plane
-      - caret
       - close
+      - paper-plane

@@ -1,3 +1,4 @@
+import 'icons/agile-teams.svg';
 import 'icons/analytics.svg';
 import 'icons/api.svg';
 import 'icons/audit.svg';
@@ -10,6 +11,7 @@ import 'icons/chevron-up.svg';
 import 'icons/close.svg';
 import 'icons/content-management.svg';
 import 'icons/content.svg';
+import 'icons/custom-development.svg';
 import 'icons/data-science.svg';
 import 'icons/ecommerce.svg';
 import 'icons/elearning.svg';
@@ -31,3 +33,4 @@ import 'icons/slashes.svg';
 import 'icons/teal-agile.svg';
 import 'icons/twitter.svg';
 import 'icons/user-experience.svg';
+import 'icons/ux-design.svg';
