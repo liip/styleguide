@@ -1,0 +1,22 @@
+/*----------------------------------------*\
+  BRANDS LIST
+\*----------------------------------------*/
+
+.brands-list {
+  @extend %list;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-top: -$spacing-unit-large;
+  margin-left: -$spacing-unit-large * $ratio;
+
+  > li {
+    flex: 1 1 200px;
+    max-width: 200px;
+    min-width: 100px;
+    padding-top: $spacing-unit-large;
+    padding-left: $spacing-unit-large * $ratio;
+  }
+}

@@ -1,0 +1,7 @@
+<ul class="brands-list">
+  {% for brand in brands %}
+    <li>
+      {% render '@brand--grayscale', brand, true %}
+    </li>
+  {% endfor %}
+</ul>

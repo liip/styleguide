@@ -10,7 +10,7 @@
 
 a.brand {
   .brand__img {
-    transition: transform .2s cubic-bezier(.32,.63,.43,1.34);
+    transition: transform 0.2s cubic-bezier(0.32, 0.63, 0.43, 1.34);
     will-change: transform;
   }
 
@@ -26,18 +26,20 @@ a.brand {
   }
 }
 
-  .brand__img {
-    max-height: 80px;
-    // Fix calculation on IE
-    max-width: calc(100% - 1px);
-  }
+.brand__img {
+  width: auto;
+  height: auto;
+  max-height: 60px;
+  // Fix calculation on IE
+  max-width: calc(100% - 1px);
+}
 
 .brand--grayscale {
   filter: grayscale(100%);
-  transition: filter .2s ease-out;
+  transition: filter 0.2s ease-out;
 }
 
-  a.brand--grayscale:hover,
-  a.brand--grayscale:focus {
-    filter: grayscale(0);
-  }
+a.brand--grayscale:hover,
+a.brand--grayscale:focus {
+  filter: grayscale(0);
+}

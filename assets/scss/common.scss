@@ -25,7 +25,6 @@
 @import 'settings/settings';
 @import 'settings/kanbasu';
 
-
 /**
  * Tools
  */
@@ -36,7 +35,6 @@
 @import 'kanbasu/src/scss/tools/mixins';
 @import 'tools/mixins';
 
-
 /**
  * Vendors
  */
@@ -44,13 +42,11 @@
 @import 'kanbasu/src/scss/vendor/normalize';
 @import 'vendor/code';
 
-
 /**
  * Animations
  */
 
 @import 'animations/rotate';
-
 
 /**
  * Defaults
@@ -61,7 +57,6 @@
 @import 'kanbasu/src/scss/defaults/typography';
 @import 'kanbasu/src/scss/defaults/table';
 @import 'kanbasu/src/scss/defaults/forms';
-
 
 /**
  * Helpers
@@ -80,7 +75,6 @@
 
 @import 'helpers/text';
 
-
 /**
  * Base
  */
@@ -89,7 +83,6 @@
 @import 'base/typography';
 @import 'base/forms';
 @import 'base/layout';
-
 
 /**
  * Components
@@ -138,6 +131,7 @@
 @import 'components/dialog';
 @import 'components/toggle';
 @import 'components/cookies-banner';
+@import 'components/brands-list';
 
 // Composed components
 @import 'components/navbar';
