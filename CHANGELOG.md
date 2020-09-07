@@ -1,3 +1,10 @@
+# [5.3.0](https://github.com/liip/styleguide/compare/5.2.0...5.3.0) (2020-09-07)
+
+
+### Features
+
+* **Brands List:** New dedicated style for better layout ([755ea90](https://github.com/liip/styleguide/commit/755ea907d84afed6603a7eb77e4dfa5379091aab))
+
 # [5.2.0](https://github.com/liip/styleguide/compare/5.1.1...5.2.0) (2020-07-29)
 
 
