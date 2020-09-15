@@ -27,3 +27,11 @@ variants:
     notes: Vertically align the content in the middle, usually coupled with "fit" or "spaced" version.
     context:
       modifier: section--middle section--fit
+  - name: wide
+    notes: Use a wider container for the body.
+    context:
+      modifier: section--wide
+  - name: narrow
+    notes: Use a narrower container for the body.
+    context:
+      modifier: section--narrow

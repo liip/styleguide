@@ -3,66 +3,66 @@
 \*----------------------------------------*/
 
 .quote {
-  max-width: 810px;
+  max-width: $container-narrow-max-width;
   margin-left: auto;
   margin-right: auto;
 }
 
-  .quote__text {
-    padding-left: 0.9em;
-    margin-bottom: $spacing-unit-default;
+.quote__text {
+  padding-left: 0.9em;
+  margin-bottom: $spacing-unit-default;
 
-    font-size: rem(20px);
-    font-weight: 500;
-    line-height: 1.3;
+  font-size: rem(20px);
+  font-weight: 500;
+  line-height: 1.3;
 
-    position: relative;
+  position: relative;
 
-    p:first-of-type::before,
-    p:last-of-type::after {
-      color: $brand-color;
-      font-size: 1.2em;
-      line-height: 1.05;
-    }
+  p:first-of-type::before,
+  p:last-of-type::after {
+    color: $brand-color;
+    font-size: 1.2em;
+    line-height: 1.05;
+  }
 
-    p:first-of-type::before {
-      content: "«";
+  p:first-of-type::before {
+    content: '«';
+    position: absolute;
+    left: 0;
+  }
+  p:last-of-type {
+    margin-bottom: $spacing-unit-tiny;
+
+    &::after {
+      content: '»';
+      margin-left: $spacing-unit-tiny;
+
       position: absolute;
-      left: 0;
-    }
-    p:last-of-type {
-      margin-bottom: $spacing-unit-tiny;
-
-      &::after {
-        content: "»";
-        margin-left: $spacing-unit-tiny;
-
-        position: absolute;
-      }
-    }
-
-    @include media('sm') {
-      font-size: rem(23px);
-    }
-
-    @include media('md') {
-      font-size: rem(26px);
-    }
-
-    @include media('lg') {
-      margin-left: -0.9em;
-
-      font-size: rem(28px);
     }
   }
 
-  .quote__author {
-    margin-left: $spacing-unit-default;
-
-    @include media('sm') {
-      margin-left: $spacing-unit-default * 1.5;
-    }
-    @include media('lg') {
-      margin-left: 0;
-    }
+  @include media('sm') {
+    font-size: rem(23px);
   }
+
+  @include media('md') {
+    font-size: rem(26px);
+  }
+
+  @include media('lg') {
+    margin-left: -0.9em;
+
+    font-size: rem(28px);
+  }
+}
+
+.quote__author {
+  margin-left: $spacing-unit-default;
+
+  @include media('sm') {
+    margin-left: $spacing-unit-default * 1.5;
+  }
+  @include media('lg') {
+    margin-left: 0;
+  }
+}
