@@ -1,3 +1,10 @@
+# [5.4.0](https://github.com/liip/styleguide/compare/5.3.0...5.4.0) (2020-09-15)
+
+
+### Features
+
+* **Section:** Add narrow variant ([dcb1a44](https://github.com/liip/styleguide/commit/dcb1a443d80b089c6c6588887e3bf474d17fa34d))
+
 # [5.3.0](https://github.com/liip/styleguide/compare/5.2.0...5.3.0) (2020-09-07)
 
 
