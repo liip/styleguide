@@ -1,0 +1,14 @@
+.alert {
+  display: block;
+  padding: $spacing-unit-small $spacing-unit-default;
+}
+
+.alert--success {
+  color: #32680a;
+  background-color: #dbeccf;
+}
+
+.alert--error {
+  color: #a1334a;
+  background-color: #f4e4e7;
+}

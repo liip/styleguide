@@ -1,0 +1,8 @@
+collated: true
+variants:
+  - name: success
+    context:
+      modifier: alert--success
+  - name: error
+    context:
+      modifier: alert--error
