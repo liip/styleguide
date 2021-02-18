@@ -13,6 +13,7 @@ import 'icons/content-management.svg';
 import 'icons/content.svg';
 import 'icons/custom-development.svg';
 import 'icons/data-science.svg';
+import 'icons/design-thinking.svg';
 import 'icons/ecommerce.svg';
 import 'icons/elearning.svg';
 import 'icons/facebook.svg';
