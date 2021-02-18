@@ -1,3 +1,11 @@
+# [5.5.0](https://github.com/liip/styleguide/compare/5.4.0...5.5.0) (2021-02-18)
+
+
+### Features
+
+* **components:** introduce alert component ([6d28a9e](https://github.com/liip/styleguide/commit/6d28a9edfd19d192b1f762a9bf267efb2960f745))
+* **icons:** add design-thinking ([f26e60a](https://github.com/liip/styleguide/commit/f26e60a4f18feb5ffa85a41fa980be69c09449a8))
+
 # [5.4.0](https://github.com/liip/styleguide/compare/5.3.0...5.4.0) (2020-09-15)
 
 
