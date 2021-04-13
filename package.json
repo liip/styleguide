@@ -67,10 +67,10 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "a11y-dialog": "^5.3.1",
+    "a11y-dialog": "^7.1.0",
     "expanding-textareas": "^1.0.2",
     "kanbasu": "^2.5.0",
-    "prismjs": "^1.20.0"
+    "prismjs": "^1.23.0"
   },
   "files": [
     "assets/*",

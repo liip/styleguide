@@ -4,9 +4,7 @@ import { lazySelector } from 'helpers/dom';
 export default class Dialog {
   constructor(el) {
     this._el = lazySelector(el);
-    this._master = document.querySelector('.master');
-
-    this._dialog = new A11yDialog(this._el, this._master);
+    this._dialog = new A11yDialog(this._el);
 
     this._dialog.on('show', this._onShow.bind(this));
     this._dialog.on('hide', this._onHide.bind(this));

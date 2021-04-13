@@ -1,8 +1,6 @@
 notes: |
   This component use [A11y-Dialog](https://github.com/edenspiekermann/a11y-dialog) in the background.
 
-  ⚠️ Be sure to check A11y-Dialog documentation on how elements should be placed in the DOM to ensure its accessibility.
-
   ## Initialization
 
   ```js

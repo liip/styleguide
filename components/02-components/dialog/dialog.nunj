@@ -1,15 +1,13 @@
-<div class="master">
-  {% block master %}
-    <button class="btn btn--default" data-a11y-dialog-show="{{ id }}">
-      Open the dialog
-    </button>
-  {% endblock %}
-</div>
+{% block page %}
+  <button class="btn btn--default" data-a11y-dialog-show="{{ id }}">
+    Open the dialog
+  </button>
+{% endblock %}
 
-<div id="{{ id }}" class="dialog{% if class %} {{ class }}{% endif %}" aria-hidden="true">
-  <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+<div id="{{ id }}" class="dialog{% if class %} {{ class }}{% endif %}" aria-hidden="true" aria-labelledby="{{ id }}-dialog-title">
+  <div class="dialog-overlay" data-a11y-dialog-hide></div>
 
-  <div class="dialog-content" role="dialog" aria-labelledby="{{ id }}-dialog-title">
+  <div class="dialog-content" role="document">
     <div class="dialog__header">
       <h1 id="{{ id }}-dialog-title" class="h3 mrgv0 flex-grow-1">
         {{ title }}

@@ -1,6 +1,6 @@
 {% extends "@dialog--default" %}
 
-{% block master %}
+{% block page %}
 <div id="cookies-banner" class="cookies-banner box box--default hidden">
   <div class="h4 mrgt0">Who reads what? For how long? And where?</div>
   <p class="mrgt0 text-muted text-medium">
