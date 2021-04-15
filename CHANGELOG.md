@@ -1,3 +1,15 @@
+# [6.0.0](https://github.com/liip/styleguide/compare/5.5.0...6.0.0) (2021-04-15)
+
+
+### Features
+
+* **deps:** update A11yDialog to version 7 ([83a2d3d](https://github.com/liip/styleguide/commit/83a2d3d0a66a1edff36c5fc924fa9d1c3ed86e04))
+
+
+### BREAKING CHANGES
+
+* **deps:** Dialog component DOM & initialization must be adapted. Dialog elements don’t have to be outside the master element anymore.
+
 # [5.5.0](https://github.com/liip/styleguide/compare/5.4.0...5.5.0) (2021-02-18)
 
 
