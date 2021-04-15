@@ -5,6 +5,7 @@ const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 module.exports = {
   mode: process.env.NODE_ENV,
+  target: 'browserslist',
   resolve: {
     modules: [
       path.resolve(__dirname, 'assets/scripts'),
@@ -20,9 +21,12 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     publicPath: process.env.NODE_ENV === 'development' ? '/' : '',
     filename: '[name].js',
-    library: 'Styleguide',
-    libraryTarget: 'umd',
-    libraryExport: 'default',
+    library: {
+      name: 'Styleguide',
+      type: 'umd',
+      umdNamedDefine: true,
+      export: 'default',
+    },
   },
   module: {
     rules: [
@@ -35,18 +39,10 @@ module.exports = {
         test: /\.scss$/,
         use: [
           {
-            loader:
-              process.env.NODE_ENV === 'production'
-                ? MiniCssExtractPlugin.loader
-                : 'style-loader',
+            loader: MiniCssExtractPlugin.loader,
           },
           'css-loader',
-          {
-            loader: 'postcss-loader',
-            options: {
-              plugins: [require('autoprefixer')(), require('cssnano')()],
-            },
-          },
+          'postcss-loader',
           {
             loader: 'sass-loader',
             options: {
@@ -93,6 +89,9 @@ module.exports = {
     }),
     new SpriteLoaderPlugin(),
   ],
+  stats: {
+    colors: true,
+  },
   devServer: {
     historyApiFallback: true,
     compress: true,
@@ -100,10 +99,6 @@ module.exports = {
       '**': 'http://localhost:4000',
     },
     port: 3000,
-    stats: {
-      colors: true,
-    },
-    overlay: true,
   },
   optimization: {
     splitChunks: {

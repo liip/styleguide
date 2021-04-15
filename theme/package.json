@@ -4,8 +4,8 @@
   "description": "Fractal Madelbrot theme customized for Liip Web Styleguide.",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --include-path 'node_modules' --output-style compressed -o dist/css assets/scss",
-    "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
+    "scss": "sass assets/scss/style.scss dist/css/style.css --load-path 'node_modules' --load-path '../node_modules' --style compressed",
+    "autoprefixer": "postcss -r dist/css/style.css",
     "build:css": "npm run scss && npm run autoprefixer",
     "watch:css": "onchange 'assets/scss/**/*.scss' -- npm run build:css",
     "start": "npm run scss && npm run watch:css",
@@ -13,22 +13,22 @@
   },
   "author": "Liip AG",
   "license": "MIT",
-  "dependencies": {
-    "@frctl/mandelbrot": "^1.4.0"
-  },
   "devDependencies": {
-    "autoprefixer": "^9.8.0",
-    "highlight.js": "^9.18.1",
-    "marked": "^1.1.0",
-    "node-sass": "^4.14.1",
+    "autoprefixer": "^10.2.5",
+    "highlight.js": "^10.7.2",
+    "marked": "^2.0.3",
     "normalize.css": "^8.0.1",
-    "onchange": "^7.0.2",
-    "postcss-cli": "^7.1.1",
+    "onchange": "^7.1.0",
+    "postcss-cli": "^8.3.1",
     "sass-mq": "^5.0.1",
     "select2": "^4.0.13"
   },
   "browserslist": [
     "last 2 versions",
     "IE >= 11"
-  ]
+  ],
+  "dependencies": {
+    "postcss-url": "^10.1.3",
+    "sass": "^1.32.8"
+  }
 }
