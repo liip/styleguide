@@ -1,3 +1,10 @@
+# [6.1.0](https://github.com/liip/styleguide/compare/6.0.0...6.1.0) (2021-05-31)
+
+
+### Features
+
+* **icons:** add teal-culture ([32c40f8](https://github.com/liip/styleguide/commit/32c40f811506d72638ab66c68a1990e4acad77e0))
+
 # [6.0.0](https://github.com/liip/styleguide/compare/5.5.0...6.0.0) (2021-04-15)
 
 
