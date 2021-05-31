@@ -1,3 +1,10 @@
+# [6.2.0](https://github.com/liip/styleguide/compare/6.1.0...6.2.0) (2021-05-31)
+
+
+### Features
+
+* **icons:** add TikTok ([32f4a61](https://github.com/liip/styleguide/commit/32f4a617e7c8e60b7e05686c8e5e1ece79999ea4))
+
 # [6.1.0](https://github.com/liip/styleguide/compare/6.0.0...6.1.0) (2021-05-31)
 
 
