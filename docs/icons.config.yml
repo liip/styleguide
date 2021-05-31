@@ -32,6 +32,7 @@ context:
       - instagram
       - linkedin
       - rss
+      - tiktok
       - twitter
     Miscellaneous:
       - caret

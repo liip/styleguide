@@ -33,6 +33,7 @@ import 'icons/service-design.svg';
 import 'icons/slashes.svg';
 import 'icons/teal-agile.svg';
 import 'icons/teal-culture.svg';
+import 'icons/tiktok.svg';
 import 'icons/twitter.svg';
 import 'icons/user-experience.svg';
 import 'icons/ux-design.svg';
