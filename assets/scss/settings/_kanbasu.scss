@@ -2,6 +2,8 @@
   KANBASU SETTINGS
 \*----------------------------------------*/
 
+@use 'sass:math';
+
 // Use this setting to prefix all the components classes
 $namespace: '';
 
@@ -41,8 +43,8 @@ $muted-color: $warm-grey-700;
 $ratio: 1.61803398875;
 
 $spacing-unit-default: 20px;
-$spacing-unit-tiny: floor($spacing-unit-default / ($ratio * 2));
-$spacing-unit-small: floor($spacing-unit-default / $ratio);
+$spacing-unit-tiny: floor(math.div($spacing-unit-default, $ratio * 2));
+$spacing-unit-small: floor(math.div($spacing-unit-default, $ratio));
 $spacing-unit-large: floor($spacing-unit-default * $ratio);
 $spacing-unit-huge: floor($spacing-unit-default * ($ratio * 2));
 
@@ -60,16 +62,16 @@ $spacings: (
 
 // Use EM media-queries for better browser consistency
 // See http://zellwk.com/blog/media-query-units
-$screen-xs-max: 640px / 16px * 1em;
-$screen-sm-min: 641px / 16px * 1em;
-$screen-sm-max: 768px / 16px * 1em;
-$screen-md-min: 769px / 16px * 1em;
-$screen-md-max: 1024px / 16px * 1em;
-$screen-lg-min: 1025px / 16px * 1em;
-$screen-lg-max: 1199px / 16px * 1em;
-$screen-xl-min: 1200px / 16px * 1em;
+$screen-xs-max: math.div(640px, 16px) * 1em;
+$screen-sm-min: math.div(641px, 16px) * 1em;
+$screen-sm-max: math.div(768px, 16px) * 1em;
+$screen-md-min: math.div(769px, 16px) * 1em;
+$screen-md-max: math.div(1024px, 16px) * 1em;
+$screen-lg-min: math.div(1025px, 16px) * 1em;
+$screen-lg-max: math.div(1199px, 16px) * 1em;
+$screen-xl-min: math.div(1200px, 16px) * 1em;
 
-$screen-xxl-min: 1500px / 16px * 1em;
+$screen-xxl-min: math.div(1500px, 16px) * 1em;
 
 $breakpoints-default: (
   'sm' '(min-width: #{$screen-sm-min})',
@@ -100,7 +102,7 @@ $border-radius-large: 6px;
  * Buttons
  */
 
-$btn-padding: $spacing-unit-default/$ratio $spacing-unit-default;
+$btn-padding: math.div($spacing-unit-default, $ratio) $spacing-unit-default;
 $btn-color: $web-black;
 $btn-font-size: inherit;
 $btn-font-family: inherit;
@@ -108,12 +110,13 @@ $btn-border: 1px solid transparent;
 $btn-bkg: transparent;
 $btn-border-radius: 0;
 
-$btn-small-padding: $spacing-unit-small/$ratio $spacing-unit-small;
+$btn-small-padding: math.div($spacing-unit-small, $ratio) $spacing-unit-small;
 $btn-small-font-size: $font-size-small;
 $btn-small-border: $btn-border;
 $btn-small-border-radius: 0;
 
-$btn-large-padding: $spacing-unit-default/$ratio $spacing-unit-default;
+$btn-large-padding: math.div($spacing-unit-default, $ratio)
+  $spacing-unit-default;
 $btn-large-font-size: $font-size-large;
 $btn-large-border: 2px solid transparent;
 $btn-large-border-radius: 0;

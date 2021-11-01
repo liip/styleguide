@@ -2,6 +2,8 @@
   EXPERTISES TILES
 \*----------------------------------------*/
 
+@use 'sass:math';
+
 .expertises-tiles {
   @extend %list;
 
@@ -14,20 +16,20 @@
   }
 }
 
-  .expertise-tiles__item {
-    flex: 0 1 auto;
-    width: 100%;
-    max-width: 380px;
+.expertise-tiles__item {
+  flex: 0 1 auto;
+  width: 100%;
+  max-width: 380px;
 
-    border: 2px solid transparent;
-    background-color: $web-white;
-    background-clip: padding-box;
+  border: 2px solid transparent;
+  background-color: $web-white;
+  background-clip: padding-box;
 
-    @include media('sm') {
-      width: percentage(1/2);
-    }
-
-    @include media('md') {
-      width: percentage(1/3);
-    }
+  @include media('sm') {
+    width: percentage(1 * 0.5);
   }
+
+  @include media('md') {
+    width: percentage(math.div(1, 3));
+  }
+}
