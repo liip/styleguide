@@ -13,6 +13,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     publicPath: process.env.NODE_ENV === 'development' ? '/' : '',
     filename: '[name].js',
+    assetModuleFilename: 'assets/[name][ext][query]',
     library: {
       name: 'Styleguide',
       type: 'umd',
@@ -48,15 +49,7 @@ module.exports = {
       {
         test: /\.(svg|png|jpe?g|gif|woff|woff2|eot|ttf|otf|ico)$/,
         exclude: path.resolve('./assets/icons'),
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'assets/',
-            },
-          },
-        ],
+        type: 'asset/resource',
       },
       {
         test: /\.svg$/,

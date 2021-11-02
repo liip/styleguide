@@ -17,7 +17,7 @@
   "scripts": {
     "start": "NODE_ENV=development concurrently 'node ./server.js' 'webpack serve'",
     "build": "NODE_ENV=production concurrently 'npm run build:fractal' 'npm run build:webpack' && cp -R dist/* build/",
-    "build:webpack": "NODE_ENV=production webpack",
+    "build:webpack": "rm -rf dist/* && NODE_ENV=production webpack",
     "build:fractal": "NODE_ENV=production fractal build",
     "prettier": "prettier --check assets/scripts/**/*.js",
     "prettier:fix": "prettier --write assets/scripts/**/*.js",
@@ -62,7 +62,6 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-rawbot": "^1.1.1",
     "eslint-plugin-prettier": "^4.0.0",
-    "file-loader": "^6.2.0",
     "glob": "^7.2.0",
     "mini-css-extract-plugin": "^2.4.3",
     "postcss": "^8.3.11",
