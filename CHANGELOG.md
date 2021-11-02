@@ -1,3 +1,10 @@
+# [6.3.0](https://github.com/liip/styleguide/compare/6.2.0...6.3.0) (2021-11-02)
+
+
+### Features
+
+* use relative paths internally & export sources ([05219d3](https://github.com/liip/styleguide/commit/05219d336fbc541fa4d5c9e32bab403b0d32ac19))
+
 # [6.2.0](https://github.com/liip/styleguide/compare/6.1.0...6.2.0) (2021-05-31)
 
 
