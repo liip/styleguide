@@ -1,3 +1,10 @@
+## [6.3.1](https://github.com/liip/styleguide/compare/6.3.0...6.3.1) (2021-11-02)
+
+
+### Bug Fixes
+
+* **build:** restore previous file names for assets ([e5d19a2](https://github.com/liip/styleguide/commit/e5d19a290b87e41dd96df5535891948ab246a13e))
+
 # [6.3.0](https://github.com/liip/styleguide/compare/6.2.0...6.3.0) (2021-11-02)
 
 
