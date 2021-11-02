@@ -4,7 +4,7 @@
   vertically
 \*----------------------------------------*/
 
-import { lazySelector } from 'helpers/dom';
+import { lazySelector } from '../helpers/dom';
 
 const DEFAULT_OPTIONS = {
   onShow: () => {},

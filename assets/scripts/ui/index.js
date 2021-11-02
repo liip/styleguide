@@ -4,6 +4,6 @@
 
 import './icons';
 
-import 'images/favicon.ico';
-import 'images/article-placeholder.png';
-import 'images/avatar-placeholder.png';
+import '../../images/favicon.ico';
+import '../../images/article-placeholder.png';
+import '../../images/avatar-placeholder.png';

@@ -1,4 +1,4 @@
-import { lazySelector } from 'helpers/dom';
+import { lazySelector } from '../helpers/dom';
 import Dialog from './Dialog';
 
 export default class CookiesBanner {

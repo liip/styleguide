@@ -1,6 +1,6 @@
-import Collapse from 'components/Collapse';
+import Collapse from './Collapse';
 import Expanding from 'expanding-textareas';
-import { lazySelector } from 'helpers/dom';
+import { lazySelector } from '../helpers/dom';
 
 export default class ContactForm {
   constructor(contactForm) {

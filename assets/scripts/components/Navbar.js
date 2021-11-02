@@ -1,7 +1,7 @@
-import { getDocumentScrollTop } from 'helpers/utils';
-import { lazySelector } from 'helpers/dom';
-import media from 'helpers/media';
-import Collapse from 'components/Collapse';
+import { getDocumentScrollTop } from '../helpers/utils';
+import { lazySelector } from '../helpers/dom';
+import media from '../helpers/media';
+import Collapse from './Collapse';
 
 const DESKTOP_MIN_HEIGHT = 80;
 const MEDIUM_MAX_HEIGHT = 160;

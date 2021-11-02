@@ -1,5 +1,5 @@
 import A11yDialog from 'a11y-dialog';
-import { lazySelector } from 'helpers/dom';
+import { lazySelector } from '../helpers/dom';
 
 export default class Dialog {
   constructor(el) {

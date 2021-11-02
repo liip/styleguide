@@ -30,6 +30,20 @@
     "release": "release-it"
   },
   "main": "dist/common.js",
+  "exports": {
+    "./dist/": "./dist/",
+    "./scss/": "./assets/scss/",
+    "./icons": "./assets/scripts/ui/icons.js",
+    "./prism": "./assets/scripts/prism.js",
+    "./helpers/dom": "./assets/scripts/helpers/dom.js",
+    "./helpers/media": "./assets/scripts/helpers/media.js",
+    "./helpers/utils": "./assets/scripts/helpers/utils.js",
+    "./components/Navbar": "./assets/scripts/components/Navbar.js",
+    "./components/Collapse": "./assets/scripts/components/Collapse.js",
+    "./components/ContactForm": "./assets/scripts/components/ContactForm.js",
+    "./components/Dialog": "./assets/scripts/components/Dialog.js",
+    "./components/CookiesBanner": "./assets/scripts/components/CookiesBanner.js"
+  },
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.0",

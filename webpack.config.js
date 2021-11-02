@@ -6,14 +6,6 @@ const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 module.exports = {
   mode: process.env.NODE_ENV,
   target: 'browserslist',
-  resolve: {
-    modules: [
-      path.resolve(__dirname, 'assets/scripts'),
-      path.resolve(__dirname, 'assets'),
-      'node_modules',
-    ],
-    extensions: ['.js'],
-  },
   entry: {
     common: path.resolve(__dirname, 'assets/scripts/common.js'),
   },
