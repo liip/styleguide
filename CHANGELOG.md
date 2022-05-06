@@ -1,3 +1,11 @@
+# [6.4.0](https://github.com/liip/styleguide/compare/6.3.1...6.4.0) (2022-05-06)
+
+
+### Features
+
+* **helpers:** add text-body size ([f0baa3d](https://github.com/liip/styleguide/commit/f0baa3dad2d781c735537bdb0b4e007f3f2c5136))
+* **wysiwyg:** better balanced headings size ([3254836](https://github.com/liip/styleguide/commit/32548364a8c694810f5d67ea69aa6161b7ff53e2))
+
 ## [6.3.1](https://github.com/liip/styleguide/compare/6.3.0...6.3.1) (2021-11-02)
 
 
