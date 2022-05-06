@@ -1,5 +1,10 @@
 <div class="wysiwyg">
   <h1>The Quick Brown Fox Jumps Over The Lazy Dog</h1>
+  <h2>The Quick Brown Fox Jumps Over The Lazy Dog</h2>
+  <h3>The Quick Brown Fox Jumps Over The Lazy Dog</h3>
+  <h4>The Quick Brown Fox Jumps Over The Lazy Dog</h4>
+  <h5>The Quick Brown Fox Jumps Over The Lazy Dog</h5>
+  <h6>The Quick Brown Fox Jumps Over The Lazy Dog</h6>
 
   <p>
     <img src="{{ image | default('/assets/images/news/1.jpg' | path) }}" alt="A bike hanging on the wall in the Liip Lausanne office.">

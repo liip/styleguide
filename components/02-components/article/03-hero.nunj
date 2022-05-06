@@ -6,7 +6,7 @@
   <div class="grid grid--multiline grid--rev">
     <div class="grid__item sm-w-2/3">
       <a href="#" class="article-card__link">
-        <h1 class="article-card__title">Fried eggs and vegetable in a bowl are delicious</h1>
+        <h1 class="h2 article-card__title">Fried eggs and vegetable in a bowl are delicious</h1>
         <p class="article-card__excerpt text-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum velit sint culpa at, in eveniet itaque, obcaecati, repudiandae illum nihil distinctio quas esse soluta aut amet. Ut ipsa nulla eligendi eaque, optio nihil dignissimos pariatur suscipit aliquid. Nam at tempore nulla molestiae tempora nesciunt, repudiandae, possimus ipsum, asperiores natus molestias.</p>
       </a>
     </div>

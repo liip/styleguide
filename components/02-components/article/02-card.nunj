@@ -1,7 +1,7 @@
 <div class="article-card">
   <a href="#" class="article-card__link">
     {% render '@image-branded' %}
-    <h3 class="article-card__title">Guacamole toast: a case study in-depth</h3>
+    <h3 class="h4 article-card__title">Guacamole toast: a case study in-depth</h3>
     <p class="article-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nihil quas error illum, inventore modi commodi voluptates doloribus incidunt saepe in explicabo omnis distinctio fugiat? Velit illo tempora, adipisci aut.</p>
   </a>
   {% render '@liiper-card--small' %}
