@@ -7,8 +7,6 @@
 
   position: relative;
 
-  background-color: $web-white;
-
   @include media('md') {
     padding: $spacing-unit-large;
   }
@@ -115,19 +113,6 @@
   @include headings() {
     color: inherit;
   }
-}
-
-/**
- * Fixed sections
- */
-
-.section--fixed {
-  width: 100%;
-  position: fixed;
-}
-
-.section-spacer {
-  height: 100vh;
 }
 
 /**
