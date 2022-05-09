@@ -1,3 +1,15 @@
+# [7.0.0](https://github.com/liip/styleguide/compare/6.4.0...7.0.0) (2022-05-09)
+
+
+### Features
+
+* **section:** remove fixed variant and default background ([8e7a978](https://github.com/liip/styleguide/commit/8e7a978ceb9633dac46fa43ff25e5d02b9a83e50))
+
+
+### BREAKING CHANGES
+
+* **section:** .section--fixed has been removed, therefore .section background color has been removed (it was the same as the page background).
+
 # [6.4.0](https://github.com/liip/styleguide/compare/6.3.1...6.4.0) (2022-05-06)
 
 
