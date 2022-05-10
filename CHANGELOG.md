@@ -1,3 +1,10 @@
+# [7.1.0](https://github.com/liip/styleguide/compare/7.0.0...7.1.0) (2022-05-10)
+
+
+### Features
+
+* **typography:** add dedicated class to use scaled headings ([d7d2612](https://github.com/liip/styleguide/commit/d7d2612d9aa24e2b5a60aa0e8d1266e3ab2aab79))
+
 # [7.0.0](https://github.com/liip/styleguide/compare/6.4.0...7.0.0) (2022-05-09)
 
 
