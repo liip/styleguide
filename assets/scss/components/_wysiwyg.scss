@@ -5,6 +5,8 @@
 .wysiwyg {
   @include spaceless-children();
 
+  @extend %headings-scaled;
+
   img,
   figure {
     @extend %img-responsive;
@@ -56,50 +58,6 @@
     p {
       margin-top: $spacing-unit-small;
       margin-bottom: $spacing-unit-small;
-    }
-  }
-
-  @include media('sm') {
-    h3,
-    .h3 {
-      font-size: rem(26px);
-    }
-
-    h4,
-    .h4 {
-      font-size: rem(23px);
-    }
-
-    h5,
-    .h5 {
-      font-size: rem(21px);
-    }
-
-    h6,
-    .h6 {
-      font-size: rem(19px);
-    }
-  }
-
-  @include media('lg') {
-    h3,
-    .h3 {
-      font-size: rem(32px);
-    }
-
-    h4,
-    .h4 {
-      font-size: rem(26px);
-    }
-
-    h5,
-    .h5 {
-      font-size: rem(23px);
-    }
-
-    h6,
-    .h6 {
-      font-size: rem(20px);
     }
   }
 }
