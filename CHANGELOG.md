@@ -1,3 +1,17 @@
+
+
+# [8.0.0](https://github.com/liip/styleguide/compare/7.1.0...8.0.0) (2022-05-30)
+
+
+### chore
+
+* update dependencies ([69fc273](https://github.com/liip/styleguide/commit/69fc2734dc5e8df6b071ebd16359be486259a950))
+
+
+### BREAKING CHANGES
+
+* Updated Kanbasu to 3.0.0 which requires Dart Sass >= 1.33 to parse the new math.div syntax.
+
 # [7.1.0](https://github.com/liip/styleguide/compare/7.0.0...7.1.0) (2022-05-10)
 
 
