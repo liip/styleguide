@@ -1,5 +1,12 @@
 
 
+# [8.1.0](https://github.com/liip/styleguide/compare/8.0.0...8.1.0) (2022-07-19)
+
+
+### Features
+
+* **haiku:** better font-size for longer sentences ([02fb681](https://github.com/liip/styleguide/commit/02fb681882c92eb503545a6c242f8c53415f109d))
+
 # [8.0.0](https://github.com/liip/styleguide/compare/7.1.0...8.0.0) (2022-05-30)
 
 
