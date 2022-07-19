@@ -4,7 +4,7 @@
 
 .haiku {
   color: $web-black;
-  line-height: 1.1;
+  line-height: 1.2;
 
   a {
     color: inherit;
@@ -34,35 +34,16 @@
     }
   }
 
-  .haiku__title {
-    font-weight: 700;
-    font-size: rem(32px);
-  }
-
+  .haiku__title,
   .haiku__list {
     font-weight: 700;
-    font-size: rem(21px);
+    font-size: rem(30px);
+    font-size: clamp(24px, 4vw, 36px);
   }
 
   .haiku__number {
     color: $brand-color;
   }
-
-@include media('md') {
-  .haiku__title {
-    font-size: rem(42px);
-  }
-
-  .haiku__list {
-    font-size: rem(25px);
-  }
-}
-
-@include media('lg') {
-  .haiku__list {
-    font-size: rem(28px);
-  }
-}
 
 .haiku--negative {
   color: white;

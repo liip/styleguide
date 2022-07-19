@@ -4,7 +4,11 @@
   <main>
     <div class="section section--fit section--behind-navbar">
       <div class="section__body">
-        {% render '@sentence--default' %}
+        <div class="grid">
+          <div class="grid__item md-w-1/2">
+            {% render '@sentence--default' %}
+          </div>
+        </div>
       </div>
       <div class="section__continue">
         {% render '@icon', { id: "chevron-down", class: "icon--100 md-icon--200" } %}
