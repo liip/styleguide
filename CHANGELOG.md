@@ -1,5 +1,12 @@
 
 
+# [8.2.0](https://github.com/liip/styleguide/compare/8.1.0...8.2.0) (2022-12-05)
+
+
+### Features
+
+* **icons:** add Fediverse ([ef40713](https://github.com/liip/styleguide/commit/ef4071300e0081996d99086310879e47bde66e7e))
+
 # [8.1.0](https://github.com/liip/styleguide/compare/8.0.0...8.1.0) (2022-07-19)
 
 
