@@ -16,7 +16,7 @@
   "devDependencies": {
     "autoprefixer": "^10.2.5",
     "highlight.js": "^10.7.2",
-    "marked": "^2.0.3",
+    "marked": "^4.0.10",
     "normalize.css": "^8.0.1",
     "onchange": "^7.1.0",
     "postcss-cli": "^8.3.1",
