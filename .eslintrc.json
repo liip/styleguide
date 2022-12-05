@@ -1,5 +1,5 @@
 {
-  "extends": ["rawbot", "plugin:prettier/recommended"],
+  "extends": ["@liip-lausanne", "plugin:prettier/recommended"],
   "env": {
     "browser": true,
     "node": true
