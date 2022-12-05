@@ -17,6 +17,7 @@ import '../../icons/design-thinking.svg';
 import '../../icons/ecommerce.svg';
 import '../../icons/elearning.svg';
 import '../../icons/facebook.svg';
+import '../../icons/fediverse.svg';
 import '../../icons/fintech.svg';
 import '../../icons/github.svg';
 import '../../icons/instagram.svg';

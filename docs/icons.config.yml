@@ -28,6 +28,7 @@ context:
       - ux-design
     Social:
       - facebook
+      - fediverse
       - github
       - instagram
       - linkedin
