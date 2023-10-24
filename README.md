@@ -2,8 +2,6 @@
 
 A living documentation of the components used, essentially, on [liip.ch](https://www.liip.ch). The goal of this documentation is to illustrate all the elements available and therefor have an overview of the style and behavior of the interface of the website.
 
-For more information about this project, visit [styleguide.liip.ch](http://styleguide.liip.ch).
-
 ## Project setup
 
 1. Clone the repository
